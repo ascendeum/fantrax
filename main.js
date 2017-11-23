@@ -15,7 +15,7 @@
             gads.type = 'text/javascript';
             var useSSL = 'https:' == document.location.protocol;
             gads.src = (useSSL ? 'https:' : 'http:') +
-                '//138.197.93.132/fantrax/prebid.js';
+                '//ascendeum.github.io/fantrax/prebid.js';
             var node = document.getElementsByTagName('script')[0];
             node.parentNode.insertBefore(gads, node);
         })();  */      
