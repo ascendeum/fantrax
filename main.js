@@ -155,7 +155,7 @@ function requestAds(requestAdunits)
     // pbjs.request ads
     pbjs.initAdserverSet = false;
     pbjs.que.push(function() { pbjs.requestAds(toRequestAdunits,displayAds,TIMEOUT); });
-    pbjs.timeout = setTimeout(displayAds, TIMEOUT);
+    pbjs.timeout = setTimeout(function(){displayAds(toRequestAdunits)}, TIMEOUT);
 
 }
 
@@ -182,7 +182,7 @@ It will actually display the ads on page
 displayAdunits (array) : list of adunits to refresh, if not defined use all from adUnits variable
 */
 function displayAds(displayAdunits)
-{
+{ 
     if (pbjs.initAdserverSet) return;
 
     var toDisplayAdunits = [];
@@ -192,7 +192,7 @@ function displayAds(displayAdunits)
     }
     else {
         for (var i = displayAdunits.length - 1; i >= 0; i--) {
-            toDisplayAdunits.push(getAdByDiv(displayAdunits[i]));
+            toDisplayAdunits.push(displayAdunits[i]);
         }
     }
 
