@@ -170,6 +170,14 @@ function setAds()
 }
 
 /*
+Helper function to refresh individual ads
+toRefreshAdunit (object) : DFP Adslot object
+*/
+function doRefreshIndividual(toRefreshAdunit) {
+    googletag.pubads().refresh([toRefreshAdunit]);
+}
+
+/*
 It will actually display the ads on page
 displayAdunits (array) : list of adunits to refresh, if not defined use all from adUnits variable
 */
@@ -190,8 +198,17 @@ function displayAds(displayAdunits)
 
     googletag.cmd.push(function() {
             pbjs.que.push(function() {
+
                 pbjs.setTargetingForGPTAsync();
-                googletag.pubads().refresh();
+
+                // Get All DFP adunits
+                var dfpAdunits = googletag.pubads().getSlots();
+                for (var i = dfpAdunits.length - 1; i >= 0; i--) {
+                    for (var y = toDisplayAdunits.length - 1; y >= 0; y--) {
+                        if(dfpAdunits[i].getSlotElementId() == toDisplayAdunits[y].code) doRefreshIndividual(dfpAdunits[i]);
+                    }
+                }
+             
             });
         });
 
@@ -255,7 +272,7 @@ $("#addAdUnit").click(function(){
         $("#content").append(ad1);
 
     // Set ads in content
-    setAds();    
+    setAds([ad1]);    
 });
 
 $("#refreshAds").click(function(){
