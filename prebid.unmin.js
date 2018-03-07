@@ -3542,7 +3542,7 @@ googletag.cmd.push((function () {
   googletag.pubads().setTargeting("refreshIteration", refreshIteration.toString());
 }));
 // move to top
-googletag.cmd.splice(0, 0, googletag.cmd.pop());
+if (typeof googletag.cmd.pop == 'function') googletag.cmd.splice(0, 0, googletag.cmd.pop());
 // Refresh Test
 googletag.cmd.unshift((function () {
   googletag.pubads().setTargeting("refreshTest", refreshTest.toString());
@@ -4204,7 +4204,7 @@ pbjs.renderAd = function (doc, id) {
         if (renderer && renderer.url) {
           renderer.render(bid);
         } else if (doc === document && !utils.inIframe() || mediaType === 'video') {
-          utils.logError("Error trying to write ad. Ad render call ad id " + id + " was prevented from writing to the main document.");
+          utils.logError('Error trying to write ad. Ad render call ad id ' + id + ' was prevented from writing to the main document.');
         } else if (ad) {
           doc.write(ad);
           doc.close();
@@ -4378,7 +4378,7 @@ pbjs.addAdUnits = function (adUnitArr) {
       return adUnit.transactionId = utils.generateUUID();
     }));
     pbjs.adUnits.push.apply(pbjs.adUnits, adUnitArr);
-  } else if ((typeof adUnitArr === "undefined" ? "undefined" : _typeof(adUnitArr)) === 'object') {
+  } else if ((typeof adUnitArr === 'undefined' ? 'undefined' : _typeof(adUnitArr)) === 'object') {
     // Generate the transaction id for the adunit
     adUnitArr.transactionId = utils.generateUUID();
     pbjs.adUnits.push(adUnitArr);
