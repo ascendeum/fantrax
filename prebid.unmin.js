@@ -3544,9 +3544,15 @@ googletag.cmd.push((function () {
 // move to top
 if (typeof googletag.cmd.pop == 'function') googletag.cmd.splice(0, 0, googletag.cmd.pop());
 // Refresh Test
-googletag.cmd.unshift((function () {
-  googletag.pubads().setTargeting("refreshTest", refreshTest.toString());
-}));
+if (typeof googletag.cmd.unshift == 'function') {
+  googletag.cmd.unshift((function () {
+    googletag.pubads().setTargeting("refreshTest", refreshTest.toString());
+  }));
+} else {
+  googletag.cmd.push((function () {
+    googletag.pubads().setTargeting("refreshTest", refreshTest.toString());
+  }));
+}
 
 // Refresh Ads
 function doRefreshIndividual(i) {
