@@ -3522,7 +3522,7 @@ window.dfpAdunitsToRefresh = [];
 
 var TIMEOUT = window.TIMEOUT || 2000;
 var EXCHANGE_RATE = window.EXCHANGE_RATE || 1.3;
-var REFRESH_RATE = 8000000;
+var REFRESH_RATE = 80000;
 var REFRESH_INDIVIDUAL_DELAY = 5000;
 var refreshIteration = 0;
 var MAX_REFRESH = 5;
