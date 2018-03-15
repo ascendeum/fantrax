@@ -3532,10 +3532,10 @@ var detectWidth = function detectWidth() {
 };
 
 // Test Refresh
-var refreshTest = true; // Always True, change to false to enable test
+var refreshTest = false;
 var d = Math.random();
 if (d < 0.5) {
-  refreshTest = true;
+  refreshTest = false;
 }
 
 // Refresh Ads
@@ -3614,7 +3614,7 @@ function refreshAds() {
   }));
   refreshesDone++;
 }
-if (refreshTest) setInterval(refreshAds, REFRESH_RATE);
+//if(refreshTest) setInterval(refreshAds,REFRESH_RATE);
 
 // Tests
 function getParameterByName(name, url) {
