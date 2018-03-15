@@ -1,5 +1,5 @@
 /* prebid.js v0.34.5
-Updated : 2018-03-07 */
+Updated : 2018-03-15 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -3526,6 +3526,7 @@ var REFRESH_RATE = 80000;
 var REFRESH_INDIVIDUAL_DELAY = 5000;
 var refreshIteration = 0;
 var MAX_REFRESH = 5;
+var doNotRefreshAdvertisers = [21329707, 29109667, 29124187];
 var detectWidth = function detectWidth() {
   return window.screen.width || window.innerWidth && document.documentElement.clientWidth ? Math.min(window.innerWidth, document.documentElement.clientWidth) : window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
 };
@@ -3553,6 +3554,21 @@ if (typeof googletag.cmd.unshift == 'function') {
     googletag.pubads().setTargeting("refreshTest", refreshTest.toString());
   }));
 }
+
+// Remove if google
+googletag.cmd.push((function () {
+  googletag.pubads().addEventListener('slotRenderEnded', (function (event) {
+    if (!event.isEmpty) {
+      if (doNotRefreshAdvertisers.indexOf(event.advertiserId) >= 0) {
+        var tempAdunits = [];
+        for (var i = 0, y = toUseAdUnits.length; i < y; i++) {
+          if (toUseAdUnits[i].code == event.slot.getSlotElementId()) continue;else tempAdunits.push(toUseAdUnits[i]);
+        }
+        toUseAdUnits = tempAdunits;
+      }
+    }
+  }));
+}));
 
 // Refresh Ads
 function doRefreshIndividual(i) {
@@ -3587,7 +3603,11 @@ function refreshAds() {
         window.dfpAdunitsToRefresh = googletag.pubads().getSlots();
 
         for (var i = 0, y = window.dfpAdunitsToRefresh.length; i < y; i++) {
-          doRefreshIndividual(i);
+          for (var w = codes.length - 1; w >= 0; w--) {
+            if (codes[w] == window.dfpAdunitsToRefresh[i].getSlotElementId()) {
+              doRefreshIndividual(i);
+            }
+          }
         }
       }
     });
