@@ -3532,7 +3532,7 @@ var detectWidth = function detectWidth() {
 };
 
 // Test Refresh
-var refreshTest = false;
+var refreshTest = true; // Always True, change to false to enable test
 var d = Math.random();
 if (d < 0.5) {
   refreshTest = true;
