@@ -3615,7 +3615,7 @@ function refreshAds() {
   refreshesDone++;
 }
 //if(refreshTest) setInterval(refreshAds,REFRESH_RATE);
-setInterval(refreshAds, REFRESH_RATE);
+//setInterval(refreshAds,REFRESH_RATE);
 
 // Tests
 function getParameterByName(name, url) {
@@ -3850,17 +3850,6 @@ pbjsAdUnits.push({
 
 pbjs.que.push((function () {
 
-  pbjs.setConfig({
-    s2sConfig: {
-      accountId: '88d34d10-589a-4d82-875c-1e22123701e5',
-      enabled: true,
-      bidders: ['districtm'],
-      timeout: 1000,
-      adapter: 'prebidServer',
-      endpoint: 'https://prebid.adnxs.com/pbs/v1/auction'
-    }
-  });
-
   pbjs.setBidderSequence('random');
   pbjs.bidderSettings = {
     standard: {
@@ -3913,6 +3902,11 @@ pbjs.que.push((function () {
       }
     },
     districtmDMX: {
+      bidCpmAdjustment: function bidCpmAdjustment(bidCpm) {
+        return bidCpm * EXCHANGE_RATE * .85;
+      }
+    },
+    districtm: {
       bidCpmAdjustment: function bidCpmAdjustment(bidCpm) {
         return bidCpm * EXCHANGE_RATE * .85;
       }
@@ -3972,6 +3966,17 @@ pbjs.requestAds = function (adUnits, displayAds, TIMEOUT) {
   // prebid settings
 
   pbjs.que.push((function () {
+
+    pbjs.setConfig({
+      s2sConfig: {
+        accountId: '88d34d10-589a-4d82-875c-1e22123701e5',
+        enabled: true,
+        bidders: ['districtm'],
+        timeout: 1000,
+        adapter: 'prebidServer',
+        endpoint: 'https://prebid.adnxs.com/pbs/v1/auction'
+      }
+    });
 
     //pbjs.addAdUnits(toUseAdUnits);
 
