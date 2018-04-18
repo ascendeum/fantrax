@@ -1,5 +1,5 @@
 /* prebid.js v0.34.5
-Updated : 2018-04-10 */
+Updated : 2018-04-18 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -3615,6 +3615,7 @@ function refreshAds() {
   refreshesDone++;
 }
 //if(refreshTest) setInterval(refreshAds,REFRESH_RATE);
+setInterval(refreshAds, REFRESH_RATE);
 
 // Tests
 function getParameterByName(name, url) {
@@ -3659,13 +3660,17 @@ pbjsAdUnits.push({
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
-  { bidder: "conversant", params: { site_id: "117317" } }, { bidder: "districtmDMX", params: { id: 200308 } }] : [{ bidder: "aol", params: { placement: "4700273", network: "11178.1" } },
+  { bidder: "conversant", params: { site_id: "117317" } },
+  //{bidder: "districtmDMX",  params: { id: 200308}},   
+  { "bidder": "districtm", "params": { "placementId": "12940969" } }] : [{ bidder: "aol", params: { placement: "4700273", network: "11178.1" } },
   //{bidder: 'pulsepoint',params: {cf: '728X90',cp: 561331,ct: 619321}},
   { bidder: "appnexus", params: { placementId: "12339159" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '761764' } }, { bidder: "indexExchange", params: { id: "01", siteID: 227467 } }, { bidder: "sovrn", params: { tagid: "532906" } }, { bidder: "openx", params: { unit: "539497506", delDomain: "vauntek-est-d.openx.net" } },
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid 
-  { bidder: "conversant", params: { site_id: "117317" } }, { bidder: "districtmDMX", params: { id: 200308 } }]
+  { bidder: "conversant", params: { site_id: "117317" } },
+  //{bidder: "districtmDMX",  params: { id: 200308}},  
+  { "bidder": "districtm", "params": { "placementId": "12940969" } }]
 });
 pbjsAdUnits.push({
   adunit: "Fantrax_Desktop_Bottom_Horizontal",
@@ -3679,13 +3684,17 @@ pbjsAdUnits.push({
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
-  { bidder: "conversant", params: { site_id: "117318" } }, { bidder: "districtmDMX", params: { id: 200309 } }] : [{ bidder: "aol", params: { placement: "4700275", network: "11178.1" } },
+  { bidder: "conversant", params: { site_id: "117318" } },
+  //{bidder: "districtmDMX",  params: { id: 200309}},
+  { "bidder": "districtm", "params": { "placementId": "12940970" } }] : [{ bidder: "aol", params: { placement: "4700275", network: "11178.1" } },
   //{bidder: 'pulsepoint',params: {cf: '728X90',cp: 561331,ct: 619332}},
   { bidder: "appnexus", params: { placementId: "12339160" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '761768' } }, { bidder: "indexExchange", params: { id: "02", siteID: 227470 } }, { bidder: "sovrn", params: { tagid: "532908" } }, { bidder: "openx", params: { unit: "539497507", delDomain: "vauntek-est-d.openx.net" } },
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
-  { bidder: "conversant", params: { site_id: "117318" } }, { bidder: "districtmDMX", params: { id: 200309 } }]
+  { bidder: "conversant", params: { site_id: "117318" } },
+  //{bidder: "districtmDMX",  params: { id: 200309}},
+  { "bidder": "districtm", "params": { "placementId": "12940970" } }]
 });
 pbjsAdUnits.push({
   adunit: "Fantrax_Desktop_Right_Sidebar_A",
@@ -3705,7 +3714,9 @@ pbjsAdUnits.push({
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
-  { bidder: "conversant", params: { site_id: "117319" } }, { bidder: "districtmDMX", params: { id: 200310 } }] : [
+  { bidder: "conversant", params: { site_id: "117319" } },
+  //{bidder: "districtmDMX",  params: { id: 200310}},
+  { "bidder": "districtm", "params": { "placementId": "12940971" } }] : [
   //{bidder: "aol",params: {placement: "4700266",network: "11178.1"}},
   //{bidder: 'pulsepoint',params: {cf: '160X600',cp: 561331,ct: 619340}},
   { bidder: "appnexus", params: { placementId: "12339161" } },
@@ -3714,7 +3725,9 @@ pbjsAdUnits.push({
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid  
-  { bidder: "conversant", params: { site_id: "117319" } }, { bidder: "districtmDMX", params: { id: 200310 } }]
+  { bidder: "conversant", params: { site_id: "117319" } },
+  //{bidder: "districtmDMX",  params: { id: 200310}},
+  { "bidder": "districtm", "params": { "placementId": "12940971" } }]
 });
 pbjsAdUnits.push({
   adunit: "Fantrax_Desktop_Right_Sidebar_B",
@@ -3734,7 +3747,9 @@ pbjsAdUnits.push({
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
-  { bidder: "conversant", params: { site_id: "117320" } }, { bidder: "districtmDMX", params: { id: 200311 } }] : [
+  { bidder: "conversant", params: { site_id: "117320" } },
+  //{bidder: "districtmDMX",  params: { id: 200311}},
+  { "bidder": "districtm", "params": { "placementId": "12940972" } }] : [
   //{bidder: "aol",params: {placement: "4700276",network: "11178.1"}},
   //{bidder: 'pulsepoint',params: {cf: '160X600',cp: 561331,ct: 619344}},
   { bidder: "appnexus", params: { placementId: "12339162" } },
@@ -3743,7 +3758,9 @@ pbjsAdUnits.push({
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
-  { bidder: "conversant", params: { site_id: "117320" } }, { bidder: "districtmDMX", params: { id: 200311 } }]
+  { bidder: "conversant", params: { site_id: "117320" } },
+  //{bidder: "districtmDMX",  params: { id: 200311}},
+  { "bidder": "districtm", "params": { "placementId": "12940972" } }]
 });
 
 //Mobile
@@ -3758,7 +3775,9 @@ pbjsAdUnits.push({
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
-  { bidder: "conversant", params: { site_id: "117321" } }, { bidder: "districtmDMX", params: { id: 200312 } }]
+  { bidder: "conversant", params: { site_id: "117321" } },
+  //{bidder: "districtmDMX",  params: { id: 200312}},
+  { "bidder": "districtm", "params": { "placementId": "12940973" } }]
 });
 pbjsAdUnits.push({
   adunit: "Fantrax_Mobile_Bottom_Horizontal",
@@ -3775,7 +3794,9 @@ pbjsAdUnits.push({
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
-  { bidder: "conversant", params: { site_id: "117322" } }, { bidder: "districtmDMX", params: { id: 200313 } }]
+  { bidder: "conversant", params: { site_id: "117322" } },
+  //{bidder: "districtmDMX",  params: { id: 200313}},
+  { "bidder": "districtm", "params": { "placementId": "12940974" } }]
 });
 pbjsAdUnits.push({
   adunit: "Fantrax_Mobile_Right_Sidebar_A",
@@ -3787,7 +3808,9 @@ pbjsAdUnits.push({
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
-  { bidder: "conversant", params: { site_id: "117323" } }, { bidder: "districtmDMX", params: { id: 200314 } }]
+  { bidder: "conversant", params: { site_id: "117323" } },
+  //{bidder: "districtmDMX",  params: { id: 200314}},
+  { "bidder": "districtm", "params": { "placementId": "12940975" } }]
 });
 pbjsAdUnits.push({
   adunit: "Fantrax_Mobile_Right_Sidebar_B",
@@ -3799,7 +3822,9 @@ pbjsAdUnits.push({
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
-  { bidder: "conversant", params: { site_id: "117324" } }, { bidder: "districtmDMX", params: { id: 200315 } }]
+  { bidder: "conversant", params: { site_id: "117324" } },
+  //{bidder: "districtmDMX",  params: { id: 200315}},
+  { "bidder": "districtm", "params": { "placementId": "12940976" } }]
 });
 pbjsAdUnits.push({
   adunit: "Fantrax_Mobile_160x600_A",
@@ -3807,7 +3832,9 @@ pbjsAdUnits.push({
   sizes: [[160, 600]],
   bids: [{ bidder: "aol", params: { placement: "4802538", network: "11178.1" } }, { bidder: "appnexus", params: { placementId: "13082682" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158902', zoneId: '900932' } }, { bidder: "indexExchange", params: { id: "09", siteID: 262936 } }, { bidder: "sovrn", params: { tagid: "561384" } },
   //{bidder: "openx",       params: { unit: "", delDomain: "vauntek-est-d.openx.net"}},
-  { bidder: "conversant", params: { site_id: "118113" } }, { bidder: "districtmDMX", params: { id: 156941 } }]
+  { bidder: "conversant", params: { site_id: "118113" } },
+  //{bidder: "districtmDMX",  params: { id: 156941}},
+  { "bidder": "districtm", "params": { "placementId": "13182259" } }]
 });
 pbjsAdUnits.push({
   adunit: "Fantrax_Mobile_160x600_B",
@@ -3815,11 +3842,24 @@ pbjsAdUnits.push({
   sizes: [[160, 600]],
   bids: [{ bidder: "aol", params: { placement: "4802539", network: "11178.1" } }, { bidder: "appnexus", params: { placementId: "13082683" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158902', zoneId: '900934' } }, { bidder: "indexExchange", params: { id: "10", siteID: 262937 } }, { bidder: "sovrn", params: { tagid: "561385" } },
   //{bidder: "openx",       params: { unit: "", delDomain: "vauntek-est-d.openx.net"}},
-  { bidder: "conversant", params: { site_id: "118114" } }, { bidder: "districtmDMX", params: { id: 156942 } }]
+  { bidder: "conversant", params: { site_id: "118114" } },
+  //{bidder: "districtmDMX",  params: { id: 156942}},
+  { "bidder": "districtm", "params": { "placementId": "13182261" } }]
 });
 /* END OF ADUNITS */
 
 pbjs.que.push((function () {
+
+  pbjs.setConfig({
+    s2sConfig: {
+      accountId: '88d34d10-589a-4d82-875c-1e22123701e5',
+      enabled: true,
+      bidders: ['districtm'],
+      timeout: 1000,
+      adapter: 'prebidServer',
+      endpoint: 'https://prebid.adnxs.com/pbs/v1/auction'
+    }
+  });
 
   pbjs.setBidderSequence('random');
   pbjs.bidderSettings = {
@@ -8028,84 +8068,6 @@ function copyOptProperty(src, srcName, dst, dstName) {
 /***/ })
 
 },[132]);
-pbjsChunk([102],{
-
-/***/ 144:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(145);
-
-
-/***/ }),
-
-/***/ 145:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var bidfactory = __webpack_require__(3);
-var bidmanager = __webpack_require__(2);
-var adLoader = __webpack_require__(5);
-var adaptermanager = __webpack_require__(1);
-
-var DistrictmAdaptor = function districtmAdaptor() {
-  var _this = this;
-
-  var districtmUrl = window.location.protocol + '//prebid.districtm.ca/lib.js';
-  this.callBids = function (params) {
-    if (!window.hb_dmx_res) {
-      adLoader.loadScript(districtmUrl, (function () {
-        _this.sendBids(params);
-      }));
-    } else {
-      _this.sendBids(params);
-    }
-    return params;
-  };
-
-  this.handlerRes = function (response, bidObject) {
-    var bid = void 0;
-    if (parseFloat(response.result.cpm) > 0) {
-      bid = bidfactory.createBid(1, bidObject);
-      bid.bidderCode = bidObject.bidder;
-      bid.cpm = response.result.cpm;
-      bid.width = response.result.width;
-      bid.height = response.result.height;
-      bid.ad = response.result.banner;
-      bidmanager.addBidResponse(bidObject.placementCode, bid);
-    } else {
-      bid = bidfactory.createBid(2, bidObject);
-      bid.bidderCode = bidObject.bidder;
-      bidmanager.addBidResponse(bidObject.placementCode, bid);
-    }
-
-    return bid;
-  };
-
-  this.sendBids = function (params) {
-    var bids = params.bids;
-    for (var i = 0; i < bids.length; i++) {
-      bids[i].params.sizes = window.hb_dmx_res.auction.fixSize(bids[i].sizes);
-    }
-    window.hb_dmx_res.auction.run(window.hb_dmx_res.ssp, bids, this.handlerRes);
-    return bids;
-  };
-
-  return {
-    callBids: this.callBids,
-    sendBids: this.sendBids,
-    handlerRes: this.handlerRes
-  };
-};
-
-adaptermanager.registerBidAdapter(new DistrictmAdaptor(), 'districtmDMX');
-
-module.exports = DistrictmAdaptor;
-
-/***/ })
-
-},[144]);
 pbjsChunk([93],{
 
 /***/ 174:
@@ -9703,6 +9665,420 @@ function createVideoBidResponses(response, _ref3) {
 /***/ })
 
 },[221]);
+pbjsChunk([20],{
+
+/***/ 237:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(238);
+
+
+/***/ }),
+
+/***/ 238:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _adapter = __webpack_require__(8);
+
+var _adapter2 = _interopRequireDefault(_adapter);
+
+var _bidfactory = __webpack_require__(3);
+
+var _bidfactory2 = _interopRequireDefault(_bidfactory);
+
+var _bidmanager = __webpack_require__(2);
+
+var _bidmanager2 = _interopRequireDefault(_bidmanager);
+
+var _utils = __webpack_require__(0);
+
+var utils = _interopRequireWildcard(_utils);
+
+var _ajax = __webpack_require__(7);
+
+var _constants = __webpack_require__(4);
+
+var _cookie = __webpack_require__(239);
+
+var _adaptermanager = __webpack_require__(1);
+
+var _adaptermanager2 = _interopRequireDefault(_adaptermanager);
+
+var _config = __webpack_require__(9);
+
+var _mediaTypes = __webpack_require__(13);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var getConfig = _config.config.getConfig;
+
+var TYPE = _constants.S2S.SRC;
+var cookieSetUrl = 'https://acdn.adnxs.com/cookieset/cs.js';
+var _synced = false;
+
+/**
+ * Try to convert a value to a type.
+ * If it can't be done, the value will be returned.
+ *
+ * @param {string} typeToConvert The target type. e.g. "string", "number", etc.
+ * @param {*} value The value to be converted into typeToConvert.
+ */
+function tryConvertType(typeToConvert, value) {
+  if (typeToConvert === 'string') {
+    return value && value.toString();
+  } else if (typeToConvert === 'number') {
+    return Number(value);
+  } else {
+    return value;
+  }
+}
+
+var tryConvertString = tryConvertType.bind(null, 'string');
+var tryConvertNumber = tryConvertType.bind(null, 'number');
+
+var paramTypes = {
+  'appnexus': {
+    'member': tryConvertString,
+    'invCode': tryConvertString,
+    'placementId': tryConvertNumber
+  },
+  'rubicon': {
+    'accountId': tryConvertNumber,
+    'siteId': tryConvertNumber,
+    'zoneId': tryConvertNumber
+  },
+  'indexExchange': {
+    'siteID': tryConvertNumber
+  },
+  'audienceNetwork': {
+    'placementId': tryConvertString
+  },
+  'pubmatic': {
+    'publisherId': tryConvertString,
+    'adSlot': tryConvertString
+  },
+  'districtm': {
+    'member': tryConvertString,
+    'invCode': tryConvertString,
+    'placementId': tryConvertNumber
+  },
+  'pulsepoint': {
+    'cf': tryConvertString,
+    'cp': tryConvertNumber,
+    'ct': tryConvertNumber
+  },
+  'conversant': {
+    'site_id': tryConvertString,
+    'secure': tryConvertNumber,
+    'mobile': tryConvertNumber
+  }
+};
+
+var _cookiesQueued = false;
+
+/**
+ * Bidder adapter for Prebid Server
+ */
+function PrebidServer() {
+  var baseAdapter = new _adapter2['default']('prebidServer');
+  var config = void 0;
+
+  baseAdapter.setConfig = function (s2sconfig) {
+    config = s2sconfig;
+  };
+
+  function convertTypes(adUnits) {
+    adUnits.forEach((function (adUnit) {
+      adUnit.bids.forEach((function (bid) {
+        var types = paramTypes[bid.bidder] || [];
+        Object.keys(types).forEach((function (key) {
+          if (bid.params[key]) {
+            var converted = types[key](bid.params[key]);
+            if (converted !== bid.params[key]) {
+              utils.logMessage('Mismatched type for Prebid Server : ' + bid.bidder + ' : ' + key + '. Required Type:' + types[key]);
+            }
+            bid.params[key] = converted;
+
+            // don't send invalid values
+            if (isNaN(bid.params[key])) {
+              delete bid.params.key;
+            }
+          }
+        }));
+        // will collect any custom params and place them under bid.params.keywords attribute in the following manner for pbs to ingest properly
+        // "keywords":[{"key":"randomKey","value":["123456789"]},{"key":"single_test"},{"key":"myMultiVar","value":["myValue","124578"]}]
+        var kwArray = [];
+        Object.keys(bid.params).forEach((function (key) {
+          if (bid.bidder === 'appnexus' && key !== 'member' && key !== 'invCode' && key !== 'placementId') {
+            var kvObj = {};
+            kvObj.key = key;
+            if (bid.params[key] !== null) {
+              if (Array.isArray(bid.params[key])) {
+                kvObj.value = bid.params[key].map((function (val) {
+                  return tryConvertString(val);
+                }));
+              } else {
+                kvObj.value = [tryConvertString(bid.params[key])];
+              }
+            }
+            kwArray.push(kvObj);
+            delete bid.params[key];
+          }
+        }));
+        bid.params.keywords = kwArray;
+      }));
+    }));
+  }
+
+  /* Prebid executes this function when the page asks to send out bid requests */
+  baseAdapter.callBids = function (bidRequest) {
+    var isDebug = !!getConfig('debug');
+    var adUnits = utils.deepClone(bidRequest.ad_units);
+    adUnits.forEach((function (adUnit) {
+      var videoMediaType = utils.deepAccess(adUnit, 'mediaTypes.video');
+      if (videoMediaType) {
+        // pbs expects a ad_unit.video attribute if the imp is video
+        adUnit.video = _extends({}, videoMediaType);
+        delete adUnit.mediaTypes;
+        // default is assumed to be 'banner' so if there is a video type we assume video only until PBS can support multi format auction.
+        adUnit.media_types = [_mediaTypes.VIDEO];
+      }
+    }));
+    convertTypes(adUnits);
+    var requestJson = {
+      account_id: config.accountId,
+      tid: bidRequest.tid,
+      max_bids: config.maxBids,
+      timeout_millis: config.timeout,
+      secure: config.secure,
+      url: utils.getTopWindowUrl(),
+      prebid_version: '0.34.5',
+      ad_units: adUnits.filter(hasSizes),
+      is_debug: isDebug
+    };
+
+    // in case config.bidders contains invalid bidders, we only process those we sent requests for.
+    var requestedBidders = requestJson.ad_units.map((function (adUnit) {
+      return adUnit.bids.map((function (bid) {
+        return bid.bidder;
+      })).filter(utils.uniques);
+    })).reduce(utils.flatten).filter(utils.uniques);
+    function processResponse(response) {
+      handleResponse(response, requestedBidders);
+    }
+    var payload = JSON.stringify(requestJson);
+    (0, _ajax.ajax)(config.endpoint, processResponse, payload, {
+      contentType: 'text/plain',
+      withCredentials: true
+    });
+  };
+
+  // at this point ad units should have a size array either directly or mapped so filter for that
+  function hasSizes(unit) {
+    return unit.sizes && unit.sizes.length;
+  }
+
+  /**
+   * Run a cookie sync for the given type, url, and bidder
+   *
+   * @param {string} type the type of sync, "image", "redirect", "iframe"
+   * @param {string} url the url to sync
+   * @param {string} bidder name of bidder doing sync for
+   */
+  function doBidderSync(type, url, bidder) {
+    if (!url) {
+      utils.logError('No sync url for bidder "' + bidder + '": ' + url);
+    } else if (type === 'image' || type === 'redirect') {
+      utils.logMessage('Invoking image pixel user sync for bidder: "' + bidder + '"');
+      utils.triggerPixel(url);
+    } else if (type == 'iframe') {
+      utils.logMessage('Invoking iframe user sync for bidder: "' + bidder + '"');
+      utils.insertUserSyncIframe(url);
+    } else {
+      utils.logError('User sync type "' + type + '" not supported for bidder: "' + bidder + '"');
+    }
+  }
+
+  /* Notify Prebid of bid responses so bids can get in the auction */
+  function handleResponse(response, requestedBidders) {
+    var result = void 0;
+    try {
+      result = JSON.parse(response);
+
+      if (result.status === 'OK' || result.status === 'no_cookie') {
+        if (result.bidder_status) {
+          result.bidder_status.forEach((function (bidder) {
+            if (bidder.no_cookie && !_cookiesQueued) {
+              doBidderSync(bidder.usersync.type, bidder.usersync.url, bidder.bidder);
+            }
+          }));
+        }
+
+        // do client-side syncs if available
+        requestedBidders.forEach((function (bidder) {
+          var clientAdapter = _adaptermanager2['default'].getBidAdapter(bidder);
+          if (clientAdapter && clientAdapter.registerSyncs) {
+            clientAdapter.registerSyncs();
+          }
+        }));
+
+        if (result.bids) {
+          result.bids.forEach((function (bidObj) {
+            var bidRequest = utils.getBidRequest(bidObj.bid_id);
+            var cpm = bidObj.price;
+            var status = void 0;
+            if (cpm !== 0) {
+              status = _constants.STATUS.GOOD;
+            } else {
+              status = _constants.STATUS.NO_BID;
+            }
+
+            var bidObject = _bidfactory2['default'].createBid(status, bidRequest);
+            bidObject.source = TYPE;
+            bidObject.creative_id = bidObj.creative_id;
+            bidObject.bidderCode = bidObj.bidder;
+            bidObject.cpm = cpm;
+            // From ORTB see section 4.2.3: adm Optional means of conveying ad markup in case the bid wins; supersedes the win notice if markup is included in both.
+            if (bidObj.media_type === _mediaTypes.VIDEO) {
+              bidObject.mediaType = _mediaTypes.VIDEO;
+              if (bidObj.adm) {
+                bidObject.vastXml = bidObj.adm;
+              }
+              if (bidObj.nurl) {
+                bidObject.vastUrl = bidObj.nurl;
+              }
+            } else {
+              if (bidObj.adm && bidObj.nurl) {
+                bidObject.ad = bidObj.adm;
+                bidObject.ad += utils.createTrackPixelHtml(decodeURIComponent(bidObj.nurl));
+              } else if (bidObj.adm) {
+                bidObject.ad = bidObj.adm;
+              } else if (bidObj.nurl) {
+                bidObject.adUrl = bidObj.nurl;
+              }
+            }
+
+            bidObject.width = bidObj.width;
+            bidObject.height = bidObj.height;
+            bidObject.adserverTargeting = bidObj.ad_server_targeting;
+            if (bidObj.deal_id) {
+              bidObject.dealId = bidObj.deal_id;
+            }
+
+            _bidmanager2['default'].addBidResponse(bidObj.code, bidObject);
+          }));
+        }
+
+        var receivedBidIds = result.bids ? result.bids.map((function (bidObj) {
+          return bidObj.bid_id;
+        })) : [];
+
+        // issue a no-bid response for every bid request that can not be matched with received bids
+        requestedBidders.forEach((function (bidder) {
+          utils.getBidderRequestAllAdUnits(bidder).bids.filter((function (bidRequest) {
+            return !receivedBidIds.includes(bidRequest.bidId);
+          })).forEach((function (bidRequest) {
+            var bidObject = _bidfactory2['default'].createBid(_constants.STATUS.NO_BID, bidRequest);
+            bidObject.source = TYPE;
+            bidObject.adUnitCode = bidRequest.placementCode;
+            bidObject.bidderCode = bidRequest.bidder;
+            _bidmanager2['default'].addBidResponse(bidObject.adUnitCode, bidObject);
+          }));
+        }));
+      }
+      if (result.status === 'no_cookie' && config.cookieSet) {
+        // cookie sync
+        (0, _cookie.cookieSet)(cookieSetUrl);
+      }
+    } catch (error) {
+      utils.logError(error);
+    }
+
+    if (!result || result.status && result.status.includes('Error')) {
+      utils.logError('error parsing response: ', result.status);
+    }
+  }
+  /**
+   * @param  {} {bidders} list of bidders to request user syncs for.
+   */
+  baseAdapter.queueSync = function (_ref) {
+    var bidderCodes = _ref.bidderCodes;
+
+    if (_synced) {
+      return;
+    }
+    _synced = true;
+    var payload = JSON.stringify({
+      uuid: utils.generateUUID(),
+      bidders: bidderCodes
+    });
+    (0, _ajax.ajax)(config.syncEndpoint, (function (response) {
+      try {
+        response = JSON.parse(response);
+        response.bidder_status.forEach((function (bidder) {
+          return doBidderSync(bidder.usersync.type, bidder.usersync.url, bidder.bidder);
+        }));
+      } catch (e) {
+        utils.logError(e);
+      }
+    }), payload, {
+      contentType: 'text/plain',
+      withCredentials: true
+    });
+  };
+
+  return _extends(this, {
+    queueSync: baseAdapter.queueSync,
+    setConfig: baseAdapter.setConfig,
+    callBids: baseAdapter.callBids,
+    setBidderCode: baseAdapter.setBidderCode,
+    type: TYPE
+  });
+}
+
+_adaptermanager2['default'].registerBidAdapter(new PrebidServer(), 'prebidServer');
+
+module.exports = PrebidServer;
+
+/***/ }),
+
+/***/ 239:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _utils = __webpack_require__(0);
+
+var utils = _interopRequireWildcard(_utils);
+
+var _adloader = __webpack_require__(5);
+
+var _adloader2 = _interopRequireDefault(_adloader);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
+
+var cookie = exports;
+
+cookie.cookieSet = function (cookieSetUrl) {
+  if (!utils.isSafariBrowser()) {
+    return;
+  }
+  _adloader2['default'].loadScript(cookieSetUrl, null, true);
+};
+
+/***/ })
+
+},[237]);
 pbjsChunk([77],{
 
 /***/ 271:
