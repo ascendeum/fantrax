@@ -1,5 +1,5 @@
 /* prebid.js v0.34.5
-Updated : 2018-04-18 */
+Updated : 2018-04-20 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -3526,7 +3526,8 @@ var REFRESH_RATE = 80000;
 var REFRESH_INDIVIDUAL_DELAY = 5000;
 var refreshIteration = 0;
 var MAX_REFRESH = 5;
-var doNotRefreshAdvertisers = [21329707, 29109667, 29124187];
+//var doNotRefreshAdvertisers = [21329707,29109667,29124187];
+var doNotRefreshAdvertisers = [];
 var detectWidth = function detectWidth() {
   return window.screen.width || window.innerWidth && document.documentElement.clientWidth ? Math.min(window.innerWidth, document.documentElement.clientWidth) : window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
 };
