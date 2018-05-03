@@ -1,5 +1,5 @@
 /* prebid.js v0.34.5
-Updated : 2018-04-20 */
+Updated : 2018-05-03 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -3657,7 +3657,8 @@ pbjsAdUnits.push({
   //{bidder: 'pulsepoint',params: {cf: '728X90',cp: 561331,ct: 619321}},
   //{bidder: 'pulsepoint',params: {cf: '970X90',cp: 561331,ct: 619322}},
   //{bidder: 'pulsepoint',params: {cf: '970X250',cp: 561331,ct: 619329}},
-  { bidder: "appnexus", params: { placementId: "12339159" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '761764' } }, { bidder: "indexExchange", params: { id: "01", siteID: 227467 } }, { bidder: "sovrn", params: { tagid: "532906" } }, { bidder: "sovrn", params: { tagid: "532907" } }, { bidder: "sovrn", params: { tagid: "532920" } }, { bidder: "openx", params: { unit: "539497506", delDomain: "vauntek-est-d.openx.net" } },
+  { bidder: "appnexus", params: { placementId: "12339159" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '761764' } }, { bidder: "indexExchange", params: { id: "01", siteID: 227467 } }, { bidder: "sovrn", params: { tagid: "532906" } }, { bidder: "sovrn", params: { tagid: "532907" } }, { bidder: "sovrn", params: { tagid: "532920" } },
+  //{bidder: "openx",       params: { unit: "539497506", delDomain: "vauntek-est-d.openx.net"}},
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
@@ -3665,7 +3666,8 @@ pbjsAdUnits.push({
   //{bidder: "districtmDMX",  params: { id: 200308}},   
   { "bidder": "districtm", "params": { "placementId": 12940969 } }] : [{ bidder: "aol", params: { placement: "4700273", network: "11178.1" } },
   //{bidder: 'pulsepoint',params: {cf: '728X90',cp: 561331,ct: 619321}},
-  { bidder: "appnexus", params: { placementId: "12339159" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '761764' } }, { bidder: "indexExchange", params: { id: "01", siteID: 227467 } }, { bidder: "sovrn", params: { tagid: "532906" } }, { bidder: "openx", params: { unit: "539497506", delDomain: "vauntek-est-d.openx.net" } },
+  { bidder: "appnexus", params: { placementId: "12339159" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '761764' } }, { bidder: "indexExchange", params: { id: "01", siteID: 227467 } }, { bidder: "sovrn", params: { tagid: "532906" } },
+  //{bidder: "openx",       params: { unit: "539497506", delDomain: "vauntek-est-d.openx.net"}},  
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid 
@@ -3681,7 +3683,8 @@ pbjsAdUnits.push({
   //{bidder: 'pulsepoint',params: {cf: '728X90',cp: 561331,ct: 619332}},
   //{bidder: 'pulsepoint',params: {cf: '970X90',cp: 561331,ct: 619334}},
   //{bidder: 'pulsepoint',params: {cf: '970X250',cp: 561331,ct: 619335}},
-  { bidder: "appnexus", params: { placementId: "12339160" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '761768' } }, { bidder: "indexExchange", params: { id: "02", siteID: 227470 } }, { bidder: "sovrn", params: { tagid: "532908" } }, { bidder: "sovrn", params: { tagid: "532909" } }, { bidder: "sovrn", params: { tagid: "532921" } }, { bidder: "openx", params: { unit: "539497507", delDomain: "vauntek-est-d.openx.net" } },
+  { bidder: "appnexus", params: { placementId: "12339160" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '761768' } }, { bidder: "indexExchange", params: { id: "02", siteID: 227470 } }, { bidder: "sovrn", params: { tagid: "532908" } }, { bidder: "sovrn", params: { tagid: "532909" } }, { bidder: "sovrn", params: { tagid: "532921" } },
+  //{bidder: "openx",       params: { unit: "539497507", delDomain: "vauntek-est-d.openx.net"}},
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
@@ -3689,7 +3692,8 @@ pbjsAdUnits.push({
   //{bidder: "districtmDMX",  params: { id: 200309}},
   { "bidder": "districtm", "params": { "placementId": 12940970 } }] : [{ bidder: "aol", params: { placement: "4700275", network: "11178.1" } },
   //{bidder: 'pulsepoint',params: {cf: '728X90',cp: 561331,ct: 619332}},
-  { bidder: "appnexus", params: { placementId: "12339160" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '761768' } }, { bidder: "indexExchange", params: { id: "02", siteID: 227470 } }, { bidder: "sovrn", params: { tagid: "532908" } }, { bidder: "openx", params: { unit: "539497507", delDomain: "vauntek-est-d.openx.net" } },
+  { bidder: "appnexus", params: { placementId: "12339160" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '761768' } }, { bidder: "indexExchange", params: { id: "02", siteID: 227470 } }, { bidder: "sovrn", params: { tagid: "532908" } },
+  //{bidder: "openx",       params: { unit: "539497507", delDomain: "vauntek-est-d.openx.net"}},
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
@@ -3711,7 +3715,8 @@ pbjsAdUnits.push({
   //{bidder: 'pulsepoint',params: {cf: '300X600',cp: 561331,ct: 619339}},
   { bidder: "appnexus", params: { placementId: "12339161" } },
   //{bidder: 'rubicon',params: {accountId: '16136',siteId: '158890',zoneId: '761782'}},   
-  { bidder: "indexExchange", params: { id: "03", siteID: 227472 } }, { bidder: "sovrn", params: { tagid: "532910" } }, { bidder: "sovrn", params: { tagid: "532911" } }, { bidder: "sovrn", params: { tagid: "532912" } }, { bidder: "openx", params: { unit: "539497508", delDomain: "vauntek-est-d.openx.net" } },
+  { bidder: "indexExchange", params: { id: "03", siteID: 227472 } }, { bidder: "sovrn", params: { tagid: "532910" } }, { bidder: "sovrn", params: { tagid: "532911" } }, { bidder: "sovrn", params: { tagid: "532912" } },
+  //{bidder: "openx",       params: { unit: "539497508", delDomain: "vauntek-est-d.openx.net"}},
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
@@ -3722,7 +3727,8 @@ pbjsAdUnits.push({
   //{bidder: 'pulsepoint',params: {cf: '160X600',cp: 561331,ct: 619340}},
   { bidder: "appnexus", params: { placementId: "12339161" } },
   //{bidder: 'rubicon',params: {accountId: '16136',siteId: '158890',zoneId: '761782'}},   
-  { bidder: "indexExchange", params: { id: "03", siteID: 227472 } }, { bidder: "sovrn", params: { tagid: "532912" } }, { bidder: "openx", params: { unit: "539497508", delDomain: "vauntek-est-d.openx.net" } },
+  { bidder: "indexExchange", params: { id: "03", siteID: 227472 } }, { bidder: "sovrn", params: { tagid: "532912" } },
+  //{bidder: "openx",       params: { unit: "539497508", delDomain: "vauntek-est-d.openx.net"}}, 
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid  
@@ -3744,7 +3750,8 @@ pbjsAdUnits.push({
   //{bidder: 'pulsepoint',params: {cf: '300X600',cp: 561331,ct: 619346}},
   { bidder: "appnexus", params: { placementId: "12339162" } },
   //{bidder: 'rubicon',params: {accountId: '16136',siteId: '158890',zoneId: '761784'}},   
-  { bidder: "indexExchange", params: { id: "04", siteID: 227475 } }, { bidder: "sovrn", params: { tagid: "532913" } }, { bidder: "sovrn", params: { tagid: "532914" } }, { bidder: "sovrn", params: { tagid: "532915" } }, { bidder: "openx", params: { unit: "539497510", delDomain: "vauntek-est-d.openx.net" } },
+  { bidder: "indexExchange", params: { id: "04", siteID: 227475 } }, { bidder: "sovrn", params: { tagid: "532913" } }, { bidder: "sovrn", params: { tagid: "532914" } }, { bidder: "sovrn", params: { tagid: "532915" } },
+  //{bidder: "openx",       params: { unit: "539497510", delDomain: "vauntek-est-d.openx.net"}},
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
@@ -3755,7 +3762,8 @@ pbjsAdUnits.push({
   //{bidder: 'pulsepoint',params: {cf: '160X600',cp: 561331,ct: 619344}},
   { bidder: "appnexus", params: { placementId: "12339162" } },
   //{bidder: 'rubicon',params: {accountId: '16136',siteId: '158890',zoneId: '761784'}},   
-  { bidder: "indexExchange", params: { id: "04", siteID: 227475 } }, { bidder: "sovrn", params: { tagid: "532915" } }, { bidder: "openx", params: { unit: "539497510", delDomain: "vauntek-est-d.openx.net" } },
+  { bidder: "indexExchange", params: { id: "04", siteID: 227475 } }, { bidder: "sovrn", params: { tagid: "532915" } },
+  //{bidder: "openx",       params: { unit: "539497510", delDomain: "vauntek-est-d.openx.net"}},
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
@@ -3772,7 +3780,8 @@ pbjsAdUnits.push({
   bids: [{ bidder: "aol", params: { placement: "4700285", network: "11178.1" } }, { bidder: "aol", params: { placement: "4700284", network: "11178.1" } },
   //{bidder: 'pulsepoint',params: {cf: '320X50',cp: 561331,ct: 619349}},
   //{bidder: 'pulsepoint',params: {cf: '320X100',cp: 561331,ct: 619350}},
-  { bidder: "appnexus", params: { placementId: "12339163" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158902', zoneId: '761786' } }, { bidder: "indexExchange", params: { id: "05", siteID: 227477 } }, { bidder: "sovrn", params: { tagid: "532916" } }, { bidder: "openx", params: { unit: "539497511", delDomain: "vauntek-est-d.openx.net" } },
+  { bidder: "appnexus", params: { placementId: "12339163" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158902', zoneId: '761786' } }, { bidder: "indexExchange", params: { id: "05", siteID: 227477 } }, { bidder: "sovrn", params: { tagid: "532916" } },
+  //{bidder: "openx",       params: { unit: "539497511", delDomain: "vauntek-est-d.openx.net"}},
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
@@ -3791,7 +3800,7 @@ pbjsAdUnits.push({
   //{bidder: 'pulsepoint',params: {cf: '320X100',cp: 561331,ct: 619360}},
   { bidder: "appnexus", params: { placementId: "12339164" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158902', zoneId: '761788' } }, { bidder: "indexExchange", params: { id: "06", siteID: 227480 } },
   //{bidder: "sovrn",     params: { tagid: "532917"}},
-  { bidder: "openx", params: { unit: "539497514", delDomain: "vauntek-est-d.openx.net" } },
+  //{bidder: "openx",       params: { unit: "539497514", delDomain: "vauntek-est-d.openx.net"}},
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
@@ -3805,7 +3814,8 @@ pbjsAdUnits.push({
   sizes: sizeMappingRight,
   bids: [{ bidder: "aol", params: { placement: "4700282", network: "11178.1" } },
   //{bidder: 'pulsepoint',params: {cf: '300X250',cp: 561331,ct: 619366}},
-  { bidder: "appnexus", params: { placementId: "12339166" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158902', zoneId: '761798' } }, { bidder: "indexExchange", params: { id: "07", siteID: 227483 } }, { bidder: "sovrn", params: { tagid: "532918" } }, { bidder: "openx", params: { unit: "539497515", delDomain: "vauntek-est-d.openx.net" } },
+  { bidder: "appnexus", params: { placementId: "12339166" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158902', zoneId: '761798' } }, { bidder: "indexExchange", params: { id: "07", siteID: 227483 } }, { bidder: "sovrn", params: { tagid: "532918" } },
+  //{bidder: "openx",       params: { unit: "539497515", delDomain: "vauntek-est-d.openx.net"}},
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
@@ -3819,7 +3829,8 @@ pbjsAdUnits.push({
   sizes: sizeMappingRight,
   bids: [{ bidder: "aol", params: { placement: "4700283", network: "11178.1" } },
   //{bidder: 'pulsepoint',params: {cf: '300X250',cp: 561331,ct: 619369}},
-  { bidder: "appnexus", params: { placementId: "12339167" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158902', zoneId: '761800' } }, { bidder: "indexExchange", params: { id: "08", siteID: 227485 } }, { bidder: "sovrn", params: { tagid: "532919" } }, { bidder: "openx", params: { unit: "539497516", delDomain: "vauntek-est-d.openx.net" } },
+  { bidder: "appnexus", params: { placementId: "12339167" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158902', zoneId: '761800' } }, { bidder: "indexExchange", params: { id: "08", siteID: 227485 } }, { bidder: "sovrn", params: { tagid: "532919" } },
+  //{bidder: "openx",       params: { unit: "539497516", delDomain: "vauntek-est-d.openx.net"}},
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
   //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
   //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
