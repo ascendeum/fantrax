@@ -1,5 +1,5 @@
 /* prebid.js v0.34.5
-Updated : 2018-06-25 */
+Updated : 2018-07-03 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -3639,25 +3639,25 @@ pbjs.que.push((function () {
 }));
 
 /* Wrapper for Fantrax, generated on 2018-06-05T03:48:53-04:00 */
-(function () {
-  var w = window;
-  var h = 'clarium.global.ssl.fastly.net';
-  w._clrm = w._clrm || {};
-  w._clrm.gpt = {
-    propertyId: 'hpZZBXt7VW7m1SA2o78XrRv3UJY',
-    confiantCdn: h,
-    mapping: 'W3siaSI6MiwidCI6Int7b319Ont7d319eHt7aH19IiwicCI6MCwiRCI6MSwiciI6W119XQ==',
-    activation: '|||MjE3NTU1NTM1Mg==,|||MjMzNTA1MjUzNQ==',
-    callback: function callback(blockingType, blockingId, isBlocked, wrapperId, tagId, impressionData) {
-      console.log("w00t one more bad ad nixed.", arguments);
-    }
-  };
-  var e = document.createElement('script');
-  e.async = true;
-  e.src = '//' + h + '/gpt/a/wrap.js';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(e, s);
-})();
+/*(function() {
+    var w = window;
+    var h = 'clarium.global.ssl.fastly.net';
+    w._clrm = w._clrm || {};
+    w._clrm.gpt = {
+        propertyId: 'hpZZBXt7VW7m1SA2o78XrRv3UJY',
+        confiantCdn: h,
+        mapping: 'W3siaSI6MiwidCI6Int7b319Ont7d319eHt7aH19IiwicCI6MCwiRCI6MSwiciI6W119XQ==',
+        activation: '|||MjE3NTU1NTM1Mg==,|||MjMzNTA1MjUzNQ==',
+        callback: function(blockingType, blockingId, isBlocked, wrapperId, tagId, impressionData) {
+            console.log("w00t one more bad ad nixed.", arguments);
+        }
+    };
+    var e = document.createElement('script');
+    e.async = true;
+    e.src = '//' + h + '/gpt/a/wrap.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(e, s);
+})();*/
 
 // Test Refresh
 var refreshTest = false;
