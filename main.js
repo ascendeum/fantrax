@@ -71,6 +71,7 @@ googletag.cmd.push(function() {
 
         // Set targeting
         googletag.pubads().setTargeting("device", (detectWidth() < 768) ? "mobile" : "desktop");
+        googletag.pubads().setTargeting("section", ""); // Populate with the section name
         googletag.pubads().setTargeting("spa", "1");
 
         // Init DFP
