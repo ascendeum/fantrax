@@ -1,5 +1,5 @@
 /* prebid.js v0.34.7
-Updated : 2018-08-07 */
+Updated : 2018-08-24 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -3759,6 +3759,12 @@ pbjsAdUnits.push({
   //{bidder: "districtmDMX",  params: { id: 200311}},
   { "bidder": "districtm", "params": { "placementId": 12940972 } }]
 });
+pbjsAdUnits.push({
+  adunit: "Fantrax_Desktop_Right_Sidebar_C",
+  code: "div-gpt-ad-Fantrax_Desktop_Right_Sidebar_C",
+  sizes: [[300, 250]],
+  bids: [{ bidder: "appnexus", params: { placementId: "12552576" } }, { bidder: "indexExchange", params: { id: "11", siteID: 239657 } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '794154' } }, { bidder: "sovrn", params: { tagid: "538773" } }, { bidder: "conversant", params: { site_id: "120763" } }, { "bidder": "districtm", "params": { "placementId": 13851457 } }, { bidder: "aol", params: { placement: "4935231", network: "11178.1" } }]
+});
 
 //Mobile
 pbjsAdUnits.push({
@@ -3825,6 +3831,12 @@ pbjsAdUnits.push({
   { bidder: "conversant", params: { site_id: "117324" } },
   //{bidder: "districtmDMX",  params: { id: 200315}},
   { "bidder": "districtm", "params": { "placementId": 12940976 } }]
+});
+pbjsAdUnits.push({
+  adunit: "Fantrax_Mobile_Right_Sidebar_C",
+  code: "div-gpt-ad-Fantrax_Mobile_Right_Sidebar_C",
+  sizes: [[300, 250]],
+  bids: [{ bidder: "appnexus", params: { placementId: "12552577" } }, { bidder: "indexExchange", params: { id: "12", siteID: 239658 } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158902', zoneId: '794186' } }, { bidder: "sovrn", params: { tagid: "538774" } }, { bidder: "conversant", params: { site_id: "120764" } }, { "bidder": "districtm", "params": { "placementId": 13851459 } }, { bidder: "aol", params: { placement: "4935232", network: "11178.1" } }]
 });
 pbjsAdUnits.push({
   adunit: "Fantrax_Mobile_160x600_A",
