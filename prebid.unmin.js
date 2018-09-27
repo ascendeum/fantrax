@@ -1,5 +1,5 @@
 /* prebid.js v0.34.7
-Updated : 2018-08-24 */
+Updated : 2018-09-27 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -3857,6 +3857,34 @@ pbjsAdUnits.push({
   { bidder: "conversant", params: { site_id: "118114" } },
   //{bidder: "districtmDMX",  params: { id: 156942}},
   { "bidder": "districtm", "params": { "placementId": 13182261 } }]
+});
+pbjsAdUnits.push({
+  adunit: "Fantrax_Desktop_LiveScoring_300x250",
+  code: "div-gpt-ad-Fantrax_Desktop_LiveScoring_300x250",
+  sizes: [[300, 250]],
+  bids: [
+  //{bidder: "aol",params: {placement: "",network: "11178.1"}},
+  { bidder: "appnexus", params: { placementId: "14019375" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '1067216' } },
+  //{bidder: "indexExchange",   params: { id: "13",siteID: }},
+  { bidder: "sovrn", params: { tagid: "585552" } },
+  //{bidder: "openx",       params: { unit: "", delDomain: "vauntek-est-d.openx.net"}},
+  //{bidder: "conversant",    params: { site_id:""}},
+  //{bidder: "districtmDMX",  params: { id: 250681}},
+  { "bidder": "districtm", "params": { "placementId": 14019384 } }]
+});
+pbjsAdUnits.push({
+  adunit: "Fantrax_Desktop_Horizontal_Middle",
+  code: "div-gpt-ad-Fantrax_Desktop_Horizontal_Middle",
+  sizes: [[728, 90]],
+  bids: [
+  //{bidder: "aol",params: {placement: "",network: "11178.1"}},
+  { bidder: "appnexus", params: { placementId: "14019377" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '1067218' } },
+  //{bidder: "indexExchange",   params: { id: "14",siteID: }},
+  { bidder: "sovrn", params: { tagid: "585571" } },
+  //{bidder: "openx",       params: { unit: "", delDomain: "vauntek-est-d.openx.net"}},
+  //{bidder: "conversant",    params: { site_id:""}},
+  //{bidder: "districtmDMX",  params: { id: 250682}},
+  { "bidder": "districtm", "params": { "placementId": 14019385 } }]
 });
 /* END OF ADUNITS */
 
