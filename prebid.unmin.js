@@ -1,5 +1,5 @@
 /* prebid.js v0.34.7
-Updated : 2018-10-01 */
+Updated : 2018-10-02 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -3872,11 +3872,9 @@ pbjsAdUnits.push({
   sizes: [[300, 250]],
   bids: [
   //{bidder: "aol",params: {placement: "",network: "11178.1"}},
-  { bidder: "appnexus", params: { placementId: "14019375" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '1067216' } },
-  //{bidder: "indexExchange",   params: { id: "13",siteID: }},
-  { bidder: "sovrn", params: { tagid: "585552" } },
+  { bidder: "appnexus", params: { placementId: "14019375" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '1067216' } }, { bidder: "indexExchange", params: { id: "13", siteID: 305071 } }, { bidder: "sovrn", params: { tagid: "585552" } },
   //{bidder: "openx",       params: { unit: "", delDomain: "vauntek-est-d.openx.net"}},
-  //{bidder: "conversant",    params: { site_id:""}},
+  { bidder: "conversant", params: { site_id: "121372" } },
   //{bidder: "districtmDMX",  params: { id: 250681}},
   { "bidder": "districtm", "params": { "placementId": 14019384 } }]
 });
@@ -3886,11 +3884,9 @@ pbjsAdUnits.push({
   sizes: [[728, 90]],
   bids: [
   //{bidder: "aol",params: {placement: "",network: "11178.1"}},
-  { bidder: "appnexus", params: { placementId: "14019377" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '1067218' } },
-  //{bidder: "indexExchange",   params: { id: "14",siteID: }},
-  { bidder: "sovrn", params: { tagid: "585571" } },
+  { bidder: "appnexus", params: { placementId: "14019377" } }, { bidder: 'rubicon', params: { accountId: '16136', siteId: '158890', zoneId: '1067218' } }, { bidder: "indexExchange", params: { id: "14", siteID: 305072 } }, { bidder: "sovrn", params: { tagid: "585571" } },
   //{bidder: "openx",       params: { unit: "", delDomain: "vauntek-est-d.openx.net"}},
-  //{bidder: "conversant",    params: { site_id:""}},
+  { bidder: "conversant", params: { site_id: "121373" } },
   //{bidder: "districtmDMX",  params: { id: 250682}},
   { "bidder": "districtm", "params": { "placementId": 14019385 } }]
 });
