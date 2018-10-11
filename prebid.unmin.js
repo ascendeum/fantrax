@@ -1,5 +1,5 @@
 /* Ascendeum build - on prebid.js v1.26.0-pre
-Updated : 2018-10-09T09:38:28 */
+Updated : 2018-10-11T13:50:04 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -6330,13 +6330,13 @@ var indexTest = getParameterByName('indexTest');
 var sizeMappingTop = [[728, 90]];
 var sizeMappingBottom = [[728, 90], [970, 250], [970, 90]];
 var sizeMappingRight = [[300, 250], [300, 600], [336, 280], [160, 600]];
-if (detectWidth() < 1024) {
+if (pbjs.detectWidth() < 1024) {
   // Table SizeMapping
   sizeMappingTop = [[468, 60]];
   sizeMappingBottom = [[728, 90]];
   sizeMappingRight = [[160, 600]];
 }
-if (detectWidth() < 768) {
+if (pbjs.detectWidth() < 768) {
   // Mobile SizeMapping
   sizeMappingTop = [[320, 50]];
   sizeMappingBottom = [[320, 50], [320, 100]];
@@ -6348,7 +6348,7 @@ pbjsAdUnits.push({
   adunit: "Fantrax_Desktop_Top_Horizontal",
   code: "div-gpt-ad-Fantrax_Top_Horizontal",
   mediaTypes: { banner: { sizes: sizeMappingTop } },
-  bids: detectWidth() >= 1024 ? [{ bidder: "aol", params: { placement: "4700273", network: "11178.1" } }, // 728x90
+  bids: pbjs.detectWidth() >= 1024 ? [{ bidder: "aol", params: { placement: "4700273", network: "11178.1" } }, // 728x90
   //{bidder: "aol",params: {placement: "4700274",network: "11178.1"}}, // 970x250
   //{bidder: "aol",params: {placement: "4700270",network: "11178.1"}}, // 970x90
   //{bidder: 'pulsepoint',params: {cf: '728X90',cp: 561331,ct: 619321}},
@@ -6380,7 +6380,7 @@ pbjsAdUnits.push({
   adunit: "Fantrax_Desktop_Bottom_Horizontal",
   code: "div-gpt-ad-Fantrax_Bottom_Horizontal",
   mediaTypes: { banner: { sizes: sizeMappingBottom } },
-  bids: detectWidth() >= 1024 ? [{ bidder: "aol", params: { placement: "4700275", network: "11178.1" } }, { bidder: "aol", params: { placement: "4700271", network: "11178.1" } }, { bidder: "aol", params: { placement: "4700268", network: "11178.1" } },
+  bids: pbjs.detectWidth() >= 1024 ? [{ bidder: "aol", params: { placement: "4700275", network: "11178.1" } }, { bidder: "aol", params: { placement: "4700271", network: "11178.1" } }, { bidder: "aol", params: { placement: "4700268", network: "11178.1" } },
   //{bidder: 'pulsepoint',params: {cf: '728X90',cp: 561331,ct: 619332}},
   //{bidder: 'pulsepoint',params: {cf: '970X90',cp: 561331,ct: 619334}},
   //{bidder: 'pulsepoint',params: {cf: '970X250',cp: 561331,ct: 619335}},
@@ -6406,7 +6406,7 @@ pbjsAdUnits.push({
   adunit: "Fantrax_Desktop_Right_Sidebar_A",
   code: "div-gpt-ad-Fantrax_Right_Sidebar_A",
   mediaTypes: { banner: { sizes: sizeMappingRight } },
-  bids: detectWidth() >= 1024 ? [
+  bids: pbjs.detectWidth() >= 1024 ? [
   //{bidder: "aol",params: {placement: "4700266",network: "11178.1"}},
   //{bidder: "aol",params: {placement: "4700272",network: "11178.1"}},
   //{bidder: "aol",params: {placement: "4700269",network: "11178.1"}},
@@ -6441,7 +6441,7 @@ pbjsAdUnits.push({
   adunit: "Fantrax_Desktop_Right_Sidebar_B",
   code: "div-gpt-ad-Fantrax_Right_Sidebar_B",
   mediaTypes: { banner: { sizes: sizeMappingRight } },
-  bids: detectWidth() >= 1024 ? [
+  bids: pbjs.detectWidth() >= 1024 ? [
   //{bidder: "aol",params: {placement: "4700276",network: "11178.1"}},
   //{bidder: "aol",params: {placement: "4700279",network: "11178.1"}},
   //{bidder: "aol",params: {placement: "4700278",network: "11178.1"}},
