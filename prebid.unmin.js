@@ -1,5 +1,5 @@
 /* Ascendeum build - on prebid.js v1.33.0-pre
-Updated : 2018-11-19T09:48:02 */
+Updated : 2018-12-19T17:16:32 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -36,7 +36,7 @@ Updated : 2018-11-19T09:48:02 */
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		187: 0
+/******/ 		186: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -3691,7 +3691,7 @@ function getGlobal() {
 
 /***/ }),
 
-/***/ 317:
+/***/ 315:
 /***/ (function(module, exports, __webpack_require__) {
 
 // 22.1.2.2 / 15.4.3.2 Array.isArray(arg)
@@ -3702,18 +3702,18 @@ $export($export.S, 'Array', { isArray: __webpack_require__(39) });
 
 /***/ }),
 
-/***/ 318:
+/***/ 316:
 /***/ (function(module, exports, __webpack_require__) {
 
 // 20.1.2.3 Number.isInteger(number)
 var $export = __webpack_require__(14);
 
-$export($export.S, 'Number', { isInteger: __webpack_require__(319) });
+$export($export.S, 'Number', { isInteger: __webpack_require__(317) });
 
 
 /***/ }),
 
-/***/ 319:
+/***/ 317:
 /***/ (function(module, exports, __webpack_require__) {
 
 // 20.1.2.3 Number.isInteger(number)
@@ -5499,7 +5499,7 @@ var targeting = exports.targeting = newTargeting(_auctionManager.auctionManager)
 /***/ 45:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(317);
+__webpack_require__(315);
 module.exports = __webpack_require__(13).Array.isArray;
 
 
@@ -5508,7 +5508,7 @@ module.exports = __webpack_require__(13).Array.isArray;
 /***/ 46:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(318);
+__webpack_require__(316);
 module.exports = __webpack_require__(13).Number.isInteger;
 
 
@@ -5615,7 +5615,7 @@ pbjs.que.push((function () {
     /* Enables sandboxing on a device group
          All:1 , Desktop:2, Mobile: 3, iOS: 4, Android: 5, Off: 0
      */
-    sandbox: 0
+    sandbox: 4
   };
 
   var isGoogleFrame = function isGoogleFrame(c) {
@@ -5727,7 +5727,7 @@ pbjs.que.push((function () {
   };
 }));
 
-/* Wrapper for Fantrax, generated on 2018-11-06T05:12:48-05:00 */
+/* Wrapper for Fantrax, generated on 2018-12-19T11:36:08-05:00 */
 (function () {
   var w = window;
   var h = 'clarium.global.ssl.fastly.net';
@@ -5735,7 +5735,7 @@ pbjs.que.push((function () {
   w._clrm.gpt = {
     propertyId: 'hpZZBXt7VW7m1SA2o78XrRv3UJY',
     confiantCdn: h,
-    sandbox: 0,
+    sandbox: 4,
     mapping: 'W3siaSI6MiwidCI6Int7b319Ont7d319eHt7aH19IiwicCI6MCwiRCI6MSwiciI6W119LHsiaSI6NiwidCI6Int7Y299fTp7e3d9fXh7e2h9fSIsInAiOjUwLCJEIjowLCJyIjpbeyJ0IjoiZXgiLCJzIjpudWxsLCJ2IjoiY28ifV19XQ==',
     activation: '|||MjE3NTU1NTM1Mg==,|||MjMzNTA1MjUzNQ==',
     callback: function callback(blockingType, blockingId, isBlocked, wrapperId, tagId, impressionData) {
@@ -6225,7 +6225,7 @@ pbjs.que.push((function () {
     },
     rubicon: {
       bidCpmAdjustment: function bidCpmAdjustment(bidCpm) {
-        return bidCpm * EXCHANGE_RATE * .75;
+        return bidCpm * EXCHANGE_RATE * .80;
       }
     },
     brealtime: {
@@ -8958,7 +8958,7 @@ module.exports = (function () {
 /***/ })
 
 /******/ });
-pbjsChunk([152],{
+pbjsChunk([151],{
 
 /***/ 156:
 /***/ (function(module, exports, __webpack_require__) {
@@ -9399,7 +9399,7 @@ var spec = exports.spec = {
 /***/ })
 
 },[156]);
-pbjsChunk([150],{
+pbjsChunk([149],{
 
 /***/ 161:
 /***/ (function(module, exports, __webpack_require__) {
@@ -9992,17 +9992,17 @@ function parseMediaType(rtbBid) {
 /***/ })
 
 },[161]);
-pbjsChunk([182],{
+pbjsChunk([181],{
 
-/***/ 315:
+/***/ 313:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(316);
+module.exports = __webpack_require__(314);
 
 
 /***/ }),
 
-/***/ 316:
+/***/ 314:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10353,19 +10353,19 @@ var spec = exports.spec = {
 
 /***/ })
 
-},[315]);
+},[313]);
 pbjsChunk([78],{
 
-/***/ 404:
+/***/ 402:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(405);
-module.exports = __webpack_require__(406);
+__webpack_require__(403);
+module.exports = __webpack_require__(404);
 
 
 /***/ }),
 
-/***/ 405:
+/***/ 403:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10849,25 +10849,25 @@ function registerBeacon(mediaType, adUnit, startTime) {
 
 /***/ }),
 
-/***/ 406:
+/***/ 404:
 /***/ (function(module, exports) {
 
 
 
 /***/ })
 
-},[404]);
+},[402]);
 pbjsChunk([66],{
 
-/***/ 442:
+/***/ 440:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(443);
+module.exports = __webpack_require__(441);
 
 
 /***/ }),
 
-/***/ 443:
+/***/ 441:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10920,7 +10920,7 @@ var _includes = __webpack_require__(7);
 
 var _includes2 = _interopRequireDefault(_includes);
 
-var _config2 = __webpack_require__(444);
+var _config2 = __webpack_require__(442);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -11575,7 +11575,7 @@ _adaptermanager2.default.registerBidAdapter(new PrebidServer(), 'prebidServer');
 
 /***/ }),
 
-/***/ 444:
+/***/ 442:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11604,19 +11604,19 @@ var S2S_VENDORS = exports.S2S_VENDORS = {
 
 /***/ })
 
-},[442]);
+},[440]);
 pbjsChunk([49],{
 
-/***/ 497:
+/***/ 495:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(498);
-module.exports = __webpack_require__(499);
+__webpack_require__(496);
+module.exports = __webpack_require__(497);
 
 
 /***/ }),
 
-/***/ 498:
+/***/ 496:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12326,26 +12326,26 @@ function resetUserSync() {
 
 /***/ }),
 
-/***/ 499:
+/***/ 497:
 /***/ (function(module, exports) {
 
 
 
 /***/ })
 
-},[497]);
+},[495]);
 pbjsChunk([38],{
 
-/***/ 536:
+/***/ 534:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(537);
-module.exports = __webpack_require__(538);
+__webpack_require__(535);
+module.exports = __webpack_require__(536);
 
 
 /***/ }),
 
-/***/ 537:
+/***/ 535:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12572,12 +12572,12 @@ var LogError = exports.LogError = (function () {
 
 /***/ }),
 
-/***/ 538:
+/***/ 536:
 /***/ (function(module, exports) {
 
 
 
 /***/ })
 
-},[536]);
+},[534]);
 pbjs.processQueue();
