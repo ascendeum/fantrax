@@ -1,5 +1,6 @@
 /* Ascendeum build - on prebid.js v1.39.0-pre
-Updated : 2019-01-22T15:21:54 */
+For: angular
+Updated : 2019-01-23T11:20:09 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
