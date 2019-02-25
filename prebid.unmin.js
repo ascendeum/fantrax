@@ -1,6 +1,6 @@
 /* Ascendeum build - on prebid.js v1.39.0-pre
 For: angular
-Updated : 2019-02-25T11:36:27 */
+Updated : 2019-02-25T13:46:28 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -8361,6 +8361,9 @@ pbjs.que.push((function () {
       iframeEnabled: true,
       syncsPerBidder: 0,
       syncDelay: 2000
+    },
+    pubcid: {
+      expInterval: 525600
     }
   });
   pbjs.bidderSettings = {
@@ -13166,6 +13169,148 @@ var S2S_VENDORS = {
 /***/ })
 
 },[344]);
+pbjsChunk([80],{
+
+/***/ 347:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(348);
+
+
+/***/ }),
+
+/***/ 348:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["isPubcidEnabled"] = isPubcidEnabled;
+/* harmony export (immutable) */ __webpack_exports__["getExpInterval"] = getExpInterval;
+/* harmony export (immutable) */ __webpack_exports__["requestBidHook"] = requestBidHook;
+/* harmony export (immutable) */ __webpack_exports__["setCookie"] = setCookie;
+/* harmony export (immutable) */ __webpack_exports__["getCookie"] = getCookie;
+/* harmony export (immutable) */ __webpack_exports__["setConfig"] = setConfig;
+/* harmony export (immutable) */ __webpack_exports__["initPubcid"] = initPubcid;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_utils__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_config__ = __webpack_require__(3);
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+/**
+ * This modules adds Publisher Common ID support to prebid.js.  It's a simple numeric id
+ * stored in the page's domain.  When the module is included, an id is generated if needed,
+ * persisted as a cookie, and automatically appended to all the bidRequest as bid.crumbs.pubcid.
+ */
+
+
+var COOKIE_NAME = '_pubcid';
+var DEFAULT_EXPIRES = 2628000; // 5-year worth of minutes
+
+var PUB_COMMON = 'PublisherCommonId';
+var pubcidEnabled = true;
+var interval = DEFAULT_EXPIRES;
+function isPubcidEnabled() {
+  return pubcidEnabled;
+}
+function getExpInterval() {
+  return interval;
+}
+/**
+ * Decorate ad units with pubcid.  This hook function is called before the
+ * real pbjs.requestBids is invoked, and can modify its parameter.  The cookie is
+ * not updated until this function is called.
+ * @param {Object} config This is the same parameter as pbjs.requestBids, and config.adUnits will be updated.
+ * @param {function} next The next function in the chain
+ */
+
+function requestBidHook(config, next) {
+  var adUnits = config.adUnits || pbjs.adUnits;
+  var pubcid = null; // Pass control to the next function if not enabled
+
+  if (!pubcidEnabled) {
+    return next.apply(this, arguments);
+  }
+
+  if (_typeof(window[PUB_COMMON]) === 'object') {
+    // If the page includes its own pubcid object, then use that instead.
+    pubcid = window[PUB_COMMON].getId();
+    __WEBPACK_IMPORTED_MODULE_0__src_utils__["logMessage"](PUB_COMMON + ': pubcid = ' + pubcid);
+  } else {
+    // Otherwise get the existing cookie or create a new id
+    pubcid = getCookie(COOKIE_NAME) || __WEBPACK_IMPORTED_MODULE_0__src_utils__["generateUUID"](); // Update the cookie with the latest expiration date
+
+    setCookie(COOKIE_NAME, pubcid, interval);
+    __WEBPACK_IMPORTED_MODULE_0__src_utils__["logMessage"]('pbjs: pubcid = ' + pubcid);
+  } // Append pubcid to each bid object, which will be incorporated
+  // into bid requests later.
+
+
+  if (adUnits && pubcid) {
+    adUnits.forEach((function (unit) {
+      unit.bids.forEach((function (bid) {
+        _extends(bid, {
+          crumbs: {
+            pubcid: pubcid
+          }
+        });
+      }));
+    }));
+  }
+
+  return next.apply(this, arguments);
+} // Helper to set a cookie
+
+function setCookie(name, value, expires) {
+  var expTime = new Date();
+  expTime.setTime(expTime.getTime() + expires * 1000 * 60);
+  window.document.cookie = name + '=' + encodeURIComponent(value) + ';path=/;expires=' + expTime.toGMTString();
+} // Helper to read a cookie
+
+function getCookie(name) {
+  var m = window.document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]*)\\s*(;|$)');
+  return m ? decodeURIComponent(m[2]) : null;
+}
+/**
+ * Configuration function
+ * @param {boolean} enable Enable or disable pubcid.  By default the module is enabled.
+ * @param {number} expInterval Expiration interval of the cookie in minutes.
+ */
+
+function setConfig() {
+  var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      _ref$enable = _ref.enable,
+      enable = _ref$enable === void 0 ? true : _ref$enable,
+      _ref$expInterval = _ref.expInterval,
+      expInterval = _ref$expInterval === void 0 ? DEFAULT_EXPIRES : _ref$expInterval;
+
+  pubcidEnabled = enable;
+  interval = parseInt(expInterval, 10);
+
+  if (isNaN(interval)) {
+    interval = DEFAULT_EXPIRES;
+  }
+}
+/**
+ * Initialize module by 1) subscribe to configuration changes and 2) register hook
+ */
+
+function initPubcid() {
+  __WEBPACK_IMPORTED_MODULE_1__src_config__["config"].getConfig('pubcid', (function (config) {
+    return setConfig(config.pubcid);
+  }));
+
+  if (__WEBPACK_IMPORTED_MODULE_0__src_utils__["cookiesAreEnabled"]()) {
+    if (!getCookie('_pubcid_optout')) {
+      pbjs.requestBids.addHook(requestBidHook);
+    }
+  }
+}
+initPubcid();
+
+/***/ })
+
+},[347]);
 pbjsChunk([66],{
 
 /***/ 387:
