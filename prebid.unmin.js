@@ -1,6 +1,6 @@
 /* Ascendeum build - on prebid.js v1.39.0-pre
 For: angular
-Updated : 2019-01-23T11:20:09 */
+Updated : 2019-02-25T11:36:27 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -7379,6 +7379,12 @@ pbjsAdUnits.push({
     "params": {
       "placementId": 12940969
     }
+  }, {
+    bidder: 'onemobile',
+    params: {
+      dcn: '2c9d2b4f016868c78238c9cb4839000e',
+      pos: 'fantrax_mw_320x50'
+    }
   }]
 });
 pbjsAdUnits.push({
@@ -7515,6 +7521,12 @@ pbjsAdUnits.push({
     "params": {
       "placementId": 12940970
     }
+  }, {
+    bidder: 'onemobile',
+    params: {
+      dcn: '2c9d2b4f016868c78238c9cb4839000e',
+      pos: 'fantrax_mw_320x50'
+    }
   }]
 });
 pbjsAdUnits.push({
@@ -7625,6 +7637,12 @@ pbjsAdUnits.push({
     "bidder": "districtm",
     "params": {
       "placementId": 12940971
+    }
+  }, {
+    bidder: 'onemobile',
+    params: {
+      dcn: '2c9d2b4f016868c78238c9cb4839000e',
+      pos: 'fantrax_mw_300x250'
     }
   }]
 });
@@ -7737,6 +7755,12 @@ pbjsAdUnits.push({
     "params": {
       "placementId": 12940972
     }
+  }, {
+    bidder: 'onemobile',
+    params: {
+      dcn: '2c9d2b4f016868c78238c9cb4839000e',
+      pos: 'fantrax_mw_300x250'
+    }
   }]
 });
 pbjsAdUnits.push({
@@ -7845,6 +7869,12 @@ pbjsAdUnits.push({
     "params": {
       "placementId": 12940973
     }
+  }, {
+    bidder: 'onemobile',
+    params: {
+      dcn: '2c9d2b4f016868c78238c9cb4839000e',
+      pos: 'fantrax_mw_320x50'
+    }
   }]
 });
 pbjsAdUnits.push({
@@ -7892,6 +7922,12 @@ pbjsAdUnits.push({
     "bidder": "districtm",
     "params": {
       "placementId": 12940974
+    }
+  }, {
+    bidder: 'onemobile',
+    params: {
+      dcn: '2c9d2b4f016868c78238c9cb4839000e',
+      pos: 'fantrax_mw_300x250'
     }
   }]
 });
@@ -7948,6 +7984,12 @@ pbjsAdUnits.push({
     "params": {
       "placementId": 12940975
     }
+  }, {
+    bidder: 'onemobile',
+    params: {
+      dcn: '2c9d2b4f016868c78238c9cb4839000e',
+      pos: 'fantrax_mw_300x250'
+    }
   }]
 });
 pbjsAdUnits.push({
@@ -8003,6 +8045,12 @@ pbjsAdUnits.push({
     "params": {
       "placementId": 12940976
     }
+  }, {
+    bidder: 'onemobile',
+    params: {
+      dcn: '2c9d2b4f016868c78238c9cb4839000e',
+      pos: 'fantrax_mw_300x250'
+    }
   }]
 });
 pbjsAdUnits.push({
@@ -8052,6 +8100,12 @@ pbjsAdUnits.push({
     params: {
       placement: "4935232",
       network: "11178.1"
+    }
+  }, {
+    bidder: 'onemobile',
+    params: {
+      dcn: '2c9d2b4f016868c78238c9cb4839000e',
+      pos: 'fantrax_mw_300x250'
     }
   }]
 });
