@@ -1,6 +1,6 @@
 /* Ascendeum build - on prebid.js v2.16.0-pre
 For: angular
-Updated : 2019-06-24T14:24:20 */
+Updated : 2019-07-18T10:17:11 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -9602,6 +9602,19 @@ var refreshIteration = 0;
 var MAX_REFRESH = 5; //var doNotRefreshAdvertisers = [21329707,29109667,29124187];
 
 var doNotRefreshAdvertisers = [];
+/*
+Unshift polify
+*/
+
+function unshiftPoly(array, item) {
+  for (var i = array.length - 1; i >= 0; i--) {
+    array[i + 1] = array[i];
+  }
+
+  array[0] = item;
+}
+
+;
 /* A9 Load Lib */
 
 !function (a9, a, p, s, t, A, g) {
@@ -9886,16 +9899,8 @@ if (typeof googletag.cmd.unshift == 'function') {
   googletag.cmd.push(function () {
     googletag.pubads().setTargeting("refreshTest", refreshTest.toString());
   });
-} // Floor Test
+} // Remove if google
 
-
-googletag.cmd.push(function () {
-  var rndNum = Math.floor(Math.random() * 100);
-  var floorTest = "no";
-  if (rndNum < 20) floorTest = "yes";
-  googletag.pubads().setTargeting('floorTest', floorTest.toString());
-});
-if (typeof googletag.cmd.pop == 'function') googletag.cmd.splice(0, 0, googletag.cmd.pop()); // Remove if google
 
 googletag.cmd.push(function () {
   googletag.pubads().addEventListener('slotRenderEnded', function (event) {
