@@ -1,6 +1,6 @@
 /* Ascendeum build - on prebid.js v2.43.0
 For: angular
-Updated : 2019-12-10T08:30:31 */
+Updated : 2019-12-13T10:45:59 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -10216,6 +10216,86 @@ pbjsAdUnits.push({
     params: {
       publisherId: "158314",
       adSlot: "Fantrax_Desktop_Right_Sidebar_C@300x250"
+    }
+  }]
+});
+pbjsAdUnits.push({
+  adunit: "Fantrax_Mobile_320x50",
+  code: "div-gpt-ad-Fantrax_Mobile_320x50",
+  mediaTypes: {
+    banner: {
+      sizes: sizeMappingTop
+    }
+  },
+  bids: [{
+    bidder: "aol",
+    params: {
+      placement: "4700285",
+      network: "11178.1"
+    }
+  }, // 320x100
+  //{bidder: "aol",params: {placement: "4700284",network: "11178.1"}}, // 320x50
+  //{bidder: 'pulsepoint',params: {cf: '320X50',cp: 561331,ct: 619349}},
+  //{bidder: 'pulsepoint',params: {cf: '320X100',cp: 561331,ct: 619350}},
+  {
+    bidder: "appnexus",
+    params: {
+      placementId: "12339163"
+    }
+  }, {
+    bidder: 'rubicon',
+    params: {
+      accountId: '16136',
+      siteId: '158902',
+      zoneId: '761786'
+    }
+  }, {
+    bidder: 'ix',
+    params: {
+      size: [320, 50],
+      siteId: "227477"
+    }
+  }, {
+    bidder: "sovrn",
+    params: {
+      tagid: "532916"
+    }
+  }, //{bidder: "openx",       params: { unit: "539497511", delDomain: "vauntek-est-d.openx.net"}},
+  //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
+  //{bidder: "appnexus",params: {placementId: "10433394"}}, // test bid
+  //{bidder: "aol",params: {placement: "3611253",network: "9599.1"}}, // test bid
+  {
+    bidder: "conversant",
+    params: {
+      site_id: "117321"
+    }
+  }, {
+    bidder: "districtmDMX",
+    params: {
+      memberid: 101272,
+      dmxid: 200312
+    }
+  }, {
+    "bidder": "districtm",
+    "params": {
+      "placementId": 12940973
+    }
+  }, {
+    bidder: 'onemobile',
+    params: {
+      dcn: '2c9d2b4f016868c78238c9cb4839000e',
+      pos: 'fantrax_mw_320x50'
+    }
+  }, {
+    bidder: "pubmatic",
+    params: {
+      publisherId: "158314",
+      adSlot: "Fantrax_Mobile_Top_Horizontal@320x50"
+    }
+  }, {
+    bidder: 'audienceNetwork',
+    params: {
+      placementId: '2607852299305901_2617928714964926'
     }
   }]
 });
