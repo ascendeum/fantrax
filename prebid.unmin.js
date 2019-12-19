@@ -1,6 +1,6 @@
 /* Ascendeum build - on prebid.js v2.43.0
 For: angular
-Updated : 2019-12-13T10:45:59 */
+Updated : 2019-12-19T09:21:45 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -10230,7 +10230,7 @@ pbjsAdUnits.push({
   bids: [{
     bidder: "aol",
     params: {
-      placement: "4700285",
+      placement: "5170923",
       network: "11178.1"
     }
   }, // 320x100
@@ -10240,25 +10240,20 @@ pbjsAdUnits.push({
   {
     bidder: "appnexus",
     params: {
-      placementId: "12339163"
+      placementId: "18080953"
     }
   }, {
     bidder: 'rubicon',
     params: {
       accountId: '16136',
       siteId: '158902',
-      zoneId: '761786'
+      zoneId: '1520574'
     }
-  }, {
-    bidder: 'ix',
-    params: {
-      size: [320, 50],
-      siteId: "227477"
-    }
-  }, {
+  }, //{bidder: 'ix',params:{size: [320, 50],siteId: "" }},
+  {
     bidder: "sovrn",
     params: {
-      tagid: "532916"
+      tagid: "670339"
     }
   }, //{bidder: "openx",       params: { unit: "539497511", delDomain: "vauntek-est-d.openx.net"}},
   //{"bidder": "openx","params": { "unit": "539439964","delDomain": "se-demo-d.openx.net"}}, // test bid
@@ -10267,20 +10262,16 @@ pbjsAdUnits.push({
   {
     bidder: "conversant",
     params: {
-      site_id: "117321"
+      site_id: "200892"
     }
   }, {
     bidder: "districtmDMX",
     params: {
       memberid: 101272,
-      dmxid: 200312
+      dmxid: 479534
     }
-  }, {
-    "bidder": "districtm",
-    "params": {
-      "placementId": 12940973
-    }
-  }, {
+  }, //{"bidder": "districtm","params": {"placementId": }},
+  {
     bidder: 'onemobile',
     params: {
       dcn: '2c9d2b4f016868c78238c9cb4839000e',
@@ -10290,7 +10281,7 @@ pbjsAdUnits.push({
     bidder: "pubmatic",
     params: {
       publisherId: "158314",
-      adSlot: "Fantrax_Mobile_Top_Horizontal@320x50"
+      adSlot: "Fantrax_Mobile_320x50@320x50"
     }
   }, {
     bidder: 'audienceNetwork',
