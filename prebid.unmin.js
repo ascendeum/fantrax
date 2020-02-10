@@ -1,6 +1,6 @@
-/* Ascendeum build - on prebid.js v2.43.0
+/* Ascendeum build - on prebid.js v3.7.0-pre
 For: angular
-Updated : 2020-01-13T13:24:00 */
+Updated : 2020-02-10T13:24:35 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -37,7 +37,7 @@ Updated : 2020-01-13T13:24:00 */
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		292: 0
+/******/ 		256: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -101,7 +101,7 @@ Updated : 2020-01-13T13:24:00 */
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 85);
+/******/ 	return __webpack_require__(__webpack_require__.s = 80);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -123,14 +123,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["parseSizesInput"] = parseSizesInput;
 /* harmony export (immutable) */ __webpack_exports__["parseGPTSingleSizeArray"] = parseGPTSingleSizeArray;
 /* harmony export (immutable) */ __webpack_exports__["parseGPTSingleSizeArrayToRtbSize"] = parseGPTSingleSizeArrayToRtbSize;
-/* harmony export (immutable) */ __webpack_exports__["getTopWindowLocation"] = getTopWindowLocation;
-/* harmony export (immutable) */ __webpack_exports__["getTopFrameReferrer"] = getTopFrameReferrer;
-/* harmony export (immutable) */ __webpack_exports__["getAncestorOrigins"] = getAncestorOrigins;
 /* harmony export (immutable) */ __webpack_exports__["getWindowTop"] = getWindowTop;
 /* harmony export (immutable) */ __webpack_exports__["getWindowSelf"] = getWindowSelf;
 /* harmony export (immutable) */ __webpack_exports__["getWindowLocation"] = getWindowLocation;
-/* harmony export (immutable) */ __webpack_exports__["getTopWindowUrl"] = getTopWindowUrl;
-/* harmony export (immutable) */ __webpack_exports__["getTopWindowReferrer"] = getTopWindowReferrer;
 /* harmony export (immutable) */ __webpack_exports__["logMessage"] = logMessage;
 /* harmony export (immutable) */ __webpack_exports__["logInfo"] = logInfo;
 /* harmony export (immutable) */ __webpack_exports__["logWarn"] = logWarn;
@@ -218,17 +213,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["getMaxValueFromArray"] = getMaxValueFromArray;
 /* harmony export (immutable) */ __webpack_exports__["compareOn"] = compareOn;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_just_clone__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_just_clone__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_just_clone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_just_clone__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__url__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_dlv_index__ = __webpack_require__(120);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "deepAccess", function() { return __WEBPACK_IMPORTED_MODULE_5_dlv_index__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_dset__ = __webpack_require__(121);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "deepSetValue", function() { return __WEBPACK_IMPORTED_MODULE_6_dset__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_dlv_index__ = __webpack_require__(116);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "deepAccess", function() { return __WEBPACK_IMPORTED_MODULE_4_dlv_index__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_dset__ = __webpack_require__(117);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "deepSetValue", function() { return __WEBPACK_IMPORTED_MODULE_5_dset__["a"]; });
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
@@ -242,7 +236,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
 
 
 
@@ -271,10 +264,7 @@ var internal = {
   createTrackPixelIframeHtml: createTrackPixelIframeHtml,
   getWindowSelf: getWindowSelf,
   getWindowTop: getWindowTop,
-  getAncestorOrigins: getAncestorOrigins,
-  getTopFrameReferrer: getTopFrameReferrer,
   getWindowLocation: getWindowLocation,
-  getTopWindowLocation: getTopWindowLocation,
   insertUserSyncIframe: insertUserSyncIframe,
   insertElement: insertElement,
   isFn: isFn,
@@ -410,7 +400,8 @@ function getAdUnitSizes(adUnit) {
       sizes = bannerSizes;
     } else {
       sizes.push(bannerSizes);
-    }
+    } // TODO - remove this else block when we're ready to deprecate adUnit.sizes for bidders
+
   } else if (Array.isArray(adUnit.sizes)) {
     if (Array.isArray(adUnit.sizes[0])) {
       sizes = adUnit.sizes;
@@ -484,61 +475,7 @@ function isValidGPTSingleSize(singleSize) {
   // if we aren't exactly 2 items in this array, it is invalid
   return isArray(singleSize) && singleSize.length === 2 && !isNaN(singleSize[0]) && !isNaN(singleSize[1]);
 }
-/**
- * @deprecated This function will be removed soon. Use http://prebid.org/dev-docs/bidder-adaptor.html#referrers
- */
 
-
-function getTopWindowLocation() {
-  if (inIframe()) {
-    var loc;
-
-    try {
-      loc = internal.getAncestorOrigins() || internal.getTopFrameReferrer();
-    } catch (e) {
-      logInfo('could not obtain top window location', e);
-    }
-
-    if (loc) return Object(__WEBPACK_IMPORTED_MODULE_4__url__["c" /* parse */])(loc, {
-      'decodeSearchAsString': true
-    });
-  }
-
-  return internal.getWindowLocation();
-}
-/**
- * @deprecated This function will be removed soon. Use http://prebid.org/dev-docs/bidder-adaptor.html#referrers
- */
-
-function getTopFrameReferrer() {
-  try {
-    // force an exception in x-domain environments. #1509
-    window.top.location.toString();
-    var referrerLoc = '';
-    var currentWindow;
-
-    do {
-      currentWindow = currentWindow ? currentWindow.parent : window;
-
-      if (currentWindow.document && currentWindow.document.referrer) {
-        referrerLoc = currentWindow.document.referrer;
-      }
-    } while (currentWindow !== window.top);
-
-    return referrerLoc;
-  } catch (e) {
-    return window.document.referrer;
-  }
-}
-/**
- * @deprecated This function will be removed soon. Use http://prebid.org/dev-docs/bidder-adaptor.html#referrers
- */
-
-function getAncestorOrigins() {
-  if (window.document.location && window.document.location.ancestorOrigins && window.document.location.ancestorOrigins.length >= 1) {
-    return window.document.location.ancestorOrigins[window.document.location.ancestorOrigins.length - 1];
-  }
-}
 function getWindowTop() {
   return window.top;
 }
@@ -547,32 +484,6 @@ function getWindowSelf() {
 }
 function getWindowLocation() {
   return window.location;
-}
-/**
- * @deprecated This function will be removed soon. Use http://prebid.org/dev-docs/bidder-adaptor.html#referrers
- */
-
-function getTopWindowUrl() {
-  var href;
-
-  try {
-    href = internal.getTopWindowLocation().href;
-  } catch (e) {
-    href = '';
-  }
-
-  return href;
-}
-/**
- * @deprecated This function will be removed soon. Use http://prebid.org/dev-docs/bidder-adaptor.html#referrers
- */
-
-function getTopWindowReferrer() {
-  try {
-    return window.top.document.referrer;
-  } catch (e) {
-    return document.referrer;
-  }
 }
 /**
  * Wrappers to console.(log | info | warn | error). Takes N arguments, the same as the native methods
@@ -1630,12 +1541,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["preloadBidderMappingFile"] = preloadBidderMappingFile;
 /* harmony export (immutable) */ __webpack_exports__["getIabSubCategory"] = getIabSubCategory;
 /* harmony export (immutable) */ __webpack_exports__["isValid"] = isValid;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__adapter__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__adapter__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__adapterManager__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bidfactory__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__userSync__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__native__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__native__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__video__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__constants_json__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__constants_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__constants_json__);
@@ -1997,11 +1908,11 @@ function newBidder(spec) {
   });
 
   function registerSyncs(responses, gdprConsent, uspConsent) {
-    if (spec.getUserSyncs) {
+    if (spec.getUserSyncs && !__WEBPACK_IMPORTED_MODULE_1__adapterManager__["default"].aliasRegistry[spec.code]) {
       var filterConfig = __WEBPACK_IMPORTED_MODULE_2__config__["b" /* config */].getConfig('userSync.filterSettings');
       var syncs = spec.getUserSyncs({
-        iframeEnabled: !!(__WEBPACK_IMPORTED_MODULE_2__config__["b" /* config */].getConfig('userSync.iframeEnabled') || filterConfig && (filterConfig.iframe || filterConfig.all)),
-        pixelEnabled: !!(__WEBPACK_IMPORTED_MODULE_2__config__["b" /* config */].getConfig('userSync.pixelEnabled') || filterConfig && (filterConfig.image || filterConfig.all))
+        iframeEnabled: !!(filterConfig && (filterConfig.iframe || filterConfig.all)),
+        pixelEnabled: !!(filterConfig && (filterConfig.image || filterConfig.all))
       }, responses, gdprConsent, uspConsent);
 
       if (syncs) {
@@ -2209,12 +2120,12 @@ var ADPOD = 'adpod';
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RANDOM; });
 /* unused harmony export newConfig */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return config; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cpmBucketManager__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cpmBucketManager__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_library_fn_array_find__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_library_fn_array_find___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_library_fn_array_find__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_set__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_set__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_set___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_set__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__url__ = __webpack_require__(9);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -2225,12 +2136,22 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
  * Module for getting and setting Prebid configuration.
  */
 
+/**
+ * @typedef {Object} MediaTypePriceGranularity
+ *
+ * @property {(string|Object)} [banner]
+ * @property {(string|Object)} [native]
+ * @property {(string|Object)} [video]
+ * @property {(string|Object)} [video-instream]
+ * @property {(string|Object)} [video-outstream]
+ */
 
 
 
 
 
-var from = __webpack_require__(80);
+
+var from = __webpack_require__(75);
 
 var utils = __webpack_require__(0);
 
@@ -2333,6 +2254,10 @@ function newConfig() {
         return this._customPriceBucket;
       },
 
+      /**
+       * mediaTypePriceGranularity
+       * @type {MediaTypePriceGranularity}
+       */
       _mediaTypePriceGranularity: {},
 
       get mediaTypePriceGranularity() {
@@ -2830,7 +2755,7 @@ function ajaxBuilder() {
 /* 5 */
 /***/ (function(module, exports) {
 
-module.exports = {"JSON_MAPPING":{"PL_CODE":"code","PL_SIZE":"sizes","PL_BIDS":"bids","BD_BIDDER":"bidder","BD_ID":"paramsd","BD_PL_ID":"placementId","ADSERVER_TARGETING":"adserverTargeting","BD_SETTING_STANDARD":"standard"},"DEBUG_MODE":"pbjs_debug","STATUS":{"GOOD":1,"NO_BID":2},"CB":{"TYPE":{"ALL_BIDS_BACK":"allRequestedBidsBack","AD_UNIT_BIDS_BACK":"adUnitBidsBack","BID_WON":"bidWon","REQUEST_BIDS":"requestBids"}},"EVENTS":{"AUCTION_INIT":"auctionInit","AUCTION_END":"auctionEnd","BID_ADJUSTMENT":"bidAdjustment","BID_TIMEOUT":"bidTimeout","BID_REQUESTED":"bidRequested","BID_RESPONSE":"bidResponse","NO_BID":"noBid","BID_WON":"bidWon","BIDDER_DONE":"bidderDone","SET_TARGETING":"setTargeting","REQUEST_BIDS":"requestBids","ADD_AD_UNITS":"addAdUnits","AD_RENDER_FAILED":"adRenderFailed"},"AD_RENDER_FAILED_REASON":{"PREVENT_WRITING_ON_MAIN_DOCUMENT":"preventWritingOnMainDocuemnt","NO_AD":"noAd","EXCEPTION":"exception","CANNOT_FIND_AD":"cannotFindAd","MISSING_DOC_OR_ADID":"missingDocOrAdid"},"EVENT_ID_PATHS":{"bidWon":"adUnitCode"},"GRANULARITY_OPTIONS":{"LOW":"low","MEDIUM":"medium","HIGH":"high","AUTO":"auto","DENSE":"dense","CUSTOM":"custom"},"TARGETING_KEYS":{"BIDDER":"hb_bidder","AD_ID":"hb_adid","PRICE_BUCKET":"hb_pb","SIZE":"hb_size","DEAL":"hb_deal","SOURCE":"hb_source","FORMAT":"hb_format","UUID":"hb_uuid","CACHE_ID":"hb_cache_id","CACHE_HOST":"hb_cache_host"},"NATIVE_KEYS":{"title":"hb_native_title","body":"hb_native_body","body2":"hb_native_body2","privacyLink":"hb_native_privacy","privacyIcon":"hb_native_privicon","sponsoredBy":"hb_native_brand","image":"hb_native_image","icon":"hb_native_icon","clickUrl":"hb_native_linkurl","displayUrl":"hb_native_displayurl","cta":"hb_native_cta","rating":"hb_native_rating","address":"hb_native_address","downloads":"hb_native_downloads","likes":"hb_native_likes","phone":"hb_native_phone","price":"hb_native_price","salePrice":"hb_native_saleprice"},"S2S":{"SRC":"s2s","DEFAULT_ENDPOINT":"https://prebid.adnxs.com/pbs/v1/openrtb2/auction","SYNCED_BIDDERS_KEY":"pbjsSyncs"},"BID_STATUS":{"BID_TARGETING_SET":"targetingSet","RENDERED":"rendered"},"SUBMODULES_THAT_ALWAYS_REFRESH_ID":{"parrableId":true}}
+module.exports = {"JSON_MAPPING":{"PL_CODE":"code","PL_SIZE":"sizes","PL_BIDS":"bids","BD_BIDDER":"bidder","BD_ID":"paramsd","BD_PL_ID":"placementId","ADSERVER_TARGETING":"adserverTargeting","BD_SETTING_STANDARD":"standard"},"DEBUG_MODE":"pbjs_debug","STATUS":{"GOOD":1,"NO_BID":2},"CB":{"TYPE":{"ALL_BIDS_BACK":"allRequestedBidsBack","AD_UNIT_BIDS_BACK":"adUnitBidsBack","BID_WON":"bidWon","REQUEST_BIDS":"requestBids"}},"EVENTS":{"AUCTION_INIT":"auctionInit","AUCTION_END":"auctionEnd","BID_ADJUSTMENT":"bidAdjustment","BID_TIMEOUT":"bidTimeout","BID_REQUESTED":"bidRequested","BID_RESPONSE":"bidResponse","NO_BID":"noBid","BID_WON":"bidWon","BIDDER_DONE":"bidderDone","SET_TARGETING":"setTargeting","BEFORE_REQUEST_BIDS":"beforeRequestBids","REQUEST_BIDS":"requestBids","ADD_AD_UNITS":"addAdUnits","AD_RENDER_FAILED":"adRenderFailed"},"AD_RENDER_FAILED_REASON":{"PREVENT_WRITING_ON_MAIN_DOCUMENT":"preventWritingOnMainDocuemnt","NO_AD":"noAd","EXCEPTION":"exception","CANNOT_FIND_AD":"cannotFindAd","MISSING_DOC_OR_ADID":"missingDocOrAdid"},"EVENT_ID_PATHS":{"bidWon":"adUnitCode"},"GRANULARITY_OPTIONS":{"LOW":"low","MEDIUM":"medium","HIGH":"high","AUTO":"auto","DENSE":"dense","CUSTOM":"custom"},"TARGETING_KEYS":{"BIDDER":"hb_bidder","AD_ID":"hb_adid","PRICE_BUCKET":"hb_pb","SIZE":"hb_size","DEAL":"hb_deal","SOURCE":"hb_source","FORMAT":"hb_format","UUID":"hb_uuid","CACHE_ID":"hb_cache_id","CACHE_HOST":"hb_cache_host"},"NATIVE_KEYS":{"title":"hb_native_title","body":"hb_native_body","body2":"hb_native_body2","privacyLink":"hb_native_privacy","privacyIcon":"hb_native_privicon","sponsoredBy":"hb_native_brand","image":"hb_native_image","icon":"hb_native_icon","clickUrl":"hb_native_linkurl","displayUrl":"hb_native_displayurl","cta":"hb_native_cta","rating":"hb_native_rating","address":"hb_native_address","downloads":"hb_native_downloads","likes":"hb_native_likes","phone":"hb_native_phone","price":"hb_native_price","salePrice":"hb_native_saleprice"},"S2S":{"SRC":"s2s","DEFAULT_ENDPOINT":"https://prebid.adnxs.com/pbs/v1/openrtb2/auction","SYNCED_BIDDERS_KEY":"pbjsSyncs"},"BID_STATUS":{"BID_TARGETING_SET":"targetingSet","RENDERED":"rendered"},"SUBMODULES_THAT_ALWAYS_REFRESH_ID":{"parrableId":true}}
 
 /***/ }),
 /* 6 */,
@@ -2843,17 +2768,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "uspDataHandler", function() { return uspDataHandler; });
 /* harmony export (immutable) */ __webpack_exports__["setS2STestingModule"] = setS2STestingModule;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sizeMapping__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__native__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sizeMapping__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__native__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__adapters_bidderFactory__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ajax__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_find__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_find___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_find__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__adUnits__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__refererDetection__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__hook__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_library_fn_array_find__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_library_fn_array_find___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_core_js_library_fn_array_find__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__adUnits__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__refererDetection__ = __webpack_require__(34);
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
@@ -2865,6 +2791,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 /** @module adaptermanger */
+
 
 
 
@@ -2933,7 +2860,7 @@ function getBids(_ref) {
           });
         }
 
-        bid = _extends({}, bid, Object(__WEBPACK_IMPORTED_MODULE_0__utils__["getDefinedParams"])(adUnit, ['mediaType', 'renderer']));
+        bid = _extends({}, bid, Object(__WEBPACK_IMPORTED_MODULE_0__utils__["getDefinedParams"])(adUnit, ['fpd', 'mediaType', 'renderer', 'storedAuctionResponse']));
 
         var _resolveStatus2 = Object(__WEBPACK_IMPORTED_MODULE_1__sizeMapping__["b" /* resolveStatus */])(Object(__WEBPACK_IMPORTED_MODULE_1__sizeMapping__["a" /* getLabels */])(bid, labels), filteredMediaTypes),
             active = _resolveStatus2.active,
@@ -2963,7 +2890,9 @@ function getBids(_ref) {
             bidderRequestId: bidderRequestId,
             auctionId: auctionId,
             src: src,
-            bidRequestsCount: __WEBPACK_IMPORTED_MODULE_8__adUnits__["a" /* adunitCounter */].getCounter(adUnit.code)
+            bidRequestsCount: __WEBPACK_IMPORTED_MODULE_9__adUnits__["a" /* adunitCounter */].getRequestsCounter(adUnit.code),
+            bidderRequestsCount: __WEBPACK_IMPORTED_MODULE_9__adUnits__["a" /* adunitCounter */].getBidderRequestsCounter(adUnit.code, bid.bidder),
+            bidderWinsCount: __WEBPACK_IMPORTED_MODULE_9__adUnits__["a" /* adunitCounter */].getBidderWinsCounter(adUnit.code, bid.bidder)
           }));
         }
 
@@ -2983,7 +2912,7 @@ function getAdUnitCopyForPrebidServer(adUnits) {
   adUnitsCopy.forEach(function (adUnit) {
     // filter out client side bids
     adUnit.bids = adUnit.bids.filter(function (bid) {
-      return __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes___default()(adaptersServerSide, bid.bidder) && (!doingS2STesting() || bid.finalSource !== s2sTestingModule.CLIENT);
+      return __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes___default()(adaptersServerSide, bid.bidder) && (!doingS2STesting() || bid.finalSource !== s2sTestingModule.CLIENT);
     }).map(function (bid) {
       bid.bid_id = utils.getUniqueIdentifierStr();
       return bid;
@@ -3029,8 +2958,12 @@ var uspDataHandler = {
     return uspDataHandler.consentData;
   }
 };
-
-adapterManager.makeBidRequests = function (adUnits, auctionStart, auctionId, cbTimeout, labels) {
+adapterManager.makeBidRequests = Object(__WEBPACK_IMPORTED_MODULE_6__hook__["b" /* hook */])('sync', function (adUnits, auctionStart, auctionId, cbTimeout, labels) {
+  /**
+   * emit and pass adunits for external modification
+   * @see {@link https://github.com/prebid/Prebid.js/issues/4149|Issue}
+   */
+  events.emit(CONSTANTS.EVENTS.BEFORE_REQUEST_BIDS, adUnits);
   var bidRequests = [];
   var bidderCodes = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["getBidderCodes"])(adUnits);
 
@@ -3038,7 +2971,7 @@ adapterManager.makeBidRequests = function (adUnits, auctionStart, auctionId, cbT
     bidderCodes = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["shuffle"])(bidderCodes);
   }
 
-  var refererInfo = Object(__WEBPACK_IMPORTED_MODULE_9__refererDetection__["b" /* getRefererInfo */])();
+  var refererInfo = Object(__WEBPACK_IMPORTED_MODULE_10__refererDetection__["b" /* getRefererInfo */])();
   var clientBidderCodes = bidderCodes;
   var clientTestAdapters = [];
 
@@ -3054,12 +2987,12 @@ adapterManager.makeBidRequests = function (adUnits, auctionStart, auctionId, cbT
     var adaptersServerSide = _s2sConfig.bidders; // don't call these client side (unless client request is needed for testing)
 
     clientBidderCodes = bidderCodes.filter(function (elm) {
-      return !__WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes___default()(adaptersServerSide, elm) || __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes___default()(clientTestAdapters, elm);
+      return !__WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes___default()(adaptersServerSide, elm) || __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes___default()(clientTestAdapters, elm);
     });
 
     var adUnitsContainServerRequests = function adUnitsContainServerRequests(adUnits) {
-      return Boolean(__WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_find___default()(adUnits, function (adUnit) {
-        return __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_find___default()(adUnit.bids, function (bid) {
+      return Boolean(__WEBPACK_IMPORTED_MODULE_8_core_js_library_fn_array_find___default()(adUnits, function (adUnit) {
+        return __WEBPACK_IMPORTED_MODULE_8_core_js_library_fn_array_find___default()(adUnit.bids, function (bid) {
           return (bid.bidSource || _s2sConfig.bidderControl && _s2sConfig.bidderControl[bid.bidder]) && bid.finalSource === s2sTestingModule.SERVER;
         });
       }));
@@ -3100,8 +3033,8 @@ adapterManager.makeBidRequests = function (adUnits, auctionStart, auctionId, cbT
 
     adUnitsS2SCopy.forEach(function (adUnitCopy) {
       var validBids = adUnitCopy.bids.filter(function (adUnitBid) {
-        return __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_find___default()(bidRequests, function (request) {
-          return __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_find___default()(request.bids, function (reqBid) {
+        return __WEBPACK_IMPORTED_MODULE_8_core_js_library_fn_array_find___default()(bidRequests, function (request) {
+          return __WEBPACK_IMPORTED_MODULE_8_core_js_library_fn_array_find___default()(request.bids, function (reqBid) {
             return reqBid.bidId === adUnitBid.bid_id;
           });
         });
@@ -3149,12 +3082,17 @@ adapterManager.makeBidRequests = function (adUnits, auctionStart, auctionId, cbT
   if (gdprDataHandler.getConsentData()) {
     bidRequests.forEach(function (bidRequest) {
       bidRequest['gdprConsent'] = gdprDataHandler.getConsentData();
+    });
+  }
+
+  if (uspDataHandler.getConsentData()) {
+    bidRequests.forEach(function (bidRequest) {
       bidRequest['uspConsent'] = uspDataHandler.getConsentData();
     });
   }
 
   return bidRequests;
-};
+}, 'makeBidRequests');
 
 adapterManager.callBids = function (adUnits, bidRequests, addBidResponse, doneCb, requestCallbacks, requestBidsTimeout, onTimelyResponse) {
   if (!bidRequests.length) {
@@ -3199,7 +3137,7 @@ adapterManager.callBids = function (adUnits, bidRequests, addBidResponse, doneCb
           }, []));
         }, []);
         utils.logMessage("CALLING S2S HEADER BIDDERS ==== ".concat(adaptersServerSide.filter(function (adapter) {
-          return __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes___default()(allBidders, adapter);
+          return __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes___default()(allBidders, adapter);
         }).join(','))); // fire BID_REQUESTED event for each s2s bidRequest
 
         serverBidRequests.forEach(function (bidRequest) {
@@ -3250,8 +3188,8 @@ function isTestingServerOnly() {
 
 function getSupportedMediaTypes(bidderCode) {
   var result = [];
-  if (__WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes___default()(adapterManager.videoAdapters, bidderCode)) result.push('video');
-  if (__WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes___default()(__WEBPACK_IMPORTED_MODULE_2__native__["e" /* nativeAdapters */], bidderCode)) result.push('native');
+  if (__WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes___default()(adapterManager.videoAdapters, bidderCode)) result.push('video');
+  if (__WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes___default()(__WEBPACK_IMPORTED_MODULE_2__native__["e" /* nativeAdapters */], bidderCode)) result.push('native');
   return result;
 }
 
@@ -3266,11 +3204,11 @@ adapterManager.registerBidAdapter = function (bidAdaptor, bidderCode) {
     if (typeof bidAdaptor.callBids === 'function') {
       _bidderRegistry[bidderCode] = bidAdaptor;
 
-      if (__WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes___default()(supportedMediaTypes, 'video')) {
+      if (__WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes___default()(supportedMediaTypes, 'video')) {
         adapterManager.videoAdapters.push(bidderCode);
       }
 
-      if (__WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes___default()(supportedMediaTypes, 'native')) {
+      if (__WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes___default()(supportedMediaTypes, 'native')) {
         __WEBPACK_IMPORTED_MODULE_2__native__["e" /* nativeAdapters */].push(bidderCode);
       }
     } else {
@@ -3292,7 +3230,7 @@ adapterManager.aliasBidAdapter = function (bidderCode, alias) {
       var s2sConfig = __WEBPACK_IMPORTED_MODULE_5__config__["b" /* config */].getConfig('s2sConfig');
       var s2sBidders = s2sConfig && s2sConfig.bidders;
 
-      if (!(s2sBidders && __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes___default()(s2sBidders, alias))) {
+      if (!(s2sBidders && __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes___default()(s2sBidders, alias))) {
         utils.logError('bidderCode "' + bidderCode + '" is not an existing bidder.', 'adapterManager.aliasBidAdapter');
       } else {
         _aliasRegistry[alias] = bidderCode;
@@ -3398,6 +3336,7 @@ adapterManager.callTimedOutBidders = function (adUnits, timedOutBidders, cbTimeo
 adapterManager.callBidWonBidder = function (bidder, bid, adUnits) {
   // Adding user configured params to bidWon event data
   bid.params = utils.getUserConfiguredParams(adUnits, bid.adUnitCode, bid.bidder);
+  __WEBPACK_IMPORTED_MODULE_9__adUnits__["a" /* adunitCounter */].incrementBidderWinsCounter(bid.adUnitCode, bid.bidder);
   tryCallBidderMethod(bidder, 'onBidWon', bid);
 };
 
@@ -3653,13 +3592,14 @@ function format(obj) {
 /* harmony export (immutable) */ __webpack_exports__["a"] = Renderer;
 /* harmony export (immutable) */ __webpack_exports__["c"] = isRendererRequired;
 /* harmony export (immutable) */ __webpack_exports__["b"] = executeRenderer;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__adloader__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__adloader__ = __webpack_require__(25);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find__);
 
 
 
+var moduleCode = 'outstream';
 /**
  * @typedef {object} Renderer
  *
@@ -3681,7 +3621,7 @@ function Renderer(options) {
   this.config = config;
   this.handlers = {};
   this.id = id; // a renderer may push to the command queue to delay rendering until the
-  // render function is loaded by loadScript, at which point the the command
+  // render function is loaded by loadExternalScript, at which point the the command
   // queue will be processed
 
   this.loaded = loaded;
@@ -3705,7 +3645,7 @@ function Renderer(options) {
 
   if (!isRendererDefinedOnAdUnit(adUnitCode)) {
     // we expect to load a renderer url once only so cache the request to load script
-    Object(__WEBPACK_IMPORTED_MODULE_0__adloader__["loadScript"])(url, this.callback, true);
+    Object(__WEBPACK_IMPORTED_MODULE_0__adloader__["loadExternalScript"])(url, moduleCode, this.callback);
   } else {
     __WEBPACK_IMPORTED_MODULE_1__utils__["logWarn"]("External Js not loaded by Renderer since renderer url and callback is already defined on adUnit ".concat(adUnitCode));
   }
@@ -3752,7 +3692,7 @@ Renderer.prototype.handleVideoEvent = function (_ref2) {
 };
 /*
  * Calls functions that were pushed to the command queue before the
- * renderer was loaded by `loadScript`
+ * renderer was loaded by `loadExternalScript`
  */
 
 
@@ -3797,16 +3737,16 @@ function isRendererDefinedOnAdUnit(adUnitCode) {
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(92);
-module.exports = __webpack_require__(15).Array.includes;
+__webpack_require__(88);
+module.exports = __webpack_require__(16).Array.includes;
 
 
 /***/ }),
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(87);
-module.exports = __webpack_require__(15).Array.find;
+__webpack_require__(82);
+module.exports = __webpack_require__(16).Array.find;
 
 
 /***/ }),
@@ -3819,7 +3759,7 @@ module.exports = __webpack_require__(15).Array.find;
 /* harmony export (immutable) */ __webpack_exports__["d"] = setupBeforeHookFnOnce;
 /* harmony export (immutable) */ __webpack_exports__["c"] = module;
 /* harmony export (immutable) */ __webpack_exports__["e"] = submodule;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval__);
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
 
@@ -3866,11 +3806,28 @@ function submodule(name) {
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
+var store = __webpack_require__(59)('wks');
+var uid = __webpack_require__(48);
+var Symbol = __webpack_require__(19).Symbol;
+var USE_SYMBOL = typeof Symbol == 'function';
+
+var $exports = module.exports = function (name) {
+  return store[name] || (store[name] =
+    USE_SYMBOL && Symbol[name] || (USE_SYMBOL ? Symbol : uid)('Symbol.' + name));
+};
+
+$exports.store = store;
+
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
 var global = __webpack_require__(19);
-var core = __webpack_require__(15);
-var ctx = __webpack_require__(26);
-var hide = __webpack_require__(23);
-var has = __webpack_require__(29);
+var core = __webpack_require__(16);
+var ctx = __webpack_require__(27);
+var hide = __webpack_require__(22);
+var has = __webpack_require__(30);
 var PROTOTYPE = 'prototype';
 
 var $export = function (type, name, source) {
@@ -3931,28 +3888,11 @@ module.exports = $export;
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports) {
 
 var core = module.exports = { version: '2.6.11' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
-
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var store = __webpack_require__(64)('wks');
-var uid = __webpack_require__(49);
-var Symbol = __webpack_require__(19).Symbol;
-var USE_SYMBOL = typeof Symbol == 'function';
-
-var $exports = module.exports = function (name) {
-  return store[name] || (store[name] =
-    USE_SYMBOL && Symbol[name] || (USE_SYMBOL ? Symbol : uid)('Symbol.' + name));
-};
-
-$exports.store = store;
 
 
 /***/ }),
@@ -3965,7 +3905,26 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 18 */,
+/* 18 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = getGlobal;
+// if $$PREBID_GLOBAL$$ already exists in global document scope, use it, if not, create the object
+// global defination should happen BEFORE imports to avoid global undefined errors.
+window.pbjs = window.pbjs || {};
+window.pbjs.cmd = window.pbjs.cmd || [];
+window.pbjs.que = window.pbjs.que || []; // create a pbjs global pointer
+
+window._pbjsGlobals = window._pbjsGlobals || [];
+
+window._pbjsGlobals.push("pbjs");
+
+function getGlobal() {
+  return window.pbjs;
+}
+
+/***/ }),
 /* 19 */
 /***/ (function(module, exports) {
 
@@ -3981,12 +3940,12 @@ if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
 /* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var anObject = __webpack_require__(28);
-var IE8_DOM_DEFINE = __webpack_require__(88);
-var toPrimitive = __webpack_require__(89);
+var anObject = __webpack_require__(29);
+var IE8_DOM_DEFINE = __webpack_require__(83);
+var toPrimitive = __webpack_require__(84);
 var dP = Object.defineProperty;
 
-exports.f = __webpack_require__(24) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
+exports.f = __webpack_require__(23) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
   anObject(O);
   P = toPrimitive(P, true);
   anObject(Attributes);
@@ -4070,31 +4029,11 @@ function createBid(statusCode, bidRequest) {
 
 /***/ }),
 /* 22 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = getGlobal;
-// if $$PREBID_GLOBAL$$ already exists in global document scope, use it, if not, create the object
-// global defination should happen BEFORE imports to avoid global undefined errors.
-window.pbjs = window.pbjs || {};
-window.pbjs.cmd = window.pbjs.cmd || [];
-window.pbjs.que = window.pbjs.que || []; // create a pbjs global pointer
-
-window._pbjsGlobals = window._pbjsGlobals || [];
-
-window._pbjsGlobals.push("pbjs");
-
-function getGlobal() {
-  return window.pbjs;
-}
-
-/***/ }),
-/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var dP = __webpack_require__(20);
-var createDesc = __webpack_require__(45);
-module.exports = __webpack_require__(24) ? function (object, key, value) {
+var createDesc = __webpack_require__(44);
+module.exports = __webpack_require__(23) ? function (object, key, value) {
   return dP.f(object, key, createDesc(1, value));
 } : function (object, key, value) {
   object[key] = value;
@@ -4103,24 +4042,24 @@ module.exports = __webpack_require__(24) ? function (object, key, value) {
 
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Thank's IE8 for his funny defineProperty
-module.exports = !__webpack_require__(37)(function () {
+module.exports = !__webpack_require__(36)(function () {
   return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
 });
 
 
 /***/ }),
-/* 25 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export newAuctionManager */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return auctionManager; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__auction__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__auction__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find__);
 /**
@@ -4163,9 +4102,10 @@ function newAuctionManager() {
     });
 
     if (auction) {
+      bid.status = CONSTANTS.BID_STATUS.RENDERED;
       auction.addWinningBid(bid);
     } else {
-      utils.logWarn("Auction not found when adding winning bid");
+      Object(__WEBPACK_IMPORTED_MODULE_0__utils__["logWarn"])("Auction not found when adding winning bid");
     }
   };
 
@@ -4216,7 +4156,7 @@ function newAuctionManager() {
         cbTimeout = _ref.cbTimeout,
         labels = _ref.labels,
         auctionId = _ref.auctionId;
-    var auction = Object(__WEBPACK_IMPORTED_MODULE_1__auction__["j" /* newAuction */])({
+    var auction = Object(__WEBPACK_IMPORTED_MODULE_1__auction__["k" /* newAuction */])({
       adUnits: adUnits,
       adUnitCodes: adUnitCodes,
       callback: callback,
@@ -4239,7 +4179,7 @@ function newAuctionManager() {
   };
 
   auctionManager.getStandardBidderAdServerTargeting = function () {
-    return Object(__WEBPACK_IMPORTED_MODULE_1__auction__["i" /* getStandardBidderSettings */])()[CONSTANTS.JSON_MAPPING.ADSERVER_TARGETING];
+    return Object(__WEBPACK_IMPORTED_MODULE_1__auction__["j" /* getStandardBidderSettings */])()[CONSTANTS.JSON_MAPPING.ADSERVER_TARGETING];
   };
 
   auctionManager.setStatusForBids = function (adId, status) {
@@ -4267,11 +4207,111 @@ function newAuctionManager() {
 var auctionManager = newAuctionManager();
 
 /***/ }),
-/* 26 */
+/* 25 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["loadExternalScript"] = loadExternalScript;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(0);
+
+
+var _requestCache = {}; // The below list contains modules or vendors whom Prebid allows to load external JS.
+
+var _approvedLoadExternalJSList = ['criteo', 'outstream', 'adagio', 'browsi'];
+/**
+ * Loads external javascript. Can only be used if external JS is approved by Prebid. See https://github.com/prebid/prebid-js-external-js-template#policy
+ * Each unique URL will be loaded at most 1 time.
+ * @param {string} url the url to load
+ * @param {string} moduleCode bidderCode or module code of the module requesting this resource
+ * @param {function} [callback] callback function to be called after the script is loaded.
+ */
+
+function loadExternalScript(url, moduleCode, callback) {
+  if (!moduleCode || !url) {
+    __WEBPACK_IMPORTED_MODULE_1__utils__["logError"]('cannot load external script without url and moduleCode');
+    return;
+  }
+
+  if (!__WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes___default()(_approvedLoadExternalJSList, moduleCode)) {
+    __WEBPACK_IMPORTED_MODULE_1__utils__["logError"]("".concat(moduleCode, " not whitelisted for loading external JavaScript"));
+    return;
+  } // only load each asset once
+
+
+  if (_requestCache[url]) {
+    if (callback && typeof callback === 'function') {
+      if (_requestCache[url].loaded) {
+        // invokeCallbacks immediately
+        callback();
+      } else {
+        // queue the callback
+        _requestCache[url].callbacks.push(callback);
+      }
+    }
+
+    return _requestCache[url].tag;
+  }
+
+  _requestCache[url] = {
+    loaded: false,
+    tag: null,
+    callbacks: []
+  };
+
+  if (callback && typeof callback === 'function') {
+    _requestCache[url].callbacks.push(callback);
+  }
+
+  __WEBPACK_IMPORTED_MODULE_1__utils__["logWarn"]("module ".concat(moduleCode, " is loading external JavaScript"));
+  return requestResource(url, function () {
+    _requestCache[url].loaded = true;
+
+    try {
+      for (var i = 0; i < _requestCache[url].callbacks.length; i++) {
+        _requestCache[url].callbacks[i]();
+      }
+    } catch (e) {
+      __WEBPACK_IMPORTED_MODULE_1__utils__["logError"]('Error executing callback', 'adloader.js:loadExternalScript', e);
+    }
+  });
+
+  function requestResource(tagSrc, callback) {
+    var jptScript = document.createElement('script');
+    jptScript.type = 'text/javascript';
+    jptScript.async = true;
+    _requestCache[url].tag = jptScript;
+
+    if (jptScript.readyState) {
+      jptScript.onreadystatechange = function () {
+        if (jptScript.readyState === 'loaded' || jptScript.readyState === 'complete') {
+          jptScript.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else {
+      jptScript.onload = function () {
+        callback();
+      };
+    }
+
+    jptScript.src = tagSrc; // add the new script tag to the page
+
+    __WEBPACK_IMPORTED_MODULE_1__utils__["insertElement"](jptScript);
+    return jptScript;
+  }
+}
+;
+
+/***/ }),
+/* 26 */,
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // optional / simple context binding
-var aFunction = __webpack_require__(60);
+var aFunction = __webpack_require__(56);
 module.exports = function (fn, that, length) {
   aFunction(fn);
   if (that === undefined) return fn;
@@ -4293,7 +4333,7 @@ module.exports = function (fn, that, length) {
 
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4539,7 +4579,7 @@ function getAssetValue(value) {
 }
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(17);
@@ -4550,7 +4590,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports) {
 
 var hasOwnProperty = {}.hasOwnProperty;
@@ -4560,144 +4600,11 @@ module.exports = function (it, key) {
 
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports) {
 
 module.exports = {};
 
-
-/***/ }),
-/* 31 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (immutable) */ __webpack_exports__["loadExternalScript"] = loadExternalScript;
-/* harmony export (immutable) */ __webpack_exports__["loadScript"] = loadScript;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(0);
-
-
-var _requestCache = {};
-var _vendorWhitelist = ['criteo', 'adagio'];
-/**
- * Loads external javascript. Can only be used if external JS is approved by Prebid. See https://github.com/prebid/prebid-js-external-js-template#policy
- * Each unique URL will be loaded at most 1 time.
- * @param {string} url the url to load
- * @param {string} moduleCode bidderCode or module code of the module requesting this resource
- */
-
-function loadExternalScript(url, moduleCode) {
-  if (!moduleCode || !url) {
-    __WEBPACK_IMPORTED_MODULE_1__utils__["logError"]('cannot load external script without url and moduleCode');
-    return;
-  }
-
-  if (!__WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes___default()(_vendorWhitelist, moduleCode)) {
-    __WEBPACK_IMPORTED_MODULE_1__utils__["logError"]("".concat(moduleCode, " not whitelisted for loading external JavaScript"));
-    return;
-  } // only load each asset once
-
-
-  if (_requestCache[url]) {
-    return;
-  }
-
-  __WEBPACK_IMPORTED_MODULE_1__utils__["logWarn"]("module ".concat(moduleCode, " is loading external JavaScript"));
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.async = true;
-  script.src = url;
-  __WEBPACK_IMPORTED_MODULE_1__utils__["insertElement"](script);
-  _requestCache[url] = true;
-}
-;
-/**
- *
- * @deprecated
- * Do not use this function. Will be removed in the next release. If external resources are required, use #loadExternalScript instead.
- */
-
-function loadScript(tagSrc, callback, cacheRequest) {
-  // var noop = () => {};
-  //
-  // callback = callback || noop;
-  if (!tagSrc) {
-    __WEBPACK_IMPORTED_MODULE_1__utils__["logError"]('Error attempting to request empty URL', 'adloader.js:loadScript');
-    return;
-  }
-
-  if (cacheRequest) {
-    if (_requestCache[tagSrc]) {
-      if (callback && typeof callback === 'function') {
-        if (_requestCache[tagSrc].loaded) {
-          // invokeCallbacks immediately
-          callback();
-        } else {
-          // queue the callback
-          _requestCache[tagSrc].callbacks.push(callback);
-        }
-      }
-    } else {
-      _requestCache[tagSrc] = {
-        loaded: false,
-        callbacks: []
-      };
-
-      if (callback && typeof callback === 'function') {
-        _requestCache[tagSrc].callbacks.push(callback);
-      }
-
-      requestResource(tagSrc, function () {
-        _requestCache[tagSrc].loaded = true;
-
-        try {
-          for (var i = 0; i < _requestCache[tagSrc].callbacks.length; i++) {
-            _requestCache[tagSrc].callbacks[i]();
-          }
-        } catch (e) {
-          __WEBPACK_IMPORTED_MODULE_1__utils__["logError"]('Error executing callback', 'adloader.js:loadScript', e);
-        }
-      });
-    }
-  } else {
-    // trigger one time request
-    requestResource(tagSrc, callback);
-  }
-}
-;
-
-function requestResource(tagSrc, callback) {
-  var jptScript = document.createElement('script');
-  jptScript.type = 'text/javascript';
-  jptScript.async = true; // Execute a callback if necessary
-
-  if (callback && typeof callback === 'function') {
-    if (jptScript.readyState) {
-      jptScript.onreadystatechange = function () {
-        if (jptScript.readyState === 'loaded' || jptScript.readyState === 'complete') {
-          jptScript.onreadystatechange = null;
-          callback();
-        }
-      };
-    } else {
-      jptScript.onload = function () {
-        callback();
-      };
-    }
-  }
-
-  jptScript.src = tagSrc; // add the new script tag to the page
-
-  var elToAppend = document.getElementsByTagName('head');
-  elToAppend = elToAppend.length ? elToAppend : document.getElementsByTagName('body');
-
-  if (elToAppend.length) {
-    elToAppend = elToAppend[0];
-    elToAppend.insertBefore(jptScript, elToAppend.firstChild);
-  }
-}
 
 /***/ }),
 /* 32 */
@@ -4727,7 +4634,12 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 __WEBPACK_IMPORTED_MODULE_1__config__["b" /* config */].setDefaults({
   'userSync': {
     syncEnabled: true,
-    pixelEnabled: true,
+    filterSettings: {
+      image: {
+        bidders: '*',
+        filter: 'include'
+      }
+    },
     syncsPerBidder: 5,
     syncDelay: 3000,
     auctionDelay: 0
@@ -4751,7 +4663,7 @@ function newUserSync(userSyncDependencies) {
   var numAdapterBids = {}; // for now - default both to false in case filterSettings config is absent/misconfigured
 
   var permittedPixels = {
-    image: false,
+    image: true,
     iframe: false
   }; // Use what is in config by default
 
@@ -4815,7 +4727,7 @@ function newUserSync(userSyncDependencies) {
 
 
   function fireImagePixels() {
-    if (!(usConfig.pixelEnabled || permittedPixels.image)) {
+    if (!permittedPixels.image) {
       return;
     }
 
@@ -4837,7 +4749,7 @@ function newUserSync(userSyncDependencies) {
 
 
   function loadIframes() {
-    if (!(usConfig.iframeEnabled || permittedPixels.iframe)) {
+    if (!permittedPixels.iframe) {
       return;
     }
 
@@ -5018,14 +4930,7 @@ function newUserSync(userSyncDependencies) {
     if (usConfig.filterSettings) {
       if (shouldBidderBeBlocked(type, bidder)) {
         return false;
-      } // TODO remove this else if code that supports deprecated fields (sometime in 2.x); for now - only run if filterSettings config is not present
-
-    } else if (usConfig.enabledBidders && usConfig.enabledBidders.length && usConfig.enabledBidders.indexOf(bidder) < 0) {
-      return false;
-    } else if (type === 'iframe' && !(usConfig.iframeEnabled || permittedPixels.iframe)) {
-      return false;
-    } else if (type === 'image' && !(usConfig.pixelEnabled || permittedPixels.image)) {
-      return false;
+      }
     }
 
     return true;
@@ -5050,8 +4955,6 @@ var userSync = newUserSync({
  *
  * @property {boolean} enableOverride
  * @property {boolean} syncEnabled
- * @property {boolean} pixelEnabled
- * @property {boolean} iframeEnabled
  * @property {int} syncsPerBidder
  * @property {string[]} enabledBidders
  * @property {Object} filterSettings
@@ -5371,15 +5274,15 @@ var getRefererInfo = detectReferer(window);
 "use strict";
 /* unused harmony export TARGETING_KEYS */
 /* unused harmony export filters */
-/* harmony export (immutable) */ __webpack_exports__["a"] = getHighestCpmBidsFromBidPool;
+/* unused harmony export getHighestCpmBidsFromBidPool */
 /* unused harmony export sortByDealAndPriceBucket */
 /* unused harmony export newTargeting */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return targeting; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return targeting; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__native__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__auctionManager__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sizeMapping__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__native__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__auctionManager__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sizeMapping__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mediaTypes__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes__);
@@ -5416,11 +5319,11 @@ var TARGETING_KEYS = Object.keys(CONSTANTS.TARGETING_KEYS).map(function (key) {
 
 var isBidNotExpired = function isBidNotExpired(bid) {
   return bid.responseTimestamp + bid.ttl * 1000 + TTL_BUFFER > Object(__WEBPACK_IMPORTED_MODULE_0__utils__["timestamp"])();
-}; // return bids whose status is not set. Winning bid can have status `targetingSet` or `rendered`.
+}; // return bids whose status is not set. Winning bids can only have a status of `rendered`.
 
 
 var isUnusedBid = function isUnusedBid(bid) {
-  return bid && (bid.status && !__WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes___default()([CONSTANTS.BID_STATUS.BID_TARGETING_SET, CONSTANTS.BID_STATUS.RENDERED], bid.status) || !bid.status);
+  return bid && (bid.status && !__WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes___default()([CONSTANTS.BID_STATUS.RENDERED], bid.status) || !bid.status);
 };
 
 var filters = {
@@ -5966,14 +5869,6 @@ var targeting = newTargeting(__WEBPACK_IMPORTED_MODULE_3__auctionManager__["a" /
 
 /***/ }),
 /* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(171);
-module.exports = __webpack_require__(15).Array.findIndex;
-
-
-/***/ }),
-/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = function (exec) {
@@ -5986,7 +5881,7 @@ module.exports = function (exec) {
 
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -5997,7 +5892,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports) {
 
 // 7.2.1 RequireObjectCoercible(argument)
@@ -6008,11 +5903,11 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.15 ToLength
-var toInteger = __webpack_require__(48);
+var toInteger = __webpack_require__(47);
 var min = Math.min;
 module.exports = function (it) {
   return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
@@ -6020,22 +5915,22 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports) {
 
 module.exports = function () { /* empty */ };
 
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ctx = __webpack_require__(26);
-var call = __webpack_require__(74);
-var isArrayIter = __webpack_require__(75);
-var anObject = __webpack_require__(28);
-var toLength = __webpack_require__(40);
-var getIterFn = __webpack_require__(76);
+var ctx = __webpack_require__(27);
+var call = __webpack_require__(69);
+var isArrayIter = __webpack_require__(70);
+var anObject = __webpack_require__(29);
+var toLength = __webpack_require__(39);
+var getIterFn = __webpack_require__(71);
 var BREAK = {};
 var RETURN = {};
 var exports = module.exports = function (iterable, entries, fn, that, ITERATOR) {
@@ -6058,30 +5953,32 @@ exports.RETURN = RETURN;
 
 
 /***/ }),
-/* 43 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export AUCTION_STARTED */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return AUCTION_IN_PROGRESS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AUCTION_COMPLETED; });
-/* harmony export (immutable) */ __webpack_exports__["j"] = newAuction;
+/* harmony export (immutable) */ __webpack_exports__["k"] = newAuction;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return addBidResponse; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return addBidderRequests; });
 /* unused harmony export bidsBackCallback */
 /* unused harmony export auctionCallbacks */
-/* harmony export (immutable) */ __webpack_exports__["f"] = doCallbacksIfTimedout;
+/* harmony export (immutable) */ __webpack_exports__["g"] = doCallbacksIfTimedout;
 /* harmony export (immutable) */ __webpack_exports__["d"] = addBidToAuction;
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return callPrebidCache; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return getPriceGranularity; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return getPriceByGranularity; });
-/* harmony export (immutable) */ __webpack_exports__["i"] = getStandardBidderSettings;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return callPrebidCache; });
+/* unused harmony export getMediaTypeGranularity */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return getPriceGranularity; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return getPriceByGranularity; });
+/* harmony export (immutable) */ __webpack_exports__["j"] = getStandardBidderSettings;
 /* unused harmony export getKeyValueTargetingPairs */
 /* unused harmony export adjustBids */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__url__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cpmBucketManager__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__native__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__videoCache__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cpmBucketManager__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__native__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__videoCache__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Renderer__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__config__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__userSync__ = __webpack_require__(32);
@@ -6089,6 +5986,7 @@ exports.RETURN = RETURN;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_find__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_find___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_find__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__video__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__mediaTypes__ = __webpack_require__(2);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -6122,8 +6020,17 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
  */
 
 /**
- * @typedef {Object} BidRequest
- * //TODO add all properties
+ * @typedef {Object} BidderRequest
+ *
+ * @property {string} bidderCode - adUnit bidder
+ * @property {number} auctionId - random UUID
+ * @property {string} bidderRequestId - random string, unique key set on all bidRequest.bids[]
+ * @property {Array.<Bid>} bids
+ * @property {number} auctionStart - Date.now() at auction start
+ * @property {number} timeout - callback timeout
+ * @property {refererInfo} refererInfo - referer info object
+ * @property {string} [tid] - random UUID (used for s2s)
+ * @property {string} [src] - s2s or client (used for s2s)
  */
 
 /**
@@ -6142,6 +6049,7 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
  * @property {function(): void} startAuctionTimer - sets the bidsBackHandler callback and starts the timer for auction
  * @property {function(): void} callBids - sends requests to all adapters for bids
  */
+
 
 
 
@@ -6179,7 +6087,11 @@ var queuedCalls = [];
   *
   * @param {Object} requestConfig
   * @param {AdUnit} requestConfig.adUnits
-  * @param {AdUnitCode} requestConfig.adUnitCode
+  * @param {AdUnitCode} requestConfig.adUnitCodes
+  * @param {function():void} requestConfig.callback
+  * @param {number} requestConfig.cbTimeout
+  * @param {Array.<string>} requestConfig.labels
+  * @param {string} requestConfig.auctionId
   *
   * @returns {Auction} auction instance
   */
@@ -6218,8 +6130,6 @@ function newAuction(_ref) {
   function addBidRequests(bidderRequests) {
     _bidderRequests = _bidderRequests.concat(bidderRequests);
   }
-
-  ;
 
   function addBidReceived(bidsReceived) {
     _bidsReceived = _bidsReceived.concat(bidsReceived);
@@ -6281,7 +6191,7 @@ function newAuction(_ref) {
 
             var bids = _bidsReceived.filter(utils.bind.call(__WEBPACK_IMPORTED_MODULE_0__utils__["adUnitsFilter"], this, _adUnitCodes2)).reduce(groupByPlacement, {});
 
-            _callback.apply(pbjs, [bids, timedOut]);
+            _callback.apply(pbjs, [bids, timedOut, _auctionId]);
 
             _callback = null;
           }
@@ -6317,70 +6227,82 @@ function newAuction(_ref) {
   }
 
   function callBids() {
-    var _this = this;
-
     _auctionStatus = AUCTION_STARTED;
     _auctionStart = Date.now();
     var bidRequests = adapterManager.makeBidRequests(_adUnits, _auctionStart, _auctionId, _timeout, _labels);
     utils.logInfo("Bids Requested for Auction with id: ".concat(_auctionId), bidRequests);
-    bidRequests.forEach(function (bidRequest) {
-      addBidRequests(bidRequest);
-    });
-    var requests = {};
 
     if (bidRequests.length < 1) {
       utils.logWarn('No valid bid requests returned for auction');
       auctionDone();
     } else {
-      var call = {
-        bidRequests: bidRequests,
-        run: function run() {
-          startAuctionTimer();
-          _auctionStatus = AUCTION_IN_PROGRESS;
-          events.emit(CONSTANTS.EVENTS.AUCTION_INIT, getProperties());
-          var callbacks = auctionCallbacks(auctionDone, _this);
-          adapterManager.callBids(_adUnits, bidRequests, function () {
-            for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-              args[_key] = arguments[_key];
+      addBidderRequests.call({
+        dispatch: addBidderRequestsCallback,
+        context: this
+      }, bidRequests);
+    }
+  }
+  /**
+   * callback executed after addBidderRequests completes
+   * @param {BidRequest[]} bidRequests
+   */
+
+
+  function addBidderRequestsCallback(bidRequests) {
+    var _this = this;
+
+    bidRequests.forEach(function (bidRequest) {
+      addBidRequests(bidRequest);
+    });
+    var requests = {};
+    var call = {
+      bidRequests: bidRequests,
+      run: function run() {
+        startAuctionTimer();
+        _auctionStatus = AUCTION_IN_PROGRESS;
+        events.emit(CONSTANTS.EVENTS.AUCTION_INIT, getProperties());
+        var callbacks = auctionCallbacks(auctionDone, _this);
+        adapterManager.callBids(_adUnits, bidRequests, function () {
+          for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+          }
+
+          addBidResponse.apply({
+            dispatch: callbacks.addBidResponse,
+            bidderRequest: this
+          }, args);
+        }, callbacks.adapterDone, {
+          request: function request(source, origin) {
+            increment(outstandingRequests, origin);
+            increment(requests, source);
+
+            if (!sourceInfo[source]) {
+              sourceInfo[source] = {
+                SRA: true,
+                origin: origin
+              };
             }
 
-            addBidResponse.apply({
-              dispatch: callbacks.addBidResponse,
-              bidderRequest: this
-            }, args);
-          }, callbacks.adapterDone, {
-            request: function request(source, origin) {
-              increment(outstandingRequests, origin);
-              increment(requests, source);
+            if (requests[source] > 1) {
+              sourceInfo[source].SRA = false;
+            }
+          },
+          done: function done(origin) {
+            outstandingRequests[origin]--;
 
-              if (!sourceInfo[source]) {
-                sourceInfo[source] = {
-                  SRA: true,
-                  origin: origin
-                };
-              }
-
-              if (requests[source] > 1) {
-                sourceInfo[source].SRA = false;
-              }
-            },
-            done: function done(origin) {
-              outstandingRequests[origin]--;
-
-              if (queuedCalls[0]) {
-                if (runIfOriginHasCapacity(queuedCalls[0])) {
-                  queuedCalls.shift();
-                }
+            if (queuedCalls[0]) {
+              if (runIfOriginHasCapacity(queuedCalls[0])) {
+                queuedCalls.shift();
               }
             }
-          }, _timeout, onTimelyResponse);
-        }
-      };
-
-      if (!runIfOriginHasCapacity(call)) {
-        utils.logWarn('queueing auction due to limited endpoint capacity');
-        queuedCalls.push(call);
+          }
+        }, _timeout, onTimelyResponse);
       }
+    };
+
+    if (!runIfOriginHasCapacity(call)) {
+      utils.logWarn('queueing auction due to limited endpoint capacity');
+      queuedCalls.push(call);
     }
 
     function runIfOriginHasCapacity(call) {
@@ -6471,6 +6393,9 @@ function newAuction(_ref) {
 var addBidResponse = Object(__WEBPACK_IMPORTED_MODULE_8__hook__["b" /* hook */])('async', function (adUnitCode, bid) {
   this.dispatch.call(this.bidderRequest, adUnitCode, bid);
 }, 'addBidResponse');
+var addBidderRequests = Object(__WEBPACK_IMPORTED_MODULE_8__hook__["b" /* hook */])('sync', function (bidderRequests) {
+  this.dispatch.call(this.context, bidderRequests);
+}, 'addBidderRequests');
 var bidsBackCallback = Object(__WEBPACK_IMPORTED_MODULE_8__hook__["b" /* hook */])('async', function (adUnits, callback) {
   if (callback) {
     callback();
@@ -6632,7 +6557,7 @@ function getPreparedBidForAuction(_ref2) {
   } // Use the config value 'mediaTypeGranularity' if it has been defined for mediaType, else use 'customPriceBucket'
 
 
-  var mediaTypeGranularity = __WEBPACK_IMPORTED_MODULE_6__config__["b" /* config */].getConfig("mediaTypePriceGranularity.".concat(bid.mediaType));
+  var mediaTypeGranularity = getMediaTypeGranularity(bid.mediaType, bidReq, __WEBPACK_IMPORTED_MODULE_6__config__["b" /* config */].getConfig('mediaTypePriceGranularity'));
   var priceStringsObj = Object(__WEBPACK_IMPORTED_MODULE_2__cpmBucketManager__["a" /* getPriceBucketString */])(bidObject.cpm, _typeof(mediaTypeGranularity) === 'object' ? mediaTypeGranularity : __WEBPACK_IMPORTED_MODULE_6__config__["b" /* config */].getConfig('customPriceBucket'), __WEBPACK_IMPORTED_MODULE_6__config__["b" /* config */].getConfig('currency.granularityMultiplier'));
   bidObject.pbLg = priceStringsObj.low;
   bidObject.pbMg = priceStringsObj.med;
@@ -6657,15 +6582,36 @@ function setupBidTargeting(bidObject, bidderRequest) {
   bidObject.adserverTargeting = _extends(bidObject.adserverTargeting || {}, keyValues);
 }
 /**
- * This function returns the price granularity defined. It can be either publisher defined or default value
- * @param {string} mediaType
- * @returns {string} granularity
+ * @param {MediaType} mediaType
+ * @param {Bid} [bidReq]
+ * @param {MediaTypePriceGranularity} [mediaTypePriceGranularity]
+ * @returns {(Object|string|undefined)}
  */
 
 
-var getPriceGranularity = function getPriceGranularity(mediaType) {
+function getMediaTypeGranularity(mediaType, bidReq, mediaTypePriceGranularity) {
+  if (mediaType && mediaTypePriceGranularity) {
+    if (mediaType === __WEBPACK_IMPORTED_MODULE_11__mediaTypes__["d" /* VIDEO */]) {
+      var context = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["deepAccess"])(bidReq, "mediaTypes.".concat(__WEBPACK_IMPORTED_MODULE_11__mediaTypes__["d" /* VIDEO */], ".context"), 'instream');
+
+      if (mediaTypePriceGranularity["".concat(__WEBPACK_IMPORTED_MODULE_11__mediaTypes__["d" /* VIDEO */], "-").concat(context)]) {
+        return mediaTypePriceGranularity["".concat(__WEBPACK_IMPORTED_MODULE_11__mediaTypes__["d" /* VIDEO */], "-").concat(context)];
+      }
+    }
+
+    return mediaTypePriceGranularity[mediaType];
+  }
+}
+/**
+ * This function returns the price granularity defined. It can be either publisher defined or default value
+ * @param {string} mediaType
+ * @param {BidRequest} bidReq
+ * @returns {string} granularity
+ */
+
+var getPriceGranularity = function getPriceGranularity(mediaType, bidReq) {
   // Use the config value 'mediaTypeGranularity' if it has been set for mediaType, else use 'priceGranularity'
-  var mediaTypeGranularity = __WEBPACK_IMPORTED_MODULE_6__config__["b" /* config */].getConfig("mediaTypePriceGranularity.".concat(mediaType));
+  var mediaTypeGranularity = getMediaTypeGranularity(mediaType, bidReq, __WEBPACK_IMPORTED_MODULE_6__config__["b" /* config */].getConfig('mediaTypePriceGranularity'));
   var granularity = typeof mediaType === 'string' && mediaTypeGranularity ? typeof mediaTypeGranularity === 'string' ? mediaTypeGranularity : 'custom' : __WEBPACK_IMPORTED_MODULE_6__config__["b" /* config */].getConfig('priceGranularity');
   return granularity;
 };
@@ -6695,10 +6641,11 @@ var getPriceByGranularity = function getPriceByGranularity(granularity) {
 /**
  * @param {string} mediaType
  * @param {string} bidderCode
+ * @param {BidRequest} bidReq
  * @returns {*}
  */
 
-function getStandardBidderSettings(mediaType, bidderCode) {
+function getStandardBidderSettings(mediaType, bidderCode, bidReq) {
   // factory for key value objs
   function createKeyVal(key, value) {
     return {
@@ -6712,7 +6659,7 @@ function getStandardBidderSettings(mediaType, bidderCode) {
   }
 
   var TARGETING_KEYS = CONSTANTS.TARGETING_KEYS;
-  var granularity = getPriceGranularity(mediaType);
+  var granularity = getPriceGranularity(mediaType, bidReq);
   var bidderSettings = pbjs.bidderSettings;
 
   if (!bidderSettings[CONSTANTS.JSON_MAPPING.BD_SETTING_STANDARD]) {
@@ -6759,7 +6706,7 @@ function getKeyValueTargetingPairs(bidderCode, custBidObj, bidReq) {
 
   if (bidderSettings) {
     // initialize default if not set
-    var standardSettings = getStandardBidderSettings(custBidObj.mediaType, bidderCode);
+    var standardSettings = getStandardBidderSettings(custBidObj.mediaType, bidderCode, bidReq);
     setKeys(keyValues, standardSettings, custBidObj); // 2) set keys from specific bidder setting override if they exist
 
     if (bidderCode && bidderSettings[bidderCode] && bidderSettings[bidderCode][CONSTANTS.JSON_MAPPING.ADSERVER_TARGETING]) {
@@ -6881,7 +6828,7 @@ function getTimedOutBids(bidderRequests, timelyBidders) {
 }
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6896,51 +6843,42 @@ var utils = __webpack_require__(0);
 var _defaultPrecision = 2;
 var _lgPriceConfig = {
   'buckets': [{
-    'min': 0,
     'max': 5,
     'increment': 0.5
   }]
 };
 var _mgPriceConfig = {
   'buckets': [{
-    'min': 0,
     'max': 20,
     'increment': 0.1
   }]
 };
 var _hgPriceConfig = {
   'buckets': [{
-    'min': 0,
     'max': 20,
     'increment': 0.01
   }]
 };
 var _densePriceConfig = {
   'buckets': [{
-    'min': 0,
     'max': 3,
     'increment': 0.01
   }, {
-    'min': 3,
     'max': 8,
     'increment': 0.05
   }, {
-    'min': 8,
     'max': 20,
     'increment': 0.5
   }]
 };
 var _autoPriceConfig = {
   'buckets': [{
-    'min': 0,
     'max': 5,
     'increment': 0.05
   }, {
-    'min': 5,
     'max': 10,
     'increment': 0.1
   }, {
-    'min': 10,
     'max': 20,
     'increment': 0.5
   }]
@@ -6980,6 +6918,7 @@ function getCpmStringValue(cpm, config, granularityMultiplier) {
   }, {
     'max': 0
   });
+  var bucketFloor = 0;
   var bucket = __WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_find___default()(config.buckets, function (bucket) {
     if (cpm > cap.max * granularityMultiplier) {
       // cpm exceeds cap, just return the cap.
@@ -6990,8 +6929,11 @@ function getCpmStringValue(cpm, config, granularityMultiplier) {
       }
 
       cpmStr = (bucket.max * granularityMultiplier).toFixed(precision);
-    } else if (cpm <= bucket.max * granularityMultiplier && cpm >= bucket.min * granularityMultiplier) {
+    } else if (cpm <= bucket.max * granularityMultiplier && cpm >= bucketFloor * granularityMultiplier) {
+      bucket.min = bucketFloor;
       return bucket;
+    } else {
+      bucketFloor = bucket.max;
     }
   });
 
@@ -7009,7 +6951,7 @@ function isValidPriceConfig(config) {
 
   var isValid = true;
   config.buckets.forEach(function (bucket) {
-    if (typeof bucket.min === 'undefined' || !bucket.max || !bucket.increment) {
+    if (!bucket.max || !bucket.increment) {
       isValid = false;
     }
   });
@@ -7037,7 +6979,7 @@ function getCpmTarget(cpm, bucket, granularityMultiplier) {
 
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, exports) {
 
 module.exports = function (bitmap, value) {
@@ -7051,7 +6993,7 @@ module.exports = function (bitmap, value) {
 
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 0 -> Array#forEach
@@ -7061,11 +7003,11 @@ module.exports = function (bitmap, value) {
 // 4 -> Array#every
 // 5 -> Array#find
 // 6 -> Array#findIndex
-var ctx = __webpack_require__(26);
-var IObject = __webpack_require__(62);
-var toObject = __webpack_require__(47);
-var toLength = __webpack_require__(40);
-var asc = __webpack_require__(90);
+var ctx = __webpack_require__(27);
+var IObject = __webpack_require__(58);
+var toObject = __webpack_require__(46);
+var toLength = __webpack_require__(39);
+var asc = __webpack_require__(85);
 module.exports = function (TYPE, $create) {
   var IS_MAP = TYPE == 1;
   var IS_FILTER = TYPE == 2;
@@ -7101,18 +7043,18 @@ module.exports = function (TYPE, $create) {
 
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.13 ToObject(argument)
-var defined = __webpack_require__(39);
+var defined = __webpack_require__(38);
 module.exports = function (it) {
   return Object(defined(it));
 };
 
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, exports) {
 
 // 7.1.4 ToInteger
@@ -7124,7 +7066,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 49 */
+/* 48 */
 /***/ (function(module, exports) {
 
 var id = 0;
@@ -7135,32 +7077,32 @@ module.exports = function (key) {
 
 
 /***/ }),
-/* 50 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // to indexed object, toObject with fallback for non-array-like ES3 strings
-var IObject = __webpack_require__(62);
-var defined = __webpack_require__(39);
+var IObject = __webpack_require__(58);
+var defined = __webpack_require__(38);
 module.exports = function (it) {
   return IObject(defined(it));
 };
 
 
 /***/ }),
-/* 51 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var LIBRARY = __webpack_require__(65);
-var $export = __webpack_require__(14);
-var redefine = __webpack_require__(96);
-var hide = __webpack_require__(23);
-var Iterators = __webpack_require__(30);
-var $iterCreate = __webpack_require__(97);
-var setToStringTag = __webpack_require__(53);
-var getPrototypeOf = __webpack_require__(102);
-var ITERATOR = __webpack_require__(16)('iterator');
+var LIBRARY = __webpack_require__(60);
+var $export = __webpack_require__(15);
+var redefine = __webpack_require__(92);
+var hide = __webpack_require__(22);
+var Iterators = __webpack_require__(31);
+var $iterCreate = __webpack_require__(93);
+var setToStringTag = __webpack_require__(52);
+var getPrototypeOf = __webpack_require__(98);
+var ITERATOR = __webpack_require__(14)('iterator');
 var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
 var FF_ITERATOR = '@@iterator';
 var KEYS = 'keys';
@@ -7223,23 +7165,23 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
 
 
 /***/ }),
-/* 52 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var shared = __webpack_require__(64)('keys');
-var uid = __webpack_require__(49);
+var shared = __webpack_require__(59)('keys');
+var uid = __webpack_require__(48);
 module.exports = function (key) {
   return shared[key] || (shared[key] = uid(key));
 };
 
 
 /***/ }),
-/* 53 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var def = __webpack_require__(20).f;
-var has = __webpack_require__(29);
-var TAG = __webpack_require__(16)('toStringTag');
+var has = __webpack_require__(30);
+var TAG = __webpack_require__(14)('toStringTag');
 
 module.exports = function (it, tag, stat) {
   if (it && !has(it = stat ? it : it.prototype, TAG)) def(it, TAG, { configurable: true, value: tag });
@@ -7247,41 +7189,20 @@ module.exports = function (it, tag, stat) {
 
 
 /***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(166);
+module.exports = __webpack_require__(16).Array.findIndex;
+
+
+/***/ }),
 /* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = Adapter;
-function Adapter(code) {
-  var bidderCode = code;
-
-  function setBidderCode(code) {
-    bidderCode = code;
-  }
-
-  function getBidderCode() {
-    return bidderCode;
-  }
-
-  function callBids() {}
-
-  return {
-    callBids: callBids,
-    setBidderCode: setBidderCode,
-    getBidderCode: getBidderCode
-  };
-}
-
-/***/ }),
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = registerVideoSupport;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__prebidGlobal__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__prebidGlobal__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(0);
 
 
@@ -7341,27 +7262,26 @@ function registerVideoSupport(name, videoSupport) {
 }
 
 /***/ }),
-/* 59 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "checkAdUnitSetup", function() { return checkAdUnitSetup; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__prebidGlobal__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__prebidGlobal__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__secureCreatives__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__secureCreatives__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__userSync_js__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__adloader__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__auctionManager__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__targeting__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__hook__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__debugging__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_library_fn_array_includes__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_library_fn_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_core_js_library_fn_array_includes__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__adUnits__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__Renderer__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__bidfactory__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__auctionManager__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__targeting__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__hook__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__debugging__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__adUnits__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__Renderer__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__bidfactory__ = __webpack_require__(21);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -7369,7 +7289,6 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 /** @module pbjs */
-
 
 
 
@@ -7412,22 +7331,22 @@ var eventValidators = {
   bidWon: checkDefinedPlacement
 }; // initialize existing debugging sessions if present
 
-Object(__WEBPACK_IMPORTED_MODULE_9__debugging__["a" /* sessionLoader */])();
+Object(__WEBPACK_IMPORTED_MODULE_8__debugging__["a" /* sessionLoader */])();
 /* Public vars */
 
 pbjs.bidderSettings = pbjs.bidderSettings || {}; // let the world know we are loaded
 
 pbjs.libLoaded = true; // version auto generated from build
 
-pbjs.version = "v2.43.0";
-utils.logInfo("Prebid.js v2.43.0 loaded"); // create adUnit array
+pbjs.version = "v3.7.0-pre";
+utils.logInfo("Prebid.js v3.7.0-pre loaded"); // create adUnit array
 
 pbjs.adUnits = pbjs.adUnits || []; // Allow publishers who enable user sync override to trigger their sync
 
 pbjs.triggerUserSyncs = triggerUserSyncs;
 
 function checkDefinedPlacement(id) {
-  var adUnitCodes = __WEBPACK_IMPORTED_MODULE_6__auctionManager__["a" /* auctionManager */].getBidsRequested().map(function (bidSet) {
+  var adUnitCodes = __WEBPACK_IMPORTED_MODULE_5__auctionManager__["a" /* auctionManager */].getBidsRequested().map(function (bidSet) {
     return bidSet.bids.map(function (bid) {
       return bid.adUnitCode;
     });
@@ -7448,40 +7367,54 @@ function setRenderSize(doc, width, height) {
   }
 }
 
-var checkAdUnitSetup = Object(__WEBPACK_IMPORTED_MODULE_8__hook__["b" /* hook */])('sync', function (adUnits) {
-  adUnits.forEach(function (adUnit) {
-    var mediaTypes = adUnit.mediaTypes;
-    var normalizedSize = utils.getAdUnitSizes(adUnit);
+var checkAdUnitSetup = Object(__WEBPACK_IMPORTED_MODULE_7__hook__["b" /* hook */])('sync', function (adUnits) {
+  function validateSizes(sizes, targLength) {
+    var cleanSizes = [];
 
-    if (mediaTypes && mediaTypes.banner) {
-      var banner = mediaTypes.banner;
-
-      if (banner.sizes) {
-        // make sure we always send [[h,w]] format
-        banner.sizes = normalizedSize;
-        adUnit.sizes = normalizedSize;
-      } else {
-        utils.logError('Detected a mediaTypes.banner object did not include sizes.  This is a required field for the mediaTypes.banner object.  Removing invalid mediaTypes.banner object from request.');
-        delete adUnit.mediaTypes.banner;
+    if (utils.isArray(sizes) && (targLength ? sizes.length === targLength : sizes.length > 0)) {
+      // check if an array of arrays or array of numbers
+      if (sizes.every(function (sz) {
+        return Object(__WEBPACK_IMPORTED_MODULE_1__utils__["isArrayOfNums"])(sz, 2);
+      })) {
+        cleanSizes = sizes;
+      } else if (Object(__WEBPACK_IMPORTED_MODULE_1__utils__["isArrayOfNums"])(sizes, 2)) {
+        cleanSizes.push(sizes);
       }
-    } else if (adUnit.sizes) {
-      utils.logWarn('Usage of adUnits.sizes will eventually be deprecated.  Please define size dimensions within the corresponding area of the mediaTypes.<object> (eg mediaTypes.banner.sizes).');
-      adUnit.sizes = normalizedSize;
     }
 
-    if (mediaTypes && mediaTypes.video) {
+    return cleanSizes;
+  }
+
+  return adUnits.filter(function (adUnit) {
+    var mediaTypes = adUnit.mediaTypes;
+
+    if (!mediaTypes || Object.keys(mediaTypes).length === 0) {
+      utils.logError("Detected adUnit.code '".concat(adUnit.code, "' did not have a 'mediaTypes' object defined.  This is a required field for the auction, so this adUnit has been removed."));
+      return false;
+    }
+
+    if (mediaTypes.banner) {
+      var bannerSizes = validateSizes(mediaTypes.banner.sizes);
+
+      if (bannerSizes.length > 0) {
+        mediaTypes.banner.sizes = bannerSizes; // TODO eventually remove this internal copy once we're ready to deprecate bidders from reading this adUnit.sizes property
+
+        adUnit.sizes = bannerSizes;
+      } else {
+        utils.logError('Detected a mediaTypes.banner object without a proper sizes field.  Please ensure the sizes are listed like: [[300, 250], ...].  Removing invalid mediaTypes.banner object from request.');
+        delete adUnit.mediaTypes.banner;
+      }
+    }
+
+    if (mediaTypes.video) {
       var video = mediaTypes.video;
 
       if (video.playerSize) {
-        if (Array.isArray(video.playerSize) && video.playerSize.length === 1 && video.playerSize.every(function (plySize) {
-          return Object(__WEBPACK_IMPORTED_MODULE_1__utils__["isArrayOfNums"])(plySize, 2);
-        })) {
-          adUnit.sizes = video.playerSize;
-        } else if (Object(__WEBPACK_IMPORTED_MODULE_1__utils__["isArrayOfNums"])(video.playerSize, 2)) {
-          var newPlayerSize = [];
-          newPlayerSize.push(video.playerSize);
-          utils.logInfo("Transforming video.playerSize from [".concat(video.playerSize, "] to [[").concat(newPlayerSize, "]] so it's in the proper format."));
-          adUnit.sizes = video.playerSize = newPlayerSize;
+        var tarPlayerSizeLen = typeof video.playerSize[0] === 'number' ? 2 : 1;
+        var videoSizes = validateSizes(video.playerSize, tarPlayerSizeLen);
+
+        if (videoSizes.length > 0) {
+          adUnit.sizes = video.playerSize = videoSizes;
         } else {
           utils.logError('Detected incorrect configuration of mediaTypes.video.playerSize.  Please specify only one set of dimensions in a format like: [[640, 480]]. Removing invalid mediaTypes.video.playerSize property from request.');
           delete adUnit.mediaTypes.video.playerSize;
@@ -7489,7 +7422,7 @@ var checkAdUnitSetup = Object(__WEBPACK_IMPORTED_MODULE_8__hook__["b" /* hook */
       }
     }
 
-    if (mediaTypes && mediaTypes.native) {
+    if (mediaTypes.native) {
       var nativeObj = mediaTypes.native;
 
       if (nativeObj.image && nativeObj.image.sizes && !Array.isArray(nativeObj.image.sizes)) {
@@ -7507,8 +7440,9 @@ var checkAdUnitSetup = Object(__WEBPACK_IMPORTED_MODULE_8__hook__["b" /* hook */
         delete adUnit.mediaTypes.native.icon.sizes;
       }
     }
+
+    return true;
   });
-  return adUnits;
 }, 'checkAdUnitSetup'); /// ///////////////////////////////
 //                              //
 //    Start Public APIs         //
@@ -7552,13 +7486,13 @@ pbjs.getAdserverTargetingForAdUnitCode = function (adUnitCode) {
 
 pbjs.getAdserverTargeting = function (adUnitCode) {
   utils.logInfo("Invoking pbjs.getAdserverTargeting", arguments);
-  return __WEBPACK_IMPORTED_MODULE_7__targeting__["b" /* targeting */].getAllTargeting(adUnitCode);
+  return __WEBPACK_IMPORTED_MODULE_6__targeting__["a" /* targeting */].getAllTargeting(adUnitCode);
 };
 
 function getBids(type) {
-  var responses = __WEBPACK_IMPORTED_MODULE_6__auctionManager__["a" /* auctionManager */][type]().filter(utils.bind.call(__WEBPACK_IMPORTED_MODULE_1__utils__["adUnitsFilter"], this, __WEBPACK_IMPORTED_MODULE_6__auctionManager__["a" /* auctionManager */].getAdUnitCodes())); // find the last auction id to get responses for most recent auction only
+  var responses = __WEBPACK_IMPORTED_MODULE_5__auctionManager__["a" /* auctionManager */][type]().filter(utils.bind.call(__WEBPACK_IMPORTED_MODULE_1__utils__["adUnitsFilter"], this, __WEBPACK_IMPORTED_MODULE_5__auctionManager__["a" /* auctionManager */].getAdUnitCodes())); // find the last auction id to get responses for most recent auction only
 
-  var currentAuctionId = __WEBPACK_IMPORTED_MODULE_6__auctionManager__["a" /* auctionManager */].getLastAuctionId();
+  var currentAuctionId = __WEBPACK_IMPORTED_MODULE_5__auctionManager__["a" /* auctionManager */].getLastAuctionId();
   return responses.map(function (bid) {
     return bid.adUnitCode;
   }).filter(__WEBPACK_IMPORTED_MODULE_1__utils__["uniques"]).map(function (adUnitCode) {
@@ -7606,7 +7540,7 @@ pbjs.getBidResponses = function () {
 
 
 pbjs.getBidResponsesForAdUnitCode = function (adUnitCode) {
-  var bids = __WEBPACK_IMPORTED_MODULE_6__auctionManager__["a" /* auctionManager */].getBidsReceived().filter(function (bid) {
+  var bids = __WEBPACK_IMPORTED_MODULE_5__auctionManager__["a" /* auctionManager */].getBidsReceived().filter(function (bid) {
     return bid.adUnitCode === adUnitCode;
   });
   return {
@@ -7630,15 +7564,15 @@ pbjs.setTargetingForGPTAsync = function (adUnit, customSlotMatching) {
   } // get our ad unit codes
 
 
-  var targetingSet = __WEBPACK_IMPORTED_MODULE_7__targeting__["b" /* targeting */].getAllTargeting(adUnit); // first reset any old targeting
+  var targetingSet = __WEBPACK_IMPORTED_MODULE_6__targeting__["a" /* targeting */].getAllTargeting(adUnit); // first reset any old targeting
 
-  __WEBPACK_IMPORTED_MODULE_7__targeting__["b" /* targeting */].resetPresetTargeting(adUnit); // now set new targeting keys
+  __WEBPACK_IMPORTED_MODULE_6__targeting__["a" /* targeting */].resetPresetTargeting(adUnit); // now set new targeting keys
 
-  __WEBPACK_IMPORTED_MODULE_7__targeting__["b" /* targeting */].setTargetingForGPT(targetingSet, customSlotMatching);
+  __WEBPACK_IMPORTED_MODULE_6__targeting__["a" /* targeting */].setTargetingForGPT(targetingSet, customSlotMatching);
   Object.keys(targetingSet).forEach(function (adUnitCode) {
     Object.keys(targetingSet[adUnitCode]).forEach(function (targetingKey) {
       if (targetingKey === 'hb_adid') {
-        __WEBPACK_IMPORTED_MODULE_6__auctionManager__["a" /* auctionManager */].setStatusForBids(targetingSet[adUnitCode][targetingKey], CONSTANTS.BID_STATUS.BID_TARGETING_SET);
+        __WEBPACK_IMPORTED_MODULE_5__auctionManager__["a" /* auctionManager */].setStatusForBids(targetingSet[adUnitCode][targetingKey], CONSTANTS.BID_STATUS.BID_TARGETING_SET);
       }
     });
   }); // emit event
@@ -7655,14 +7589,14 @@ pbjs.setTargetingForGPTAsync = function (adUnit, customSlotMatching) {
 pbjs.setTargetingForAst = function (adUnitCodes) {
   utils.logInfo("Invoking pbjs.setTargetingForAn", arguments);
 
-  if (!__WEBPACK_IMPORTED_MODULE_7__targeting__["b" /* targeting */].isApntagDefined()) {
+  if (!__WEBPACK_IMPORTED_MODULE_6__targeting__["a" /* targeting */].isApntagDefined()) {
     utils.logError('window.apntag is not defined on the page');
     return;
   }
 
-  __WEBPACK_IMPORTED_MODULE_7__targeting__["b" /* targeting */].setTargetingForAst(adUnitCodes); // emit event
+  __WEBPACK_IMPORTED_MODULE_6__targeting__["a" /* targeting */].setTargetingForAst(adUnitCodes); // emit event
 
-  events.emit(SET_TARGETING, __WEBPACK_IMPORTED_MODULE_7__targeting__["b" /* targeting */].getAllTargeting());
+  events.emit(SET_TARGETING, __WEBPACK_IMPORTED_MODULE_6__targeting__["a" /* targeting */].getAllTargeting());
 };
 
 function emitAdRenderFail(_ref2) {
@@ -7695,15 +7629,14 @@ pbjs.renderAd = function (doc, id) {
   if (doc && id) {
     try {
       // lookup ad by ad Id
-      var bid = __WEBPACK_IMPORTED_MODULE_6__auctionManager__["a" /* auctionManager */].findBidByAdId(id);
+      var bid = __WEBPACK_IMPORTED_MODULE_5__auctionManager__["a" /* auctionManager */].findBidByAdId(id);
 
       if (bid) {
-        bid.status = CONSTANTS.BID_STATUS.RENDERED; // replace macros according to openRTB with price paid = bid.cpm
-
+        // replace macros according to openRTB with price paid = bid.cpm
         bid.ad = utils.replaceAuctionPrice(bid.ad, bid.cpm);
         bid.adUrl = utils.replaceAuctionPrice(bid.adUrl, bid.cpm); // save winning bids
 
-        __WEBPACK_IMPORTED_MODULE_6__auctionManager__["a" /* auctionManager */].addWinningBid(bid); // emit 'bid won' event here
+        __WEBPACK_IMPORTED_MODULE_5__auctionManager__["a" /* auctionManager */].addWinningBid(bid); // emit 'bid won' event here
 
         events.emit(BID_WON, bid);
         var height = bid.height,
@@ -7715,8 +7648,8 @@ pbjs.renderAd = function (doc, id) {
         var creativeComment = document.createComment("Creative ".concat(bid.creativeId, " served by ").concat(bid.bidder, " Prebid.js Header Bidding"));
         utils.insertElement(creativeComment, doc, 'body');
 
-        if (Object(__WEBPACK_IMPORTED_MODULE_12__Renderer__["c" /* isRendererRequired */])(renderer)) {
-          Object(__WEBPACK_IMPORTED_MODULE_12__Renderer__["b" /* executeRenderer */])(renderer, bid);
+        if (Object(__WEBPACK_IMPORTED_MODULE_11__Renderer__["c" /* isRendererRequired */])(renderer)) {
+          Object(__WEBPACK_IMPORTED_MODULE_11__Renderer__["b" /* executeRenderer */])(renderer, bid);
         } else if (doc === document && !utils.inIframe() || mediaType === 'video') {
           var message = "Error trying to write ad. Ad render call ad id ".concat(id, " was prevented from writing to the main document.");
           emitAdRenderFail({
@@ -7833,7 +7766,7 @@ pbjs.removeAdUnit = function (adUnitCode) {
  */
 
 
-pbjs.requestBids = Object(__WEBPACK_IMPORTED_MODULE_8__hook__["b" /* hook */])('async', function () {
+pbjs.requestBids = Object(__WEBPACK_IMPORTED_MODULE_7__hook__["b" /* hook */])('async', function () {
   var _ref3 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
       bidsBackHandler = _ref3.bidsBackHandler,
       timeout = _ref3.timeout,
@@ -7843,14 +7776,14 @@ pbjs.requestBids = Object(__WEBPACK_IMPORTED_MODULE_8__hook__["b" /* hook */])('
       auctionId = _ref3.auctionId;
 
   events.emit(REQUEST_BIDS);
-  var cbTimeout = timeout || __WEBPACK_IMPORTED_MODULE_5__config__["b" /* config */].getConfig('bidderTimeout');
+  var cbTimeout = timeout || __WEBPACK_IMPORTED_MODULE_4__config__["b" /* config */].getConfig('bidderTimeout');
   adUnits = adUnits || pbjs.adUnits;
   utils.logInfo("Invoking pbjs.requestBids", arguments);
 
   if (adUnitCodes && adUnitCodes.length) {
     // if specific adUnitCodes supplied filter adUnits for those codes
     adUnits = adUnits.filter(function (unit) {
-      return __WEBPACK_IMPORTED_MODULE_10_core_js_library_fn_array_includes___default()(adUnitCodes, unit.code);
+      return __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes___default()(adUnitCodes, unit.code);
     });
   } else {
     // otherwise derive adUnitCodes from adUnits
@@ -7877,10 +7810,10 @@ pbjs.requestBids = Object(__WEBPACK_IMPORTED_MODULE_8__hook__["b" /* hook */])('
       return bid.bidder;
     });
     var bidderRegistry = adapterManager.bidderRegistry;
-    var s2sConfig = __WEBPACK_IMPORTED_MODULE_5__config__["b" /* config */].getConfig('s2sConfig');
+    var s2sConfig = __WEBPACK_IMPORTED_MODULE_4__config__["b" /* config */].getConfig('s2sConfig');
     var s2sBidders = s2sConfig && s2sConfig.bidders;
     var bidders = s2sBidders ? allBidders.filter(function (bidder) {
-      return !__WEBPACK_IMPORTED_MODULE_10_core_js_library_fn_array_includes___default()(s2sBidders, bidder);
+      return !__WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes___default()(s2sBidders, bidder);
     }) : allBidders;
     adUnit.transactionId = utils.generateUUID();
     bidders.forEach(function (bidder) {
@@ -7890,7 +7823,7 @@ pbjs.requestBids = Object(__WEBPACK_IMPORTED_MODULE_8__hook__["b" /* hook */])('
       var bidderMediaTypes = spec && spec.supportedMediaTypes || ['banner']; // check if the bidder's mediaTypes are not in the adUnit's mediaTypes
 
       var bidderEligible = adUnitMediaTypes.some(function (type) {
-        return __WEBPACK_IMPORTED_MODULE_10_core_js_library_fn_array_includes___default()(bidderMediaTypes, type);
+        return __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes___default()(bidderMediaTypes, type);
       });
 
       if (!bidderEligible) {
@@ -7899,9 +7832,11 @@ pbjs.requestBids = Object(__WEBPACK_IMPORTED_MODULE_8__hook__["b" /* hook */])('
         adUnit.bids = adUnit.bids.filter(function (bid) {
           return bid.bidder !== bidder;
         });
+      } else {
+        __WEBPACK_IMPORTED_MODULE_10__adUnits__["a" /* adunitCounter */].incrementBidderRequestsCounter(adUnit.code, bidder);
       }
     });
-    __WEBPACK_IMPORTED_MODULE_11__adUnits__["a" /* adunitCounter */].incrementCounter(adUnit.code);
+    __WEBPACK_IMPORTED_MODULE_10__adUnits__["a" /* adunitCounter */].incrementRequestsCounter(adUnit.code);
   });
 
   if (!adUnits || adUnits.length === 0) {
@@ -7919,7 +7854,7 @@ pbjs.requestBids = Object(__WEBPACK_IMPORTED_MODULE_8__hook__["b" /* hook */])('
     return;
   }
 
-  var auction = __WEBPACK_IMPORTED_MODULE_6__auctionManager__["a" /* auctionManager */].createAuction({
+  var auction = __WEBPACK_IMPORTED_MODULE_5__auctionManager__["a" /* auctionManager */].createAuction({
     adUnits: adUnits,
     adUnitCodes: adUnitCodes,
     callback: bidsBackHandler,
@@ -7934,7 +7869,7 @@ pbjs.requestBids = Object(__WEBPACK_IMPORTED_MODULE_8__hook__["b" /* hook */])('
   }
 
   adUnitCodes.forEach(function (code) {
-    return __WEBPACK_IMPORTED_MODULE_7__targeting__["b" /* targeting */].setLatestAuctionForAdUnit(code, auction.getAuctionId());
+    return __WEBPACK_IMPORTED_MODULE_6__targeting__["a" /* targeting */].setLatestAuctionForAdUnit(code, auction.getAuctionId());
   });
   auction.callBids();
   return auction;
@@ -8051,19 +7986,7 @@ pbjs.registerAnalyticsAdapter = function (options) {
 
 pbjs.createBid = function (statusCode) {
   utils.logInfo("Invoking pbjs.createBid", arguments);
-  return Object(__WEBPACK_IMPORTED_MODULE_13__bidfactory__["createBid"])(statusCode);
-};
-/**
- * @deprecated this function will be removed in the next release. Prebid has deprected external JS loading.
- * @param  {string} tagSrc [description]
- * @param  {Function} callback [description]
- * @alias module:pbjs.loadScript
- */
-
-
-pbjs.loadScript = function (tagSrc, callback, useCache) {
-  utils.logInfo("Invoking pbjs.loadScript", arguments);
-  Object(__WEBPACK_IMPORTED_MODULE_4__adloader__["loadScript"])(tagSrc, callback, useCache);
+  return Object(__WEBPACK_IMPORTED_MODULE_12__bidfactory__["createBid"])(statusCode);
 };
 /**
  * Enable sending analytics data to the analytics provider of your
@@ -8145,7 +8068,7 @@ pbjs.aliasBidder = function (bidderCode, alias) {
 
 
 pbjs.getAllWinningBids = function () {
-  return __WEBPACK_IMPORTED_MODULE_6__auctionManager__["a" /* auctionManager */].getAllWinningBids();
+  return __WEBPACK_IMPORTED_MODULE_5__auctionManager__["a" /* auctionManager */].getAllWinningBids();
 };
 /**
  * Get all of the bids that have won their respective auctions.
@@ -8154,7 +8077,7 @@ pbjs.getAllWinningBids = function () {
 
 
 pbjs.getAllPrebidWinningBids = function () {
-  return __WEBPACK_IMPORTED_MODULE_6__auctionManager__["a" /* auctionManager */].getBidsReceived().filter(function (bid) {
+  return __WEBPACK_IMPORTED_MODULE_5__auctionManager__["a" /* auctionManager */].getBidsReceived().filter(function (bid) {
     return bid.status === CONSTANTS.BID_STATUS.BID_TARGETING_SET;
   });
 };
@@ -8168,8 +8091,7 @@ pbjs.getAllPrebidWinningBids = function () {
 
 
 pbjs.getHighestCpmBids = function (adUnitCode) {
-  var bidsReceived = Object(__WEBPACK_IMPORTED_MODULE_7__targeting__["a" /* getHighestCpmBidsFromBidPool */])(__WEBPACK_IMPORTED_MODULE_6__auctionManager__["a" /* auctionManager */].getBidsReceived(), __WEBPACK_IMPORTED_MODULE_1__utils__["getLatestHighestCpmBid"]);
-  return __WEBPACK_IMPORTED_MODULE_7__targeting__["b" /* targeting */].getWinningBids(adUnitCode, bidsReceived);
+  return __WEBPACK_IMPORTED_MODULE_6__targeting__["a" /* targeting */].getWinningBids(adUnitCode);
 };
 /**
  * Mark the winning bid as used, should only be used in conjunction with video
@@ -8185,13 +8107,13 @@ pbjs.markWinningBidAsUsed = function (markBidRequest) {
   var bids = [];
 
   if (markBidRequest.adUnitCode && markBidRequest.adId) {
-    bids = __WEBPACK_IMPORTED_MODULE_6__auctionManager__["a" /* auctionManager */].getBidsReceived().filter(function (bid) {
+    bids = __WEBPACK_IMPORTED_MODULE_5__auctionManager__["a" /* auctionManager */].getBidsReceived().filter(function (bid) {
       return bid.adId === markBidRequest.adId && bid.adUnitCode === markBidRequest.adUnitCode;
     });
   } else if (markBidRequest.adUnitCode) {
-    bids = __WEBPACK_IMPORTED_MODULE_7__targeting__["b" /* targeting */].getWinningBids(markBidRequest.adUnitCode);
+    bids = __WEBPACK_IMPORTED_MODULE_6__targeting__["a" /* targeting */].getWinningBids(markBidRequest.adUnitCode);
   } else if (markBidRequest.adId) {
-    bids = __WEBPACK_IMPORTED_MODULE_6__auctionManager__["a" /* auctionManager */].getBidsReceived().filter(function (bid) {
+    bids = __WEBPACK_IMPORTED_MODULE_5__auctionManager__["a" /* auctionManager */].getBidsReceived().filter(function (bid) {
       return bid.adId === markBidRequest.adId;
     });
   } else {
@@ -8209,7 +8131,7 @@ pbjs.markWinningBidAsUsed = function (markBidRequest) {
  */
 
 
-pbjs.getConfig = __WEBPACK_IMPORTED_MODULE_5__config__["b" /* config */].getConfig;
+pbjs.getConfig = __WEBPACK_IMPORTED_MODULE_4__config__["b" /* config */].getConfig;
 /**
  * Set Prebid config options.
  * (Added in version 0.27.0).
@@ -8257,8 +8179,8 @@ pbjs.getConfig = __WEBPACK_IMPORTED_MODULE_5__config__["b" /* config */].getConf
  * ```
  */
 
-pbjs.setConfig = __WEBPACK_IMPORTED_MODULE_5__config__["b" /* config */].setConfig;
-pbjs.setBidderConfig = __WEBPACK_IMPORTED_MODULE_5__config__["b" /* config */].setBidderConfig;
+pbjs.setConfig = __WEBPACK_IMPORTED_MODULE_4__config__["b" /* config */].setConfig;
+pbjs.setBidderConfig = __WEBPACK_IMPORTED_MODULE_4__config__["b" /* config */].setBidderConfig;
 pbjs.que.push(function () {
   return Object(__WEBPACK_IMPORTED_MODULE_2__secureCreatives__["a" /* listenMessagesFromCreative */])();
 });
@@ -8315,7 +8237,7 @@ function processQueue(queue) {
 
 
 pbjs.processQueue = function () {
-  __WEBPACK_IMPORTED_MODULE_8__hook__["b" /* hook */].ready();
+  __WEBPACK_IMPORTED_MODULE_7__hook__["b" /* hook */].ready();
   processQueue(pbjs.que);
   processQueue(pbjs.cmd);
 };
@@ -8323,7 +8245,7 @@ pbjs.processQueue = function () {
 /* harmony default export */ __webpack_exports__["default"] = (pbjs);
 
 /***/ }),
-/* 60 */
+/* 56 */
 /***/ (function(module, exports) {
 
 module.exports = function (it) {
@@ -8333,7 +8255,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 61 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(17);
@@ -8346,11 +8268,11 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 62 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // fallback for non-array-like ES3 and non-enumerable old V8 strings
-var cof = __webpack_require__(38);
+var cof = __webpack_require__(37);
 // eslint-disable-next-line no-prototype-builtins
 module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
   return cof(it) == 'String' ? it.split('') : Object(it);
@@ -8358,21 +8280,10 @@ module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
 
 
 /***/ }),
-/* 63 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// 7.2.2 IsArray(argument)
-var cof = __webpack_require__(38);
-module.exports = Array.isArray || function isArray(arg) {
-  return cof(arg) == 'Array';
-};
-
-
-/***/ }),
-/* 64 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var core = __webpack_require__(15);
+var core = __webpack_require__(16);
 var global = __webpack_require__(19);
 var SHARED = '__core-js_shared__';
 var store = global[SHARED] || (global[SHARED] = {});
@@ -8381,27 +8292,27 @@ var store = global[SHARED] || (global[SHARED] = {});
   return store[key] || (store[key] = value !== undefined ? value : {});
 })('versions', []).push({
   version: core.version,
-  mode: __webpack_require__(65) ? 'pure' : 'global',
+  mode: __webpack_require__(60) ? 'pure' : 'global',
   copyright: '© 2018 Denis Pushkarev (zloirock.ru)'
 });
 
 
 /***/ }),
-/* 65 */
+/* 60 */
 /***/ (function(module, exports) {
 
 module.exports = true;
 
 
 /***/ }),
-/* 66 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // false -> Array#indexOf
 // true  -> Array#includes
-var toIObject = __webpack_require__(50);
-var toLength = __webpack_require__(40);
-var toAbsoluteIndex = __webpack_require__(93);
+var toIObject = __webpack_require__(49);
+var toLength = __webpack_require__(39);
+var toAbsoluteIndex = __webpack_require__(89);
 module.exports = function (IS_INCLUDES) {
   return function ($this, el, fromIndex) {
     var O = toIObject($this);
@@ -8423,29 +8334,29 @@ module.exports = function (IS_INCLUDES) {
 
 
 /***/ }),
-/* 67 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(94);
-__webpack_require__(68);
-__webpack_require__(103);
+__webpack_require__(90);
+__webpack_require__(63);
+__webpack_require__(99);
+__webpack_require__(101);
 __webpack_require__(105);
-__webpack_require__(109);
-__webpack_require__(112);
-__webpack_require__(114);
-module.exports = __webpack_require__(15).Set;
+__webpack_require__(108);
+__webpack_require__(110);
+module.exports = __webpack_require__(16).Set;
 
 
 /***/ }),
-/* 68 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var $at = __webpack_require__(95)(true);
+var $at = __webpack_require__(91)(true);
 
 // 21.1.3.27 String.prototype[@@iterator]()
-__webpack_require__(51)(String, 'String', function (iterated) {
+__webpack_require__(50)(String, 'String', function (iterated) {
   this._t = String(iterated); // target
   this._i = 0;                // next index
 // 21.1.5.2.1 %StringIteratorPrototype%.next()
@@ -8461,27 +8372,27 @@ __webpack_require__(51)(String, 'String', function (iterated) {
 
 
 /***/ }),
-/* 69 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-var anObject = __webpack_require__(28);
-var dPs = __webpack_require__(98);
-var enumBugKeys = __webpack_require__(70);
-var IE_PROTO = __webpack_require__(52)('IE_PROTO');
+var anObject = __webpack_require__(29);
+var dPs = __webpack_require__(94);
+var enumBugKeys = __webpack_require__(65);
+var IE_PROTO = __webpack_require__(51)('IE_PROTO');
 var Empty = function () { /* empty */ };
 var PROTOTYPE = 'prototype';
 
 // Create object with fake `null` prototype: use iframe Object with cleared prototype
 var createDict = function () {
   // Thrash, waste and sodomy: IE GC bug
-  var iframe = __webpack_require__(61)('iframe');
+  var iframe = __webpack_require__(57)('iframe');
   var i = enumBugKeys.length;
   var lt = '<';
   var gt = '>';
   var iframeDocument;
   iframe.style.display = 'none';
-  __webpack_require__(101).appendChild(iframe);
+  __webpack_require__(97).appendChild(iframe);
   iframe.src = 'javascript:'; // eslint-disable-line no-script-url
   // createDict = iframe.contentWindow.Object;
   // html.removeChild(iframe);
@@ -8508,7 +8419,7 @@ module.exports = Object.create || function create(O, Properties) {
 
 
 /***/ }),
-/* 70 */
+/* 65 */
 /***/ (function(module, exports) {
 
 // IE 8- don't enum bug keys
@@ -8518,7 +8429,7 @@ module.exports = (
 
 
 /***/ }),
-/* 71 */
+/* 66 */
 /***/ (function(module, exports) {
 
 module.exports = function (done, value) {
@@ -8527,10 +8438,10 @@ module.exports = function (done, value) {
 
 
 /***/ }),
-/* 72 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var hide = __webpack_require__(23);
+var hide = __webpack_require__(22);
 module.exports = function (target, src, safe) {
   for (var key in src) {
     if (safe && target[key]) target[key] = src[key];
@@ -8540,7 +8451,7 @@ module.exports = function (target, src, safe) {
 
 
 /***/ }),
-/* 73 */
+/* 68 */
 /***/ (function(module, exports) {
 
 module.exports = function (it, Constructor, name, forbiddenField) {
@@ -8551,11 +8462,11 @@ module.exports = function (it, Constructor, name, forbiddenField) {
 
 
 /***/ }),
-/* 74 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // call something on iterator step with safe closing on error
-var anObject = __webpack_require__(28);
+var anObject = __webpack_require__(29);
 module.exports = function (iterator, fn, value, entries) {
   try {
     return entries ? fn(anObject(value)[0], value[1]) : fn(value);
@@ -8569,12 +8480,12 @@ module.exports = function (iterator, fn, value, entries) {
 
 
 /***/ }),
-/* 75 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // check on default Array iterator
-var Iterators = __webpack_require__(30);
-var ITERATOR = __webpack_require__(16)('iterator');
+var Iterators = __webpack_require__(31);
+var ITERATOR = __webpack_require__(14)('iterator');
 var ArrayProto = Array.prototype;
 
 module.exports = function (it) {
@@ -8583,13 +8494,13 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 76 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var classof = __webpack_require__(77);
-var ITERATOR = __webpack_require__(16)('iterator');
-var Iterators = __webpack_require__(30);
-module.exports = __webpack_require__(15).getIteratorMethod = function (it) {
+var classof = __webpack_require__(72);
+var ITERATOR = __webpack_require__(14)('iterator');
+var Iterators = __webpack_require__(31);
+module.exports = __webpack_require__(16).getIteratorMethod = function (it) {
   if (it != undefined) return it[ITERATOR]
     || it['@@iterator']
     || Iterators[classof(it)];
@@ -8597,12 +8508,12 @@ module.exports = __webpack_require__(15).getIteratorMethod = function (it) {
 
 
 /***/ }),
-/* 77 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // getting tag from 19.1.3.6 Object.prototype.toString()
-var cof = __webpack_require__(38);
-var TAG = __webpack_require__(16)('toStringTag');
+var cof = __webpack_require__(37);
+var TAG = __webpack_require__(14)('toStringTag');
 // ES3 wrong here
 var ARG = cof(function () { return arguments; }()) == 'Arguments';
 
@@ -8626,18 +8537,18 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 78 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var META = __webpack_require__(49)('meta');
+var META = __webpack_require__(48)('meta');
 var isObject = __webpack_require__(17);
-var has = __webpack_require__(29);
+var has = __webpack_require__(30);
 var setDesc = __webpack_require__(20).f;
 var id = 0;
 var isExtensible = Object.isExtensible || function () {
   return true;
 };
-var FREEZE = !__webpack_require__(37)(function () {
+var FREEZE = !__webpack_require__(36)(function () {
   return isExtensible(Object.preventExtensions({}));
 });
 var setMeta = function (it) {
@@ -8685,7 +8596,7 @@ var meta = module.exports = {
 
 
 /***/ }),
-/* 79 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(17);
@@ -8696,16 +8607,16 @@ module.exports = function (it, TYPE) {
 
 
 /***/ }),
-/* 80 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(68);
-__webpack_require__(116);
-module.exports = __webpack_require__(15).Array.from;
+__webpack_require__(63);
+__webpack_require__(112);
+module.exports = __webpack_require__(16).Array.from;
 
 
 /***/ }),
-/* 81 */
+/* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8850,7 +8761,7 @@ function getCacheUrl(id) {
 }
 
 /***/ }),
-/* 82 */
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9006,13 +8917,18 @@ function resolveStatus() {
 function evaluateSizeConfig(configs) {
   return configs.reduce(function (results, config) {
     if (_typeof(config) === 'object' && typeof config.mediaQuery === 'string') {
-      var ruleMatch = false;
+      var ruleMatch = false; // TODO: (Prebid - 4.0) Remove empty mediaQuery string check. Disallow empty mediaQuery in sizeConfig.
+      // Refer: https://github.com/prebid/Prebid.js/pull/4691, https://github.com/prebid/Prebid.js/issues/4810 for more details.
 
-      try {
-        ruleMatch = Object(__WEBPACK_IMPORTED_MODULE_1__utils__["getWindowTop"])().matchMedia(config.mediaQuery).matches;
-      } catch (e) {
-        Object(__WEBPACK_IMPORTED_MODULE_1__utils__["logWarn"])('Unfriendly iFrame blocks sizeConfig from being correctly evaluated');
-        ruleMatch = matchMedia(config.mediaQuery).matches;
+      if (config.mediaQuery === '') {
+        ruleMatch = true;
+      } else {
+        try {
+          ruleMatch = Object(__WEBPACK_IMPORTED_MODULE_1__utils__["getWindowTop"])().matchMedia(config.mediaQuery).matches;
+        } catch (e) {
+          Object(__WEBPACK_IMPORTED_MODULE_1__utils__["logWarn"])('Unfriendly iFrame blocks sizeConfig from being correctly evaluated');
+          ruleMatch = matchMedia(config.mediaQuery).matches;
+        }
       }
 
       if (ruleMatch) {
@@ -9039,7 +8955,33 @@ function evaluateSizeConfig(configs) {
 }
 
 /***/ }),
-/* 83 */
+/* 78 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = Adapter;
+function Adapter(code) {
+  var bidderCode = code;
+
+  function setBidderCode(code) {
+    bidderCode = code;
+  }
+
+  function getBidderCode() {
+    return bidderCode;
+  }
+
+  function callBids() {}
+
+  return {
+    callBids: callBids,
+    setBidderCode: setBidderCode,
+    getBidderCode: getBidderCode
+  };
+}
+
+/***/ }),
+/* 79 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9047,16 +8989,55 @@ function evaluateSizeConfig(configs) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(0);
 
 var adUnits = {};
+
+function ensureAdUnit(adunit, bidderCode) {
+  var adUnit = adUnits[adunit] = adUnits[adunit] || {
+    bidders: {}
+  };
+
+  if (bidderCode) {
+    return adUnit.bidders[bidderCode] = adUnit.bidders[bidderCode] || {};
+  }
+
+  return adUnit;
+}
+
+function incrementAdUnitCount(adunit, counter, bidderCode) {
+  var adUnit = ensureAdUnit(adunit, bidderCode);
+  adUnit[counter] = (adUnit[counter] || 0) + 1;
+  return adUnit[counter];
+}
 /**
  * Increments and returns current Adunit counter
  * @param {string} adunit id
  * @returns {number} current adunit count
  */
 
-function incrementCounter(adunit) {
-  adUnits[adunit] = adUnits[adunit] || {};
-  adUnits[adunit].counter = Object(__WEBPACK_IMPORTED_MODULE_0__utils__["deepAccess"])(adUnits, "".concat(adunit, ".counter")) + 1 || 1;
-  return adUnits[adunit].counter;
+
+function incrementRequestsCounter(adunit) {
+  return incrementAdUnitCount(adunit, 'requestsCounter');
+}
+/**
+ * Increments and returns current Adunit requests counter for a bidder
+ * @param {string} adunit id
+ * @param {string} bidderCode code
+ * @returns {number} current adunit bidder requests count
+ */
+
+
+function incrementBidderRequestsCounter(adunit, bidderCode) {
+  return incrementAdUnitCount(adunit, 'requestsCounter', bidderCode);
+}
+/**
+ * Increments and returns current Adunit wins counter for a bidder
+ * @param {string} adunit id
+ * @param {string} bidderCode code
+ * @returns {number} current adunit bidder requests count
+ */
+
+
+function incrementBidderWinsCounter(adunit, bidderCode) {
+  return incrementAdUnitCount(adunit, 'winsCounter', bidderCode);
 }
 /**
  * Returns current Adunit counter
@@ -9065,8 +9046,30 @@ function incrementCounter(adunit) {
  */
 
 
-function getCounter(adunit) {
-  return Object(__WEBPACK_IMPORTED_MODULE_0__utils__["deepAccess"])(adUnits, "".concat(adunit, ".counter")) || 0;
+function getRequestsCounter(adunit) {
+  return Object(__WEBPACK_IMPORTED_MODULE_0__utils__["deepAccess"])(adUnits, "".concat(adunit, ".requestsCounter")) || 0;
+}
+/**
+ * Returns current Adunit requests counter for a specific bidder code
+ * @param {string} adunit id
+ * @param {string} bidder code
+ * @returns {number} current adunit bidder requests count
+ */
+
+
+function getBidderRequestsCounter(adunit, bidder) {
+  return Object(__WEBPACK_IMPORTED_MODULE_0__utils__["deepAccess"])(adUnits, "".concat(adunit, ".bidders.").concat(bidder, ".requestsCounter")) || 0;
+}
+/**
+ * Returns current Adunit requests counter for a specific bidder code
+ * @param {string} adunit id
+ * @param {string} bidder code
+ * @returns {number} current adunit bidder requests count
+ */
+
+
+function getBidderWinsCounter(adunit, bidder) {
+  return Object(__WEBPACK_IMPORTED_MODULE_0__utils__["deepAccess"])(adUnits, "".concat(adunit, ".bidders.").concat(bidder, ".winsCounter")) || 0;
 }
 /**
  * A module which counts how many times an adunit was called
@@ -9075,29 +9078,25 @@ function getCounter(adunit) {
 
 
 var adunitCounter = {
-  incrementCounter: incrementCounter,
-  getCounter: getCounter
+  incrementRequestsCounter: incrementRequestsCounter,
+  incrementBidderRequestsCounter: incrementBidderRequestsCounter,
+  incrementBidderWinsCounter: incrementBidderWinsCounter,
+  getRequestsCounter: getRequestsCounter,
+  getBidderRequestsCounter: getBidderRequestsCounter,
+  getBidderWinsCounter: getBidderWinsCounter
 };
 
 
 /***/ }),
-/* 84 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(379);
-module.exports = __webpack_require__(15).Number.isInteger;
+__webpack_require__(81);
+module.exports = __webpack_require__(55);
 
 
 /***/ }),
-/* 85 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(86);
-module.exports = __webpack_require__(59);
-
-
-/***/ }),
-/* 86 */
+/* 81 */
 /***/ (function(module, exports) {
 
 /**
@@ -10943,13 +10942,23 @@ if (testbids == "true") {
 pbjs.que.push(function () {
   //pbjs.addAdUnits(toUseAdUnits);
   pbjs.setConfig({
-    userSync: {
-      syncEnabled: true,
-      pixelEnabled: true,
-      iframeEnabled: true,
-      syncsPerBidder: 0,
-      syncDelay: 2000
-    },
+    "userSync": {
+      "syncEnabled": true,
+      "syncsPerBidder": 5,
+      "syncDelay": 3000,
+      "filterSettings": {
+        "iframe": {
+          "bidders": "*",
+          "filter": "include"
+        },
+        "image": {
+          "bidders": "*",
+          "filter": "include"
+        }
+      }
+    }
+  });
+  pbjs.setConfig({
     pubcid: {
       expInterval: 525600
     }
@@ -11131,14 +11140,14 @@ pbjs.requestAds = function (adUnits, displayAds, TIMEOUT) {
 **/
 
 /***/ }),
-/* 87 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // 22.1.3.8 Array.prototype.find(predicate, thisArg = undefined)
-var $export = __webpack_require__(14);
-var $find = __webpack_require__(46)(5);
+var $export = __webpack_require__(15);
+var $find = __webpack_require__(45)(5);
 var KEY = 'find';
 var forced = true;
 // Shouldn't skip holes
@@ -11148,20 +11157,20 @@ $export($export.P + $export.F * forced, 'Array', {
     return $find(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
   }
 });
-__webpack_require__(41)(KEY);
+__webpack_require__(40)(KEY);
 
 
 /***/ }),
-/* 88 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = !__webpack_require__(24) && !__webpack_require__(37)(function () {
-  return Object.defineProperty(__webpack_require__(61)('div'), 'a', { get: function () { return 7; } }).a != 7;
+module.exports = !__webpack_require__(23) && !__webpack_require__(36)(function () {
+  return Object.defineProperty(__webpack_require__(57)('div'), 'a', { get: function () { return 7; } }).a != 7;
 });
 
 
 /***/ }),
-/* 89 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.1 ToPrimitive(input [, PreferredType])
@@ -11179,11 +11188,11 @@ module.exports = function (it, S) {
 
 
 /***/ }),
-/* 90 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-var speciesConstructor = __webpack_require__(91);
+var speciesConstructor = __webpack_require__(86);
 
 module.exports = function (original, length) {
   return new (speciesConstructor(original))(length);
@@ -11191,12 +11200,12 @@ module.exports = function (original, length) {
 
 
 /***/ }),
-/* 91 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(17);
-var isArray = __webpack_require__(63);
-var SPECIES = __webpack_require__(16)('species');
+var isArray = __webpack_require__(87);
+var SPECIES = __webpack_require__(14)('species');
 
 module.exports = function (original) {
   var C;
@@ -11213,14 +11222,25 @@ module.exports = function (original) {
 
 
 /***/ }),
-/* 92 */
+/* 87 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 7.2.2 IsArray(argument)
+var cof = __webpack_require__(37);
+module.exports = Array.isArray || function isArray(arg) {
+  return cof(arg) == 'Array';
+};
+
+
+/***/ }),
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // https://github.com/tc39/Array.prototype.includes
-var $export = __webpack_require__(14);
-var $includes = __webpack_require__(66)(true);
+var $export = __webpack_require__(15);
+var $includes = __webpack_require__(61)(true);
 
 $export($export.P, 'Array', {
   includes: function includes(el /* , fromIndex = 0 */) {
@@ -11228,14 +11248,14 @@ $export($export.P, 'Array', {
   }
 });
 
-__webpack_require__(41)('includes');
+__webpack_require__(40)('includes');
 
 
 /***/ }),
-/* 93 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toInteger = __webpack_require__(48);
+var toInteger = __webpack_require__(47);
 var max = Math.max;
 var min = Math.min;
 module.exports = function (index, length) {
@@ -11245,17 +11265,17 @@ module.exports = function (index, length) {
 
 
 /***/ }),
-/* 94 */
+/* 90 */
 /***/ (function(module, exports) {
 
 
 
 /***/ }),
-/* 95 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toInteger = __webpack_require__(48);
-var defined = __webpack_require__(39);
+var toInteger = __webpack_require__(47);
+var defined = __webpack_require__(38);
 // true  -> String#at
 // false -> String#codePointAt
 module.exports = function (TO_STRING) {
@@ -11274,25 +11294,25 @@ module.exports = function (TO_STRING) {
 
 
 /***/ }),
-/* 96 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(23);
+module.exports = __webpack_require__(22);
 
 
 /***/ }),
-/* 97 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var create = __webpack_require__(69);
-var descriptor = __webpack_require__(45);
-var setToStringTag = __webpack_require__(53);
+var create = __webpack_require__(64);
+var descriptor = __webpack_require__(44);
+var setToStringTag = __webpack_require__(52);
 var IteratorPrototype = {};
 
 // 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
-__webpack_require__(23)(IteratorPrototype, __webpack_require__(16)('iterator'), function () { return this; });
+__webpack_require__(22)(IteratorPrototype, __webpack_require__(14)('iterator'), function () { return this; });
 
 module.exports = function (Constructor, NAME, next) {
   Constructor.prototype = create(IteratorPrototype, { next: descriptor(1, next) });
@@ -11301,14 +11321,14 @@ module.exports = function (Constructor, NAME, next) {
 
 
 /***/ }),
-/* 98 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var dP = __webpack_require__(20);
-var anObject = __webpack_require__(28);
-var getKeys = __webpack_require__(99);
+var anObject = __webpack_require__(29);
+var getKeys = __webpack_require__(95);
 
-module.exports = __webpack_require__(24) ? Object.defineProperties : function defineProperties(O, Properties) {
+module.exports = __webpack_require__(23) ? Object.defineProperties : function defineProperties(O, Properties) {
   anObject(O);
   var keys = getKeys(Properties);
   var length = keys.length;
@@ -11320,12 +11340,12 @@ module.exports = __webpack_require__(24) ? Object.defineProperties : function de
 
 
 /***/ }),
-/* 99 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 / 15.2.3.14 Object.keys(O)
-var $keys = __webpack_require__(100);
-var enumBugKeys = __webpack_require__(70);
+var $keys = __webpack_require__(96);
+var enumBugKeys = __webpack_require__(65);
 
 module.exports = Object.keys || function keys(O) {
   return $keys(O, enumBugKeys);
@@ -11333,13 +11353,13 @@ module.exports = Object.keys || function keys(O) {
 
 
 /***/ }),
-/* 100 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var has = __webpack_require__(29);
-var toIObject = __webpack_require__(50);
-var arrayIndexOf = __webpack_require__(66)(false);
-var IE_PROTO = __webpack_require__(52)('IE_PROTO');
+var has = __webpack_require__(30);
+var toIObject = __webpack_require__(49);
+var arrayIndexOf = __webpack_require__(61)(false);
+var IE_PROTO = __webpack_require__(51)('IE_PROTO');
 
 module.exports = function (object, names) {
   var O = toIObject(object);
@@ -11356,7 +11376,7 @@ module.exports = function (object, names) {
 
 
 /***/ }),
-/* 101 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var document = __webpack_require__(19).document;
@@ -11364,13 +11384,13 @@ module.exports = document && document.documentElement;
 
 
 /***/ }),
-/* 102 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
-var has = __webpack_require__(29);
-var toObject = __webpack_require__(47);
-var IE_PROTO = __webpack_require__(52)('IE_PROTO');
+var has = __webpack_require__(30);
+var toObject = __webpack_require__(46);
+var IE_PROTO = __webpack_require__(51)('IE_PROTO');
 var ObjectProto = Object.prototype;
 
 module.exports = Object.getPrototypeOf || function (O) {
@@ -11383,14 +11403,14 @@ module.exports = Object.getPrototypeOf || function (O) {
 
 
 /***/ }),
-/* 103 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(104);
+__webpack_require__(100);
 var global = __webpack_require__(19);
-var hide = __webpack_require__(23);
-var Iterators = __webpack_require__(30);
-var TO_STRING_TAG = __webpack_require__(16)('toStringTag');
+var hide = __webpack_require__(22);
+var Iterators = __webpack_require__(31);
+var TO_STRING_TAG = __webpack_require__(14)('toStringTag');
 
 var DOMIterables = ('CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,' +
   'DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,' +
@@ -11408,21 +11428,21 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 
 /***/ }),
-/* 104 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var addToUnscopables = __webpack_require__(41);
-var step = __webpack_require__(71);
-var Iterators = __webpack_require__(30);
-var toIObject = __webpack_require__(50);
+var addToUnscopables = __webpack_require__(40);
+var step = __webpack_require__(66);
+var Iterators = __webpack_require__(31);
+var toIObject = __webpack_require__(49);
 
 // 22.1.3.4 Array.prototype.entries()
 // 22.1.3.13 Array.prototype.keys()
 // 22.1.3.29 Array.prototype.values()
 // 22.1.3.30 Array.prototype[@@iterator]()
-module.exports = __webpack_require__(51)(Array, 'Array', function (iterated, kind) {
+module.exports = __webpack_require__(50)(Array, 'Array', function (iterated, kind) {
   this._t = toIObject(iterated); // target
   this._i = 0;                   // next index
   this._k = kind;                // kind
@@ -11449,17 +11469,17 @@ addToUnscopables('entries');
 
 
 /***/ }),
-/* 105 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var strong = __webpack_require__(106);
-var validate = __webpack_require__(79);
+var strong = __webpack_require__(102);
+var validate = __webpack_require__(74);
 var SET = 'Set';
 
 // 23.2 Set Objects
-module.exports = __webpack_require__(108)(SET, function (get) {
+module.exports = __webpack_require__(104)(SET, function (get) {
   return function Set() { return get(this, arguments.length > 0 ? arguments[0] : undefined); };
 }, {
   // 23.2.3.1 Set.prototype.add(value)
@@ -11470,23 +11490,23 @@ module.exports = __webpack_require__(108)(SET, function (get) {
 
 
 /***/ }),
-/* 106 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var dP = __webpack_require__(20).f;
-var create = __webpack_require__(69);
-var redefineAll = __webpack_require__(72);
-var ctx = __webpack_require__(26);
-var anInstance = __webpack_require__(73);
-var forOf = __webpack_require__(42);
-var $iterDefine = __webpack_require__(51);
-var step = __webpack_require__(71);
-var setSpecies = __webpack_require__(107);
-var DESCRIPTORS = __webpack_require__(24);
-var fastKey = __webpack_require__(78).fastKey;
-var validate = __webpack_require__(79);
+var create = __webpack_require__(64);
+var redefineAll = __webpack_require__(67);
+var ctx = __webpack_require__(27);
+var anInstance = __webpack_require__(68);
+var forOf = __webpack_require__(41);
+var $iterDefine = __webpack_require__(50);
+var step = __webpack_require__(66);
+var setSpecies = __webpack_require__(103);
+var DESCRIPTORS = __webpack_require__(23);
+var fastKey = __webpack_require__(73).fastKey;
+var validate = __webpack_require__(74);
 var SIZE = DESCRIPTORS ? '_s' : 'size';
 
 var getEntry = function (that, key) {
@@ -11621,16 +11641,16 @@ module.exports = {
 
 
 /***/ }),
-/* 107 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var global = __webpack_require__(19);
-var core = __webpack_require__(15);
+var core = __webpack_require__(16);
 var dP = __webpack_require__(20);
-var DESCRIPTORS = __webpack_require__(24);
-var SPECIES = __webpack_require__(16)('species');
+var DESCRIPTORS = __webpack_require__(23);
+var SPECIES = __webpack_require__(14)('species');
 
 module.exports = function (KEY) {
   var C = typeof core[KEY] == 'function' ? core[KEY] : global[KEY];
@@ -11642,24 +11662,24 @@ module.exports = function (KEY) {
 
 
 /***/ }),
-/* 108 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var global = __webpack_require__(19);
-var $export = __webpack_require__(14);
-var meta = __webpack_require__(78);
-var fails = __webpack_require__(37);
-var hide = __webpack_require__(23);
-var redefineAll = __webpack_require__(72);
-var forOf = __webpack_require__(42);
-var anInstance = __webpack_require__(73);
+var $export = __webpack_require__(15);
+var meta = __webpack_require__(73);
+var fails = __webpack_require__(36);
+var hide = __webpack_require__(22);
+var redefineAll = __webpack_require__(67);
+var forOf = __webpack_require__(41);
+var anInstance = __webpack_require__(68);
 var isObject = __webpack_require__(17);
-var setToStringTag = __webpack_require__(53);
+var setToStringTag = __webpack_require__(52);
 var dP = __webpack_require__(20).f;
-var each = __webpack_require__(46)(0);
-var DESCRIPTORS = __webpack_require__(24);
+var each = __webpack_require__(45)(0);
+var DESCRIPTORS = __webpack_require__(23);
 
 module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
   var Base = global[NAME];
@@ -11708,22 +11728,22 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 
 
 /***/ }),
-/* 109 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // https://github.com/DavidBruant/Map-Set.prototype.toJSON
-var $export = __webpack_require__(14);
+var $export = __webpack_require__(15);
 
-$export($export.P + $export.R, 'Set', { toJSON: __webpack_require__(110)('Set') });
+$export($export.P + $export.R, 'Set', { toJSON: __webpack_require__(106)('Set') });
 
 
 /***/ }),
-/* 110 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // https://github.com/DavidBruant/Map-Set.prototype.toJSON
-var classof = __webpack_require__(77);
-var from = __webpack_require__(111);
+var classof = __webpack_require__(72);
+var from = __webpack_require__(107);
 module.exports = function (NAME) {
   return function toJSON() {
     if (classof(this) != NAME) throw TypeError(NAME + "#toJSON isn't generic");
@@ -11733,10 +11753,10 @@ module.exports = function (NAME) {
 
 
 /***/ }),
-/* 111 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var forOf = __webpack_require__(42);
+var forOf = __webpack_require__(41);
 
 module.exports = function (iter, ITERATOR) {
   var result = [];
@@ -11746,21 +11766,21 @@ module.exports = function (iter, ITERATOR) {
 
 
 /***/ }),
-/* 112 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // https://tc39.github.io/proposal-setmap-offrom/#sec-set.of
-__webpack_require__(113)('Set');
+__webpack_require__(109)('Set');
 
 
 /***/ }),
-/* 113 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // https://tc39.github.io/proposal-setmap-offrom/
-var $export = __webpack_require__(14);
+var $export = __webpack_require__(15);
 
 module.exports = function (COLLECTION) {
   $export($export.S, COLLECTION, { of: function of() {
@@ -11773,24 +11793,24 @@ module.exports = function (COLLECTION) {
 
 
 /***/ }),
-/* 114 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // https://tc39.github.io/proposal-setmap-offrom/#sec-set.from
-__webpack_require__(115)('Set');
+__webpack_require__(111)('Set');
 
 
 /***/ }),
-/* 115 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // https://tc39.github.io/proposal-setmap-offrom/
-var $export = __webpack_require__(14);
-var aFunction = __webpack_require__(60);
-var ctx = __webpack_require__(26);
-var forOf = __webpack_require__(42);
+var $export = __webpack_require__(15);
+var aFunction = __webpack_require__(56);
+var ctx = __webpack_require__(27);
+var forOf = __webpack_require__(41);
 
 module.exports = function (COLLECTION) {
   $export($export.S, COLLECTION, { from: function from(source /* , mapFn, thisArg */) {
@@ -11816,21 +11836,21 @@ module.exports = function (COLLECTION) {
 
 
 /***/ }),
-/* 116 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ctx = __webpack_require__(26);
-var $export = __webpack_require__(14);
-var toObject = __webpack_require__(47);
-var call = __webpack_require__(74);
-var isArrayIter = __webpack_require__(75);
-var toLength = __webpack_require__(40);
-var createProperty = __webpack_require__(117);
-var getIterFn = __webpack_require__(76);
+var ctx = __webpack_require__(27);
+var $export = __webpack_require__(15);
+var toObject = __webpack_require__(46);
+var call = __webpack_require__(69);
+var isArrayIter = __webpack_require__(70);
+var toLength = __webpack_require__(39);
+var createProperty = __webpack_require__(113);
+var getIterFn = __webpack_require__(71);
 
-$export($export.S + $export.F * !__webpack_require__(118)(function (iter) { Array.from(iter); }), 'Array', {
+$export($export.S + $export.F * !__webpack_require__(114)(function (iter) { Array.from(iter); }), 'Array', {
   // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
   from: function from(arrayLike /* , mapfn = undefined, thisArg = undefined */) {
     var O = toObject(arrayLike);
@@ -11860,13 +11880,13 @@ $export($export.S + $export.F * !__webpack_require__(118)(function (iter) { Arra
 
 
 /***/ }),
-/* 117 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 var $defineProperty = __webpack_require__(20);
-var createDesc = __webpack_require__(45);
+var createDesc = __webpack_require__(44);
 
 module.exports = function (object, index, value) {
   if (index in object) $defineProperty.f(object, index, createDesc(0, value));
@@ -11875,10 +11895,10 @@ module.exports = function (object, index, value) {
 
 
 /***/ }),
-/* 118 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ITERATOR = __webpack_require__(16)('iterator');
+var ITERATOR = __webpack_require__(14)('iterator');
 var SAFE_CLOSING = false;
 
 try {
@@ -11903,7 +11923,7 @@ module.exports = function (exec, skipClosing) {
 
 
 /***/ }),
-/* 119 */
+/* 115 */
 /***/ (function(module, exports) {
 
 module.exports = clone;
@@ -11937,7 +11957,7 @@ function clone(obj) {
 
 
 /***/ }),
-/* 120 */
+/* 116 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11952,7 +11972,7 @@ function dlv(obj, key, def, p, undef) {
 
 
 /***/ }),
-/* 121 */
+/* 117 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11967,7 +11987,7 @@ function dlv(obj, key, def, p, undef) {
 
 
 /***/ }),
-/* 122 */
+/* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11975,11 +11995,11 @@ function dlv(obj, key, def, p, undef) {
 /* unused harmony export _sendAdToCreative */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__events__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__events___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__events__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__native__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__native__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__constants__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__auctionManager__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__auctionManager__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_library_fn_array_find__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_library_fn_array_find___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_core_js_library_fn_array_find__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Renderer__ = __webpack_require__(10);
@@ -11996,7 +12016,7 @@ function dlv(obj, key, def, p, undef) {
 
 var BID_WON = __WEBPACK_IMPORTED_MODULE_2__constants__["EVENTS"].BID_WON;
 function listenMessagesFromCreative() {
-  addEventListener('message', receiveMessage, false);
+  window.addEventListener('message', receiveMessage, false);
 }
 
 function receiveMessage(ev) {
@@ -12117,7 +12137,7 @@ function resizeRemoteCreative(_ref) {
 }
 
 /***/ }),
-/* 123 */
+/* 119 */
 /***/ (function(module, exports) {
 
 /*
@@ -12503,25 +12523,30 @@ module.exports = create;
 
 
 /***/ }),
-/* 124 */
+/* 120 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export boundHook */
+/* unused harmony export addBidResponseBound */
+/* unused harmony export addBidderRequestsBound */
+/* unused harmony export enableOverrides */
 /* unused harmony export disableOverrides */
+/* unused harmony export bidExcluded */
+/* unused harmony export bidderExcluded */
+/* unused harmony export applyBidOverrides */
 /* unused harmony export addBidResponseHook */
+/* unused harmony export addBidderRequestsHook */
 /* unused harmony export getConfig */
 /* harmony export (immutable) */ __webpack_exports__["a"] = sessionLoader;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auction__ = __webpack_require__(43);
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auction__ = __webpack_require__(42);
 
 
 
 var OVERRIDE_KEY = "pbjs:debugging";
-var boundHook;
+var addBidResponseBound;
+var addBidderRequestsBound;
 
 function logMessage(msg) {
   Object(__WEBPACK_IMPORTED_MODULE_1__utils__["logMessage"])('DEBUG: ' + msg);
@@ -12531,9 +12556,19 @@ function logWarn(msg) {
   Object(__WEBPACK_IMPORTED_MODULE_1__utils__["logWarn"])('DEBUG: ' + msg);
 }
 
-function removeHook() {
+function addHooks(overrides) {
+  addBidResponseBound = addBidResponseHook.bind(overrides);
+  __WEBPACK_IMPORTED_MODULE_2__auction__["c" /* addBidResponse */].before(addBidResponseBound, 5);
+  addBidderRequestsBound = addBidderRequestsHook.bind(overrides);
+  __WEBPACK_IMPORTED_MODULE_2__auction__["e" /* addBidderRequests */].before(addBidderRequestsBound, 5);
+}
+
+function removeHooks() {
   __WEBPACK_IMPORTED_MODULE_2__auction__["c" /* addBidResponse */].getHooks({
-    hook: boundHook
+    hook: addBidResponseBound
+  }).remove();
+  __WEBPACK_IMPORTED_MODULE_2__auction__["e" /* addBidderRequests */].getHooks({
+    hook: addBidderRequestsBound
   }).remove();
 }
 
@@ -12542,46 +12577,99 @@ function enableOverrides(overrides) {
   __WEBPACK_IMPORTED_MODULE_0__config__["b" /* config */].setConfig({
     'debug': true
   });
+  removeHooks();
+  addHooks(overrides);
   logMessage("bidder overrides enabled".concat(fromSession ? ' from session' : ''));
-  removeHook();
-  boundHook = addBidResponseHook.bind(overrides);
-  __WEBPACK_IMPORTED_MODULE_2__auction__["c" /* addBidResponse */].before(boundHook, 5);
 }
-
 function disableOverrides() {
-  removeHook();
+  removeHooks();
   logMessage('bidder overrides disabled');
+}
+/**
+ * @param {{bidder:string, adUnitCode:string}} overrideObj
+ * @param {string} bidderCode
+ * @param {string} adUnitCode
+ * @returns {boolean}
+ */
+
+function bidExcluded(overrideObj, bidderCode, adUnitCode) {
+  if (overrideObj.bidder && overrideObj.bidder !== bidderCode) {
+    return true;
+  }
+
+  if (overrideObj.adUnitCode && overrideObj.adUnitCode !== adUnitCode) {
+    return true;
+  }
+
+  return false;
+}
+/**
+ * @param {string[]} bidders
+ * @param {string} bidderCode
+ * @returns {boolean}
+ */
+
+function bidderExcluded(bidders, bidderCode) {
+  return Array.isArray(bidders) && bidders.indexOf(bidderCode) === -1;
+}
+/**
+ * @param {Object} overrideObj
+ * @param {Object} bidObj
+ * @param {Object} bidType
+ * @returns {Object} bidObj with overridden properties
+ */
+
+function applyBidOverrides(overrideObj, bidObj, bidType) {
+  return Object.keys(overrideObj).filter(function (key) {
+    return ['adUnitCode', 'bidder'].indexOf(key) === -1;
+  }).reduce(function (result, key) {
+    logMessage("bidder overrides changed '".concat(result.adUnitCode, "/").concat(result.bidderCode, "' ").concat(bidType, ".").concat(key, " from '").concat(result[key], "' to '").concat(overrideObj[key], "'"));
+    result[key] = overrideObj[key];
+    return result;
+  }, bidObj);
 }
 function addBidResponseHook(next, adUnitCode, bid) {
   var overrides = this;
 
-  if (Array.isArray(overrides.bidders) && overrides.bidders.indexOf(bid.bidderCode) === -1) {
+  if (bidderExcluded(overrides.bidders, bid.bidderCode)) {
     logWarn("bidder '".concat(bid.bidderCode, "' excluded from auction by bidder overrides"));
     return;
   }
 
   if (Array.isArray(overrides.bids)) {
     overrides.bids.forEach(function (overrideBid) {
-      if (overrideBid.bidder && overrideBid.bidder !== bid.bidderCode) {
-        return;
+      if (!bidExcluded(overrideBid, bid.bidderCode, adUnitCode)) {
+        applyBidOverrides(overrideBid, bid, 'bidder');
       }
-
-      if (overrideBid.adUnitCode && overrideBid.adUnitCode !== adUnitCode) {
-        return;
-      }
-
-      bid = _extends({}, bid);
-      Object.keys(overrideBid).filter(function (key) {
-        return ['bidder', 'adUnitCode'].indexOf(key) === -1;
-      }).forEach(function (key) {
-        var value = overrideBid[key];
-        logMessage("bidder overrides changed '".concat(adUnitCode, "/").concat(bid.bidderCode, "' bid.").concat(key, " from '").concat(bid[key], "' to '").concat(value, "'"));
-        bid[key] = value;
-      });
     });
   }
 
   next(adUnitCode, bid);
+}
+function addBidderRequestsHook(next, bidderRequests) {
+  var overrides = this;
+  var includedBidderRequests = bidderRequests.filter(function (bidderRequest) {
+    if (bidderExcluded(overrides.bidders, bidderRequest.bidderCode)) {
+      logWarn("bidRequest '".concat(bidderRequest.bidderCode, "' excluded from auction by bidder overrides"));
+      return false;
+    }
+
+    return true;
+  });
+
+  if (Array.isArray(overrides.bidRequests)) {
+    includedBidderRequests.forEach(function (bidderRequest) {
+      overrides.bidRequests.forEach(function (overrideBid) {
+        bidderRequest.bids.forEach(function (bid) {
+          if (!bidExcluded(overrideBid, bidderRequest.bidderCode, bid.adUnitCode)) {
+            applyBidOverrides(overrideBid, bid, 'bidRequest');
+          }
+        });
+      });
+    });
+  }
+
+  next(includedBidderRequests);
 }
 function getConfig(debugging) {
   if (!debugging.enabled) {
@@ -12616,6 +12704,10 @@ function sessionLoader(storage) {
 }
 
 /***/ }),
+/* 121 */,
+/* 122 */,
+/* 123 */,
+/* 124 */,
 /* 125 */,
 /* 126 */,
 /* 127 */,
@@ -12657,19 +12749,14 @@ function sessionLoader(storage) {
 /* 163 */,
 /* 164 */,
 /* 165 */,
-/* 166 */,
-/* 167 */,
-/* 168 */,
-/* 169 */,
-/* 170 */,
-/* 171 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // 22.1.3.9 Array.prototype.findIndex(predicate, thisArg = undefined)
-var $export = __webpack_require__(14);
-var $find = __webpack_require__(46)(6);
+var $export = __webpack_require__(15);
+var $find = __webpack_require__(45)(6);
 var KEY = 'findIndex';
 var forced = true;
 // Shouldn't skip holes
@@ -12679,10 +12766,15 @@ $export($export.P + $export.F * forced, 'Array', {
     return $find(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
   }
 });
-__webpack_require__(41)(KEY);
+__webpack_require__(40)(KEY);
 
 
 /***/ }),
+/* 167 */,
+/* 168 */,
+/* 169 */,
+/* 170 */,
+/* 171 */,
 /* 172 */,
 /* 173 */,
 /* 174 */,
@@ -12768,34 +12860,25 @@ __webpack_require__(41)(KEY);
 /* 254 */,
 /* 255 */,
 /* 256 */,
-/* 257 */,
-/* 258 */,
-/* 259 */,
-/* 260 */,
-/* 261 */,
-/* 262 */,
-/* 263 */,
-/* 264 */,
-/* 265 */,
-/* 266 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(267);
-module.exports = __webpack_require__(15).String.includes;
+__webpack_require__(258);
+module.exports = __webpack_require__(16).String.includes;
 
 
 /***/ }),
-/* 267 */
+/* 258 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 // 21.1.3.7 String.prototype.includes(searchString, position = 0)
 
-var $export = __webpack_require__(14);
-var context = __webpack_require__(268);
+var $export = __webpack_require__(15);
+var context = __webpack_require__(259);
 var INCLUDES = 'includes';
 
-$export($export.P + $export.F * __webpack_require__(270)(INCLUDES), 'String', {
+$export($export.P + $export.F * __webpack_require__(261)(INCLUDES), 'String', {
   includes: function includes(searchString /* , position = 0 */) {
     return !!~context(this, searchString, INCLUDES)
       .indexOf(searchString, arguments.length > 1 ? arguments[1] : undefined);
@@ -12804,12 +12887,12 @@ $export($export.P + $export.F * __webpack_require__(270)(INCLUDES), 'String', {
 
 
 /***/ }),
-/* 268 */
+/* 259 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // helper for String#{startsWith, endsWith, includes}
-var isRegExp = __webpack_require__(269);
-var defined = __webpack_require__(39);
+var isRegExp = __webpack_require__(260);
+var defined = __webpack_require__(38);
 
 module.exports = function (that, searchString, NAME) {
   if (isRegExp(searchString)) throw TypeError('String#' + NAME + " doesn't accept regex!");
@@ -12818,13 +12901,13 @@ module.exports = function (that, searchString, NAME) {
 
 
 /***/ }),
-/* 269 */
+/* 260 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.2.8 IsRegExp(argument)
 var isObject = __webpack_require__(17);
-var cof = __webpack_require__(38);
-var MATCH = __webpack_require__(16)('match');
+var cof = __webpack_require__(37);
+var MATCH = __webpack_require__(14)('match');
 module.exports = function (it) {
   var isRegExp;
   return isObject(it) && ((isRegExp = it[MATCH]) !== undefined ? !!isRegExp : cof(it) == 'RegExp');
@@ -12832,10 +12915,10 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 270 */
+/* 261 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var MATCH = __webpack_require__(16)('match');
+var MATCH = __webpack_require__(14)('match');
 module.exports = function (KEY) {
   var re = /./;
   try {
@@ -12850,6 +12933,15 @@ module.exports = function (KEY) {
 
 
 /***/ }),
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
 /* 271 */,
 /* 272 */,
 /* 273 */,
@@ -12942,49 +13034,25 @@ module.exports = function (KEY) {
 /* 360 */,
 /* 361 */,
 /* 362 */,
-/* 363 */,
-/* 364 */,
-/* 365 */,
-/* 366 */,
-/* 367 */,
-/* 368 */,
-/* 369 */,
-/* 370 */,
-/* 371 */,
-/* 372 */,
-/* 373 */,
-/* 374 */,
-/* 375 */,
-/* 376 */,
-/* 377 */
+/* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(378);
-module.exports = __webpack_require__(15).Array.isArray;
+__webpack_require__(364);
+module.exports = __webpack_require__(16).Number.isInteger;
 
 
 /***/ }),
-/* 378 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 22.1.2.2 / 15.4.3.2 Array.isArray(arg)
-var $export = __webpack_require__(14);
-
-$export($export.S, 'Array', { isArray: __webpack_require__(63) });
-
-
-/***/ }),
-/* 379 */
+/* 364 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 20.1.2.3 Number.isInteger(number)
-var $export = __webpack_require__(14);
+var $export = __webpack_require__(15);
 
-$export($export.S, 'Number', { isInteger: __webpack_require__(380) });
+$export($export.S, 'Number', { isInteger: __webpack_require__(365) });
 
 
 /***/ }),
-/* 380 */
+/* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 20.1.2.3 Number.isInteger(number)
@@ -12997,17 +13065,17 @@ module.exports = function isInteger(it) {
 
 /***/ })
 /******/ ]);
-pbjsChunk([260],{
+pbjsChunk([227],{
 
-/***/ 202:
+/***/ 195:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(203);
+module.exports = __webpack_require__(196);
 
 
 /***/ }),
 
-/***/ 203:
+/***/ 196:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13161,7 +13229,13 @@ var spec = {
   buildRequests: function buildRequests(bids, bidderRequest) {
     var _this = this;
 
-    var consentData = bidderRequest ? bidderRequest.gdprConsent : null;
+    var consentData = {};
+
+    if (bidderRequest) {
+      consentData.gdpr = bidderRequest.gdprConsent;
+      consentData.uspConsent = bidderRequest.uspConsent;
+    }
+
     return bids.map(function (bid) {
       var endpointCode = resolveEndpointCode(bid);
 
@@ -13176,10 +13250,10 @@ var spec = {
     if (!body) {
       __WEBPACK_IMPORTED_MODULE_0__src_utils__["logError"]('Empty bid response', bidRequest.bidderCode, body);
     } else {
-      var _bid = this._parseBidResponse(body, bidRequest);
+      var bid = this._parseBidResponse(body, bidRequest);
 
-      if (_bid) {
-        return _bid;
+      if (bid) {
+        return bid;
       }
     }
   },
@@ -13296,7 +13370,7 @@ var spec = {
   },
   formatMarketplaceDynamicParams: function formatMarketplaceDynamicParams() {
     var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var consentData = arguments.length > 1 ? arguments[1] : undefined;
+    var consentData = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var queryParams = {};
 
     if (params.bidFloor) {
@@ -13317,7 +13391,7 @@ var spec = {
   },
   formatOneMobileDynamicParams: function formatOneMobileDynamicParams() {
     var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-    var consentData = arguments.length > 1 ? arguments[1] : undefined;
+    var consentData = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
     if (this.isSecureProtocol()) {
       params.secure = NUMERIC_VALUES.TRUE;
@@ -13333,32 +13407,29 @@ var spec = {
 
     return paramsFormatted;
   },
-  buildOpenRtbRequestData: function buildOpenRtbRequestData(bid, consentData) {
+  buildOpenRtbRequestData: function buildOpenRtbRequestData(bid) {
+    var consentData = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var openRtbObject = {
       id: bid.params.id,
       imp: bid.params.imp
     };
 
-    if (this.isConsentRequired(consentData)) {
-      openRtbObject.regs = {
-        ext: {
-          gdpr: NUMERIC_VALUES.TRUE
-        }
-      };
+    if (this.isEUConsentRequired(consentData)) {
+      __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepSetValue"](openRtbObject, 'regs.ext.gdpr', NUMERIC_VALUES.TRUE);
 
-      if (consentData.consentString) {
-        openRtbObject.user = {
-          ext: {
-            consent: consentData.consentString
-          }
-        };
+      if (consentData.gdpr.consentString) {
+        __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepSetValue"](openRtbObject, 'user.ext.consent', consentData.gdpr.consentString);
       }
+    }
+
+    if (consentData.uspConsent) {
+      __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepSetValue"](openRtbObject, 'regs.ext.us_privacy', consentData.uspConsent);
     }
 
     return openRtbObject;
   },
-  isConsentRequired: function isConsentRequired(consentData) {
-    return !!(consentData && consentData.gdprApplies);
+  isEUConsentRequired: function isEUConsentRequired(consentData) {
+    return !!(consentData && consentData.gdpr && consentData.gdpr.gdprApplies);
   },
   formatKeyValues: function formatKeyValues(keyValues) {
     var keyValuesHash = {};
@@ -13372,12 +13443,16 @@ var spec = {
   formatConsentData: function formatConsentData(consentData) {
     var params = {};
 
-    if (this.isConsentRequired(consentData)) {
+    if (this.isEUConsentRequired(consentData)) {
       params.gdpr = NUMERIC_VALUES.TRUE;
 
-      if (consentData.consentString) {
-        params.euconsent = consentData.consentString;
+      if (consentData.gdpr.consentString) {
+        params.euconsent = consentData.gdpr.consentString;
       }
+    }
+
+    if (consentData.uspConsent) {
+      params.us_privacy = consentData.uspConsent;
     }
 
     return params;
@@ -13425,7 +13500,7 @@ var spec = {
       cpm = bidData.price;
 
       if (cpm === null || isNaN(cpm)) {
-        __WEBPACK_IMPORTED_MODULE_0__src_utils__["logError"]('Invalid price in bid response', AOL_BIDDERS_CODES.AOL, bid);
+        __WEBPACK_IMPORTED_MODULE_0__src_utils__["logError"]('Invalid price in bid response', AOL_BIDDERS_CODES.AOL, bidData);
         return;
       }
     }
@@ -13454,18 +13529,18 @@ Object(__WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory__["registerBidder
 
 /***/ })
 
-},[202]);
-pbjsChunk([258],{
+},[195]);
+pbjsChunk([225],{
 
-/***/ 210:
+/***/ 203:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(211);
+module.exports = __webpack_require__(204);
 
 
 /***/ }),
 
-/***/ 211:
+/***/ 204:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13476,7 +13551,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_config__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_adapters_bidderFactory__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_mediaTypes__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_auctionManager__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_auctionManager__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_find__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_find___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_find__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes__ = __webpack_require__(11);
@@ -13504,7 +13579,7 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 
 var BIDDER_CODE = 'appnexus';
-var URL = '//ib.adnxs.com/ut/v3/prebid';
+var URL = 'https://ib.adnxs.com/ut/v3/prebid';
 var VIDEO_TARGETING = ['id', 'mimes', 'minduration', 'maxduration', 'startdelay', 'skippable', 'playback_method', 'frameworks'];
 var USER_PARAMS = ['age', 'externalUid', 'segments', 'gender', 'dnt', 'language'];
 var APP_DEVICE_PARAMS = ['geo', 'device_id']; // appid is collected separately
@@ -13533,7 +13608,7 @@ var NATIVE_MAPPING = {
 };
 var SOURCE = 'pbjs';
 var MAX_IMPS_PER_REQUEST = 15;
-var mappingFileUrl = '//acdn.adnxs.com/prebid/appnexus-mapping/mappings.json';
+var mappingFileUrl = 'https://acdn.adnxs.com/prebid/appnexus-mapping/mappings.json';
 var SCRIPT_TAG_START = '<script';
 var VIEWABILITY_URL_START = /\/\/cdn\.adnxs\.com\/v/;
 var VIEWABILITY_FILE_NAME = 'trk.js';
@@ -13633,7 +13708,7 @@ var spec = {
       user: userObj,
       sdk: {
         source: SOURCE,
-        version: "2.43.0"
+        version: "3.7.0-pre"
       },
       schain: schain
     };
@@ -13788,7 +13863,7 @@ var spec = {
     if (syncOptions.iframeEnabled) {
       return [{
         type: 'iframe',
-        url: '//acdn.adnxs.com/ib/static/usersync/v3/async_usersync.html'
+        url: 'https://acdn.adnxs.com/ib/static/usersync/v3/async_usersync.html'
       }];
     }
   },
@@ -14066,7 +14141,7 @@ function newBid(serverBid, rtbBid, bidderRequest) {
         break;
 
       case __WEBPACK_IMPORTED_MODULE_8__src_video__["a" /* INSTREAM */]:
-        bid.vastUrl = rtbBid.rtb.video.asset_url;
+        bid.vastUrl = rtbBid.notify_url + '&redir=' + encodeURIComponent(rtbBid.rtb.video.asset_url);
         break;
     }
   } else if (rtbBid.rtb[__WEBPACK_IMPORTED_MODULE_4__src_mediaTypes__["c" /* NATIVE */]]) {
@@ -14445,18 +14520,18 @@ Object(__WEBPACK_IMPORTED_MODULE_3__src_adapters_bidderFactory__["registerBidder
 
 /***/ })
 
-},[210]);
-pbjsChunk([255],{
+},[203]);
+pbjsChunk([222],{
 
-/***/ 216:
+/***/ 209:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(217);
+module.exports = __webpack_require__(210);
 
 
 /***/ }),
 
-/***/ 217:
+/***/ 210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14465,7 +14540,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_adapters_bidderFactory__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_url__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_utils__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_find_index__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_find_index__ = __webpack_require__(53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_find_index___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_find_index__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_library_fn_array_includes__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_library_fn_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_library_fn_array_includes__);
@@ -14504,7 +14579,7 @@ var netRevenue = true;
 var hbBidder = 'fan';
 var ttl = 600;
 var videoTtl = 3600;
-var platver = "2.43.0";
+var platver = "3.7.0-pre";
 var platform = '241394079772386';
 var adapterver = '1.3.0';
 /**
@@ -14654,15 +14729,6 @@ var createAdHtml = function createAdHtml(placementId, format, bidId) {
   return "<html>\n  <head>".concat(nativeStyle, "</head>\n  <body>\n    <div style=\"display:none;position:relative;\">\n      <script type=\"text/javascript\" src=\"https://connect.facebook.net/en_US/fbadnw60-tag.js\" async></script>\n      <script type=\"text/javascript\">\n        window.ADNW = window.ADNW || {};\n        window.ADNW.v60 = window.ADNW.v60 || {};\n        window.ADNW.v60.slots = window.ADNW.v60.slots || [];\n        window.ADNW.v60.slots.push({\n          rootElement: document.currentScript.parentElement,\n          placementid: '").concat(placementId, "',\n          format: '").concat(format, "',\n          bidid: '").concat(bidId, "',\n          testmode: false,\n          onAdLoaded: function(rootElement) {\n            console.log('Audience Network [").concat(placementId, "] ad loaded');\n            rootElement.style.display = 'block';\n          },\n          onAdError: function(errorCode, errorMessage) {\n            console.log('Audience Network [").concat(placementId, "] error (' + errorCode + ') ' + errorMessage);\n          }\n        });\n      </script>\n      ").concat(nativeContainer, "\n    </div>\n  </body>\n</html>");
 };
 /**
- * Get the current window location URL correctly encoded for use in a URL query string.
- * @returns {String} URI-encoded URL
- */
-
-
-var getTopWindowUrlEncoded = function getTopWindowUrlEncoded() {
-  return encodeURIComponent(Object(__WEBPACK_IMPORTED_MODULE_2__src_utils__["getTopWindowUrl"])());
-};
-/**
  * Convert each bid request to a single URL to fetch those bids.
  * @param {Array} bids - list of bids
  * @param {String} bids[].placementCode - Prebid placement identifier
@@ -14676,7 +14742,7 @@ var getTopWindowUrlEncoded = function getTopWindowUrlEncoded() {
  */
 
 
-var buildRequests = function buildRequests(bids) {
+var buildRequests = function buildRequests(bids, bidderRequest) {
   // Build lists of placementids, adformats, sizes and SDK versions
   var placementids = [];
   var adformats = [];
@@ -14703,7 +14769,7 @@ var buildRequests = function buildRequests(bids) {
   }); // Build URL
 
   var testmode = isTestmode();
-  var pageurl = getTopWindowUrlEncoded();
+  var pageurl = encodeURIComponent(Object(__WEBPACK_IMPORTED_MODULE_2__src_utils__["deepAccess"])(bidderRequest, 'refererInfo.canonicalUrl') || Object(__WEBPACK_IMPORTED_MODULE_2__src_utils__["deepAccess"])(bidderRequest, 'refererInfo.referer'));
   var platform = findPlatform(platforms);
   var cb = Object(__WEBPACK_IMPORTED_MODULE_2__src_utils__["generateUUID"])();
   var search = {
@@ -14735,7 +14801,8 @@ var buildRequests = function buildRequests(bids) {
     method: method,
     requestIds: requestIds,
     sizes: sizes,
-    url: url
+    url: url,
+    pageurl: pageurl
   }];
 };
 /**
@@ -14753,7 +14820,8 @@ var interpretResponse = function interpretResponse(_ref, _ref2) {
   var body = _ref.body;
   var adformats = _ref2.adformats,
       requestIds = _ref2.requestIds,
-      sizes = _ref2.sizes;
+      sizes = _ref2.sizes,
+      pageurl = _ref2.pageurl;
   var _body$bids = body.bids,
       bids = _body$bids === void 0 ? {} : _body$bids;
   return Object.keys(bids) // extract Array of bid responses
@@ -14795,7 +14863,6 @@ var interpretResponse = function interpretResponse(_ref, _ref2) {
     }; // Video attributes
 
     if (isVideo(format)) {
-      var pageurl = getTopWindowUrlEncoded();
       bidResponse.mediaType = 'video';
       bidResponse.vastUrl = "https://an.facebook.com/v1/instream/vast.xml?placementid=".concat(creativeId, "&pageurl=").concat(pageurl, "&playerwidth=").concat(width, "&playerheight=").concat(height, "&bidid=").concat(fbBidid);
       bidResponse.ttl = videoTtl;
@@ -14830,18 +14897,18 @@ Object(__WEBPACK_IMPORTED_MODULE_0__src_adapters_bidderFactory__["registerBidder
 
 /***/ })
 
-},[216]);
-pbjsChunk([214],{
+},[209]);
+pbjsChunk([185],{
 
-/***/ 307:
+/***/ 295:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(308);
+module.exports = __webpack_require__(296);
 
 
 /***/ }),
 
-/***/ 308:
+/***/ 296:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14979,6 +15046,12 @@ var spec = {
       dmxRequest.user = {};
       dmxRequest.user.ext = {};
       dmxRequest.user.ext.consent = bidderRequest.gdprConsent.consentString;
+    }
+
+    if (bidderRequest && bidderRequest.uspConsent) {
+      dmxRequest.regs = dmxRequest.regs || {};
+      dmxRequest.regs.ext = dmxRequest.regs.ext || {};
+      dmxRequest.regs.ext.us_privacy = bidderRequest.uspConsent;
     }
 
     try {
@@ -15175,18 +15248,18 @@ Object(__WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory__["registerBidder
 
 /***/ })
 
-},[307]);
-pbjsChunk([178],{
+},[295]);
+pbjsChunk([156],{
 
-/***/ 393:
+/***/ 361:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(394);
+module.exports = __webpack_require__(362);
 
 
 /***/ }),
 
-/***/ 394:
+/***/ 362:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15194,10 +15267,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "spec", function() { return spec; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_utils__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_mediaTypes__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_config__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_library_fn_number_is_integer__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_config__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_find__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_find___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_find__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_library_fn_number_is_integer__ = __webpack_require__(363);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_library_fn_number_is_integer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_library_fn_number_is_integer__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_adapters_bidderFactory__ = __webpack_require__(1);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -15390,7 +15463,7 @@ function getBidRequest(id, impressions) {
     return;
   }
 
-  return __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find___default()(impressions, function (imp) {
+  return __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_find___default()(impressions, function (imp) {
     return imp.id === id;
   });
 }
@@ -15434,7 +15507,15 @@ function buildRequest(validBidRequests, bidderRequest, impressions, version) {
   r.imp = impressions;
   r.site = {};
   r.ext = {};
-  r.ext.source = 'prebid';
+  r.ext.source = 'prebid'; // if an schain is provided, send it along
+
+  if (validBidRequests[0].schain) {
+    r.source = {
+      ext: {
+        schain: validBidRequests[0].schain
+      }
+    };
+  }
 
   if (userEids.length > 0) {
     r.user = {};
@@ -15466,6 +15547,10 @@ function buildRequest(validBidRequests, bidderRequest, impressions, version) {
       }
     }
 
+    if (bidderRequest.uspConsent) {
+      __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepSetValue"](r, 'regs.ext.us_privacy', bidderRequest.uspConsent);
+    }
+
     if (bidderRequest.refererInfo) {
       r.site.page = bidderRequest.refererInfo.referer;
     }
@@ -15473,7 +15558,7 @@ function buildRequest(validBidRequests, bidderRequest, impressions, version) {
 
   var payload = {}; // Parse additional runtime configs.
 
-  var otherIxConfig = __WEBPACK_IMPORTED_MODULE_3__src_config__["b" /* config */].getConfig('ix');
+  var otherIxConfig = __WEBPACK_IMPORTED_MODULE_2__src_config__["b" /* config */].getConfig('ix');
 
   if (otherIxConfig) {
     // Append firstPartyData to r.site.page if firstPartyData exists.
@@ -15655,18 +15740,18 @@ Object(__WEBPACK_IMPORTED_MODULE_5__src_adapters_bidderFactory__["registerBidder
 
 /***/ })
 
-},[393]);
-pbjsChunk([142],{
+},[361]);
+pbjsChunk([124],{
 
-/***/ 475:
+/***/ 438:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(476);
+module.exports = __webpack_require__(439);
 
 
 /***/ }),
 
-/***/ 476:
+/***/ 439:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15693,7 +15778,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var SUPPORTED_AD_TYPES = [__WEBPACK_IMPORTED_MODULE_3__src_mediaTypes__["b" /* BANNER */], __WEBPACK_IMPORTED_MODULE_3__src_mediaTypes__["d" /* VIDEO */]];
 var BIDDER_CODE = 'openx';
 var BIDDER_CONFIG = 'hb_pb';
-var BIDDER_VERSION = '3.0.0';
+var BIDDER_VERSION = '3.0.1';
 var USER_ID_CODE_TO_QUERY_ARG = {
   idl_env: 'lre',
   // liveramp
@@ -15745,10 +15830,10 @@ var spec = {
     var mediaType = getMediaTypeFromRequest(serverRequest);
     return mediaType === __WEBPACK_IMPORTED_MODULE_3__src_mediaTypes__["d" /* VIDEO */] ? createVideoBidResponses(oxResponseObj, serverRequest.payload) : createBannerBidResponses(oxResponseObj, serverRequest.payload);
   },
-  getUserSyncs: function getUserSyncs(syncOptions, responses) {
+  getUserSyncs: function getUserSyncs(syncOptions, responses, gdprConsent, uspConsent) {
     if (syncOptions.iframeEnabled || syncOptions.pixelEnabled) {
       var pixelType = syncOptions.iframeEnabled ? 'iframe' : 'image';
-      var url = __WEBPACK_IMPORTED_MODULE_2__src_utils__["deepAccess"](responses, '0.body.ads.pixels') || __WEBPACK_IMPORTED_MODULE_2__src_utils__["deepAccess"](responses, '0.body.pixels') || 'https://u.openx.net/w/1.0/pd';
+      var url = __WEBPACK_IMPORTED_MODULE_2__src_utils__["deepAccess"](responses, '0.body.ads.pixels') || __WEBPACK_IMPORTED_MODULE_2__src_utils__["deepAccess"](responses, '0.body.pixels') || generateDefaultSyncUrl(gdprConsent, uspConsent);
       return [{
         type: pixelType,
         url: url
@@ -15762,6 +15847,23 @@ var spec = {
     }, params);
   }
 };
+
+function generateDefaultSyncUrl(gdprConsent, uspConsent) {
+  var url = 'https://u.openx.net/w/1.0/pd';
+  var queryParamStrings = [];
+
+  if (gdprConsent) {
+    queryParamStrings.push('gdpr=' + (gdprConsent.gdprApplies ? 1 : 0));
+    queryParamStrings.push('gdpr_consent=' + encodeURIComponent(gdprConsent.consentString || ''));
+  } // CCPA
+
+
+  if (uspConsent) {
+    queryParamStrings.push('us_privacy=' + encodeURIComponent(uspConsent));
+  }
+
+  return "".concat(url).concat(queryParamStrings.length > 0 ? '?' + queryParamStrings.join('&') : '');
+}
 
 function isVideoRequest(bidRequest) {
   return __WEBPACK_IMPORTED_MODULE_2__src_utils__["deepAccess"](bidRequest, 'mediaTypes.video') && !__WEBPACK_IMPORTED_MODULE_2__src_utils__["deepAccess"](bidRequest, 'mediaTypes.banner') || bidRequest.mediaType === __WEBPACK_IMPORTED_MODULE_3__src_mediaTypes__["d" /* VIDEO */];
@@ -15907,7 +16009,7 @@ function buildCommonQueryParamsFromBids(bids, bidderRequest) {
     defaultParams.ph = bids[0].params.platform;
   }
 
-  if (__WEBPACK_IMPORTED_MODULE_2__src_utils__["deepAccess"](bidderRequest, 'gdprConsent')) {
+  if (bidderRequest.gdprConsent) {
     var gdprConsentConfig = bidderRequest.gdprConsent;
 
     if (gdprConsentConfig.consentString !== undefined) {
@@ -15921,6 +16023,10 @@ function buildCommonQueryParamsFromBids(bids, bidderRequest) {
     if (__WEBPACK_IMPORTED_MODULE_0__src_config__["b" /* config */].getConfig('consentManagement.cmpApi') === 'iab') {
       defaultParams.x_gdpr_f = 1;
     }
+  }
+
+  if (bidderRequest && bidderRequest.uspConsent) {
+    defaultParams.us_privacy = bidderRequest.uspConsent;
   } // normalize publisher common id
 
 
@@ -16132,25 +16238,25 @@ Object(__WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory__["registerBidder
 
 /***/ })
 
-},[475]);
-pbjsChunk([21],{
+},[438]);
+pbjsChunk([20],{
 
-/***/ 513:
+/***/ 462:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(514);
+module.exports = __webpack_require__(463);
 
 
 /***/ }),
 
-/***/ 514:
+/***/ 463:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["resetSyncedStatus"] = resetSyncedStatus;
 /* harmony export (immutable) */ __webpack_exports__["PrebidServer"] = PrebidServer;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_adapter__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_adapter__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_bidfactory__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_utils__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_constants__ = __webpack_require__(5);
@@ -16158,14 +16264,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_adapterManager__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_config__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_mediaTypes__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_native__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_native__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_adapters_bidderFactory__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_events__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_events___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__src_events__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_library_fn_array_includes__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_library_fn_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_core_js_library_fn_array_includes__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_js__ = __webpack_require__(515);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_js__ = __webpack_require__(464);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__src_ajax__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_library_fn_array_find__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_library_fn_array_find___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_core_js_library_fn_array_find__);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
@@ -16179,6 +16287,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 
 
 
@@ -16454,7 +16563,7 @@ function _getDigiTrustQueryParams() {
   };
 }
 
-function _appendSiteAppDevice(request) {
+function _appendSiteAppDevice(request, pageUrl) {
   if (!request) return; // ORTB specifies app OR site
 
   if (_typeof(__WEBPACK_IMPORTED_MODULE_5__src_config__["b" /* config */].getConfig('app')) === 'object') {
@@ -16467,7 +16576,7 @@ function _appendSiteAppDevice(request) {
       publisher: {
         id: _s2sConfig.accountId
       },
-      page: __WEBPACK_IMPORTED_MODULE_2__src_utils__["getTopWindowUrl"]()
+      page: pageUrl
     };
   }
 
@@ -16486,171 +16595,8 @@ function _appendSiteAppDevice(request) {
   if (!request.device.h) {
     request.device.h = window.innerHeight;
   }
-}
+} // https://iabtechlab.com/wp-content/uploads/2016/07/OpenRTB-Native-Ads-Specification-Final-1.2.pdf#page=40
 
-function transformHeightWidth(adUnit) {
-  var sizesObj = [];
-  var sizes = __WEBPACK_IMPORTED_MODULE_2__src_utils__["parseSizesInput"](adUnit.sizes);
-  sizes.forEach(function (size) {
-    var heightWidth = size.split('x');
-    var sizeObj = {
-      'w': parseInt(heightWidth[0]),
-      'h': parseInt(heightWidth[1])
-    };
-    sizesObj.push(sizeObj);
-  });
-  return sizesObj;
-}
-/*
- * Protocol spec for legacy endpoint
- * e.g., https://<prebid-server-url>/v1/auction
- */
-
-
-var LEGACY_PROTOCOL = {
-  buildRequest: function buildRequest(s2sBidRequest, bidRequests, adUnits) {
-    adUnits.forEach(function (adUnit) {
-      adUnit.bids.forEach(function (bid) {
-        var adapter = __WEBPACK_IMPORTED_MODULE_4__src_adapterManager__["default"].bidderRegistry[bid.bidder];
-
-        if (adapter && adapter.getSpec().transformBidParams) {
-          bid.params = adapter.getSpec().transformBidParams(bid.params, isOpenRtb());
-        }
-      });
-    }); // pbs expects an ad_unit.video attribute if the imp is video
-
-    adUnits.forEach(function (adUnit) {
-      adUnit.sizes = transformHeightWidth(adUnit);
-      var videoMediaType = __WEBPACK_IMPORTED_MODULE_2__src_utils__["deepAccess"](adUnit, 'mediaTypes.video');
-
-      if (videoMediaType) {
-        adUnit.video = _extends({}, videoMediaType);
-        delete adUnit.mediaTypes; // default is assumed to be 'banner' so if there is a video type
-        // we assume video only until PBS can support multi-format auction
-
-        adUnit.media_types = [__WEBPACK_IMPORTED_MODULE_6__src_mediaTypes__["d" /* VIDEO */]];
-      }
-    });
-    var request = {
-      account_id: _s2sConfig.accountId,
-      tid: s2sBidRequest.tid,
-      max_bids: _s2sConfig.maxBids,
-      timeout_millis: _s2sConfig.timeout,
-      secure: _s2sConfig.secure,
-      cache_markup: _s2sConfig.cacheMarkup === 1 || _s2sConfig.cacheMarkup === 2 ? _s2sConfig.cacheMarkup : 0,
-      url: __WEBPACK_IMPORTED_MODULE_2__src_utils__["getTopWindowUrl"](),
-      prebid_version: "2.43.0",
-      ad_units: adUnits,
-      is_debug: !!getConfig('debug')
-    };
-
-    _appendSiteAppDevice(request);
-
-    var digiTrust = _getDigiTrustQueryParams(bidRequests && bidRequests[0]);
-
-    if (digiTrust) {
-      request.digiTrust = digiTrust;
-    }
-
-    return request;
-  },
-  interpretResponse: function interpretResponse(result, bidderRequests) {
-    var bids = [];
-
-    if (result.status === 'OK' || result.status === 'no_cookie') {
-      if (result.bidder_status) {
-        result.bidder_status.forEach(function (bidder) {
-          if (bidder.error) {
-            __WEBPACK_IMPORTED_MODULE_2__src_utils__["logWarn"]("Prebid Server returned error: '".concat(bidder.error, "' for ").concat(bidder.bidder));
-          }
-
-          bidderRequests.filter(function (bidderRequest) {
-            return bidderRequest.bidderCode === bidder.bidder;
-          }).forEach(function (bidderRequest) {
-            return (bidderRequest.bids || []).forEach(function (bid) {
-              return bid.serverResponseTimeMs = bidder.response_time_ms;
-            });
-          });
-        });
-      }
-
-      if (result.bids) {
-        result.bids.forEach(function (bidObj) {
-          var bidRequest = __WEBPACK_IMPORTED_MODULE_2__src_utils__["getBidRequest"](bidObj.bid_id, bidderRequests);
-          var cpm = bidObj.price;
-          var status = cpm !== 0 ? __WEBPACK_IMPORTED_MODULE_3__src_constants__["STATUS"].GOOD : __WEBPACK_IMPORTED_MODULE_3__src_constants__["STATUS"].NO_BID;
-          var bidObject = Object(__WEBPACK_IMPORTED_MODULE_1__src_bidfactory__["createBid"])(status, bidRequest);
-          bidObject.source = TYPE;
-          bidObject.creative_id = bidObj.creative_id;
-          bidObject.bidderCode = bidObj.bidder;
-          bidObject.cpm = cpm;
-
-          if (bidObj.cache_id) {
-            bidObject.cache_id = bidObj.cache_id;
-          }
-
-          if (bidObj.cache_url) {
-            bidObject.cache_url = bidObj.cache_url;
-          } // From ORTB see section 4.2.3: adm Optional means of conveying ad markup in case the bid wins; supersedes the win notice if markup is included in both.
-
-
-          if (bidObj.media_type === __WEBPACK_IMPORTED_MODULE_6__src_mediaTypes__["d" /* VIDEO */]) {
-            bidObject.mediaType = __WEBPACK_IMPORTED_MODULE_6__src_mediaTypes__["d" /* VIDEO */];
-
-            if (bidObj.adm) {
-              bidObject.vastXml = bidObj.adm;
-            }
-
-            if (bidObj.nurl) {
-              bidObject.vastUrl = bidObj.nurl;
-            } // when video bid is already cached by Prebid Server, videoCacheKey and vastUrl should be provided properly
-
-
-            if (bidObj.cache_id && bidObj.cache_url) {
-              bidObject.videoCacheKey = bidObj.cache_id;
-              bidObject.vastUrl = bidObj.cache_url;
-            }
-          } else {
-            if (bidObj.adm && bidObj.nurl) {
-              bidObject.ad = bidObj.adm;
-              bidObject.ad += __WEBPACK_IMPORTED_MODULE_2__src_utils__["createTrackPixelHtml"](decodeURIComponent(bidObj.nurl));
-            } else if (bidObj.adm) {
-              bidObject.ad = bidObj.adm;
-            } else if (bidObj.nurl) {
-              bidObject.adUrl = bidObj.nurl;
-            }
-          }
-
-          bidObject.width = bidObj.width;
-          bidObject.height = bidObj.height;
-          bidObject.adserverTargeting = bidObj.ad_server_targeting;
-
-          if (bidObj.deal_id) {
-            bidObject.dealId = bidObj.deal_id;
-          }
-
-          bidObject.requestId = bidRequest.bidId || bidRequest.bid_Id;
-          bidObject.creativeId = bidObj.creative_id; // TODO: Remove when prebid-server returns ttl, currency and netRevenue
-
-          bidObject.ttl = bidObj.ttl ? bidObj.ttl : DEFAULT_S2S_TTL;
-          bidObject.currency = bidObj.currency ? bidObj.currency : DEFAULT_S2S_CURRENCY;
-          bidObject.netRevenue = bidObj.netRevenue ? bidObj.netRevenue : DEFAULT_S2S_NETREVENUE;
-
-          if (result.burl) {
-            bidObject.burl = result.burl;
-          }
-
-          bids.push({
-            adUnit: bidObj.code,
-            bid: bidObject
-          });
-        });
-      }
-    }
-
-    return bids;
-  }
-}; // https://iabtechlab.com/wp-content/uploads/2016/07/OpenRTB-Native-Ads-Specification-Final-1.2.pdf#page=40
 
 var nativeDataIdMap = {
   sponsoredBy: 1,
@@ -16792,19 +16738,7 @@ var OPEN_RTB_PROTOCOL = {
           aliases[bid.bidder] = __WEBPACK_IMPORTED_MODULE_4__src_adapterManager__["default"].aliasRegistry[bid.bidder];
         }
       });
-      var mediaTypes = {}; // default to banner if mediaTypes isn't defined
-
-      if (!(nativeParams || videoParams || bannerParams)) {
-        var sizeObjects = adUnit.sizes.map(function (size) {
-          return {
-            w: size[0],
-            h: size[1]
-          };
-        });
-        mediaTypes['banner'] = {
-          format: sizeObjects
-        };
-      }
+      var mediaTypes = {};
 
       if (bannerParams && bannerParams.sizes) {
         var sizes = __WEBPACK_IMPORTED_MODULE_2__src_utils__["parseSizesInput"](bannerParams.sizes); // get banner sizes in form [{ w: <int>, h: <int> }, ...]
@@ -16863,7 +16797,7 @@ var OPEN_RTB_PROTOCOL = {
         var adapter = __WEBPACK_IMPORTED_MODULE_4__src_adapterManager__["default"].bidderRegistry[bid.bidder];
 
         if (adapter && adapter.getSpec().transformBidParams) {
-          bid.params = adapter.getSpec().transformBidParams(bid.params, isOpenRtb());
+          bid.params = adapter.getSpec().transformBidParams(bid.params, true);
         }
 
         acc[bid.bidder] = _s2sConfig.adapterOptions && _s2sConfig.adapterOptions[bid.bidder] ? _extends({}, bid.params, _s2sConfig.adapterOptions[bid.bidder]) : bid.params;
@@ -16874,8 +16808,27 @@ var OPEN_RTB_PROTOCOL = {
         ext: ext,
         secure: _s2sConfig.secure
       };
+      /**
+       * Prebid AdSlot
+       * @type {(string|undefined)}
+       */
 
-      _extends(imp, mediaTypes);
+      var pbAdSlot = __WEBPACK_IMPORTED_MODULE_2__src_utils__["deepAccess"](adUnit, 'fpd.context.pbAdSlot');
+
+      if (typeof pbAdSlot === 'string' && pbAdSlot) {
+        __WEBPACK_IMPORTED_MODULE_2__src_utils__["deepSetValue"](imp, 'ext.context.data.adslot', pbAdSlot);
+      }
+
+      _extends(imp, mediaTypes); // if storedAuctionResponse has been set, pass SRID
+
+
+      var storedAuctionResponseBid = __WEBPACK_IMPORTED_MODULE_13_core_js_library_fn_array_find___default()(bidRequests[0].bids, function (bid) {
+        return bid.adUnitCode === adUnit.code && bid.storedAuctionResponse;
+      });
+
+      if (storedAuctionResponseBid) {
+        __WEBPACK_IMPORTED_MODULE_2__src_utils__["deepSetValue"](imp, 'ext.prebid.storedauctionresponse.id', storedAuctionResponseBid.storedAuctionResponse.toString());
+      }
 
       if (imp.banner || imp.video || imp.native) {
         imps.push(imp);
@@ -16925,7 +16878,7 @@ var OPEN_RTB_PROTOCOL = {
       request.cur = [adServerCur[0]];
     }
 
-    _appendSiteAppDevice(request);
+    _appendSiteAppDevice(request, bidRequests[0].refererInfo.referer);
 
     var digiTrust = _getDigiTrustQueryParams(bidRequests && bidRequests[0]);
 
@@ -16965,7 +16918,7 @@ var OPEN_RTB_PROTOCOL = {
 
       if (bidUserId.pubcid) {
         request.user.ext.eids.push({
-          source: 'pubcommon',
+          source: 'pubcid.org',
           uids: [{
             id: bidUserId.pubcid
           }]
@@ -17189,11 +17142,11 @@ var OPEN_RTB_PROTOCOL = {
 
           if (bid.burl) {
             bidObject.burl = bid.burl;
-          } // TODO: Remove when prebid-server returns ttl, currency and netRevenue
+          }
 
+          bidObject.currency = response.cur ? response.cur : DEFAULT_S2S_CURRENCY; // TODO: Remove when prebid-server returns ttl and netRevenue
 
           bidObject.ttl = bid.ttl ? bid.ttl : DEFAULT_S2S_TTL;
-          bidObject.currency = bid.currency ? bid.currency : DEFAULT_S2S_CURRENCY;
           bidObject.netRevenue = bid.netRevenue ? bid.netRevenue : DEFAULT_S2S_NETREVENUE;
           bids.push({
             adUnit: bid.impid,
@@ -17206,33 +17159,9 @@ var OPEN_RTB_PROTOCOL = {
     return bids;
   }
 };
-
-var isOpenRtb = function isOpenRtb() {
-  var OPEN_RTB_PATH = '/openrtb2/';
-  var endpoint = _s2sConfig && _s2sConfig.endpoint || '';
-  return ~endpoint.indexOf(OPEN_RTB_PATH);
-};
-/*
- * Returns the required protocol adapter to communicate with the configured
- * endpoint. The adapter is an object containing `buildRequest` and
- * `interpretResponse` functions.
- *
- * Usage:
- * // build JSON payload to send to server
- * const request = protocol().buildRequest(s2sBidRequest, adUnits);
- *
- * // turn server response into bid object array
- * const bids = protocol().interpretResponse(response, bidRequests, requestedBidders);
- */
-
-
-var protocolAdapter = function protocolAdapter() {
-  return isOpenRtb() ? OPEN_RTB_PROTOCOL : LEGACY_PROTOCOL;
-};
 /**
  * Bidder adapter for Prebid Server
  */
-
 
 function PrebidServer() {
   var baseAdapter = new __WEBPACK_IMPORTED_MODULE_0__src_adapter__["a" /* default */]('prebidServer');
@@ -17242,7 +17171,7 @@ function PrebidServer() {
     var adUnits = __WEBPACK_IMPORTED_MODULE_2__src_utils__["deepClone"](s2sBidRequest.ad_units); // at this point ad units should have a size array either directly or mapped so filter for that
 
     var validAdUnits = adUnits.filter(function (unit) {
-      return unit.sizes && unit.sizes.length || unit.mediaTypes && unit.mediaTypes.native;
+      return unit.mediaTypes && (unit.mediaTypes.native || unit.mediaTypes.banner && unit.mediaTypes.banner.sizes || unit.mediaTypes.video && unit.mediaTypes.video.playerSize);
     }); // in case config.bidders contains invalid bidders, we only process those we sent requests for
 
     var requestedBidders = validAdUnits.map(function (adUnit) {
@@ -17268,7 +17197,7 @@ function PrebidServer() {
       queueSync(syncBidders, gdprConsent, uspConsent);
     }
 
-    var request = protocolAdapter().buildRequest(s2sBidRequest, bidRequests, validAdUnits);
+    var request = OPEN_RTB_PROTOCOL.buildRequest(s2sBidRequest, bidRequests, validAdUnits);
     var requestJson = request && JSON.stringify(request);
 
     if (request && requestJson) {
@@ -17292,7 +17221,7 @@ function PrebidServer() {
 
     try {
       result = JSON.parse(response);
-      bids = protocolAdapter().interpretResponse(result, bidderRequests, requestedBidders);
+      bids = OPEN_RTB_PROTOCOL.interpretResponse(result, bidderRequests, requestedBidders);
       bids.forEach(function (_ref2) {
         var adUnit = _ref2.adUnit,
             bid = _ref2.bid;
@@ -17326,7 +17255,7 @@ __WEBPACK_IMPORTED_MODULE_4__src_adapterManager__["default"].registerBidAdapter(
 
 /***/ }),
 
-/***/ 515:
+/***/ 464:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17336,33 +17265,33 @@ var S2S_VENDORS = {
   'appnexus': {
     adapter: 'prebidServer',
     enabled: true,
-    endpoint: '//prebid.adnxs.com/pbs/v1/openrtb2/auction',
-    syncEndpoint: '//prebid.adnxs.com/pbs/v1/cookie_sync',
+    endpoint: 'https://prebid.adnxs.com/pbs/v1/openrtb2/auction',
+    syncEndpoint: 'https://prebid.adnxs.com/pbs/v1/cookie_sync',
     timeout: 1000
   },
   'rubicon': {
     adapter: 'prebidServer',
     enabled: true,
-    endpoint: '//prebid-server.rubiconproject.com/openrtb2/auction',
-    syncEndpoint: '//prebid-server.rubiconproject.com/cookie_sync',
+    endpoint: 'https://prebid-server.rubiconproject.com/openrtb2/auction',
+    syncEndpoint: 'https://prebid-server.rubiconproject.com/cookie_sync',
     timeout: 500
   }
 };
 
 /***/ })
 
-},[513]);
-pbjsChunk([122],{
+},[462]);
+pbjsChunk([111],{
 
-/***/ 520:
+/***/ 469:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(521);
+module.exports = __webpack_require__(470);
 
 
 /***/ }),
 
-/***/ 521:
+/***/ 470:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17724,18 +17653,18 @@ initPubcid();
 
 /***/ })
 
-},[520]);
-pbjsChunk([121],{
+},[469]);
+pbjsChunk([109],{
 
-/***/ 522:
+/***/ 473:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(523);
+module.exports = __webpack_require__(474);
 
 
 /***/ }),
 
-/***/ 523:
+/***/ 474:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18555,7 +18484,7 @@ function _handleEids(payload, validBidRequests) {
   var bidRequest = validBidRequests[0];
 
   if (bidRequest && bidRequest.userId) {
-    _addExternalUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepAccess"](bidRequest, "userId.pubcid"), 'pubcommon', 1);
+    _addExternalUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepAccess"](bidRequest, "userId.pubcid"), 'pubcid.org', 1);
 
     _addExternalUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepAccess"](bidRequest, "userId.digitrustid.data.id"), 'digitru.st', 1);
 
@@ -18838,8 +18767,9 @@ var spec = {
     payload.ext.wrapper = {};
     payload.ext.wrapper.profile = parseInt(conf.profId) || UNDEFINED;
     payload.ext.wrapper.version = parseInt(conf.verId) || UNDEFINED;
-    payload.ext.wrapper.wiid = conf.wiid || UNDEFINED;
-    payload.ext.wrapper.wv = "prebid_prebid_2.43.0";
+    payload.ext.wrapper.wiid = conf.wiid || UNDEFINED; // eslint-disable-next-line no-undef
+
+    payload.ext.wrapper.wv = "prebid_prebid_3.7.0-pre";
     payload.ext.wrapper.transactionId = conf.transactionId;
     payload.ext.wrapper.wp = 'pbjs';
     payload.user.gender = conf.gender ? conf.gender.trim() : UNDEFINED;
@@ -18849,26 +18779,28 @@ var spec = {
     payload.user.yob = _parseSlotParam('yob', conf.yob);
     payload.device.geo = payload.user.geo;
     payload.site.page = conf.kadpageurl.trim() || payload.site.page.trim();
-    payload.site.domain = _getDomainFromURL(payload.site.page); // adding schain object
+    payload.site.domain = _getDomainFromURL(payload.site.page); // passing transactionId in source.tid
+
+    __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepSetValue"](payload, 'source.tid', conf.transactionId); // test bids
+
+    if (window.location.href.indexOf('pubmaticTest=true') !== -1) {
+      payload.test = 1;
+    } // adding schain object
+
 
     if (validBidRequests[0].schain) {
-      payload.source = {
-        ext: {
-          schain: validBidRequests[0].schain
-        }
-      };
+      __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepSetValue"](payload, 'source.ext.schain', validBidRequests[0].schain);
     } // Attaching GDPR Consent Params
 
 
     if (bidderRequest && bidderRequest.gdprConsent) {
-      payload.user.ext = {
-        consent: bidderRequest.gdprConsent.consentString
-      };
-      payload.regs = {
-        ext: {
-          gdpr: bidderRequest.gdprConsent.gdprApplies ? 1 : 0
-        }
-      };
+      __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepSetValue"](payload, 'user.ext.consent', bidderRequest.gdprConsent.consentString);
+      __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepSetValue"](payload, 'regs.ext.gdpr', bidderRequest.gdprConsent.gdprApplies ? 1 : 0);
+    } // CCPA
+
+
+    if (bidderRequest && bidderRequest.uspConsent) {
+      __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepSetValue"](payload, 'regs.ext.us_privacy', bidderRequest.uspConsent);
     } // coppa compliance
 
 
@@ -18977,12 +18909,17 @@ var spec = {
   /**
    * Register User Sync.
    */
-  getUserSyncs: function getUserSyncs(syncOptions, responses, gdprConsent) {
+  getUserSyncs: function getUserSyncs(syncOptions, responses, gdprConsent, uspConsent) {
     var syncurl = USYNCURL + publisherId; // Attaching GDPR Consent Params in UserSync url
 
     if (gdprConsent) {
       syncurl += '&gdpr=' + (gdprConsent.gdprApplies ? 1 : 0);
       syncurl += '&gdpr_consent=' + encodeURIComponent(gdprConsent.consentString || '');
+    } // CCPA
+
+
+    if (uspConsent) {
+      syncurl += '&us_privacy=' + encodeURIComponent(uspConsent);
     } // coppa compliance
 
 
@@ -19017,18 +18954,18 @@ Object(__WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory__["registerBidder
 
 /***/ })
 
-},[522]);
-pbjsChunk([104],{
+},[473]);
+pbjsChunk([94],{
 
-/***/ 570:
+/***/ 517:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(571);
+module.exports = __webpack_require__(518);
 
 
 /***/ }),
 
-/***/ 571:
+/***/ 518:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19334,6 +19271,22 @@ var spec = {
       if (bidRequest.schain && hasValidSupplyChainParams(bidRequest.schain)) {
         __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepSetValue"](data, 'source.ext.schain', bidRequest.schain);
       }
+      /**
+       * Prebid AdSlot
+       * @type {(string|undefined)}
+       */
+
+
+      var pbAdSlot = __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepAccess"](bidRequest, 'fpd.context.pbAdSlot');
+
+      if (typeof pbAdSlot === 'string' && pbAdSlot) {
+        __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepSetValue"](data.imp[0].ext, 'context.data.adslot', pbAdSlot);
+      } // if storedAuctionResponse has been set, pass SRID
+
+
+      if (bidRequest.storedAuctionResponse) {
+        __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepSetValue"](data.imp[0], 'ext.prebid.storedauctionresponse.id', bidRequest.storedAuctionResponse.toString());
+      }
 
       return {
         method: 'POST',
@@ -19469,7 +19422,7 @@ var spec = {
       'alt_size_ids': parsedSizes.slice(1).join(',') || undefined,
       'rp_floor': (params.floor = parseFloat(params.floor)) > 0.01 ? params.floor : 0.01,
       'rp_secure': '1',
-      'tk_flint': "".concat(configIntType || DEFAULT_INTEGRATION, "_v2.43.0"),
+      'tk_flint': "".concat(configIntType || DEFAULT_INTEGRATION, "_v3.7.0-pre"),
       'x_source.tid': bidRequest.transactionId,
       'x_source.pchain': params.pchain,
       'p_screen_res': _getScreenResolution(),
@@ -19528,6 +19481,17 @@ var spec = {
           data["tg_i.".concat(key)] = params.inventory[key].toString();
         }
       });
+    }
+    /**
+     * Prebid AdSlot
+     * @type {(string|undefined)}
+     */
+
+
+    var pbAdSlot = __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepAccess"](bidRequest, 'fpd.context.pbAdSlot');
+
+    if (typeof pbAdSlot === 'string' && pbAdSlot) {
+      data['tg_i.dfp_ad_unit_code'] = pbAdSlot.replace(/^\/+/, '');
     } // digitrust properties
 
 
@@ -19607,7 +19571,8 @@ var spec = {
             cpm: bid.price || 0,
             bidderCode: seatbid.seat,
             ttl: 300,
-            netRevenue: __WEBPACK_IMPORTED_MODULE_2__src_config__["b" /* config */].getConfig('rubicon.netRevenue') || true,
+            netRevenue: __WEBPACK_IMPORTED_MODULE_2__src_config__["b" /* config */].getConfig('rubicon.netRevenue') !== false,
+            // If anything other than false, netRev is true
             width: bid.w || __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepAccess"](bidRequest, 'mediaTypes.video.w') || __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepAccess"](bidRequest, 'params.video.playerWidth'),
             height: bid.h || __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepAccess"](bidRequest, 'mediaTypes.video.h') || __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepAccess"](bidRequest, 'params.video.playerHeight')
           };
@@ -19694,7 +19659,8 @@ var spec = {
           dealId: ad.deal,
           ttl: 300,
           // 5 minutes
-          netRevenue: __WEBPACK_IMPORTED_MODULE_2__src_config__["b" /* config */].getConfig('rubicon.netRevenue') || false,
+          netRevenue: __WEBPACK_IMPORTED_MODULE_2__src_config__["b" /* config */].getConfig('rubicon.netRevenue') !== false,
+          // If anything other than false, netRev is true
           rubicon: {
             advertiserId: ad.advertiser,
             networkId: ad.network
@@ -20195,18 +20161,18 @@ Object(__WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory__["registerBidder
 
 /***/ })
 
-},[570]);
-pbjsChunk([85],{
+},[517]);
+pbjsChunk([77],{
 
-/***/ 620:
+/***/ 563:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(621);
+module.exports = __webpack_require__(564);
 
 
 /***/ }),
 
-/***/ 621:
+/***/ 564:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20305,17 +20271,13 @@ var spec = {
         };
       }
 
-      if (bidderRequest && bidderRequest.gdprConsent) {
-        sovrnBidReq.regs = {
-          ext: {
-            gdpr: +bidderRequest.gdprConsent.gdprApplies
-          }
-        };
-        sovrnBidReq.user = {
-          ext: {
-            consent: bidderRequest.gdprConsent.consentString
-          }
-        };
+      if (bidderRequest.gdprConsent) {
+        __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepSetValue"](sovrnBidReq, 'regs.ext.gdpr', +bidderRequest.gdprConsent.gdprApplies);
+        __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepSetValue"](sovrnBidReq, 'user.ext.consent', bidderRequest.gdprConsent.consentString);
+      }
+
+      if (bidderRequest.uspConsent) {
+        __WEBPACK_IMPORTED_MODULE_0__src_utils__["deepSetValue"](sovrnBidReq, 'regs.ext.us_privacy', bidderRequest.uspConsent);
       }
 
       if (digitrust) {
@@ -20325,7 +20287,7 @@ var spec = {
         });
       }
 
-      var url = "https://ap.lijit.com/rtb/bid?" + "src=prebid_prebid_2.43.0";
+      var url = "https://ap.lijit.com/rtb/bid?" + "src=prebid_prebid_3.7.0-pre";
       if (iv) url += "&iv=".concat(iv);
       return {
         method: 'POST',
@@ -20378,7 +20340,7 @@ var spec = {
       console.log(e);
     }
   },
-  getUserSyncs: function getUserSyncs(syncOptions, serverResponses, gdprConsent) {
+  getUserSyncs: function getUserSyncs(syncOptions, serverResponses, gdprConsent, uspConsent) {
     try {
       var tracks = [];
 
@@ -20389,16 +20351,23 @@ var spec = {
           }).map(function (resp) {
             return resp.body.ext.iid;
           });
-          var consentString = '';
+          var params = [];
 
           if (gdprConsent && gdprConsent.gdprApplies && typeof gdprConsent.consentString === 'string') {
-            consentString = gdprConsent.consentString;
+            params.push(['gdpr_consent', gdprConsent.consentString]);
+          }
+
+          if (uspConsent) {
+            params.push(['us_privacy', uspConsent]);
           }
 
           if (iidArr[0]) {
+            params.push(['informer', iidArr[0]]);
             tracks.push({
               type: 'iframe',
-              url: 'https://ap.lijit.com/beacon?informer=' + iidArr[0] + '&gdpr_consent=' + consentString
+              url: 'https://ap.lijit.com/beacon?' + params.map(function (p) {
+                return p.join('=');
+              }).join('&')
             });
           }
         }
@@ -20429,5 +20398,5 @@ Object(__WEBPACK_IMPORTED_MODULE_2__src_adapters_bidderFactory__["registerBidder
 
 /***/ })
 
-},[620]);
+},[563]);
 pbjs.processQueue();
