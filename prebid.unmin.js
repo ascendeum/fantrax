@@ -1,6 +1,6 @@
 /* Ascendeum build - on prebid.js v3.7.0-pre
 For: angular
-Updated : 2020-02-25T05:23:46 */
+Updated : 2020-03-12T07:14:53 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -1546,7 +1546,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bidfactory__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__userSync__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__native__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__native__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__video__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__constants_json__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__constants_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__constants_json__);
@@ -2769,7 +2769,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["setS2STestingModule"] = setS2STestingModule;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sizeMapping__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__native__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__native__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__adapters_bidderFactory__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ajax__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config__ = __webpack_require__(3);
@@ -3592,7 +3592,7 @@ function format(obj) {
 /* harmony export (immutable) */ __webpack_exports__["a"] = Renderer;
 /* harmony export (immutable) */ __webpack_exports__["c"] = isRendererRequired;
 /* harmony export (immutable) */ __webpack_exports__["b"] = executeRenderer;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__adloader__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__adloader__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find__);
@@ -3645,7 +3645,7 @@ function Renderer(options) {
 
   if (!isRendererDefinedOnAdUnit(adUnitCode)) {
     // we expect to load a renderer url once only so cache the request to load script
-    Object(__WEBPACK_IMPORTED_MODULE_0__adloader__["loadExternalScript"])(url, moduleCode, this.callback);
+    Object(__WEBPACK_IMPORTED_MODULE_0__adloader__["a" /* loadExternalScript */])(url, moduleCode, this.callback);
   } else {
     __WEBPACK_IMPORTED_MODULE_1__utils__["logWarn"]("External Js not loaded by Renderer since renderer url and callback is already defined on adUnit ".concat(adUnitCode));
   }
@@ -3825,7 +3825,7 @@ $exports.store = store;
 
 var global = __webpack_require__(19);
 var core = __webpack_require__(16);
-var ctx = __webpack_require__(27);
+var ctx = __webpack_require__(26);
 var hide = __webpack_require__(22);
 var has = __webpack_require__(30);
 var PROTOTYPE = 'prototype';
@@ -4207,107 +4207,8 @@ function newAuctionManager() {
 var auctionManager = newAuctionManager();
 
 /***/ }),
-/* 25 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (immutable) */ __webpack_exports__["loadExternalScript"] = loadExternalScript;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(0);
-
-
-var _requestCache = {}; // The below list contains modules or vendors whom Prebid allows to load external JS.
-
-var _approvedLoadExternalJSList = ['criteo', 'outstream', 'adagio', 'browsi'];
-/**
- * Loads external javascript. Can only be used if external JS is approved by Prebid. See https://github.com/prebid/prebid-js-external-js-template#policy
- * Each unique URL will be loaded at most 1 time.
- * @param {string} url the url to load
- * @param {string} moduleCode bidderCode or module code of the module requesting this resource
- * @param {function} [callback] callback function to be called after the script is loaded.
- */
-
-function loadExternalScript(url, moduleCode, callback) {
-  if (!moduleCode || !url) {
-    __WEBPACK_IMPORTED_MODULE_1__utils__["logError"]('cannot load external script without url and moduleCode');
-    return;
-  }
-
-  if (!__WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes___default()(_approvedLoadExternalJSList, moduleCode)) {
-    __WEBPACK_IMPORTED_MODULE_1__utils__["logError"]("".concat(moduleCode, " not whitelisted for loading external JavaScript"));
-    return;
-  } // only load each asset once
-
-
-  if (_requestCache[url]) {
-    if (callback && typeof callback === 'function') {
-      if (_requestCache[url].loaded) {
-        // invokeCallbacks immediately
-        callback();
-      } else {
-        // queue the callback
-        _requestCache[url].callbacks.push(callback);
-      }
-    }
-
-    return _requestCache[url].tag;
-  }
-
-  _requestCache[url] = {
-    loaded: false,
-    tag: null,
-    callbacks: []
-  };
-
-  if (callback && typeof callback === 'function') {
-    _requestCache[url].callbacks.push(callback);
-  }
-
-  __WEBPACK_IMPORTED_MODULE_1__utils__["logWarn"]("module ".concat(moduleCode, " is loading external JavaScript"));
-  return requestResource(url, function () {
-    _requestCache[url].loaded = true;
-
-    try {
-      for (var i = 0; i < _requestCache[url].callbacks.length; i++) {
-        _requestCache[url].callbacks[i]();
-      }
-    } catch (e) {
-      __WEBPACK_IMPORTED_MODULE_1__utils__["logError"]('Error executing callback', 'adloader.js:loadExternalScript', e);
-    }
-  });
-
-  function requestResource(tagSrc, callback) {
-    var jptScript = document.createElement('script');
-    jptScript.type = 'text/javascript';
-    jptScript.async = true;
-    _requestCache[url].tag = jptScript;
-
-    if (jptScript.readyState) {
-      jptScript.onreadystatechange = function () {
-        if (jptScript.readyState === 'loaded' || jptScript.readyState === 'complete') {
-          jptScript.onreadystatechange = null;
-          callback();
-        }
-      };
-    } else {
-      jptScript.onload = function () {
-        callback();
-      };
-    }
-
-    jptScript.src = tagSrc; // add the new script tag to the page
-
-    __WEBPACK_IMPORTED_MODULE_1__utils__["insertElement"](jptScript);
-    return jptScript;
-  }
-}
-;
-
-/***/ }),
-/* 26 */,
-/* 27 */
+/* 25 */,
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // optional / simple context binding
@@ -4333,7 +4234,7 @@ module.exports = function (fn, that, length) {
 
 
 /***/ }),
-/* 28 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4577,6 +4478,104 @@ function getAssetValue(value) {
 
   return value;
 }
+
+/***/ }),
+/* 28 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = loadExternalScript;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(0);
+
+
+var _requestCache = {}; // The below list contains modules or vendors whom Prebid allows to load external JS.
+
+var _approvedLoadExternalJSList = ['criteo', 'outstream', 'adagio', 'browsi'];
+/**
+ * Loads external javascript. Can only be used if external JS is approved by Prebid. See https://github.com/prebid/prebid-js-external-js-template#policy
+ * Each unique URL will be loaded at most 1 time.
+ * @param {string} url the url to load
+ * @param {string} moduleCode bidderCode or module code of the module requesting this resource
+ * @param {function} [callback] callback function to be called after the script is loaded.
+ */
+
+function loadExternalScript(url, moduleCode, callback) {
+  if (!moduleCode || !url) {
+    __WEBPACK_IMPORTED_MODULE_1__utils__["logError"]('cannot load external script without url and moduleCode');
+    return;
+  }
+
+  if (!__WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes___default()(_approvedLoadExternalJSList, moduleCode)) {
+    __WEBPACK_IMPORTED_MODULE_1__utils__["logError"]("".concat(moduleCode, " not whitelisted for loading external JavaScript"));
+    return;
+  } // only load each asset once
+
+
+  if (_requestCache[url]) {
+    if (callback && typeof callback === 'function') {
+      if (_requestCache[url].loaded) {
+        // invokeCallbacks immediately
+        callback();
+      } else {
+        // queue the callback
+        _requestCache[url].callbacks.push(callback);
+      }
+    }
+
+    return _requestCache[url].tag;
+  }
+
+  _requestCache[url] = {
+    loaded: false,
+    tag: null,
+    callbacks: []
+  };
+
+  if (callback && typeof callback === 'function') {
+    _requestCache[url].callbacks.push(callback);
+  }
+
+  __WEBPACK_IMPORTED_MODULE_1__utils__["logWarn"]("module ".concat(moduleCode, " is loading external JavaScript"));
+  return requestResource(url, function () {
+    _requestCache[url].loaded = true;
+
+    try {
+      for (var i = 0; i < _requestCache[url].callbacks.length; i++) {
+        _requestCache[url].callbacks[i]();
+      }
+    } catch (e) {
+      __WEBPACK_IMPORTED_MODULE_1__utils__["logError"]('Error executing callback', 'adloader.js:loadExternalScript', e);
+    }
+  });
+
+  function requestResource(tagSrc, callback) {
+    var jptScript = document.createElement('script');
+    jptScript.type = 'text/javascript';
+    jptScript.async = true;
+    _requestCache[url].tag = jptScript;
+
+    if (jptScript.readyState) {
+      jptScript.onreadystatechange = function () {
+        if (jptScript.readyState === 'loaded' || jptScript.readyState === 'complete') {
+          jptScript.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else {
+      jptScript.onload = function () {
+        callback();
+      };
+    }
+
+    jptScript.src = tagSrc; // add the new script tag to the page
+
+    __WEBPACK_IMPORTED_MODULE_1__utils__["insertElement"](jptScript);
+    return jptScript;
+  }
+}
+;
 
 /***/ }),
 /* 29 */
@@ -5280,7 +5279,7 @@ var getRefererInfo = detectReferer(window);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return targeting; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__native__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__native__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__auctionManager__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sizeMapping__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mediaTypes__ = __webpack_require__(2);
@@ -5925,7 +5924,7 @@ module.exports = function () { /* empty */ };
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ctx = __webpack_require__(27);
+var ctx = __webpack_require__(26);
 var call = __webpack_require__(69);
 var isArrayIter = __webpack_require__(70);
 var anObject = __webpack_require__(29);
@@ -5977,7 +5976,7 @@ exports.RETURN = RETURN;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__url__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cpmBucketManager__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__native__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__native__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__videoCache__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Renderer__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__config__ = __webpack_require__(3);
@@ -7003,7 +7002,7 @@ module.exports = function (bitmap, value) {
 // 4 -> Array#every
 // 5 -> Array#find
 // 6 -> Array#findIndex
-var ctx = __webpack_require__(27);
+var ctx = __webpack_require__(26);
 var IObject = __webpack_require__(58);
 var toObject = __webpack_require__(46);
 var toLength = __webpack_require__(39);
@@ -9617,6 +9616,11 @@ pbjsAdUnits.push({
     params: {
       uid: 3263
     }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68135
+    }
   }] : [//{bidder: "aol",params: {placement: "4700273",network: "11178.1"}}, //728x90
   //{bidder: 'pulsepoint',params: {cf: '728X90',cp: 561331,ct: 619321}},
   {
@@ -9674,6 +9678,11 @@ pbjsAdUnits.push({
     bidder: "grid",
     params: {
       uid: 3263
+    }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68135
     }
   }]
 });
@@ -9794,6 +9803,11 @@ pbjsAdUnits.push({
     params: {
       uid: 3254
     }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68126
+    }
   }] : [{
     bidder: "aol",
     params: {
@@ -9860,6 +9874,11 @@ pbjsAdUnits.push({
     bidder: "grid",
     params: {
       uid: 3254
+    }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68126
     }
   }]
 });
@@ -9972,6 +9991,11 @@ pbjsAdUnits.push({
     params: {
       uid: 3260
     }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68132
+    }
   }] : [//{bidder: "aol",params: {placement: "4700266",network: "11178.1"}},
   //{bidder: 'pulsepoint',params: {cf: '160X600',cp: 561331,ct: 619340}},
   {
@@ -10027,6 +10051,11 @@ pbjsAdUnits.push({
     bidder: "grid",
     params: {
       uid: 3260
+    }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68132
     }
   }]
 });
@@ -10139,6 +10168,11 @@ pbjsAdUnits.push({
     params: {
       uid: 3261
     }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68133
+    }
   }] : [//{bidder: "aol",params: {placement: "4700276",network: "11178.1"}},
   //{bidder: 'pulsepoint',params: {cf: '160X600',cp: 561331,ct: 619344}},
   {
@@ -10194,6 +10228,11 @@ pbjsAdUnits.push({
     bidder: "grid",
     params: {
       uid: 3261
+    }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68133
     }
   }]
 });
@@ -10260,6 +10299,11 @@ pbjsAdUnits.push({
     bidder: "grid",
     params: {
       uid: 3262
+    }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68134
     }
   }]
 });
@@ -10342,6 +10386,11 @@ pbjsAdUnits.push({
     bidder: "grid",
     params: {
       uid: 3266
+    }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68138
     }
   }]
 });
@@ -10429,6 +10478,11 @@ pbjsAdUnits.push({
     params: {
       uid: 3271
     }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68143
+    }
   }]
 });
 pbjsAdUnits.push({
@@ -10498,6 +10552,11 @@ pbjsAdUnits.push({
     bidder: "grid",
     params: {
       uid: 3267
+    }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68139
     }
   }]
 });
@@ -10576,6 +10635,11 @@ pbjsAdUnits.push({
     params: {
       uid: 3268
     }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68140
+    }
   }]
 });
 pbjsAdUnits.push({
@@ -10653,6 +10717,11 @@ pbjsAdUnits.push({
     params: {
       uid: 3269
     }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68141
+    }
   }]
 });
 pbjsAdUnits.push({
@@ -10725,6 +10794,11 @@ pbjsAdUnits.push({
     params: {
       uid: 3270
     }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68142
+    }
   }]
 });
 pbjsAdUnits.push({
@@ -10791,6 +10865,11 @@ pbjsAdUnits.push({
     bidder: "grid",
     params: {
       uid: 3264
+    }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68136
     }
   }]
 });
@@ -10859,6 +10938,11 @@ pbjsAdUnits.push({
     params: {
       uid: 3265
     }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68137
+    }
   }]
 });
 pbjsAdUnits.push({
@@ -10926,6 +11010,11 @@ pbjsAdUnits.push({
     params: {
       uid: 3257
     }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68129
+    }
   }]
 });
 pbjsAdUnits.push({
@@ -10992,6 +11081,11 @@ pbjsAdUnits.push({
     bidder: "grid",
     params: {
       uid: 3255
+    }
+  }, {
+    bidder: 'gumgum',
+    params: {
+      inSlot: 68127
     }
   }]
 });
@@ -11593,7 +11687,7 @@ module.exports = __webpack_require__(104)(SET, function (get) {
 var dP = __webpack_require__(20).f;
 var create = __webpack_require__(64);
 var redefineAll = __webpack_require__(67);
-var ctx = __webpack_require__(27);
+var ctx = __webpack_require__(26);
 var anInstance = __webpack_require__(68);
 var forOf = __webpack_require__(41);
 var $iterDefine = __webpack_require__(50);
@@ -11904,7 +11998,7 @@ __webpack_require__(111)('Set');
 // https://tc39.github.io/proposal-setmap-offrom/
 var $export = __webpack_require__(15);
 var aFunction = __webpack_require__(56);
-var ctx = __webpack_require__(27);
+var ctx = __webpack_require__(26);
 var forOf = __webpack_require__(41);
 
 module.exports = function (COLLECTION) {
@@ -11936,7 +12030,7 @@ module.exports = function (COLLECTION) {
 
 "use strict";
 
-var ctx = __webpack_require__(27);
+var ctx = __webpack_require__(26);
 var $export = __webpack_require__(15);
 var toObject = __webpack_require__(46);
 var call = __webpack_require__(69);
@@ -12090,7 +12184,7 @@ function dlv(obj, key, def, p, undef) {
 /* unused harmony export _sendAdToCreative */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__events__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__events___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__events__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__native__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__native__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__constants__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(0);
@@ -15674,6 +15768,424 @@ Object(__WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory__["registerBidder
 /***/ })
 
 },[337]);
+pbjsChunk([27],{
+
+/***/ 25:
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ 339:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(340);
+
+
+/***/ }),
+
+/***/ 340:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "spec", function() { return spec; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_utils__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_config__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_adapters_bidderFactory__ = __webpack_require__(1);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+
+
+
+
+var BIDDER_CODE = 'gumgum';
+var ALIAS_BIDDER_CODE = ['gg'];
+var BID_ENDPOINT = "https://g2.gumgum.com/hbid/imp";
+var DT_CREDENTIALS = {
+  member: 'YcXr87z2lpbB'
+};
+var TIME_TO_LIVE = 60;
+var browserParams = {};
+var pageViewId = null; // TODO: potential 0 values for browserParams sent to ad server
+
+function _getBrowserParams(topWindowUrl) {
+  var topWindow;
+  var topScreen;
+  var topUrl;
+  var ggad;
+  var ns;
+
+  function getNetworkSpeed() {
+    var connection = window.navigator && (window.navigator.connection || window.navigator.mozConnection || window.navigator.webkitConnection);
+    var Mbps = connection && (connection.downlink || connection.bandwidth);
+    return Mbps ? Math.round(Mbps * 1024) : null; // 1 megabit -> 1024 kilobits
+  }
+
+  function getOgURL() {
+    var ogURL = '';
+    var ogURLSelector = "meta[property='og:url']";
+    var head = document && document.getElementsByTagName('head')[0];
+    var ogURLElement = head.querySelector(ogURLSelector);
+    ogURL = ogURLElement ? ogURLElement.content : null;
+    return ogURL;
+  }
+
+  if (browserParams.vw) {
+    // we've already initialized browserParams, just return it.
+    return browserParams;
+  }
+
+  try {
+    topWindow = global.top;
+    topScreen = topWindow.screen;
+    topUrl = topWindowUrl || '';
+  } catch (error) {
+    __WEBPACK_IMPORTED_MODULE_0__src_utils__["logError"](error);
+    return browserParams;
+  }
+
+  browserParams = {
+    vw: topWindow.innerWidth,
+    vh: topWindow.innerHeight,
+    sw: topScreen.width,
+    sh: topScreen.height,
+    pu: topUrl,
+    ce: __WEBPACK_IMPORTED_MODULE_0__src_utils__["cookiesAreEnabled"](),
+    dpr: topWindow.devicePixelRatio || 1,
+    jcsi: JSON.stringify({
+      t: 0,
+      rq: 8
+    }),
+    ogu: getOgURL()
+  };
+  ns = getNetworkSpeed();
+
+  if (ns) {
+    browserParams.ns = ns;
+  }
+
+  ggad = (topUrl.match(/#ggad=(\w+)$/) || [0, 0])[1];
+
+  if (ggad) {
+    browserParams[isNaN(ggad) ? 'eAdBuyId' : 'adBuyId'] = ggad;
+  }
+
+  return browserParams;
+}
+
+function getWrapperCode(wrapper, data) {
+  return wrapper.replace('AD_JSON', window.btoa(JSON.stringify(data)));
+}
+
+function _getTradeDeskIDParam(userId) {
+  var unifiedIdObj = {};
+
+  if (userId.tdid) {
+    unifiedIdObj.tdid = userId.tdid;
+  }
+
+  return unifiedIdObj;
+}
+
+function _getDigiTrustQueryParams(userId) {
+  var digiTrustId = userId.digitrustid && userId.digitrustid.data;
+
+  if (!digiTrustId) {
+    var digiTrustUser = window.DigiTrust && window.DigiTrust.getUser ? window.DigiTrust.getUser(DT_CREDENTIALS) : {};
+    digiTrustId = digiTrustUser && digiTrustUser.success && digiTrustUser.identity || '';
+  } // Verify there is an ID and this user has not opted out
+
+
+  if (!digiTrustId || digiTrustId.privacy && digiTrustId.privacy.optout) {
+    return {};
+  }
+
+  return {
+    dt: digiTrustId.id
+  };
+}
+/**
+ * Serializes the supply chain object according to IAB standards
+ * @see https://github.com/InteractiveAdvertisingBureau/openrtb/blob/master/supplychainobject.md
+ * @param {Object} schainObj supply chain object
+ * @returns {string}
+ */
+
+
+function _serializeSupplyChainObj(schainObj) {
+  var serializedSchain = "".concat(schainObj.ver, ",").concat(schainObj.complete); // order of properties: asi,sid,hp,rid,name,domain
+
+  schainObj.nodes.map(function (node) {
+    serializedSchain += "!".concat(encodeURIComponent(node['asi'] || ''), ",");
+    serializedSchain += "".concat(encodeURIComponent(node['sid'] || ''), ",");
+    serializedSchain += "".concat(encodeURIComponent(node['hp'] || ''), ",");
+    serializedSchain += "".concat(encodeURIComponent(node['rid'] || ''), ",");
+    serializedSchain += "".concat(encodeURIComponent(node['name'] || ''), ",");
+    serializedSchain += "".concat(encodeURIComponent(node['domain'] || ''));
+  });
+  return serializedSchain;
+}
+/**
+ * Determines whether or not the given bid request is valid.
+ *
+ * @param {BidRequest} bid The bid params to validate.
+ * @return boolean True if this is a valid bid, and false otherwise.
+ */
+
+
+function isBidRequestValid(bid) {
+  var params = bid.params,
+      adUnitCode = bid.adUnitCode;
+
+  switch (true) {
+    case !!params.inScreen:
+      break;
+
+    case !!params.inSlot:
+      break;
+
+    case !!params.ICV:
+      break;
+
+    default:
+      __WEBPACK_IMPORTED_MODULE_0__src_utils__["logWarn"]("[GumGum] No product selected for the placement ".concat(adUnitCode, ", please check your implementation."));
+      return false;
+  }
+
+  if (params.bidfloor && !(typeof params.bidfloor === 'number' && isFinite(params.bidfloor))) {
+    __WEBPACK_IMPORTED_MODULE_0__src_utils__["logWarn"]('[GumGum] bidfloor must be a Number');
+    return false;
+  }
+
+  return true;
+}
+/**
+ * Make a server request from the list of BidRequests.
+ *
+ * @param {validBidRequests[]} - an array of bids
+ * @return ServerRequest Info describing the request to the server.
+ */
+
+
+function buildRequests(validBidRequests, bidderRequest) {
+  var bids = [];
+  var gdprConsent = bidderRequest && bidderRequest.gdprConsent;
+  var uspConsent = bidderRequest && bidderRequest.uspConsent;
+
+  __WEBPACK_IMPORTED_MODULE_0__src_utils__["_each"](validBidRequests, function (bidRequest) {
+    var timeout = __WEBPACK_IMPORTED_MODULE_1__src_config__["b" /* config */].getConfig('bidderTimeout');
+    var bidId = bidRequest.bidId,
+        _bidRequest$params = bidRequest.params,
+        params = _bidRequest$params === void 0 ? {} : _bidRequest$params,
+        schain = bidRequest.schain,
+        transactionId = bidRequest.transactionId,
+        _bidRequest$userId = bidRequest.userId,
+        userId = _bidRequest$userId === void 0 ? {} : _bidRequest$userId;
+    var data = {};
+    var sizes = bidRequest.mediaTypes && bidRequest.mediaTypes.banner && bidRequest.mediaTypes.banner.sizes;
+    var topWindowUrl = bidderRequest && bidderRequest.refererInfo && bidderRequest.refererInfo.referer;
+
+    if (pageViewId) {
+      data.pv = pageViewId;
+    }
+
+    if (params.bidfloor) {
+      data.fp = params.bidfloor;
+    }
+
+    if (params.inScreenPubID) {
+      data.pubId = params.inScreenPubID;
+      data.pi = 2;
+    }
+
+    if (params.inScreen) {
+      data.t = params.inScreen;
+      data.pi = 2;
+    }
+
+    if (params.inSlot) {
+      data.si = parseInt(params.inSlot, 10);
+      data.pi = 3;
+    }
+
+    if (params.ICV) {
+      data.ni = parseInt(params.ICV, 10);
+      data.pi = 5;
+    }
+
+    if (gdprConsent) {
+      data.gdprApplies = gdprConsent.gdprApplies ? 1 : 0;
+    }
+
+    if (data.gdprApplies) {
+      data.gdprConsent = gdprConsent.consentString;
+    }
+
+    if (uspConsent) {
+      data.uspConsent = uspConsent;
+    }
+
+    if (schain && schain.nodes) {
+      data.schain = _serializeSupplyChainObj(schain);
+    }
+
+    bids.push({
+      id: bidId,
+      tmax: timeout,
+      tId: transactionId,
+      pi: data.pi,
+      selector: params.selector,
+      sizes: sizes || bidRequest.sizes,
+      url: BID_ENDPOINT,
+      method: 'GET',
+      data: _extends(data, _getBrowserParams(topWindowUrl), _getDigiTrustQueryParams(userId), _getTradeDeskIDParam(userId))
+    });
+  });
+
+  return bids;
+}
+/**
+ * Unpack the response from the server into a list of bids.
+ *
+ * @param {*} serverResponse A successful response from the server.
+ * @return {Bid[]} An array of bids which were nested inside the server.
+ */
+
+
+function interpretResponse(serverResponse, bidRequest) {
+  var bidResponses = [];
+  var serverResponseBody = serverResponse.body;
+  var defaultResponse = {
+    ad: {
+      price: 0,
+      id: 0,
+      markup: ''
+    },
+    pag: {
+      pvid: 0
+    }
+  };
+
+  var _Object$assign = _extends(defaultResponse, serverResponseBody),
+      _Object$assign$ad = _Object$assign.ad,
+      cpm = _Object$assign$ad.price,
+      creativeId = _Object$assign$ad.id,
+      markup = _Object$assign$ad.markup,
+      cur = _Object$assign$ad.cur,
+      wrapper = _Object$assign.cw,
+      pvid = _Object$assign.pag.pvid;
+
+  var data = bidRequest.data || {};
+  var product = data.pi;
+  var isTestUnit = product === 3 && data.si === 9;
+  var sizes = __WEBPACK_IMPORTED_MODULE_0__src_utils__["parseSizesInput"](bidRequest.sizes);
+
+  var _sizes$0$split = sizes[0].split('x'),
+      _sizes$0$split2 = _slicedToArray(_sizes$0$split, 2),
+      width = _sizes$0$split2[0],
+      height = _sizes$0$split2[1]; // return 1x1 when breakout expected
+
+
+  if ((product === 2 || product === 5) && __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes___default()(sizes, '1x1')) {
+    width = '1';
+    height = '1';
+  } // update Page View ID from server response
+
+
+  pageViewId = pvid;
+
+  if (creativeId) {
+    bidResponses.push({
+      // dealId: DEAL_ID,
+      // referrer: REFERER,
+      ad: wrapper ? getWrapperCode(wrapper, _extends({}, serverResponseBody, {
+        bidRequest: bidRequest
+      })) : markup,
+      cpm: isTestUnit ? 0.1 : cpm,
+      creativeId: creativeId,
+      currency: cur || 'USD',
+      height: height,
+      netRevenue: true,
+      requestId: bidRequest.id,
+      ttl: TIME_TO_LIVE,
+      width: width
+    });
+  }
+
+  return bidResponses;
+}
+/**
+ * Register the user sync pixels which should be dropped after the auction.
+ *
+ * @param {SyncOptions} syncOptions Which user syncs are allowed?
+ * @param {ServerResponse[]} serverResponses List of server's responses.
+ * @return {UserSync[]} The user syncs which should be dropped.
+ */
+
+
+function getUserSyncs(syncOptions, serverResponses) {
+  var responses = serverResponses.map(function (response) {
+    return response.body && response.body.pxs && response.body.pxs.scr || [];
+  });
+  var userSyncs = responses.reduce(function (usersyncs, response) {
+    return usersyncs.concat(response);
+  }, []);
+  var syncs = userSyncs.map(function (sync) {
+    return {
+      type: sync.t === 'f' ? 'iframe' : 'image',
+      url: sync.u
+    };
+  });
+  return syncs;
+}
+
+var spec = {
+  code: BIDDER_CODE,
+  aliases: ALIAS_BIDDER_CODE,
+  isBidRequestValid: isBidRequestValid,
+  buildRequests: buildRequests,
+  interpretResponse: interpretResponse,
+  getUserSyncs: getUserSyncs
+};
+Object(__WEBPACK_IMPORTED_MODULE_3__src_adapters_bidderFactory__["registerBidder"])(spec);
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(25)))
+
+/***/ })
+
+},[339]);
 pbjsChunk([156],{
 
 /***/ 361:
@@ -16689,7 +17201,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_adapterManager__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_config__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_mediaTypes__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_native__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_native__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_adapters_bidderFactory__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_events__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_events___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__src_events__);
