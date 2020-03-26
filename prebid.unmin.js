@@ -1,6 +1,6 @@
 /* Ascendeum build - on prebid.js v3.7.0-pre
 For: angular
-Updated : 2020-03-12T07:14:53 */
+Updated : 2020-03-26T14:50:53 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -9119,7 +9119,7 @@ pbjs.detectWidth = window.detectWidth || function () {
 };
 
 window.dfpAdunitsToRefresh = [];
-var EXCHANGE_RATE = window.EXCHANGE_RATE || 1.3;
+var EXCHANGE_RATE = window.EXCHANGE_RATE || 1.45;
 var REFRESH_RATE = 80000;
 var REFRESH_INDIVIDUAL_DELAY = 5000;
 var refreshIteration = 0;
@@ -11245,6 +11245,16 @@ pbjs.que.push(function () {
     pubmatic: {
       bidCpmAdjustment: function bidCpmAdjustment(bidCpm) {
         return bidCpm * EXCHANGE_RATE * .80;
+      }
+    },
+    gumgum: {
+      bidCpmAdjustment: function bidCpmAdjustment(bidCpm) {
+        return bidCpm * EXCHANGE_RATE;
+      }
+    },
+    grid: {
+      bidCpmAdjustment: function bidCpmAdjustment(bidCpm) {
+        return bidCpm * EXCHANGE_RATE;
       }
     }
   };
