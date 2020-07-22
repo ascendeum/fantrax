@@ -1,6 +1,6 @@
-/* Ascendeum build - on prebid.js v3.14.0
+/* Ascendeum build - on prebid.js v3.26.0
 For: angular
-Updated : 2020-05-28T07:55:35 */
+Updated : 2020-07-22T08:29:45 */
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// install a JSONP callback for chunk loading
 /******/ 	var parentJsonpFunction = window["pbjsChunk"];
@@ -37,7 +37,7 @@ Updated : 2020-05-28T07:55:35 */
 /******/
 /******/ 	// objects to store loaded and loading chunks
 /******/ 	var installedChunks = {
-/******/ 		279: 0
+/******/ 		316: 0
 /******/ 	};
 /******/
 /******/ 	// The require function
@@ -101,7 +101,7 @@ Updated : 2020-05-28T07:55:35 */
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 102);
+/******/ 	return __webpack_require__(__webpack_require__.s = 122);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -112,7 +112,6 @@ Updated : 2020-05-28T07:55:35 */
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "internal", function() { return internal; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bind", function() { return bind; });
-/* harmony export (immutable) */ __webpack_exports__["replaceTokenInString"] = replaceTokenInString;
 /* harmony export (immutable) */ __webpack_exports__["getUniqueIdentifierStr"] = getUniqueIdentifierStr;
 /* harmony export (immutable) */ __webpack_exports__["generateUUID"] = generateUUID;
 /* harmony export (immutable) */ __webpack_exports__["getBidIdParameter"] = getBidIdParameter;
@@ -134,8 +133,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["debugTurnedOn"] = debugTurnedOn;
 /* harmony export (immutable) */ __webpack_exports__["createInvisibleIframe"] = createInvisibleIframe;
 /* harmony export (immutable) */ __webpack_exports__["getParameterByName"] = getParameterByName;
-/* harmony export (immutable) */ __webpack_exports__["hasValidBidRequest"] = hasValidBidRequest;
-/* harmony export (immutable) */ __webpack_exports__["addEventHandler"] = addEventHandler;
 /* harmony export (immutable) */ __webpack_exports__["isA"] = isA;
 /* harmony export (immutable) */ __webpack_exports__["isFn"] = isFn;
 /* harmony export (immutable) */ __webpack_exports__["isStr"] = isStr;
@@ -147,7 +144,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["isEmptyStr"] = isEmptyStr;
 /* harmony export (immutable) */ __webpack_exports__["_each"] = _each;
 /* harmony export (immutable) */ __webpack_exports__["contains"] = contains;
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "indexOf", function() { return indexOf; });
 /* harmony export (immutable) */ __webpack_exports__["_map"] = _map;
 /* harmony export (immutable) */ __webpack_exports__["hasOwn"] = hasOwn;
 /* harmony export (immutable) */ __webpack_exports__["insertElement"] = insertElement;
@@ -157,7 +153,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["insertUserSyncIframe"] = insertUserSyncIframe;
 /* harmony export (immutable) */ __webpack_exports__["createTrackPixelHtml"] = createTrackPixelHtml;
 /* harmony export (immutable) */ __webpack_exports__["createTrackPixelIframeHtml"] = createTrackPixelIframeHtml;
-/* harmony export (immutable) */ __webpack_exports__["getIframeDocument"] = getIframeDocument;
 /* harmony export (immutable) */ __webpack_exports__["getValueString"] = getValueString;
 /* harmony export (immutable) */ __webpack_exports__["uniques"] = uniques;
 /* harmony export (immutable) */ __webpack_exports__["flatten"] = flatten;
@@ -172,7 +167,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getLatestHighestCpmBid", function() { return getLatestHighestCpmBid; });
 /* harmony export (immutable) */ __webpack_exports__["shuffle"] = shuffle;
 /* harmony export (immutable) */ __webpack_exports__["adUnitsFilter"] = adUnitsFilter;
-/* harmony export (immutable) */ __webpack_exports__["isSrcdocSupported"] = isSrcdocSupported;
 /* harmony export (immutable) */ __webpack_exports__["deepClone"] = deepClone;
 /* harmony export (immutable) */ __webpack_exports__["inIframe"] = inIframe;
 /* harmony export (immutable) */ __webpack_exports__["isSafariBrowser"] = isSafariBrowser;
@@ -182,7 +176,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["checkCookieSupport"] = checkCookieSupport;
 /* harmony export (immutable) */ __webpack_exports__["delayExecution"] = delayExecution;
 /* harmony export (immutable) */ __webpack_exports__["groupBy"] = groupBy;
-/* harmony export (immutable) */ __webpack_exports__["createContentToExecuteExtScriptInFriendlyFrame"] = createContentToExecuteExtScriptInFriendlyFrame;
 /* harmony export (immutable) */ __webpack_exports__["getDefinedParams"] = getDefinedParams;
 /* harmony export (immutable) */ __webpack_exports__["isValidMediaTypes"] = isValidMediaTypes;
 /* harmony export (immutable) */ __webpack_exports__["getBidderRequest"] = getBidderRequest;
@@ -193,7 +186,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["isSlotMatchingAdUnitCode"] = isSlotMatchingAdUnitCode;
 /* harmony export (immutable) */ __webpack_exports__["getGptSlotInfoForAdUnitCode"] = getGptSlotInfoForAdUnitCode;
 /* harmony export (immutable) */ __webpack_exports__["unsupportedBidderMessage"] = unsupportedBidderMessage;
-/* harmony export (immutable) */ __webpack_exports__["deletePropertyFromObject"] = deletePropertyFromObject;
 /* harmony export (immutable) */ __webpack_exports__["isInteger"] = isInteger;
 /* harmony export (immutable) */ __webpack_exports__["convertCamelToUnderscore"] = convertCamelToUnderscore;
 /* harmony export (immutable) */ __webpack_exports__["cleanObj"] = cleanObj;
@@ -206,17 +198,33 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["getMinValueFromArray"] = getMinValueFromArray;
 /* harmony export (immutable) */ __webpack_exports__["getMaxValueFromArray"] = getMaxValueFromArray;
 /* harmony export (immutable) */ __webpack_exports__["compareOn"] = compareOn;
+/* harmony export (immutable) */ __webpack_exports__["parseQS"] = parseQS;
+/* harmony export (immutable) */ __webpack_exports__["formatQS"] = formatQS;
+/* harmony export (immutable) */ __webpack_exports__["parseUrl"] = parseUrl;
+/* harmony export (immutable) */ __webpack_exports__["buildUrl"] = buildUrl;
+/* harmony export (immutable) */ __webpack_exports__["deepEqual"] = deepEqual;
+/* harmony export (immutable) */ __webpack_exports__["mergeDeep"] = mergeDeep;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_just_clone__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_just_clone__ = __webpack_require__(186);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_just_clone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_just_clone__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find_js__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_dlv_index_js__ = __webpack_require__(138);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "deepAccess", function() { return __WEBPACK_IMPORTED_MODULE_4_dlv_index_js__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_dset__ = __webpack_require__(139);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "deepSetValue", function() { return __WEBPACK_IMPORTED_MODULE_5_dset__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_deep_equal__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_deep_equal___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_deep_equal__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_array_find_js__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_array_find_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_pure_features_array_includes_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_pure_features_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_pure_features_array_includes_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_dlv_index_js__ = __webpack_require__(201);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "deepAccess", function() { return __WEBPACK_IMPORTED_MODULE_5_dlv_index_js__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_dset__ = __webpack_require__(202);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "deepSetValue", function() { return __WEBPACK_IMPORTED_MODULE_6_dset__["a"]; });
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -236,6 +244,7 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 /* eslint-disable no-console */
+
 
 
 
@@ -271,7 +280,10 @@ var internal = {
   logError: logError,
   logWarn: logWarn,
   logMessage: logMessage,
-  logInfo: logInfo
+  logInfo: logInfo,
+  parseQS: parseQS,
+  formatQS: formatQS,
+  deepEqual: deepEqual
 };
 var uniqueRef = {};
 var bind = function (a, b) {
@@ -283,26 +295,6 @@ var bind = function (a, b) {
     return self.apply(bind, args.concat(Array.prototype.slice.call(arguments)));
   };
 };
-/*
- *   Substitutes into a string from a given map using the token
- *   Usage
- *   var str = 'text %%REPLACE%% this text with %%SOMETHING%%';
- *   var map = {};
- *   map['replace'] = 'it was subbed';
- *   map['something'] = 'something else';
- *   console.log(replaceTokenInString(str, map, '%%')); => "text it was subbed this text with something else"
- */
-
-function replaceTokenInString(str, map, token) {
-  _each(map, function (value, key) {
-    value = value === undefined ? '' : value;
-    var keyString = token + key.toUpperCase() + token;
-    var re = new RegExp(keyString, 'g');
-    str = str.replace(re, value);
-  });
-
-  return str;
-}
 /* utility method to get incremental integer starting from 1 */
 
 var getIncrementalInteger = function () {
@@ -349,12 +341,13 @@ function getBidIdParameter(key, paramsObj) {
 }
 function tryAppendQueryString(existingUrl, key, value) {
   if (value) {
-    return existingUrl += key + '=' + encodeURIComponent(value) + '&';
+    return existingUrl + key + '=' + encodeURIComponent(value) + '&';
   }
 
   return existingUrl;
 } // parse a query string object passed in bid params
 // bid params should be an object such as {key: "value", key1 : "value1"}
+// aliases to formatQS
 
 function parseQueryStringParameters(queryObj) {
   var result = '';
@@ -365,6 +358,7 @@ function parseQueryStringParameters(queryObj) {
     }
   }
 
+  result = result.replace(/&$/, '');
   return result;
 } // transform an AdServer targeting bids into a query string to send to the adserver
 
@@ -546,52 +540,7 @@ function createInvisibleIframe() {
  */
 
 function getParameterByName(name) {
-  var regexS = '[\\?&]' + name + '=([^&#]*)';
-  var regex = new RegExp(regexS);
-  var results = regex.exec(window.location.search);
-
-  if (results === null) {
-    return '';
-  }
-
-  return decodeURIComponent(results[1].replace(/\+/g, ' '));
-}
-/**
- * This function validates paramaters.
- * @param  {Object} paramObj          [description]
- * @param  {string[]} requiredParamsArr [description]
- * @return {boolean}                   Bool if paramaters are valid
- */
-
-function hasValidBidRequest(paramObj, requiredParamsArr, adapter) {
-  var found = false;
-
-  function findParam(value, key) {
-    if (key === requiredParamsArr[i]) {
-      found = true;
-    }
-  }
-
-  for (var i = 0; i < requiredParamsArr.length; i++) {
-    found = false;
-
-    _each(paramObj, findParam);
-
-    if (!found) {
-      logError('Params are missing for bid request. One of these required paramaters are missing: ' + requiredParamsArr, adapter);
-      return false;
-    }
-  }
-
-  return true;
-} // Handle addEventListener gracefully in older browsers
-
-function addEventHandler(element, event, func) {
-  if (element.addEventListener) {
-    element.addEventListener(event, func, true);
-  } else if (element.attachEvent) {
-    element.attachEvent('on' + event, func);
-  }
+  return parseQS(getWindowLocation().search)[name] || '';
 }
 /**
  * Return if the object is of the
@@ -693,13 +642,6 @@ function contains(a, obj) {
 
   return false;
 }
-var indexOf = function () {
-  if (Array.prototype.indexOf) {
-    return Array.prototype.indexOf;
-  } // ie8 no longer supported
-  // return polyfills.indexOf;
-
-}();
 /**
  * Map an array or object into another array
  * given a function
@@ -874,33 +816,6 @@ function createTrackPixelIframeHtml(url) {
 
   return "<iframe ".concat(sandbox, " id=\"").concat(getUniqueIdentifierStr(), "\"\n      frameborder=\"0\"\n      allowtransparency=\"true\"\n      marginheight=\"0\" marginwidth=\"0\"\n      width=\"0\" hspace=\"0\" vspace=\"0\" height=\"0\"\n      style=\"height:0px;width:0px;display:none;\"\n      scrolling=\"no\"\n      src=\"").concat(url, "\">\n    </iframe>");
 }
-/**
- * Returns iframe document in a browser agnostic way
- * @param  {Object} iframe reference
- * @return {Object}        iframe `document` reference
- */
-
-function getIframeDocument(iframe) {
-  if (!iframe) {
-    return;
-  }
-
-  var doc;
-
-  try {
-    if (iframe.contentWindow) {
-      doc = iframe.contentWindow.document;
-    } else if (iframe.contentDocument.document) {
-      doc = iframe.contentDocument.document;
-    } else {
-      doc = iframe.contentDocument;
-    }
-  } catch (e) {
-    internal.logError('Cannot get iframe document', e);
-  }
-
-  return doc;
-}
 function getValueString(param, val, defaultValue) {
   if (val === undefined || val === null) {
     return defaultValue;
@@ -929,7 +844,7 @@ function getBidRequest(id, bidderRequests) {
 
   var bidRequest;
   bidderRequests.some(function (bidderRequest) {
-    var result = __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find_js___default()(bidderRequest.bids, function (bid) {
+    var result = __WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_array_find_js___default()(bidderRequest.bids, function (bid) {
       return ['bidId', 'adId', 'bid_id'].some(function (type) {
         return bid[type] === id;
       });
@@ -1025,16 +940,7 @@ function shuffle(array) {
   return array;
 }
 function adUnitsFilter(filter, bid) {
-  return __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes_js___default()(filter, bid && bid.adUnitCode);
-}
-/**
- * Check if parent iframe of passed document supports content rendering via 'srcdoc' property
- * @param {HTMLDocument} doc document to check support of 'srcdoc'
- */
-
-function isSrcdocSupported(doc) {
-  // Firefox is excluded due to https://bugzilla.mozilla.org/show_bug.cgi?id=1265961
-  return doc.defaultView && doc.defaultView.frameElement && 'srcdoc' in doc.defaultView.frameElement && !/firefox/i.test(navigator.userAgent);
+  return __WEBPACK_IMPORTED_MODULE_4_core_js_pure_features_array_includes_js___default()(filter, bid && bid.adUnitCode);
 }
 function deepClone(obj) {
   return __WEBPACK_IMPORTED_MODULE_1_just_clone___default()(obj);
@@ -1047,7 +953,7 @@ function inIframe() {
   }
 }
 function isSafariBrowser() {
-  return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  return /^((?!chrome|android|crios|fxios).)*safari/i.test(navigator.userAgent);
 }
 function replaceAuctionPrice(str, cpm) {
   if (!str) return;
@@ -1115,19 +1021,6 @@ function groupBy(xs, key) {
   }, {});
 }
 /**
- * Returns content for a friendly iframe to execute a URL in script tag
- * @param {string} url URL to be executed in a script tag in a friendly iframe
- * <!--PRE_SCRIPT_TAG_MACRO--> and <!--POST_SCRIPT_TAG_MACRO--> are macros left to be replaced if required
- */
-
-function createContentToExecuteExtScriptInFriendlyFrame(url) {
-  if (!url) {
-    return '';
-  }
-
-  return "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"><html><head><base target=\"_top\" /><script>inDapIF=true;</script></head><body><!--PRE_SCRIPT_TAG_MACRO--><script src=\"".concat(url, "\"></script><!--POST_SCRIPT_TAG_MACRO--></body></html>");
-}
-/**
  * Build an object consisting of only defined parameters to avoid creating an
  * object with defined keys and undefined values.
  * @param {Object} object The object to pick defined params out of
@@ -1161,19 +1054,19 @@ function isValidMediaTypes(mediaTypes) {
   var types = Object.keys(mediaTypes);
 
   if (!types.every(function (type) {
-    return __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes_js___default()(SUPPORTED_MEDIA_TYPES, type);
+    return __WEBPACK_IMPORTED_MODULE_4_core_js_pure_features_array_includes_js___default()(SUPPORTED_MEDIA_TYPES, type);
   })) {
     return false;
   }
 
   if (mediaTypes.video && mediaTypes.video.context) {
-    return __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes_js___default()(SUPPORTED_STREAM_TYPES, mediaTypes.video.context);
+    return __WEBPACK_IMPORTED_MODULE_4_core_js_pure_features_array_includes_js___default()(SUPPORTED_STREAM_TYPES, mediaTypes.video.context);
   }
 
   return true;
 }
 function getBidderRequest(bidRequests, bidder, adUnitCode) {
-  return __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find_js___default()(bidRequests, function (request) {
+  return __WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_array_find_js___default()(bidRequests, function (request) {
     return request.bids.filter(function (bid) {
       return bid.bidder === bidder && bid.adUnitCode === adUnitCode;
     }).length > 0;
@@ -1256,7 +1149,7 @@ function getGptSlotInfoForAdUnitCode(adUnitCode) {
 
   if (isGptPubadsDefined()) {
     // find the first matching gpt slot on the page
-    matchingSlot = __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find_js___default()(window.googletag.pubads().getSlots(), isSlotMatchingAdUnitCode(adUnitCode));
+    matchingSlot = __WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_array_find_js___default()(window.googletag.pubads().getSlots(), isSlotMatchingAdUnitCode(adUnitCode));
   }
 
   if (matchingSlot) {
@@ -1281,19 +1174,6 @@ function unsupportedBidderMessage(adUnit, bidder) {
     'banner': 'banner'
   }).join(', ');
   return "\n    ".concat(adUnit.code, " is a ").concat(mediaType, " ad unit\n    containing bidders that don't support ").concat(mediaType, ": ").concat(bidder, ".\n    This bidder won't fetch demand.\n  ");
-}
-/**
- * Delete property from object
- * @param {Object} object
- * @param {string} prop
- * @return {Object} object
- */
-
-function deletePropertyFromObject(object, prop) {
-  var result = _extends({}, object);
-
-  delete result[prop];
-  return result;
 }
 /**
  * Checks input is integer or not
@@ -1513,6 +1393,93 @@ function compareOn(property) {
     return 0;
   };
 }
+function parseQS(query) {
+  return !query ? {} : query.replace(/^\?/, '').split('&').reduce(function (acc, criteria) {
+    var _criteria$split = criteria.split('='),
+        _criteria$split2 = _slicedToArray(_criteria$split, 2),
+        k = _criteria$split2[0],
+        v = _criteria$split2[1];
+
+    if (/\[\]$/.test(k)) {
+      k = k.replace('[]', '');
+      acc[k] = acc[k] || [];
+      acc[k].push(v);
+    } else {
+      acc[k] = v || '';
+    }
+
+    return acc;
+  }, {});
+}
+function formatQS(query) {
+  return Object.keys(query).map(function (k) {
+    return Array.isArray(query[k]) ? query[k].map(function (v) {
+      return "".concat(k, "[]=").concat(v);
+    }).join('&') : "".concat(k, "=").concat(query[k]);
+  }).join('&');
+}
+function parseUrl(url, options) {
+  var parsed = document.createElement('a');
+
+  if (options && 'noDecodeWholeURL' in options && options.noDecodeWholeURL) {
+    parsed.href = url;
+  } else {
+    parsed.href = decodeURIComponent(url);
+  } // in window.location 'search' is string, not object
+
+
+  var qsAsString = options && 'decodeSearchAsString' in options && options.decodeSearchAsString;
+  return {
+    href: parsed.href,
+    protocol: (parsed.protocol || '').replace(/:$/, ''),
+    hostname: parsed.hostname,
+    port: +parsed.port,
+    pathname: parsed.pathname.replace(/^(?!\/)/, '/'),
+    search: qsAsString ? parsed.search : internal.parseQS(parsed.search || ''),
+    hash: (parsed.hash || '').replace(/^#/, ''),
+    host: parsed.host || window.location.host
+  };
+}
+function buildUrl(obj) {
+  return (obj.protocol || 'http') + '://' + (obj.host || obj.hostname + (obj.port ? ":".concat(obj.port) : '')) + (obj.pathname || '') + (obj.search ? "?".concat(internal.formatQS(obj.search || '')) : '') + (obj.hash ? "#".concat(obj.hash) : '');
+}
+/**
+ * This function compares two objects for checking their equivalence.
+ * @param {Object} obj1
+ * @param {Object} obj2
+ * @returns {boolean}
+ */
+
+function deepEqual(obj1, obj2) {
+  return __WEBPACK_IMPORTED_MODULE_2_deep_equal___default()(obj1, obj2);
+}
+function mergeDeep(target) {
+  for (var _len = arguments.length, sources = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    sources[_key - 1] = arguments[_key];
+  }
+
+  if (!sources.length) return target;
+  var source = sources.shift();
+
+  if (isPlainObject(target) && isPlainObject(source)) {
+    for (var key in source) {
+      if (isPlainObject(source[key])) {
+        if (!target[key]) _extends(target, _defineProperty({}, key, {}));
+        mergeDeep(target[key], source[key]);
+      } else if (isArray(source[key])) {
+        if (!target[key]) {
+          _extends(target, _defineProperty({}, key, source[key]));
+        } else if (isArray(target[key])) {
+          target[key] = target[key].concat(source[key]);
+        }
+      } else {
+        _extends(target, _defineProperty({}, key, source[key]));
+      }
+    }
+  }
+
+  return mergeDeep.apply(void 0, [target].concat(sources));
+}
 
 /***/ }),
 /* 1 */
@@ -1527,23 +1494,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["preloadBidderMappingFile"] = preloadBidderMappingFile;
 /* harmony export (immutable) */ __webpack_exports__["getIabSubCategory"] = getIabSubCategory;
 /* harmony export (immutable) */ __webpack_exports__["isValid"] = isValid;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__adapter_js__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__adapter_js__ = __webpack_require__(111);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__adapterManager_js__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bidfactory_js__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__userSync_js__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__native_js__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__video_js__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bidfactory_js__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__userSync_js__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__native_js__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__video_js__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__constants_json__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__constants_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7__constants_json__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__events_js__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__events_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__events_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_includes_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_includes_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ajax_js__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__utils_js__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__mediaTypes_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__hook_js__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__hook_js__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__storageManager_js__ = __webpack_require__(9);
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -1667,7 +1634,7 @@ var storage = Object(__WEBPACK_IMPORTED_MODULE_14__storageManager_js__["a" /* ge
  * @property {object} [native] Object for storing native creative assets
  * @property {object} [video] Object for storing video response data
  * @property {object} [meta] Object for storing bid meta data
- * @property {string} [meta.iabSubCatId] The IAB subcategory ID
+ * @property {string} [meta.primaryCatId] The IAB primary category ID
  * @property [Renderer] renderer A Renderer which can be used as a default for this bid,
  *   if the publisher doesn't override it. This is only relevant for Outstream Video bids.
  */
@@ -1955,24 +1922,30 @@ function preloadBidderMappingFile(fn, adUnits) {
       var key = info.localStorageKey ? info.localStorageKey : bidderSpec.getSpec().code;
       var mappingData = storage.getDataFromLocalStorage(key);
 
-      if (!mappingData || Object(__WEBPACK_IMPORTED_MODULE_11__utils_js__["timestamp"])() < mappingData.lastUpdated + refreshInDays * 24 * 60 * 60 * 1000) {
-        Object(__WEBPACK_IMPORTED_MODULE_10__ajax_js__["a" /* ajax */])(info.url, {
-          success: function success(response) {
-            try {
-              response = JSON.parse(response);
-              var mapping = {
-                lastUpdated: Object(__WEBPACK_IMPORTED_MODULE_11__utils_js__["timestamp"])(),
-                mapping: response.mapping
-              };
-              storage.setDataInLocalStorage(key, JSON.stringify(mapping));
-            } catch (error) {
-              Object(__WEBPACK_IMPORTED_MODULE_11__utils_js__["logError"])("Failed to parse ".concat(bidder, " bidder translation mapping file"));
+      try {
+        mappingData = mappingData ? JSON.parse(mappingData) : undefined;
+
+        if (!mappingData || Object(__WEBPACK_IMPORTED_MODULE_11__utils_js__["timestamp"])() > mappingData.lastUpdated + refreshInDays * 24 * 60 * 60 * 1000) {
+          Object(__WEBPACK_IMPORTED_MODULE_10__ajax_js__["a" /* ajax */])(info.url, {
+            success: function success(response) {
+              try {
+                response = JSON.parse(response);
+                var mapping = {
+                  lastUpdated: Object(__WEBPACK_IMPORTED_MODULE_11__utils_js__["timestamp"])(),
+                  mapping: response.mapping
+                };
+                storage.setDataInLocalStorage(key, JSON.stringify(mapping));
+              } catch (error) {
+                Object(__WEBPACK_IMPORTED_MODULE_11__utils_js__["logError"])("Failed to parse ".concat(bidder, " bidder translation mapping file"));
+              }
+            },
+            error: function error() {
+              Object(__WEBPACK_IMPORTED_MODULE_11__utils_js__["logError"])("Failed to load ".concat(bidder, " bidder translation file"));
             }
-          },
-          error: function error() {
-            Object(__WEBPACK_IMPORTED_MODULE_11__utils_js__["logError"])("Failed to load ".concat(bidder, " bidder translation file"));
-          }
-        });
+          });
+        }
+      } catch (error) {
+        Object(__WEBPACK_IMPORTED_MODULE_11__utils_js__["logError"])("Failed to parse ".concat(bidder, " bidder translation mapping file"));
       }
     }
   });
@@ -2036,7 +2009,7 @@ function isValid(adUnitCode, bid, bidRequests) {
   function hasValidKeys() {
     var bidKeys = Object.keys(bid);
     return COMMON_BID_RESPONSE_KEYS.every(function (key) {
-      return __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes_js___default()(bidKeys, key) && !__WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes_js___default()([undefined, null], bid[key]);
+      return __WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_includes_js___default()(bidKeys, key) && !__WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_includes_js___default()([undefined, null], bid[key]);
     });
   }
 
@@ -2118,14 +2091,14 @@ var ADPOD = 'adpod';
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RANDOM; });
 /* unused harmony export newConfig */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return config; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cpmBucketManager_js__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_library_fn_array_find_js__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_library_fn_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_library_fn_array_find_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_set_js__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_set_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_set_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__url_js__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cpmBucketManager_js__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_pure_features_array_find_js__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_pure_features_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_pure_features_array_find_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_set__ = __webpack_require__(92);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_set___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_set__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_js__ = __webpack_require__(0);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -2149,13 +2122,13 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 
 
-var from = __webpack_require__(88);
+var from = __webpack_require__(104);
 
 var utils = __webpack_require__(0);
 
 var CONSTANTS = __webpack_require__(5);
 
-var DEFAULT_DEBUG = (Object(__WEBPACK_IMPORTED_MODULE_4__url_js__["d" /* parseQS */])(window.location.search)[CONSTANTS.DEBUG_MODE] || '').toUpperCase() === 'TRUE';
+var DEFAULT_DEBUG = utils.getParameterByName(CONSTANTS.DEBUG_MODE).toUpperCase() === 'TRUE';
 var DEFAULT_BIDDER_TIMEOUT = 3000;
 var DEFAULT_PUBLISHER_DOMAIN = window.location.origin;
 var DEFAULT_ENABLE_SEND_ALL_BIDS = true;
@@ -2367,7 +2340,7 @@ function newConfig() {
     bidderConfig = {};
 
     function hasGranularity(val) {
-      return __WEBPACK_IMPORTED_MODULE_1_core_js_library_fn_array_find_js___default()(Object.keys(GRANULARITY_OPTIONS), function (option) {
+      return __WEBPACK_IMPORTED_MODULE_1_core_js_pure_features_array_find_js___default()(Object.keys(GRANULARITY_OPTIONS), function (option) {
         return val === GRANULARITY_OPTIONS[option];
       });
     }
@@ -2401,7 +2374,7 @@ function newConfig() {
   function _getConfig() {
     if (currBidder && bidderConfig && utils.isPlainObject(bidderConfig[currBidder])) {
       var currBidderConfig = bidderConfig[currBidder];
-      var configTopicSet = new __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_set_js___default.a(Object.keys(config).concat(Object.keys(currBidderConfig)));
+      var configTopicSet = new __WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_set___default.a(Object.keys(config).concat(Object.keys(currBidderConfig)));
       return from(configTopicSet).reduce(function (memo, topic) {
         if (typeof currBidderConfig[topic] === 'undefined') {
           memo[topic] = config[topic];
@@ -2409,7 +2382,7 @@ function newConfig() {
           memo[topic] = currBidderConfig[topic];
         } else {
           if (utils.isPlainObject(currBidderConfig[topic])) {
-            memo[topic] = _extends({}, config[topic], currBidderConfig[topic]);
+            memo[topic] = Object(__WEBPACK_IMPORTED_MODULE_4__utils_js__["mergeDeep"])({}, config[topic], currBidderConfig[topic]);
           } else {
             memo[topic] = currBidderConfig[topic];
           }
@@ -2546,7 +2519,7 @@ function newConfig() {
     var TOPICS = Object.keys(options); // call subscribers of a specific topic, passing only that configuration
 
     listeners.filter(function (listener) {
-      return __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js___default()(TOPICS, listener.topic);
+      return __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js___default()(TOPICS, listener.topic);
     }).forEach(function (listener) {
       listener.callback(_defineProperty({}, listener.topic, options[listener.topic]));
     }); // call subscribers that didn't give a topic, passing everything that was set
@@ -2653,7 +2626,7 @@ var config = newConfig();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ajax; });
 /* harmony export (immutable) */ __webpack_exports__["b"] = ajaxBuilder;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__url_js__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__url_js__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_js__ = __webpack_require__(3);
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -2777,7 +2750,7 @@ function ajaxBuilder() {
 /* 5 */
 /***/ (function(module, exports) {
 
-module.exports = {"JSON_MAPPING":{"PL_CODE":"code","PL_SIZE":"sizes","PL_BIDS":"bids","BD_BIDDER":"bidder","BD_ID":"paramsd","BD_PL_ID":"placementId","ADSERVER_TARGETING":"adserverTargeting","BD_SETTING_STANDARD":"standard"},"DEBUG_MODE":"pbjs_debug","STATUS":{"GOOD":1,"NO_BID":2},"CB":{"TYPE":{"ALL_BIDS_BACK":"allRequestedBidsBack","AD_UNIT_BIDS_BACK":"adUnitBidsBack","BID_WON":"bidWon","REQUEST_BIDS":"requestBids"}},"EVENTS":{"AUCTION_INIT":"auctionInit","AUCTION_END":"auctionEnd","BID_ADJUSTMENT":"bidAdjustment","BID_TIMEOUT":"bidTimeout","BID_REQUESTED":"bidRequested","BID_RESPONSE":"bidResponse","NO_BID":"noBid","BID_WON":"bidWon","BIDDER_DONE":"bidderDone","SET_TARGETING":"setTargeting","BEFORE_REQUEST_BIDS":"beforeRequestBids","REQUEST_BIDS":"requestBids","ADD_AD_UNITS":"addAdUnits","AD_RENDER_FAILED":"adRenderFailed"},"AD_RENDER_FAILED_REASON":{"PREVENT_WRITING_ON_MAIN_DOCUMENT":"preventWritingOnMainDocuemnt","NO_AD":"noAd","EXCEPTION":"exception","CANNOT_FIND_AD":"cannotFindAd","MISSING_DOC_OR_ADID":"missingDocOrAdid"},"EVENT_ID_PATHS":{"bidWon":"adUnitCode"},"GRANULARITY_OPTIONS":{"LOW":"low","MEDIUM":"medium","HIGH":"high","AUTO":"auto","DENSE":"dense","CUSTOM":"custom"},"TARGETING_KEYS":{"BIDDER":"hb_bidder","AD_ID":"hb_adid","PRICE_BUCKET":"hb_pb","SIZE":"hb_size","DEAL":"hb_deal","SOURCE":"hb_source","FORMAT":"hb_format","UUID":"hb_uuid","CACHE_ID":"hb_cache_id","CACHE_HOST":"hb_cache_host"},"NATIVE_KEYS":{"title":"hb_native_title","body":"hb_native_body","body2":"hb_native_body2","privacyLink":"hb_native_privacy","privacyIcon":"hb_native_privicon","sponsoredBy":"hb_native_brand","image":"hb_native_image","icon":"hb_native_icon","clickUrl":"hb_native_linkurl","displayUrl":"hb_native_displayurl","cta":"hb_native_cta","rating":"hb_native_rating","address":"hb_native_address","downloads":"hb_native_downloads","likes":"hb_native_likes","phone":"hb_native_phone","price":"hb_native_price","salePrice":"hb_native_saleprice"},"S2S":{"SRC":"s2s","DEFAULT_ENDPOINT":"https://prebid.adnxs.com/pbs/v1/openrtb2/auction","SYNCED_BIDDERS_KEY":"pbjsSyncs"},"BID_STATUS":{"BID_TARGETING_SET":"targetingSet","RENDERED":"rendered","BID_REJECTED":"bidRejected"},"SUBMODULES_THAT_ALWAYS_REFRESH_ID":{"parrableId":true}}
+module.exports = {"JSON_MAPPING":{"PL_CODE":"code","PL_SIZE":"sizes","PL_BIDS":"bids","BD_BIDDER":"bidder","BD_ID":"paramsd","BD_PL_ID":"placementId","ADSERVER_TARGETING":"adserverTargeting","BD_SETTING_STANDARD":"standard"},"DEBUG_MODE":"pbjs_debug","STATUS":{"GOOD":1,"NO_BID":2},"CB":{"TYPE":{"ALL_BIDS_BACK":"allRequestedBidsBack","AD_UNIT_BIDS_BACK":"adUnitBidsBack","BID_WON":"bidWon","REQUEST_BIDS":"requestBids"}},"EVENTS":{"AUCTION_INIT":"auctionInit","AUCTION_END":"auctionEnd","BID_ADJUSTMENT":"bidAdjustment","BID_TIMEOUT":"bidTimeout","BID_REQUESTED":"bidRequested","BID_RESPONSE":"bidResponse","NO_BID":"noBid","BID_WON":"bidWon","BIDDER_DONE":"bidderDone","SET_TARGETING":"setTargeting","BEFORE_REQUEST_BIDS":"beforeRequestBids","REQUEST_BIDS":"requestBids","ADD_AD_UNITS":"addAdUnits","AD_RENDER_FAILED":"adRenderFailed"},"AD_RENDER_FAILED_REASON":{"PREVENT_WRITING_ON_MAIN_DOCUMENT":"preventWritingOnMainDocuemnt","NO_AD":"noAd","EXCEPTION":"exception","CANNOT_FIND_AD":"cannotFindAd","MISSING_DOC_OR_ADID":"missingDocOrAdid"},"EVENT_ID_PATHS":{"bidWon":"adUnitCode"},"GRANULARITY_OPTIONS":{"LOW":"low","MEDIUM":"medium","HIGH":"high","AUTO":"auto","DENSE":"dense","CUSTOM":"custom"},"TARGETING_KEYS":{"BIDDER":"hb_bidder","AD_ID":"hb_adid","PRICE_BUCKET":"hb_pb","SIZE":"hb_size","DEAL":"hb_deal","SOURCE":"hb_source","FORMAT":"hb_format","UUID":"hb_uuid","CACHE_ID":"hb_cache_id","CACHE_HOST":"hb_cache_host"},"NATIVE_KEYS":{"title":"hb_native_title","body":"hb_native_body","body2":"hb_native_body2","privacyLink":"hb_native_privacy","privacyIcon":"hb_native_privicon","sponsoredBy":"hb_native_brand","image":"hb_native_image","icon":"hb_native_icon","clickUrl":"hb_native_linkurl","displayUrl":"hb_native_displayurl","cta":"hb_native_cta","rating":"hb_native_rating","address":"hb_native_address","downloads":"hb_native_downloads","likes":"hb_native_likes","phone":"hb_native_phone","price":"hb_native_price","salePrice":"hb_native_saleprice"},"S2S":{"SRC":"s2s","DEFAULT_ENDPOINT":"https://prebid.adnxs.com/pbs/v1/openrtb2/auction","SYNCED_BIDDERS_KEY":"pbjsSyncs"},"BID_STATUS":{"BID_TARGETING_SET":"targetingSet","RENDERED":"rendered","BID_REJECTED":"bidRejected"}}
 
 /***/ }),
 /* 6 */,
@@ -2790,18 +2763,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "uspDataHandler", function() { return uspDataHandler; });
 /* harmony export (immutable) */ __webpack_exports__["setS2STestingModule"] = setS2STestingModule;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sizeMapping_js__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__native_js__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sizeMapping_js__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__native_js__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__adapters_bidderFactory_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ajax_js__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__config_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__hook_js__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_library_fn_array_find_js__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_library_fn_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_core_js_library_fn_array_find_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__adUnits_js__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__refererDetection_js__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__hook_js__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_pure_features_array_find_js__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_pure_features_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_core_js_pure_features_array_find_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__adUnits_js__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__refererDetection_js__ = __webpack_require__(33);
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -2940,7 +2913,7 @@ function getAdUnitCopyForPrebidServer(adUnits) {
   adUnitsCopy.forEach(function (adUnit) {
     // filter out client side bids
     adUnit.bids = adUnit.bids.filter(function (bid) {
-      return __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default()(adaptersServerSide, bid.bidder) && (!doingS2STesting() || bid.finalSource !== s2sTestingModule.CLIENT);
+      return __WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default()(adaptersServerSide, bid.bidder) && (!doingS2STesting() || bid.finalSource !== s2sTestingModule.CLIENT);
     }).map(function (bid) {
       bid.bid_id = utils.getUniqueIdentifierStr();
       return bid;
@@ -2999,7 +2972,7 @@ adapterManager.makeBidRequests = Object(__WEBPACK_IMPORTED_MODULE_6__hook_js__["
     bidderCodes = Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["shuffle"])(bidderCodes);
   }
 
-  var refererInfo = Object(__WEBPACK_IMPORTED_MODULE_10__refererDetection_js__["b" /* getRefererInfo */])();
+  var refererInfo = Object(__WEBPACK_IMPORTED_MODULE_10__refererDetection_js__["a" /* getRefererInfo */])();
   var clientBidderCodes = bidderCodes;
   var clientTestAdapters = [];
 
@@ -3015,12 +2988,12 @@ adapterManager.makeBidRequests = Object(__WEBPACK_IMPORTED_MODULE_6__hook_js__["
     var adaptersServerSide = _s2sConfig.bidders; // don't call these client side (unless client request is needed for testing)
 
     clientBidderCodes = bidderCodes.filter(function (elm) {
-      return !__WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default()(adaptersServerSide, elm) || __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default()(clientTestAdapters, elm);
+      return !__WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default()(adaptersServerSide, elm) || __WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default()(clientTestAdapters, elm);
     });
 
     var adUnitsContainServerRequests = function adUnitsContainServerRequests(adUnits) {
-      return Boolean(__WEBPACK_IMPORTED_MODULE_8_core_js_library_fn_array_find_js___default()(adUnits, function (adUnit) {
-        return __WEBPACK_IMPORTED_MODULE_8_core_js_library_fn_array_find_js___default()(adUnit.bids, function (bid) {
+      return Boolean(__WEBPACK_IMPORTED_MODULE_8_core_js_pure_features_array_find_js___default()(adUnits, function (adUnit) {
+        return __WEBPACK_IMPORTED_MODULE_8_core_js_pure_features_array_find_js___default()(adUnit.bids, function (bid) {
           return (bid.bidSource || _s2sConfig.bidderControl && _s2sConfig.bidderControl[bid.bidder]) && bid.finalSource === s2sTestingModule.SERVER;
         });
       }));
@@ -3061,8 +3034,8 @@ adapterManager.makeBidRequests = Object(__WEBPACK_IMPORTED_MODULE_6__hook_js__["
 
     adUnitsS2SCopy.forEach(function (adUnitCopy) {
       var validBids = adUnitCopy.bids.filter(function (adUnitBid) {
-        return __WEBPACK_IMPORTED_MODULE_8_core_js_library_fn_array_find_js___default()(bidRequests, function (request) {
-          return __WEBPACK_IMPORTED_MODULE_8_core_js_library_fn_array_find_js___default()(request.bids, function (reqBid) {
+        return __WEBPACK_IMPORTED_MODULE_8_core_js_pure_features_array_find_js___default()(bidRequests, function (request) {
+          return __WEBPACK_IMPORTED_MODULE_8_core_js_pure_features_array_find_js___default()(request.bids, function (reqBid) {
             return reqBid.bidId === adUnitBid.bid_id;
           });
         });
@@ -3165,7 +3138,7 @@ adapterManager.callBids = function (adUnits, bidRequests, addBidResponse, doneCb
           }, []));
         }, []);
         utils.logMessage("CALLING S2S HEADER BIDDERS ==== ".concat(adaptersServerSide.filter(function (adapter) {
-          return __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default()(allBidders, adapter);
+          return __WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default()(allBidders, adapter);
         }).join(','))); // fire BID_REQUESTED event for each s2s bidRequest
 
         serverBidRequests.forEach(function (bidRequest) {
@@ -3216,8 +3189,8 @@ function isTestingServerOnly() {
 
 function getSupportedMediaTypes(bidderCode) {
   var result = [];
-  if (__WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default()(adapterManager.videoAdapters, bidderCode)) result.push('video');
-  if (__WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default()(__WEBPACK_IMPORTED_MODULE_2__native_js__["e" /* nativeAdapters */], bidderCode)) result.push('native');
+  if (__WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default()(adapterManager.videoAdapters, bidderCode)) result.push('video');
+  if (__WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default()(__WEBPACK_IMPORTED_MODULE_2__native_js__["e" /* nativeAdapters */], bidderCode)) result.push('native');
   return result;
 }
 
@@ -3232,11 +3205,11 @@ adapterManager.registerBidAdapter = function (bidAdaptor, bidderCode) {
     if (typeof bidAdaptor.callBids === 'function') {
       _bidderRegistry[bidderCode] = bidAdaptor;
 
-      if (__WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default()(supportedMediaTypes, 'video')) {
+      if (__WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default()(supportedMediaTypes, 'video')) {
         adapterManager.videoAdapters.push(bidderCode);
       }
 
-      if (__WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default()(supportedMediaTypes, 'native')) {
+      if (__WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default()(supportedMediaTypes, 'native')) {
         __WEBPACK_IMPORTED_MODULE_2__native_js__["e" /* nativeAdapters */].push(bidderCode);
       }
     } else {
@@ -3258,7 +3231,7 @@ adapterManager.aliasBidAdapter = function (bidderCode, alias) {
       var s2sConfig = __WEBPACK_IMPORTED_MODULE_5__config_js__["b" /* config */].getConfig('s2sConfig');
       var s2sBidders = s2sConfig && s2sConfig.bidders;
 
-      if (!(s2sBidders && __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default()(s2sBidders, alias))) {
+      if (!(s2sBidders && __WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default()(s2sBidders, alias))) {
         utils.logError('bidderCode "' + bidderCode + '" is not an existing bidder.', 'adapterManager.aliasBidAdapter');
       } else {
         _aliasRegistry[alias] = bidderCode;
@@ -3555,10 +3528,10 @@ module.exports = function () {
 /* harmony export (immutable) */ __webpack_exports__["a"] = getCoreStorageManager;
 /* harmony export (immutable) */ __webpack_exports__["b"] = getStorageManager;
 /* unused harmony export resetData */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__hook_js__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__hook_js__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js__);
 
 
 
@@ -3588,7 +3561,7 @@ function newStorageManager() {
       moduleType = _ref.moduleType;
 
   function isValid(cb) {
-    if (__WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js___default()(moduleTypeWhiteList, moduleType)) {
+    if (__WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js___default()(moduleTypeWhiteList, moduleType)) {
       var result = {
         valid: true
       };
@@ -3909,7 +3882,242 @@ function resetData() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["d"] = parseQS;
+/* harmony export (immutable) */ __webpack_exports__["a"] = Renderer;
+/* harmony export (immutable) */ __webpack_exports__["c"] = isRendererRequired;
+/* harmony export (immutable) */ __webpack_exports__["b"] = executeRenderer;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__adloader_js__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_js__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_find_js__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_find_js__);
+
+
+
+var moduleCode = 'outstream';
+/**
+ * @typedef {object} Renderer
+ *
+ * A Renderer stores some functions which are used to render a particular Bid.
+ * These are used in Outstream Video Bids, returned on the Bid by the adapter, and will
+ * be used to render that bid unless the Publisher overrides them.
+ */
+
+function Renderer(options) {
+  var _this = this;
+
+  var url = options.url,
+      config = options.config,
+      id = options.id,
+      callback = options.callback,
+      loaded = options.loaded,
+      adUnitCode = options.adUnitCode;
+  this.url = url;
+  this.config = config;
+  this.handlers = {};
+  this.id = id; // a renderer may push to the command queue to delay rendering until the
+  // render function is loaded by loadExternalScript, at which point the the command
+  // queue will be processed
+
+  this.loaded = loaded;
+  this.cmd = [];
+
+  this.push = function (func) {
+    if (typeof func !== 'function') {
+      __WEBPACK_IMPORTED_MODULE_1__utils_js__["logError"]('Commands given to Renderer.push must be wrapped in a function');
+      return;
+    }
+
+    _this.loaded ? func.call() : _this.cmd.push(func);
+  }; // bidders may override this with the `callback` property given to `install`
+
+
+  this.callback = callback || function () {
+    _this.loaded = true;
+
+    _this.process();
+  }; // use a function, not an arrow, in order to be able to pass "arguments" through
+
+
+  this.render = function () {
+    if (!isRendererDefinedOnAdUnit(adUnitCode)) {
+      // we expect to load a renderer url once only so cache the request to load script
+      Object(__WEBPACK_IMPORTED_MODULE_0__adloader_js__["a" /* loadExternalScript */])(url, moduleCode, this.callback);
+    } else {
+      __WEBPACK_IMPORTED_MODULE_1__utils_js__["logWarn"]("External Js not loaded by Renderer since renderer url and callback is already defined on adUnit ".concat(adUnitCode));
+    }
+
+    if (this._render) {
+      this._render.apply(this, arguments); // _render is expected to use push as appropriate
+
+    } else {
+      __WEBPACK_IMPORTED_MODULE_1__utils_js__["logWarn"]("No render function was provided, please use .setRender on the renderer");
+    }
+  }.bind(this); // bind the function to this object to avoid 'this' errors
+
+}
+
+Renderer.install = function (_ref) {
+  var url = _ref.url,
+      config = _ref.config,
+      id = _ref.id,
+      callback = _ref.callback,
+      loaded = _ref.loaded,
+      adUnitCode = _ref.adUnitCode;
+  return new Renderer({
+    url: url,
+    config: config,
+    id: id,
+    callback: callback,
+    loaded: loaded,
+    adUnitCode: adUnitCode
+  });
+};
+
+Renderer.prototype.getConfig = function () {
+  return this.config;
+};
+
+Renderer.prototype.setRender = function (fn) {
+  this._render = fn;
+};
+
+Renderer.prototype.setEventHandlers = function (handlers) {
+  this.handlers = handlers;
+};
+
+Renderer.prototype.handleVideoEvent = function (_ref2) {
+  var id = _ref2.id,
+      eventName = _ref2.eventName;
+
+  if (typeof this.handlers[eventName] === 'function') {
+    this.handlers[eventName]();
+  }
+
+  __WEBPACK_IMPORTED_MODULE_1__utils_js__["logMessage"]("Prebid Renderer event for id ".concat(id, " type ").concat(eventName));
+};
+/*
+ * Calls functions that were pushed to the command queue before the
+ * renderer was loaded by `loadExternalScript`
+ */
+
+
+Renderer.prototype.process = function () {
+  while (this.cmd.length > 0) {
+    try {
+      this.cmd.shift().call();
+    } catch (error) {
+      __WEBPACK_IMPORTED_MODULE_1__utils_js__["logError"]('Error processing Renderer command: ', error);
+    }
+  }
+};
+/**
+ * Checks whether creative rendering should be done by Renderer or not.
+ * @param {Object} renderer Renderer object installed by adapter
+ * @returns {Boolean}
+ */
+
+
+function isRendererRequired(renderer) {
+  return !!(renderer && renderer.url);
+}
+/**
+ * Render the bid returned by the adapter
+ * @param {Object} renderer Renderer object installed by adapter
+ * @param {Object} bid Bid response
+ */
+
+function executeRenderer(renderer, bid) {
+  renderer.render(bid);
+}
+
+function isRendererDefinedOnAdUnit(adUnitCode) {
+  var adUnits = pbjs.adUnits;
+  var adUnit = __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_find_js___default()(adUnits, function (adUnit) {
+    return adUnit.code === adUnitCode;
+  });
+  return !!(adUnit && adUnit.renderer && adUnit.renderer.url && adUnit.renderer.render);
+}
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var parent = __webpack_require__(124);
+
+module.exports = parent;
+
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var parent = __webpack_require__(133);
+
+module.exports = parent;
+
+
+/***/ }),
+/* 13 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return hook; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getHook; });
+/* harmony export (immutable) */ __webpack_exports__["d"] = setupBeforeHookFnOnce;
+/* harmony export (immutable) */ __webpack_exports__["c"] = module;
+/* harmony export (immutable) */ __webpack_exports__["e"] = submodule;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval_index_js__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval_index_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval_index_js__);
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+
+var hook = __WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval_index_js___default()({
+  ready: __WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval_index_js___default.a.SYNC | __WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval_index_js___default.a.ASYNC | __WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval_index_js___default.a.QUEUE
+});
+var getHook = hook.get;
+function setupBeforeHookFnOnce(baseFn, hookFn) {
+  var priority = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 15;
+  var result = baseFn.getHooks({
+    hook: hookFn
+  });
+
+  if (result.length === 0) {
+    baseFn.before(hookFn, priority);
+  }
+}
+function module(name, install) {
+  hook('async', function (submodules) {
+    submodules.forEach(function (args) {
+      return install.apply(void 0, _toConsumableArray(args));
+    });
+  }, name)([]); // will be queued until hook.ready() called in pbjs.processQueue();
+}
+function submodule(name) {
+  for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    args[_key - 1] = arguments[_key];
+  }
+
+  getHook(name).before(function (next, modules) {
+    modules.push(args);
+    next(modules);
+  });
+}
+
+/***/ }),
+/* 14 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export parseQS */
 /* harmony export (immutable) */ __webpack_exports__["b"] = formatQS;
 /* harmony export (immutable) */ __webpack_exports__["c"] = parse;
 /* harmony export (immutable) */ __webpack_exports__["a"] = format;
@@ -3977,230 +4185,242 @@ function format(obj) {
 }
 
 /***/ }),
-/* 11 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(110);
-module.exports = __webpack_require__(19).Array.includes;
-
-
-/***/ }),
-/* 12 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = Renderer;
-/* harmony export (immutable) */ __webpack_exports__["c"] = isRendererRequired;
-/* harmony export (immutable) */ __webpack_exports__["b"] = executeRenderer;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__adloader_js__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find_js__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find_js__);
 
+var global = __webpack_require__(24);
+var getOwnPropertyDescriptor = __webpack_require__(126).f;
+var isForced = __webpack_require__(128);
+var path = __webpack_require__(47);
+var bind = __webpack_require__(23);
+var createNonEnumerableProperty = __webpack_require__(31);
+var has = __webpack_require__(26);
 
-
-var moduleCode = 'outstream';
-/**
- * @typedef {object} Renderer
- *
- * A Renderer stores some functions which are used to render a particular Bid.
- * These are used in Outstream Video Bids, returned on the Bid by the adapter, and will
- * be used to render that bid unless the Publisher overrides them.
- */
-
-function Renderer(options) {
-  var _this = this;
-
-  var url = options.url,
-      config = options.config,
-      id = options.id,
-      callback = options.callback,
-      loaded = options.loaded,
-      adUnitCode = options.adUnitCode;
-  this.url = url;
-  this.config = config;
-  this.handlers = {};
-  this.id = id; // a renderer may push to the command queue to delay rendering until the
-  // render function is loaded by loadExternalScript, at which point the the command
-  // queue will be processed
-
-  this.loaded = loaded;
-  this.cmd = [];
-
-  this.push = function (func) {
-    if (typeof func !== 'function') {
-      __WEBPACK_IMPORTED_MODULE_1__utils_js__["logError"]('Commands given to Renderer.push must be wrapped in a function');
-      return;
-    }
-
-    _this.loaded ? func.call() : _this.cmd.push(func);
-  }; // bidders may override this with the `callback` property given to `install`
-
-
-  this.callback = callback || function () {
-    _this.loaded = true;
-
-    _this.process();
+var wrapConstructor = function (NativeConstructor) {
+  var Wrapper = function (a, b, c) {
+    if (this instanceof NativeConstructor) {
+      switch (arguments.length) {
+        case 0: return new NativeConstructor();
+        case 1: return new NativeConstructor(a);
+        case 2: return new NativeConstructor(a, b);
+      } return new NativeConstructor(a, b, c);
+    } return NativeConstructor.apply(this, arguments);
   };
-
-  if (!isRendererDefinedOnAdUnit(adUnitCode)) {
-    // we expect to load a renderer url once only so cache the request to load script
-    Object(__WEBPACK_IMPORTED_MODULE_0__adloader_js__["a" /* loadExternalScript */])(url, moduleCode, this.callback);
-  } else {
-    __WEBPACK_IMPORTED_MODULE_1__utils_js__["logWarn"]("External Js not loaded by Renderer since renderer url and callback is already defined on adUnit ".concat(adUnitCode));
-  }
-}
-
-Renderer.install = function (_ref) {
-  var url = _ref.url,
-      config = _ref.config,
-      id = _ref.id,
-      callback = _ref.callback,
-      loaded = _ref.loaded,
-      adUnitCode = _ref.adUnitCode;
-  return new Renderer({
-    url: url,
-    config: config,
-    id: id,
-    callback: callback,
-    loaded: loaded,
-    adUnitCode: adUnitCode
-  });
+  Wrapper.prototype = NativeConstructor.prototype;
+  return Wrapper;
 };
 
-Renderer.prototype.getConfig = function () {
-  return this.config;
-};
-
-Renderer.prototype.setRender = function (fn) {
-  this.render = fn;
-};
-
-Renderer.prototype.setEventHandlers = function (handlers) {
-  this.handlers = handlers;
-};
-
-Renderer.prototype.handleVideoEvent = function (_ref2) {
-  var id = _ref2.id,
-      eventName = _ref2.eventName;
-
-  if (typeof this.handlers[eventName] === 'function') {
-    this.handlers[eventName]();
-  }
-
-  __WEBPACK_IMPORTED_MODULE_1__utils_js__["logMessage"]("Prebid Renderer event for id ".concat(id, " type ").concat(eventName));
-};
 /*
- * Calls functions that were pushed to the command queue before the
- * renderer was loaded by `loadExternalScript`
- */
+  options.target      - name of the target object
+  options.global      - target is the global object
+  options.stat        - export as static methods of target
+  options.proto       - export as prototype methods of target
+  options.real        - real prototype method for the `pure` version
+  options.forced      - export even if the native feature is available
+  options.bind        - bind methods to the target, required for the `pure` version
+  options.wrap        - wrap constructors to preventing global pollution, required for the `pure` version
+  options.unsafe      - use the simple assignment of property instead of delete + defineProperty
+  options.sham        - add a flag to not completely full polyfills
+  options.enumerable  - export as enumerable property
+  options.noTargetGet - prevent calling a getter on target
+*/
+module.exports = function (options, source) {
+  var TARGET = options.target;
+  var GLOBAL = options.global;
+  var STATIC = options.stat;
+  var PROTO = options.proto;
 
+  var nativeSource = GLOBAL ? global : STATIC ? global[TARGET] : (global[TARGET] || {}).prototype;
 
-Renderer.prototype.process = function () {
-  while (this.cmd.length > 0) {
-    try {
-      this.cmd.shift().call();
-    } catch (error) {
-      __WEBPACK_IMPORTED_MODULE_1__utils_js__["logError"]('Error processing Renderer command: ', error);
+  var target = GLOBAL ? path : path[TARGET] || (path[TARGET] = {});
+  var targetPrototype = target.prototype;
+
+  var FORCED, USE_NATIVE, VIRTUAL_PROTOTYPE;
+  var key, sourceProperty, targetProperty, nativeProperty, resultProperty, descriptor;
+
+  for (key in source) {
+    FORCED = isForced(GLOBAL ? key : TARGET + (STATIC ? '.' : '#') + key, options.forced);
+    // contains in native
+    USE_NATIVE = !FORCED && nativeSource && has(nativeSource, key);
+
+    targetProperty = target[key];
+
+    if (USE_NATIVE) if (options.noTargetGet) {
+      descriptor = getOwnPropertyDescriptor(nativeSource, key);
+      nativeProperty = descriptor && descriptor.value;
+    } else nativeProperty = nativeSource[key];
+
+    // export native or implementation
+    sourceProperty = (USE_NATIVE && nativeProperty) ? nativeProperty : source[key];
+
+    if (USE_NATIVE && typeof targetProperty === typeof sourceProperty) continue;
+
+    // bind timers to global for call from export context
+    if (options.bind && USE_NATIVE) resultProperty = bind(sourceProperty, global);
+    // wrap global constructors for prevent changs in this version
+    else if (options.wrap && USE_NATIVE) resultProperty = wrapConstructor(sourceProperty);
+    // make static versions for prototype methods
+    else if (PROTO && typeof sourceProperty == 'function') resultProperty = bind(Function.call, sourceProperty);
+    // default case
+    else resultProperty = sourceProperty;
+
+    // add a flag to not completely full polyfills
+    if (options.sham || (sourceProperty && sourceProperty.sham) || (targetProperty && targetProperty.sham)) {
+      createNonEnumerableProperty(resultProperty, 'sham', true);
+    }
+
+    target[key] = resultProperty;
+
+    if (PROTO) {
+      VIRTUAL_PROTOTYPE = TARGET + 'Prototype';
+      if (!has(path, VIRTUAL_PROTOTYPE)) {
+        createNonEnumerableProperty(path, VIRTUAL_PROTOTYPE, {});
+      }
+      // export virtual prototype methods
+      path[VIRTUAL_PROTOTYPE][key] = sourceProperty;
+      // export real prototype methods
+      if (options.real && targetPrototype && !targetPrototype[key]) {
+        createNonEnumerableProperty(targetPrototype, key, sourceProperty);
+      }
     }
   }
 };
-/**
- * Checks whether creative rendering should be done by Renderer or not.
- * @param {Object} renderer Renderer object installed by adapter
- * @returns {Boolean}
- */
 
-
-function isRendererRequired(renderer) {
-  return !!(renderer && renderer.url);
-}
-/**
- * Render the bid returned by the adapter
- * @param {Object} renderer Renderer object installed by adapter
- * @param {Object} bid Bid response
- */
-
-function executeRenderer(renderer, bid) {
-  renderer.render(bid);
-}
-
-function isRendererDefinedOnAdUnit(adUnitCode) {
-  var adUnits = pbjs.adUnits;
-  var adUnit = __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find_js___default()(adUnits, function (adUnit) {
-    return adUnit.code === adUnitCode;
-  });
-  return !!(adUnit && adUnit.renderer && adUnit.renderer.url && adUnit.renderer.render);
-}
 
 /***/ }),
-/* 13 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(104);
-module.exports = __webpack_require__(19).Array.find;
+var isObject = __webpack_require__(25);
+
+module.exports = function (it) {
+  if (!isObject(it)) {
+    throw TypeError(String(it) + ' is not an object');
+  } return it;
+};
 
 
 /***/ }),
-/* 14 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 17 */
+/***/ (function(module, exports) {
 
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return hook; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getHook; });
-/* harmony export (immutable) */ __webpack_exports__["d"] = setupBeforeHookFnOnce;
-/* harmony export (immutable) */ __webpack_exports__["c"] = module;
-/* harmony export (immutable) */ __webpack_exports__["e"] = submodule;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval_index_js__ = __webpack_require__(141);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval_index_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval_index_js__);
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+module.exports = true;
 
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-
-var hook = __WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval_index_js___default()({
-  ready: __WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval_index_js___default.a.SYNC | __WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval_index_js___default.a.ASYNC | __WEBPACK_IMPORTED_MODULE_0_fun_hooks_no_eval_index_js___default.a.QUEUE
-});
-var getHook = hook.get;
-function setupBeforeHookFnOnce(baseFn, hookFn) {
-  var priority = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 15;
-  var result = baseFn.getHooks({
-    hook: hookFn
-  });
-
-  if (result.length === 0) {
-    baseFn.before(hookFn, priority);
-  }
-}
-function module(name, install) {
-  hook('async', function (submodules) {
-    submodules.forEach(function (args) {
-      return install.apply(void 0, _toConsumableArray(args));
-    });
-  }, name)([]); // will be queued until hook.ready() called in pbjs.processQueue();
-}
-function submodule(name) {
-  for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    args[_key - 1] = arguments[_key];
-  }
-
-  getHook(name).before(function (next, modules) {
-    modules.push(args);
-    next(modules);
-  });
-}
 
 /***/ }),
-/* 15 */,
-/* 16 */
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var anObject = __webpack_require__(16);
+var isArrayIteratorMethod = __webpack_require__(94);
+var toLength = __webpack_require__(56);
+var bind = __webpack_require__(23);
+var getIteratorMethod = __webpack_require__(70);
+var callWithSafeIterationClosing = __webpack_require__(95);
+
+var Result = function (stopped, result) {
+  this.stopped = stopped;
+  this.result = result;
+};
+
+var iterate = module.exports = function (iterable, fn, that, AS_ENTRIES, IS_ITERATOR) {
+  var boundFunction = bind(fn, that, AS_ENTRIES ? 2 : 1);
+  var iterator, iterFn, index, length, result, next, step;
+
+  if (IS_ITERATOR) {
+    iterator = iterable;
+  } else {
+    iterFn = getIteratorMethod(iterable);
+    if (typeof iterFn != 'function') throw TypeError('Target is not iterable');
+    // optimisation for array iterators
+    if (isArrayIteratorMethod(iterFn)) {
+      for (index = 0, length = toLength(iterable.length); length > index; index++) {
+        result = AS_ENTRIES
+          ? boundFunction(anObject(step = iterable[index])[0], step[1])
+          : boundFunction(iterable[index]);
+        if (result && result instanceof Result) return result;
+      } return new Result(false);
+    }
+    iterator = iterFn.call(iterable);
+  }
+
+  next = iterator.next;
+  while (!(step = next.call(iterator)).done) {
+    result = callWithSafeIterationClosing(iterator, boundFunction, step.value, AS_ENTRIES);
+    if (typeof result == 'object' && result && result instanceof Result) return result;
+  } return new Result(false);
+};
+
+iterate.stop = function (result) {
+  return new Result(true, result);
+};
+
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports) {
+
+module.exports = function (it) {
+  if (typeof it != 'function') {
+    throw TypeError(String(it) + ' is not a function');
+  } return it;
+};
+
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || Function("return this")() || (1,eval)("this");
+} catch(e) {
+	// This works if the window reference is available
+	if(typeof window === "object")
+		g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var global = __webpack_require__(24);
+var shared = __webpack_require__(88);
+var has = __webpack_require__(26);
+var uid = __webpack_require__(68);
+var NATIVE_SYMBOL = __webpack_require__(90);
+var USE_SYMBOL_AS_UID = __webpack_require__(132);
+
+var WellKnownSymbolsStore = shared('wks');
+var Symbol = global.Symbol;
+var createWellKnownSymbol = USE_SYMBOL_AS_UID ? Symbol : Symbol && Symbol.withoutSetter || uid;
+
+module.exports = function (name) {
+  if (!has(WellKnownSymbolsStore, name)) {
+    if (NATIVE_SYMBOL && has(Symbol, name)) WellKnownSymbolsStore[name] = Symbol[name];
+    else WellKnownSymbolsStore[name] = createWellKnownSymbol('Symbol.' + name);
+  } return WellKnownSymbolsStore[name];
+};
+
+
+/***/ }),
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4220,100 +4440,57 @@ function getGlobal() {
 }
 
 /***/ }),
-/* 17 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var store = __webpack_require__(72)('wks');
-var uid = __webpack_require__(57);
-var Symbol = __webpack_require__(22).Symbol;
-var USE_SYMBOL = typeof Symbol == 'function';
+var aFunction = __webpack_require__(19);
 
-var $exports = module.exports = function (name) {
-  return store[name] || (store[name] =
-    USE_SYMBOL && Symbol[name] || (USE_SYMBOL ? Symbol : uid)('Symbol.' + name));
-};
-
-$exports.store = store;
-
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var global = __webpack_require__(22);
-var core = __webpack_require__(19);
-var ctx = __webpack_require__(31);
-var hide = __webpack_require__(24);
-var has = __webpack_require__(36);
-var PROTOTYPE = 'prototype';
-
-var $export = function (type, name, source) {
-  var IS_FORCED = type & $export.F;
-  var IS_GLOBAL = type & $export.G;
-  var IS_STATIC = type & $export.S;
-  var IS_PROTO = type & $export.P;
-  var IS_BIND = type & $export.B;
-  var IS_WRAP = type & $export.W;
-  var exports = IS_GLOBAL ? core : core[name] || (core[name] = {});
-  var expProto = exports[PROTOTYPE];
-  var target = IS_GLOBAL ? global : IS_STATIC ? global[name] : (global[name] || {})[PROTOTYPE];
-  var key, own, out;
-  if (IS_GLOBAL) source = name;
-  for (key in source) {
-    // contains in native
-    own = !IS_FORCED && target && target[key] !== undefined;
-    if (own && has(exports, key)) continue;
-    // export native or passed
-    out = own ? target[key] : source[key];
-    // prevent global pollution for namespaces
-    exports[key] = IS_GLOBAL && typeof target[key] != 'function' ? source[key]
-    // bind timers to global for call from export context
-    : IS_BIND && own ? ctx(out, global)
-    // wrap global constructors for prevent change them in library
-    : IS_WRAP && target[key] == out ? (function (C) {
-      var F = function (a, b, c) {
-        if (this instanceof C) {
-          switch (arguments.length) {
-            case 0: return new C();
-            case 1: return new C(a);
-            case 2: return new C(a, b);
-          } return new C(a, b, c);
-        } return C.apply(this, arguments);
-      };
-      F[PROTOTYPE] = C[PROTOTYPE];
-      return F;
-    // make static versions for prototype methods
-    })(out) : IS_PROTO && typeof out == 'function' ? ctx(Function.call, out) : out;
-    // export proto methods to core.%CONSTRUCTOR%.methods.%NAME%
-    if (IS_PROTO) {
-      (exports.virtual || (exports.virtual = {}))[key] = out;
-      // export proto methods to core.%CONSTRUCTOR%.prototype.%NAME%
-      if (type & $export.R && expProto && !expProto[key]) hide(expProto, key, out);
-    }
+// optional / simple context binding
+module.exports = function (fn, that, length) {
+  aFunction(fn);
+  if (that === undefined) return fn;
+  switch (length) {
+    case 0: return function () {
+      return fn.call(that);
+    };
+    case 1: return function (a) {
+      return fn.call(that, a);
+    };
+    case 2: return function (a, b) {
+      return fn.call(that, a, b);
+    };
+    case 3: return function (a, b, c) {
+      return fn.call(that, a, b, c);
+    };
   }
+  return function (/* ...args */) {
+    return fn.apply(that, arguments);
+  };
 };
-// type bitmap
-$export.F = 1;   // forced
-$export.G = 2;   // global
-$export.S = 4;   // static
-$export.P = 8;   // proto
-$export.B = 16;  // bind
-$export.W = 32;  // wrap
-$export.U = 64;  // safe
-$export.R = 128; // real proto method for `library`
-module.exports = $export;
 
 
 /***/ }),
-/* 19 */
-/***/ (function(module, exports) {
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
 
-var core = module.exports = { version: '2.6.11' };
-if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
+/* WEBPACK VAR INJECTION */(function(global) {var check = function (it) {
+  return it && it.Math == Math && it;
+};
 
+// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
+module.exports =
+  // eslint-disable-next-line no-undef
+  check(typeof globalThis == 'object' && globalThis) ||
+  check(typeof window == 'object' && window) ||
+  check(typeof self == 'object' && self) ||
+  check(typeof global == 'object' && global) ||
+  // eslint-disable-next-line no-new-func
+  Function('return this')();
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(20)))
 
 /***/ }),
-/* 20 */
+/* 25 */
 /***/ (function(module, exports) {
 
 module.exports = function (it) {
@@ -4322,389 +4499,44 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 21 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (immutable) */ __webpack_exports__["createBid"] = createBid;
-var utils = __webpack_require__(0);
-/**
- Required paramaters
- bidderCode,
- height,
- width,
- statusCode
- Optional paramaters
- adId,
- cpm,
- ad,
- adUrl,
- dealId,
- priceKeyString;
- */
-
-
-function Bid(statusCode, bidRequest) {
-  var _bidSrc = bidRequest && bidRequest.src || 'client';
-
-  var _statusCode = statusCode || 0;
-
-  this.bidderCode = bidRequest && bidRequest.bidder || '';
-  this.width = 0;
-  this.height = 0;
-  this.statusMessage = _getStatus();
-  this.adId = utils.getUniqueIdentifierStr();
-  this.requestId = bidRequest && bidRequest.bidId;
-  this.mediaType = 'banner';
-  this.source = _bidSrc;
-
-  function _getStatus() {
-    switch (_statusCode) {
-      case 0:
-        return 'Pending';
-
-      case 1:
-        return 'Bid available';
-
-      case 2:
-        return 'Bid returned empty or error response';
-
-      case 3:
-        return 'Bid timed out';
-    }
-  }
-
-  this.getStatusCode = function () {
-    return _statusCode;
-  }; // returns the size of the bid creative. Concatenation of width and height by ‘x’.
-
-
-  this.getSize = function () {
-    return this.width + 'x' + this.height;
-  };
-} // Bid factory function.
-
-
-function createBid(statusCode, bidRequest) {
-  return new Bid(statusCode, bidRequest);
-}
-
-/***/ }),
-/* 22 */
+/* 26 */
 /***/ (function(module, exports) {
 
-// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
-var global = module.exports = typeof window != 'undefined' && window.Math == Math
-  ? window : typeof self != 'undefined' && self.Math == Math ? self
-  // eslint-disable-next-line no-new-func
-  : Function('return this')();
-if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
+var hasOwnProperty = {}.hasOwnProperty;
 
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var anObject = __webpack_require__(35);
-var IE8_DOM_DEFINE = __webpack_require__(105);
-var toPrimitive = __webpack_require__(106);
-var dP = Object.defineProperty;
-
-exports.f = __webpack_require__(25) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
-  anObject(O);
-  P = toPrimitive(P, true);
-  anObject(Attributes);
-  if (IE8_DOM_DEFINE) try {
-    return dP(O, P, Attributes);
-  } catch (e) { /* empty */ }
-  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported!');
-  if ('value' in Attributes) O[P] = Attributes.value;
-  return O;
+module.exports = function (it, key) {
+  return hasOwnProperty.call(it, key);
 };
 
-
-/***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var dP = __webpack_require__(23);
-var createDesc = __webpack_require__(53);
-module.exports = __webpack_require__(25) ? function (object, key, value) {
-  return dP.f(object, key, createDesc(1, value));
-} : function (object, key, value) {
-  object[key] = value;
-  return object;
-};
-
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Thank's IE8 for his funny defineProperty
-module.exports = !__webpack_require__(43)(function () {
-  return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
-});
-
-
-/***/ }),
-/* 26 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return nativeAdapters; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NATIVE_TARGETING_KEYS; });
-/* harmony export (immutable) */ __webpack_exports__["g"] = processNativeAdUnitParams;
-/* unused harmony export nativeAdUnit */
-/* unused harmony export nativeBidder */
-/* unused harmony export hasNonNativeBidder */
-/* harmony export (immutable) */ __webpack_exports__["f"] = nativeBidIsValid;
-/* harmony export (immutable) */ __webpack_exports__["b"] = fireNativeTrackers;
-/* harmony export (immutable) */ __webpack_exports__["d"] = getNativeTargeting;
-/* harmony export (immutable) */ __webpack_exports__["c"] = getAssetMessage;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_library_fn_array_includes_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_library_fn_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_library_fn_array_includes_js__);
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-
-
-
-var CONSTANTS = __webpack_require__(5);
-
-var nativeAdapters = [];
-var NATIVE_TARGETING_KEYS = Object.keys(CONSTANTS.NATIVE_KEYS).map(function (key) {
-  return CONSTANTS.NATIVE_KEYS[key];
-});
-var IMAGE = {
-  image: {
-    required: true
-  },
-  title: {
-    required: true
-  },
-  sponsoredBy: {
-    required: true
-  },
-  clickUrl: {
-    required: true
-  },
-  body: {
-    required: false
-  },
-  icon: {
-    required: false
-  }
-};
-var SUPPORTED_TYPES = {
-  image: IMAGE
-};
-/**
- * Recieves nativeParams from an adUnit. If the params were not of type 'type',
- * passes them on directly. If they were of type 'type', translate
- * them into the predefined specific asset requests for that type of native ad.
- */
-
-function processNativeAdUnitParams(params) {
-  if (params && params.type && typeIsSupported(params.type)) {
-    return SUPPORTED_TYPES[params.type];
-  }
-
-  return params;
-}
-/**
- * Check if the native type specified in the adUnit is supported by Prebid.
- */
-
-function typeIsSupported(type) {
-  if (!(type && __WEBPACK_IMPORTED_MODULE_1_core_js_library_fn_array_includes_js___default()(Object.keys(SUPPORTED_TYPES), type))) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["logError"])("".concat(type, " nativeParam is not supported"));
-    return false;
-  }
-
-  return true;
-}
-/**
- * Helper functions for working with native-enabled adUnits
- * TODO: abstract this and the video helper functions into general
- * adunit validation helper functions
- */
-
-
-var nativeAdUnit = function nativeAdUnit(adUnit) {
-  var mediaType = adUnit.mediaType === 'native';
-  var mediaTypes = Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(adUnit, 'mediaTypes.native');
-  return mediaType || mediaTypes;
-};
-var nativeBidder = function nativeBidder(bid) {
-  return __WEBPACK_IMPORTED_MODULE_1_core_js_library_fn_array_includes_js___default()(nativeAdapters, bid.bidder);
-};
-var hasNonNativeBidder = function hasNonNativeBidder(adUnit) {
-  return adUnit.bids.filter(function (bid) {
-    return !nativeBidder(bid);
-  }).length;
-};
-/**
- * Validate that the native assets on this bid contain all assets that were
- * marked as required in the adUnit configuration.
- * @param {Bid} bid Native bid to validate
- * @param {BidRequest[]} bidRequests All bid requests for an auction
- * @return {Boolean} If object is valid
- */
-
-function nativeBidIsValid(bid, bidRequests) {
-  var bidRequest = Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["getBidRequest"])(bid.requestId, bidRequests);
-
-  if (!bidRequest) {
-    return false;
-  } // all native bid responses must define a landing page url
-
-
-  if (!Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bid, 'native.clickUrl')) {
-    return false;
-  }
-
-  if (Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bid, 'native.image')) {
-    if (!Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bid, 'native.image.height') || !Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bid, 'native.image.width')) {
-      return false;
-    }
-  }
-
-  if (Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bid, 'native.icon')) {
-    if (!Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bid, 'native.icon.height') || !Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bid, 'native.icon.width')) {
-      return false;
-    }
-  }
-
-  var requestedAssets = bidRequest.nativeParams;
-
-  if (!requestedAssets) {
-    return true;
-  }
-
-  var requiredAssets = Object.keys(requestedAssets).filter(function (key) {
-    return requestedAssets[key].required;
-  });
-  var returnedAssets = Object.keys(bid['native']).filter(function (key) {
-    return bid['native'][key];
-  });
-  return requiredAssets.every(function (asset) {
-    return __WEBPACK_IMPORTED_MODULE_1_core_js_library_fn_array_includes_js___default()(returnedAssets, asset);
-  });
-}
-/*
- * Native responses may have associated impression or click trackers.
- * This retrieves the appropriate tracker urls for the given ad object and
- * fires them. As a native creatives may be in a cross-origin frame, it may be
- * necessary to invoke this function via postMessage. secureCreatives is
- * configured to fire this function when it receives a `message` of 'Prebid Native'
- * and an `adId` with the value of the `bid.adId`. When a message is posted with
- * these parameters, impression trackers are fired. To fire click trackers, the
- * message should contain an `action` set to 'click'.
- *
- * // Native creative template example usage
- * <a href="%%CLICK_URL_UNESC%%%%PATTERN:hb_native_linkurl%%"
- *    target="_blank"
- *    onclick="fireTrackers('click')">
- *    %%PATTERN:hb_native_title%%
- * </a>
- *
- * <script>
- *   function fireTrackers(action) {
- *     var message = {message: 'Prebid Native', adId: '%%PATTERN:hb_adid%%'};
- *     if (action === 'click') {message.action = 'click';} // fires click trackers
- *     window.parent.postMessage(JSON.stringify(message), '*');
- *   }
- *   fireTrackers(); // fires impressions when creative is loaded
- * </script>
- */
-
-function fireNativeTrackers(message, adObject) {
-  var trackers;
-
-  if (message.action === 'click') {
-    trackers = adObject['native'] && adObject['native'].clickTrackers;
-  } else {
-    trackers = adObject['native'] && adObject['native'].impressionTrackers;
-
-    if (adObject['native'] && adObject['native'].javascriptTrackers) {
-      Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["insertHtmlIntoIframe"])(adObject['native'].javascriptTrackers);
-    }
-  }
-
-  (trackers || []).forEach(__WEBPACK_IMPORTED_MODULE_0__utils_js__["triggerPixel"]);
-  return message.action;
-}
-/**
- * Gets native targeting key-value pairs
- * @param {Object} bid
- * @return {Object} targeting
- */
-
-function getNativeTargeting(bid, bidReq) {
-  var keyValues = {};
-  Object.keys(bid['native']).forEach(function (asset) {
-    var key = CONSTANTS.NATIVE_KEYS[asset];
-    var value = getAssetValue(bid['native'][asset]);
-    var sendPlaceholder = Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bidReq, "mediaTypes.native.".concat(asset, ".sendId"));
-
-    if (sendPlaceholder) {
-      var placeholder = "".concat(key, ":").concat(bid.adId);
-      value = placeholder;
-    }
-
-    if (key && value) {
-      keyValues[key] = value;
-    }
-  });
-  return keyValues;
-}
-/**
- * Constructs a message object containing asset values for each of the
- * requested data keys.
- */
-
-function getAssetMessage(data, adObject) {
-  var message = {
-    message: 'assetResponse',
-    adId: data.adId,
-    assets: []
-  };
-  data.assets.forEach(function (asset) {
-    var key = Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["getKeyByValue"])(CONSTANTS.NATIVE_KEYS, asset);
-    var value = getAssetValue(adObject.native[key]);
-    message.assets.push({
-      key: key,
-      value: value
-    });
-  });
-  return message;
-}
-/**
- * Native assets can be a string or an object with a url prop. Returns the value
- * appropriate for sending in adserver targeting or placeholder replacement.
- */
-
-function getAssetValue(value) {
-  if (_typeof(value) === 'object' && value.url) {
-    return value.url;
-  }
-
-  return value;
-}
 
 /***/ }),
 /* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var path = __webpack_require__(47);
+var global = __webpack_require__(24);
+
+var aFunction = function (variable) {
+  return typeof variable == 'function' ? variable : undefined;
+};
+
+module.exports = function (namespace, method) {
+  return arguments.length < 2 ? aFunction(path[namespace]) || aFunction(global[namespace])
+    : path[namespace] && path[namespace][method] || global[namespace] && global[namespace][method];
+};
+
+
+/***/ }),
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export newAuctionManager */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return auctionManager; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__auction_js__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find_js__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__auction_js__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_find_js__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_find_js__);
 /**
  * AuctionManager modules is responsible for creating auction instances.
  * This module is the gateway for Prebid core to access auctions.
@@ -4740,7 +4572,7 @@ function newAuctionManager() {
   var auctionManager = {};
 
   auctionManager.addWinningBid = function (bid) {
-    var auction = __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find_js___default()(_auctions, function (auction) {
+    var auction = __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_find_js___default()(_auctions, function (auction) {
       return auction.getAuctionId() === bid.auctionId;
     });
 
@@ -4814,7 +4646,7 @@ function newAuctionManager() {
   };
 
   auctionManager.findBidByAdId = function (adId) {
-    return __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find_js___default()(_auctions.map(function (auction) {
+    return __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_find_js___default()(_auctions.map(function (auction) {
       return auction.getBidsReceived();
     }).reduce(__WEBPACK_IMPORTED_MODULE_0__utils_js__["flatten"], []), function (bid) {
       return bid.adId === adId;
@@ -4830,7 +4662,7 @@ function newAuctionManager() {
     if (bid) bid.status = status;
 
     if (bid && status === CONSTANTS.BID_STATUS.BID_TARGETING_SET) {
-      var auction = __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_find_js___default()(_auctions, function (auction) {
+      var auction = __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_find_js___default()(_auctions, function (auction) {
         return auction.getAuctionId() === bid.auctionId;
       });
       if (auction) auction.setBidTargeting(bid);
@@ -4850,12 +4682,122 @@ function newAuctionManager() {
 var auctionManager = newAuctionManager();
 
 /***/ }),
-/* 28 */
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var fails = __webpack_require__(30);
+
+// Thank's IE8 for his funny defineProperty
+module.exports = !fails(function () {
+  return Object.defineProperty({}, 1, { get: function () { return 7; } })[1] != 7;
+});
+
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports) {
+
+module.exports = function (exec) {
+  try {
+    return !!exec();
+  } catch (error) {
+    return true;
+  }
+};
+
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var DESCRIPTORS = __webpack_require__(29);
+var definePropertyModule = __webpack_require__(34);
+var createPropertyDescriptor = __webpack_require__(52);
+
+module.exports = DESCRIPTORS ? function (object, key, value) {
+  return definePropertyModule.f(object, key, createPropertyDescriptor(1, value));
+} : function (object, key, value) {
+  object[key] = value;
+  return object;
+};
+
+
+/***/ }),
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = detectReferer;
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getRefererInfo; });
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (immutable) */ __webpack_exports__["createBid"] = createBid;
+var utils = __webpack_require__(0);
+/**
+ Required paramaters
+ bidderCode,
+ height,
+ width,
+ statusCode
+ Optional paramaters
+ adId,
+ cpm,
+ ad,
+ adUrl,
+ dealId,
+ priceKeyString;
+ */
+
+
+function Bid(statusCode, bidRequest) {
+  var _bidSrc = bidRequest && bidRequest.src || 'client';
+
+  var _statusCode = statusCode || 0;
+
+  this.bidderCode = bidRequest && bidRequest.bidder || '';
+  this.width = 0;
+  this.height = 0;
+  this.statusMessage = _getStatus();
+  this.adId = utils.getUniqueIdentifierStr();
+  this.requestId = bidRequest && bidRequest.bidId;
+  this.mediaType = 'banner';
+  this.source = _bidSrc;
+
+  function _getStatus() {
+    switch (_statusCode) {
+      case 0:
+        return 'Pending';
+
+      case 1:
+        return 'Bid available';
+
+      case 2:
+        return 'Bid returned empty or error response';
+
+      case 3:
+        return 'Bid timed out';
+    }
+  }
+
+  this.getStatusCode = function () {
+    return _statusCode;
+  }; // returns the size of the bid creative. Concatenation of width and height by ‘x’.
+
+
+  this.getSize = function () {
+    return this.width + 'x' + this.height;
+  };
+} // Bid factory function.
+
+
+function createBid(statusCode, bidRequest) {
+  return new Bid(statusCode, bidRequest);
+}
+
+/***/ }),
+/* 33 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export detectReferer */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getRefererInfo; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_js__ = __webpack_require__(0);
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -5075,163 +5017,402 @@ function detectReferer(win) {
 var getRefererInfo = detectReferer(window);
 
 /***/ }),
-/* 29 */,
-/* 30 */,
-/* 31 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// optional / simple context binding
-var aFunction = __webpack_require__(69);
-module.exports = function (fn, that, length) {
-  aFunction(fn);
-  if (that === undefined) return fn;
-  switch (length) {
-    case 1: return function (a) {
-      return fn.call(that, a);
-    };
-    case 2: return function (a, b) {
-      return fn.call(that, a, b);
-    };
-    case 3: return function (a, b, c) {
-      return fn.call(that, a, b, c);
-    };
-  }
-  return function (/* ...args */) {
-    return fn.apply(that, arguments);
-  };
+var DESCRIPTORS = __webpack_require__(29);
+var IE8_DOM_DEFINE = __webpack_require__(86);
+var anObject = __webpack_require__(16);
+var toPrimitive = __webpack_require__(64);
+
+var nativeDefineProperty = Object.defineProperty;
+
+// `Object.defineProperty` method
+// https://tc39.github.io/ecma262/#sec-object.defineproperty
+exports.f = DESCRIPTORS ? nativeDefineProperty : function defineProperty(O, P, Attributes) {
+  anObject(O);
+  P = toPrimitive(P, true);
+  anObject(Attributes);
+  if (IE8_DOM_DEFINE) try {
+    return nativeDefineProperty(O, P, Attributes);
+  } catch (error) { /* empty */ }
+  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported');
+  if ('value' in Attributes) O[P] = Attributes.value;
+  return O;
 };
 
 
 /***/ }),
-/* 32 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = loadExternalScript;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_js__ = __webpack_require__(0);
-
-
-var _requestCache = {}; // The below list contains modules or vendors whom Prebid allows to load external JS.
-
-var _approvedLoadExternalJSList = ['criteo', 'outstream', 'adagio', 'browsi'];
-/**
- * Loads external javascript. Can only be used if external JS is approved by Prebid. See https://github.com/prebid/prebid-js-external-js-template#policy
- * Each unique URL will be loaded at most 1 time.
- * @param {string} url the url to load
- * @param {string} moduleCode bidderCode or module code of the module requesting this resource
- * @param {function} [callback] callback function to be called after the script is loaded.
- */
-
-function loadExternalScript(url, moduleCode, callback) {
-  if (!moduleCode || !url) {
-    __WEBPACK_IMPORTED_MODULE_1__utils_js__["logError"]('cannot load external script without url and moduleCode');
-    return;
-  }
-
-  if (!__WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_includes_js___default()(_approvedLoadExternalJSList, moduleCode)) {
-    __WEBPACK_IMPORTED_MODULE_1__utils_js__["logError"]("".concat(moduleCode, " not whitelisted for loading external JavaScript"));
-    return;
-  } // only load each asset once
-
-
-  if (_requestCache[url]) {
-    if (callback && typeof callback === 'function') {
-      if (_requestCache[url].loaded) {
-        // invokeCallbacks immediately
-        callback();
-      } else {
-        // queue the callback
-        _requestCache[url].callbacks.push(callback);
-      }
-    }
-
-    return _requestCache[url].tag;
-  }
-
-  _requestCache[url] = {
-    loaded: false,
-    tag: null,
-    callbacks: []
-  };
-
-  if (callback && typeof callback === 'function') {
-    _requestCache[url].callbacks.push(callback);
-  }
-
-  __WEBPACK_IMPORTED_MODULE_1__utils_js__["logWarn"]("module ".concat(moduleCode, " is loading external JavaScript"));
-  return requestResource(url, function () {
-    _requestCache[url].loaded = true;
-
-    try {
-      for (var i = 0; i < _requestCache[url].callbacks.length; i++) {
-        _requestCache[url].callbacks[i]();
-      }
-    } catch (e) {
-      __WEBPACK_IMPORTED_MODULE_1__utils_js__["logError"]('Error executing callback', 'adloader.js:loadExternalScript', e);
-    }
-  });
-
-  function requestResource(tagSrc, callback) {
-    var jptScript = document.createElement('script');
-    jptScript.type = 'text/javascript';
-    jptScript.async = true;
-    _requestCache[url].tag = jptScript;
-
-    if (jptScript.readyState) {
-      jptScript.onreadystatechange = function () {
-        if (jptScript.readyState === 'loaded' || jptScript.readyState === 'complete') {
-          jptScript.onreadystatechange = null;
-          callback();
-        }
-      };
-    } else {
-      jptScript.onload = function () {
-        callback();
-      };
-    }
-
-    jptScript.src = tagSrc; // add the new script tag to the page
-
-    __WEBPACK_IMPORTED_MODULE_1__utils_js__["insertElement"](jptScript);
-    return jptScript;
-  }
-}
-;
-
-/***/ }),
-/* 33 */,
-/* 34 */,
 /* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(20);
-module.exports = function (it) {
-  if (!isObject(it)) throw TypeError(it + ' is not an object!');
-  return it;
+var IS_PURE = __webpack_require__(17);
+var getIterator = __webpack_require__(103);
+
+module.exports = IS_PURE ? getIterator : function (it) {
+  // eslint-disable-next-line no-undef
+  return Set.prototype.values.call(it);
 };
 
 
 /***/ }),
 /* 36 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var hasOwnProperty = {}.hasOwnProperty;
-module.exports = function (it, key) {
-  return hasOwnProperty.call(it, key);
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return nativeAdapters; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NATIVE_TARGETING_KEYS; });
+/* harmony export (immutable) */ __webpack_exports__["g"] = processNativeAdUnitParams;
+/* unused harmony export nativeAdUnit */
+/* unused harmony export nativeBidder */
+/* unused harmony export hasNonNativeBidder */
+/* harmony export (immutable) */ __webpack_exports__["f"] = nativeBidIsValid;
+/* harmony export (immutable) */ __webpack_exports__["b"] = fireNativeTrackers;
+/* harmony export (immutable) */ __webpack_exports__["d"] = getNativeTargeting;
+/* harmony export (immutable) */ __webpack_exports__["c"] = getAssetMessage;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_js__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_pure_features_array_includes_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_pure_features_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_pure_features_array_includes_js__);
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+
+
+
+var CONSTANTS = __webpack_require__(5);
+
+var nativeAdapters = [];
+var NATIVE_TARGETING_KEYS = Object.keys(CONSTANTS.NATIVE_KEYS).map(function (key) {
+  return CONSTANTS.NATIVE_KEYS[key];
+});
+var IMAGE = {
+  image: {
+    required: true
+  },
+  title: {
+    required: true
+  },
+  sponsoredBy: {
+    required: true
+  },
+  clickUrl: {
+    required: true
+  },
+  body: {
+    required: false
+  },
+  icon: {
+    required: false
+  }
 };
+var SUPPORTED_TYPES = {
+  image: IMAGE
+};
+/**
+ * Recieves nativeParams from an adUnit. If the params were not of type 'type',
+ * passes them on directly. If they were of type 'type', translate
+ * them into the predefined specific asset requests for that type of native ad.
+ */
 
+function processNativeAdUnitParams(params) {
+  if (params && params.type && typeIsSupported(params.type)) {
+    return SUPPORTED_TYPES[params.type];
+  }
+
+  return params;
+}
+/**
+ * Check if the native type specified in the adUnit is supported by Prebid.
+ */
+
+function typeIsSupported(type) {
+  if (!(type && __WEBPACK_IMPORTED_MODULE_1_core_js_pure_features_array_includes_js___default()(Object.keys(SUPPORTED_TYPES), type))) {
+    Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["logError"])("".concat(type, " nativeParam is not supported"));
+    return false;
+  }
+
+  return true;
+}
+/**
+ * Helper functions for working with native-enabled adUnits
+ * TODO: abstract this and the video helper functions into general
+ * adunit validation helper functions
+ */
+
+
+var nativeAdUnit = function nativeAdUnit(adUnit) {
+  var mediaType = adUnit.mediaType === 'native';
+  var mediaTypes = Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(adUnit, 'mediaTypes.native');
+  return mediaType || mediaTypes;
+};
+var nativeBidder = function nativeBidder(bid) {
+  return __WEBPACK_IMPORTED_MODULE_1_core_js_pure_features_array_includes_js___default()(nativeAdapters, bid.bidder);
+};
+var hasNonNativeBidder = function hasNonNativeBidder(adUnit) {
+  return adUnit.bids.filter(function (bid) {
+    return !nativeBidder(bid);
+  }).length;
+};
+/**
+ * Validate that the native assets on this bid contain all assets that were
+ * marked as required in the adUnit configuration.
+ * @param {Bid} bid Native bid to validate
+ * @param {BidRequest[]} bidRequests All bid requests for an auction
+ * @return {Boolean} If object is valid
+ */
+
+function nativeBidIsValid(bid, bidRequests) {
+  var bidRequest = Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["getBidRequest"])(bid.requestId, bidRequests);
+
+  if (!bidRequest) {
+    return false;
+  } // all native bid responses must define a landing page url
+
+
+  if (!Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bid, 'native.clickUrl')) {
+    return false;
+  }
+
+  if (Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bid, 'native.image')) {
+    if (!Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bid, 'native.image.height') || !Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bid, 'native.image.width')) {
+      return false;
+    }
+  }
+
+  if (Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bid, 'native.icon')) {
+    if (!Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bid, 'native.icon.height') || !Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bid, 'native.icon.width')) {
+      return false;
+    }
+  }
+
+  var requestedAssets = bidRequest.nativeParams;
+
+  if (!requestedAssets) {
+    return true;
+  }
+
+  var requiredAssets = Object.keys(requestedAssets).filter(function (key) {
+    return requestedAssets[key].required;
+  });
+  var returnedAssets = Object.keys(bid['native']).filter(function (key) {
+    return bid['native'][key];
+  });
+  return requiredAssets.every(function (asset) {
+    return __WEBPACK_IMPORTED_MODULE_1_core_js_pure_features_array_includes_js___default()(returnedAssets, asset);
+  });
+}
+/*
+ * Native responses may have associated impression or click trackers.
+ * This retrieves the appropriate tracker urls for the given ad object and
+ * fires them. As a native creatives may be in a cross-origin frame, it may be
+ * necessary to invoke this function via postMessage. secureCreatives is
+ * configured to fire this function when it receives a `message` of 'Prebid Native'
+ * and an `adId` with the value of the `bid.adId`. When a message is posted with
+ * these parameters, impression trackers are fired. To fire click trackers, the
+ * message should contain an `action` set to 'click'.
+ *
+ * // Native creative template example usage
+ * <a href="%%CLICK_URL_UNESC%%%%PATTERN:hb_native_linkurl%%"
+ *    target="_blank"
+ *    onclick="fireTrackers('click')">
+ *    %%PATTERN:hb_native_title%%
+ * </a>
+ *
+ * <script>
+ *   function fireTrackers(action) {
+ *     var message = {message: 'Prebid Native', adId: '%%PATTERN:hb_adid%%'};
+ *     if (action === 'click') {message.action = 'click';} // fires click trackers
+ *     window.parent.postMessage(JSON.stringify(message), '*');
+ *   }
+ *   fireTrackers(); // fires impressions when creative is loaded
+ * </script>
+ */
+
+function fireNativeTrackers(message, adObject) {
+  var trackers;
+
+  if (message.action === 'click') {
+    trackers = adObject['native'] && adObject['native'].clickTrackers;
+  } else {
+    trackers = adObject['native'] && adObject['native'].impressionTrackers;
+
+    if (adObject['native'] && adObject['native'].javascriptTrackers) {
+      Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["insertHtmlIntoIframe"])(adObject['native'].javascriptTrackers);
+    }
+  }
+
+  (trackers || []).forEach(__WEBPACK_IMPORTED_MODULE_0__utils_js__["triggerPixel"]);
+  return message.action;
+}
+/**
+ * Gets native targeting key-value pairs
+ * @param {Object} bid
+ * @return {Object} targeting
+ */
+
+function getNativeTargeting(bid, bidReq) {
+  var keyValues = {};
+  Object.keys(bid['native']).forEach(function (asset) {
+    var key = CONSTANTS.NATIVE_KEYS[asset];
+    var value = getAssetValue(bid['native'][asset]);
+    var sendPlaceholder = Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bidReq, "mediaTypes.native.".concat(asset, ".sendId"));
+
+    if (sendPlaceholder) {
+      var placeholder = "".concat(key, ":").concat(bid.adId);
+      value = placeholder;
+    }
+
+    if (key && value) {
+      keyValues[key] = value;
+    }
+  });
+  return keyValues;
+}
+/**
+ * Constructs a message object containing asset values for each of the
+ * requested data keys.
+ */
+
+function getAssetMessage(data, adObject) {
+  var message = {
+    message: 'assetResponse',
+    adId: data.adId,
+    assets: []
+  };
+  data.assets.forEach(function (asset) {
+    var key = Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["getKeyByValue"])(CONSTANTS.NATIVE_KEYS, asset);
+    var value = getAssetValue(adObject.native[key]);
+    message.assets.push({
+      key: key,
+      value: value
+    });
+  });
+  return message;
+}
+/**
+ * Native assets can be a string or an object with a url prop. Returns the value
+ * appropriate for sending in adserver targeting or placeholder replacement.
+ */
+
+function getAssetValue(value) {
+  if (_typeof(value) === 'object' && value.url) {
+    return value.url;
+  }
+
+  return value;
+}
 
 /***/ }),
 /* 37 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return OUTSTREAM; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return INSTREAM; });
+/* unused harmony export videoAdUnit */
+/* unused harmony export videoBidder */
+/* unused harmony export hasNonVideoBidder */
+/* harmony export (immutable) */ __webpack_exports__["d"] = isValidVideoBid;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return checkVideoBidSetup; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__adapterManager_js__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_js__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_config_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_array_includes_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_array_includes_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hook_js__ = __webpack_require__(13);
+
+
+
+
+
+var VIDEO_MEDIA_TYPE = 'video';
+var OUTSTREAM = 'outstream';
+var INSTREAM = 'instream';
+/**
+ * Helper functions for working with video-enabled adUnits
+ */
+
+var videoAdUnit = function videoAdUnit(adUnit) {
+  var mediaType = adUnit.mediaType === VIDEO_MEDIA_TYPE;
+  var mediaTypes = Object(__WEBPACK_IMPORTED_MODULE_1__utils_js__["deepAccess"])(adUnit, 'mediaTypes.video');
+  return mediaType || mediaTypes;
+};
+var videoBidder = function videoBidder(bid) {
+  return __WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_array_includes_js___default()(__WEBPACK_IMPORTED_MODULE_0__adapterManager_js__["default"].videoAdapters, bid.bidder);
+};
+var hasNonVideoBidder = function hasNonVideoBidder(adUnit) {
+  return adUnit.bids.filter(function (bid) {
+    return !videoBidder(bid);
+  }).length;
+};
+/**
+ * @typedef {object} VideoBid
+ * @property {string} adId id of the bid
+ */
+
+/**
+ * Validate that the assets required for video context are present on the bid
+ * @param {VideoBid} bid Video bid to validate
+ * @param {BidRequest[]} bidRequests All bid requests for an auction
+ * @return {Boolean} If object is valid
+ */
+
+function isValidVideoBid(bid, bidRequests) {
+  var bidRequest = Object(__WEBPACK_IMPORTED_MODULE_1__utils_js__["getBidRequest"])(bid.requestId, bidRequests);
+  var videoMediaType = bidRequest && Object(__WEBPACK_IMPORTED_MODULE_1__utils_js__["deepAccess"])(bidRequest, 'mediaTypes.video');
+  var context = videoMediaType && Object(__WEBPACK_IMPORTED_MODULE_1__utils_js__["deepAccess"])(videoMediaType, 'context'); // if context not defined assume default 'instream' for video bids
+  // instream bids require a vast url or vast xml content
+
+  return checkVideoBidSetup(bid, bidRequest, videoMediaType, context);
+}
+var checkVideoBidSetup = Object(__WEBPACK_IMPORTED_MODULE_4__hook_js__["b" /* hook */])('sync', function (bid, bidRequest, videoMediaType, context) {
+  if (!bidRequest || videoMediaType && context !== OUTSTREAM) {
+    // xml-only video bids require a prebid cache url
+    if (!__WEBPACK_IMPORTED_MODULE_2__src_config_js__["b" /* config */].getConfig('cache.url') && bid.vastXml && !bid.vastUrl) {
+      Object(__WEBPACK_IMPORTED_MODULE_1__utils_js__["logError"])("\n        This bid contains only vastXml and will not work when a prebid cache url is not specified.\n        Try enabling prebid cache with pbjs.setConfig({ cache: {url: \"...\"} });\n      ");
+      return false;
+    }
+
+    return !!(bid.vastUrl || bid.vastXml);
+  } // outstream bids require a renderer on the bid or pub-defined on adunit
+
+
+  if (context === OUTSTREAM) {
+    return !!(bid.renderer || bidRequest.renderer);
+  }
+
+  return true;
+}, 'checkVideoBidSetup');
+
+/***/ }),
+/* 38 */,
+/* 39 */,
+/* 40 */
 /***/ (function(module, exports) {
 
 module.exports = {};
 
 
 /***/ }),
-/* 38 */
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var anObject = __webpack_require__(16);
+var aFunction = __webpack_require__(19);
+var wellKnownSymbol = __webpack_require__(21);
+
+var SPECIES = wellKnownSymbol('species');
+
+// `SpeciesConstructor` abstract operation
+// https://tc39.github.io/ecma262/#sec-speciesconstructor
+module.exports = function (O, defaultConstructor) {
+  var C = anObject(O).constructor;
+  var S;
+  return C === undefined || (S = anObject(C)[SPECIES]) == undefined ? defaultConstructor : aFunction(S);
+};
+
+
+/***/ }),
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5253,17 +5434,17 @@ module.exports = {};
 /* unused harmony export getKeyValueTargetingPairs */
 /* unused harmony export adjustBids */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__url_js__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cpmBucketManager_js__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__native_js__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__videoCache_js__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Renderer_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__url_js__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cpmBucketManager_js__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__native_js__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__videoCache_js__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Renderer_js__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__config_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__userSync_js__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__hook_js__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_find_js__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_find_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__video_js__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__userSync_js__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__hook_js__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_find_js__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_find_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__video_js__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__mediaTypes_js__ = __webpack_require__(2);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -5744,7 +5925,7 @@ function doCallbacksIfTimedout(auctionInstance, bidResponse) {
 
 function addBidToAuction(auctionInstance, bidResponse) {
   var bidderRequests = auctionInstance.getBidRequests();
-  var bidderRequest = __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_find_js___default()(bidderRequests, function (bidderRequest) {
+  var bidderRequest = __WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_find_js___default()(bidderRequests, function (bidderRequest) {
     return bidderRequest.bidderCode === bidResponse.bidderCode;
   });
   setupBidTargeting(bidResponse, bidderRequest);
@@ -5795,7 +5976,7 @@ var callPrebidCache = Object(__WEBPACK_IMPORTED_MODULE_8__hook_js__["b" /* hook 
         afterBidAdded();
       }
     }
-  });
+  }, bidderRequest);
 }, 'callPrebidCache'); // Postprocess the bids so that all the universal properties exist, no matter which bidder they came from.
 // This should be called before addBidToAuction().
 
@@ -5822,7 +6003,7 @@ function getPreparedBidForAuction(_ref2) {
 
   events.emit(CONSTANTS.EVENTS.BID_ADJUSTMENT, bidObject); // a publisher-defined renderer can be used to render bids
 
-  var bidReq = bidderRequest.bids && __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_find_js___default()(bidderRequest.bids, function (bid) {
+  var bidReq = bidderRequest.bids && __WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_find_js___default()(bidderRequest.bids, function (bid) {
     return bid.adUnitCode == adUnitCode;
   });
   var adUnitRenderer = bidReq && bidReq.renderer;
@@ -5850,7 +6031,7 @@ function setupBidTargeting(bidObject, bidderRequest) {
   var keyValues;
 
   if (bidObject.bidderCode && (bidObject.cpm > 0 || bidObject.dealId)) {
-    var bidReq = __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_find_js___default()(bidderRequest.bids, function (bid) {
+    var bidReq = __WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_find_js___default()(bidderRequest.bids, function (bid) {
       return bid.adUnitCode === bidObject.adUnitCode;
     });
     keyValues = getKeyValueTargetingPairs(bidObject.bidderCode, bidObject, bidReq);
@@ -5952,7 +6133,7 @@ function getStandardBidderSettings(mediaType, bidderCode, bidReq) {
     var adserverTargeting = bidderSettings[CONSTANTS.JSON_MAPPING.BD_SETTING_STANDARD][CONSTANTS.JSON_MAPPING.ADSERVER_TARGETING]; // Adding hb_uuid + hb_cache_id
 
     [TARGETING_KEYS.UUID, TARGETING_KEYS.CACHE_ID].forEach(function (targetingKeyVal) {
-      if (typeof __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_find_js___default()(adserverTargeting, function (kvPair) {
+      if (typeof __WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_find_js___default()(adserverTargeting, function (kvPair) {
         return kvPair.key === targetingKeyVal;
       }) === 'undefined') {
         adserverTargeting.push(createKeyVal(targetingKeyVal, 'videoCacheKey'));
@@ -5962,7 +6143,7 @@ function getStandardBidderSettings(mediaType, bidderCode, bidReq) {
     if (__WEBPACK_IMPORTED_MODULE_6__config_js__["b" /* config */].getConfig('cache.url') && (!bidderCode || utils.deepAccess(bidderSettings, "".concat(bidderCode, ".sendStandardTargeting")) !== false)) {
       var urlInfo = Object(__WEBPACK_IMPORTED_MODULE_1__url_js__["c" /* parse */])(__WEBPACK_IMPORTED_MODULE_6__config_js__["b" /* config */].getConfig('cache.url'));
 
-      if (typeof __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_find_js___default()(adserverTargeting, function (targetingKeyVal) {
+      if (typeof __WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_find_js___default()(adserverTargeting, function (targetingKeyVal) {
         return targetingKeyVal.key === TARGETING_KEYS.CACHE_HOST;
       }) === 'undefined') {
         adserverTargeting.push(createKeyVal(TARGETING_KEYS.CACHE_HOST, function (bidResponse) {
@@ -6106,7 +6287,727 @@ function getTimedOutBids(bidderRequests, timelyBidders) {
 }
 
 /***/ }),
-/* 39 */
+/* 43 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = loadExternalScript;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_pure_features_array_includes_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_pure_features_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_pure_features_array_includes_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_js__ = __webpack_require__(0);
+
+
+var _requestCache = {}; // The below list contains modules or vendors whom Prebid allows to load external JS.
+
+var _approvedLoadExternalJSList = ['criteo', 'outstream', 'adagio', 'browsi'];
+/**
+ * Loads external javascript. Can only be used if external JS is approved by Prebid. See https://github.com/prebid/prebid-js-external-js-template#policy
+ * Each unique URL will be loaded at most 1 time.
+ * @param {string} url the url to load
+ * @param {string} moduleCode bidderCode or module code of the module requesting this resource
+ * @param {function} [callback] callback function to be called after the script is loaded.
+ */
+
+function loadExternalScript(url, moduleCode, callback) {
+  if (!moduleCode || !url) {
+    __WEBPACK_IMPORTED_MODULE_1__utils_js__["logError"]('cannot load external script without url and moduleCode');
+    return;
+  }
+
+  if (!__WEBPACK_IMPORTED_MODULE_0_core_js_pure_features_array_includes_js___default()(_approvedLoadExternalJSList, moduleCode)) {
+    __WEBPACK_IMPORTED_MODULE_1__utils_js__["logError"]("".concat(moduleCode, " not whitelisted for loading external JavaScript"));
+    return;
+  } // only load each asset once
+
+
+  if (_requestCache[url]) {
+    if (callback && typeof callback === 'function') {
+      if (_requestCache[url].loaded) {
+        // invokeCallbacks immediately
+        callback();
+      } else {
+        // queue the callback
+        _requestCache[url].callbacks.push(callback);
+      }
+    }
+
+    return _requestCache[url].tag;
+  }
+
+  _requestCache[url] = {
+    loaded: false,
+    tag: null,
+    callbacks: []
+  };
+
+  if (callback && typeof callback === 'function') {
+    _requestCache[url].callbacks.push(callback);
+  }
+
+  __WEBPACK_IMPORTED_MODULE_1__utils_js__["logWarn"]("module ".concat(moduleCode, " is loading external JavaScript"));
+  return requestResource(url, function () {
+    _requestCache[url].loaded = true;
+
+    try {
+      for (var i = 0; i < _requestCache[url].callbacks.length; i++) {
+        _requestCache[url].callbacks[i]();
+      }
+    } catch (e) {
+      __WEBPACK_IMPORTED_MODULE_1__utils_js__["logError"]('Error executing callback', 'adloader.js:loadExternalScript', e);
+    }
+  });
+
+  function requestResource(tagSrc, callback) {
+    var jptScript = document.createElement('script');
+    jptScript.type = 'text/javascript';
+    jptScript.async = true;
+    _requestCache[url].tag = jptScript;
+
+    if (jptScript.readyState) {
+      jptScript.onreadystatechange = function () {
+        if (jptScript.readyState === 'loaded' || jptScript.readyState === 'complete') {
+          jptScript.onreadystatechange = null;
+          callback();
+        }
+      };
+    } else {
+      jptScript.onload = function () {
+        callback();
+      };
+    }
+
+    jptScript.src = tagSrc; // add the new script tag to the page
+
+    __WEBPACK_IMPORTED_MODULE_1__utils_js__["insertElement"](jptScript);
+    return jptScript;
+  }
+}
+;
+
+/***/ }),
+/* 44 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export TARGETING_KEYS */
+/* unused harmony export filters */
+/* unused harmony export getHighestCpmBidsFromBidPool */
+/* unused harmony export sortByDealAndPriceBucketOrCpm */
+/* unused harmony export newTargeting */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return targeting; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_js__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__native_js__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__auctionManager_js__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sizeMapping_js__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mediaTypes_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_includes_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_includes_js__);
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+
+
+
+
+
+
+
+
+var utils = __webpack_require__(0);
+
+var CONSTANTS = __webpack_require__(5);
+
+var pbTargetingKeys = [];
+var MAX_DFP_KEYLENGTH = 20;
+var TTL_BUFFER = 1000;
+var TARGETING_KEYS = Object.keys(CONSTANTS.TARGETING_KEYS).map(function (key) {
+  return CONSTANTS.TARGETING_KEYS[key];
+}); // return unexpired bids
+
+var isBidNotExpired = function isBidNotExpired(bid) {
+  return bid.responseTimestamp + bid.ttl * 1000 + TTL_BUFFER > Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["timestamp"])();
+}; // return bids whose status is not set. Winning bids can only have a status of `rendered`.
+
+
+var isUnusedBid = function isUnusedBid(bid) {
+  return bid && (bid.status && !__WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_includes_js___default()([CONSTANTS.BID_STATUS.RENDERED], bid.status) || !bid.status);
+};
+
+var filters = {
+  isBidNotExpired: isBidNotExpired,
+  isUnusedBid: isUnusedBid
+}; // If two bids are found for same adUnitCode, we will use the highest one to take part in auction
+// This can happen in case of concurrent auctions
+// If adUnitBidLimit is set above 0 return top N number of bids
+
+function getHighestCpmBidsFromBidPool(bidsReceived, highestCpmCallback) {
+  var adUnitBidLimit = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+  var bids = [];
+  var dealPrioritization = __WEBPACK_IMPORTED_MODULE_1__config_js__["b" /* config */].getConfig('sendBidsControl.dealPrioritization'); // bucket by adUnitcode
+
+  var buckets = Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["groupBy"])(bidsReceived, 'adUnitCode'); // filter top bid for each bucket by bidder
+
+  Object.keys(buckets).forEach(function (bucketKey) {
+    var bucketBids = [];
+    var bidsByBidder = Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["groupBy"])(buckets[bucketKey], 'bidderCode');
+    Object.keys(bidsByBidder).forEach(function (key) {
+      return bucketBids.push(bidsByBidder[key].reduce(highestCpmCallback));
+    }); // if adUnitBidLimit is set, pass top N number bids
+
+    if (adUnitBidLimit > 0) {
+      bucketBids = dealPrioritization ? bucketBids(sortByDealAndPriceBucketOrCpm(true)) : bucketBids.sort(function (a, b) {
+        return b.cpm - a.cpm;
+      });
+      bids.push.apply(bids, _toConsumableArray(bucketBids.slice(0, adUnitBidLimit)));
+    } else {
+      bids.push.apply(bids, _toConsumableArray(bucketBids));
+    }
+  });
+  return bids;
+}
+/**
+* A descending sort function that will sort the list of objects based on the following two dimensions:
+*  - bids with a deal are sorted before bids w/o a deal
+*  - then sort bids in each grouping based on the hb_pb value
+* eg: the following list of bids would be sorted like:
+*  [{
+*    "hb_adid": "vwx",
+*    "hb_pb": "28",
+*    "hb_deal": "7747"
+*  }, {
+*    "hb_adid": "jkl",
+*    "hb_pb": "10",
+*    "hb_deal": "9234"
+*  }, {
+*    "hb_adid": "stu",
+*    "hb_pb": "50"
+*  }, {
+*    "hb_adid": "def",
+*    "hb_pb": "2"
+*  }]
+*/
+
+function sortByDealAndPriceBucketOrCpm() {
+  var useCpm = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+  return function (a, b) {
+    if (a.adUnitTargeting.hb_deal !== undefined && b.adUnitTargeting.hb_deal === undefined) {
+      return -1;
+    }
+
+    if (a.adUnitTargeting.hb_deal === undefined && b.adUnitTargeting.hb_deal !== undefined) {
+      return 1;
+    } // assuming both values either have a deal or don't have a deal - sort by the hb_pb param
+
+
+    if (useCpm) {
+      return b.cpm - a.cpm;
+    }
+
+    return b.adUnitTargeting.hb_pb - a.adUnitTargeting.hb_pb;
+  };
+}
+/**
+ * @typedef {Object.<string,string>} targeting
+ * @property {string} targeting_key
+ */
+
+/**
+ * @typedef {Object.<string,Object.<string,string[]>[]>[]} targetingArray
+ */
+
+function newTargeting(auctionManager) {
+  var targeting = {};
+  var latestAuctionForAdUnit = {};
+
+  targeting.setLatestAuctionForAdUnit = function (adUnitCode, auctionId) {
+    latestAuctionForAdUnit[adUnitCode] = auctionId;
+  };
+
+  targeting.resetPresetTargeting = function (adUnitCode, customSlotMatching) {
+    if (Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["isGptPubadsDefined"])()) {
+      var adUnitCodes = getAdUnitCodes(adUnitCode);
+      var adUnits = auctionManager.getAdUnits().filter(function (adUnit) {
+        return __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_includes_js___default()(adUnitCodes, adUnit.code);
+      });
+      window.googletag.pubads().getSlots().forEach(function (slot) {
+        var customSlotMatchingFunc = utils.isFn(customSlotMatching) && customSlotMatching(slot);
+        pbTargetingKeys.forEach(function (key) {
+          // reset only registered adunits
+          adUnits.forEach(function (unit) {
+            if (unit.code === slot.getAdUnitPath() || unit.code === slot.getSlotElementId() || utils.isFn(customSlotMatchingFunc) && customSlotMatchingFunc(unit.code)) {
+              slot.setTargeting(key, null);
+            }
+          });
+        });
+      });
+    }
+  };
+
+  targeting.resetPresetTargetingAST = function (adUnitCode) {
+    var adUnitCodes = getAdUnitCodes(adUnitCode);
+    adUnitCodes.forEach(function (unit) {
+      var astTag = window.apntag.getTag(unit);
+
+      if (astTag && astTag.keywords) {
+        var currentKeywords = Object.keys(astTag.keywords);
+        var newKeywords = {};
+        currentKeywords.forEach(function (key) {
+          if (!__WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_includes_js___default()(pbTargetingKeys, key.toLowerCase())) {
+            newKeywords[key] = astTag.keywords[key];
+          }
+        });
+        window.apntag.modifyTag(unit, {
+          keywords: newKeywords
+        });
+      }
+    });
+  };
+  /**
+   * checks if bid has targeting set and belongs based on matching ad unit codes
+   * @return {boolean} true or false
+   */
+
+
+  function bidShouldBeAddedToTargeting(bid, adUnitCodes) {
+    return bid.adserverTargeting && adUnitCodes && (utils.isArray(adUnitCodes) && __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_includes_js___default()(adUnitCodes, bid.adUnitCode) || typeof adUnitCodes === 'string' && bid.adUnitCode === adUnitCodes);
+  }
+
+  ;
+  /**
+   * Returns targeting for any bids which have deals if alwaysIncludeDeals === true
+   */
+
+  function getDealBids(adUnitCodes, bidsReceived) {
+    if (__WEBPACK_IMPORTED_MODULE_1__config_js__["b" /* config */].getConfig('targetingControls.alwaysIncludeDeals') === true) {
+      var standardKeys = TARGETING_KEYS.concat(__WEBPACK_IMPORTED_MODULE_2__native_js__["a" /* NATIVE_TARGETING_KEYS */]); // we only want the top bid from bidders who have multiple entries per ad unit code
+
+      var bids = getHighestCpmBidsFromBidPool(bidsReceived, __WEBPACK_IMPORTED_MODULE_0__utils_js__["getHighestCpm"]); // populate targeting keys for the remaining bids if they have a dealId
+
+      return bids.map(function (bid) {
+        if (bid.dealId && bidShouldBeAddedToTargeting(bid, adUnitCodes)) {
+          return _defineProperty({}, bid.adUnitCode, getTargetingMap(bid, standardKeys.filter(function (key) {
+            return typeof bid.adserverTargeting[key] !== 'undefined';
+          })));
+        }
+      }).filter(function (bid) {
+        return bid;
+      }); // removes empty elements in array
+    }
+
+    return [];
+  }
+
+  ;
+  /**
+   * Returns all ad server targeting for all ad units.
+   * @param {string=} adUnitCode
+   * @return {Object.<string,targeting>} targeting
+   */
+
+  targeting.getAllTargeting = function (adUnitCode) {
+    var bidsReceived = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : getBidsReceived();
+    var adUnitCodes = getAdUnitCodes(adUnitCode); // Get targeting for the winning bid. Add targeting for any bids that have
+    // `alwaysUseBid=true`. If sending all bids is enabled, add targeting for losing bids.
+
+    var targeting = getWinningBidTargeting(adUnitCodes, bidsReceived).concat(getCustomBidTargeting(adUnitCodes, bidsReceived)).concat(__WEBPACK_IMPORTED_MODULE_1__config_js__["b" /* config */].getConfig('enableSendAllBids') ? getBidLandscapeTargeting(adUnitCodes, bidsReceived) : getDealBids(adUnitCodes, bidsReceived)); // store a reference of the targeting keys
+
+    targeting.map(function (adUnitCode) {
+      Object.keys(adUnitCode).map(function (key) {
+        adUnitCode[key].map(function (targetKey) {
+          if (pbTargetingKeys.indexOf(Object.keys(targetKey)[0]) === -1) {
+            pbTargetingKeys = Object.keys(targetKey).concat(pbTargetingKeys);
+          }
+        });
+      });
+    });
+    targeting = flattenTargeting(targeting);
+    var auctionKeysThreshold = __WEBPACK_IMPORTED_MODULE_1__config_js__["b" /* config */].getConfig('targetingControls.auctionKeyMaxChars');
+
+    if (auctionKeysThreshold) {
+      Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["logInfo"])("Detected 'targetingControls.auctionKeyMaxChars' was active for this auction; set with a limit of ".concat(auctionKeysThreshold, " characters.  Running checks on auction keys..."));
+      targeting = filterTargetingKeys(targeting, auctionKeysThreshold);
+    } // make sure at least there is a entry per adUnit code in the targetingSet so receivers of SET_TARGETING call's can know what ad units are being invoked
+
+
+    adUnitCodes.forEach(function (code) {
+      if (!targeting[code]) {
+        targeting[code] = {};
+      }
+    });
+    return targeting;
+  }; // create an encoded string variant based on the keypairs of the provided object
+  //  - note this will encode the characters between the keys (ie = and &)
+
+
+  function convertKeysToQueryForm(keyMap) {
+    return Object.keys(keyMap).reduce(function (queryString, key) {
+      var encodedKeyPair = "".concat(key, "%3d").concat(encodeURIComponent(keyMap[key]), "%26");
+      return queryString += encodedKeyPair;
+    }, '');
+  }
+
+  function filterTargetingKeys(targeting, auctionKeysThreshold) {
+    // read each targeting.adUnit object and sort the adUnits into a list of adUnitCodes based on priorization setting (eg CPM)
+    var targetingCopy = Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepClone"])(targeting);
+    var targetingMap = Object.keys(targetingCopy).map(function (adUnitCode) {
+      return {
+        adUnitCode: adUnitCode,
+        adUnitTargeting: targetingCopy[adUnitCode]
+      };
+    }).sort(sortByDealAndPriceBucketOrCpm()); // iterate through the targeting based on above list and transform the keys into the query-equivalent and count characters
+
+    return targetingMap.reduce(function (accMap, currMap, index, arr) {
+      var adUnitQueryString = convertKeysToQueryForm(currMap.adUnitTargeting); // for the last adUnit - trim last encoded ampersand from the converted query string
+
+      if (index + 1 === arr.length) {
+        adUnitQueryString = adUnitQueryString.slice(0, -3);
+      } // if under running threshold add to result
+
+
+      var code = currMap.adUnitCode;
+      var querySize = adUnitQueryString.length;
+
+      if (querySize <= auctionKeysThreshold) {
+        auctionKeysThreshold -= querySize;
+        Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["logInfo"])("AdUnit '".concat(code, "' auction keys comprised of ").concat(querySize, " characters.  Deducted from running threshold; new limit is ").concat(auctionKeysThreshold), targetingCopy[code]);
+        accMap[code] = targetingCopy[code];
+      } else {
+        Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["logWarn"])("The following keys for adUnitCode '".concat(code, "' exceeded the current limit of the 'auctionKeyMaxChars' setting.\nThe key-set size was ").concat(querySize, ", the current allotted amount was ").concat(auctionKeysThreshold, ".\n"), targetingCopy[code]);
+      }
+
+      if (index + 1 === arr.length && Object.keys(accMap).length === 0) {
+        Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["logError"])('No auction targeting keys were permitted due to the setting in setConfig(targetingControls.auctionKeyMaxChars).  Please review setup and consider adjusting.');
+      }
+
+      return accMap;
+    }, {});
+  }
+  /**
+   * Converts targeting array and flattens to make it easily iteratable
+   * e.g: Sample input to this function
+   * ```
+   * [
+   *    {
+   *      "div-gpt-ad-1460505748561-0": [{"hb_bidder": ["appnexusAst"]}]
+   *    },
+   *    {
+   *      "div-gpt-ad-1460505748561-0": [{"hb_bidder_appnexusAs": ["appnexusAst"]}]
+   *    }
+   * ]
+   * ```
+   * Resulting array
+   * ```
+   * {
+   *  "div-gpt-ad-1460505748561-0": {
+   *    "hb_bidder": "appnexusAst",
+   *    "hb_bidder_appnexusAs": "appnexusAst"
+   *  }
+   * }
+   * ```
+   *
+   * @param {targetingArray}  targeting
+   * @return {Object.<string,targeting>}  targeting
+   */
+
+
+  function flattenTargeting(targeting) {
+    var targetingObj = targeting.map(function (targeting) {
+      return _defineProperty({}, Object.keys(targeting)[0], targeting[Object.keys(targeting)[0]].map(function (target) {
+        return _defineProperty({}, Object.keys(target)[0], target[Object.keys(target)[0]].join(', '));
+      }).reduce(function (p, c) {
+        return _extends(c, p);
+      }, {}));
+    }).reduce(function (accumulator, targeting) {
+      var key = Object.keys(targeting)[0];
+      accumulator[key] = _extends({}, accumulator[key], targeting[key]);
+      return accumulator;
+    }, {});
+    return targetingObj;
+  }
+  /**
+   * Sets targeting for DFP
+   * @param {Object.<string,Object.<string,string>>} targetingConfig
+   */
+
+
+  targeting.setTargetingForGPT = function (targetingConfig, customSlotMatching) {
+    window.googletag.pubads().getSlots().forEach(function (slot) {
+      Object.keys(targetingConfig).filter(customSlotMatching ? customSlotMatching(slot) : Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["isAdUnitCodeMatchingSlot"])(slot)).forEach(function (targetId) {
+        return Object.keys(targetingConfig[targetId]).forEach(function (key) {
+          var valueArr = targetingConfig[targetId][key].split(',');
+          valueArr = valueArr.length > 1 ? [valueArr] : valueArr;
+          valueArr.map(function (value) {
+            utils.logMessage("Attempting to set key value for slot: ".concat(slot.getSlotElementId(), " key: ").concat(key, " value: ").concat(value));
+            return value;
+          }).forEach(function (value) {
+            slot.setTargeting(key, value);
+          });
+        });
+      });
+    });
+  };
+  /**
+   * normlizes input to a `adUnit.code` array
+   * @param  {(string|string[])} adUnitCode [description]
+   * @return {string[]}     AdUnit code array
+   */
+
+
+  function getAdUnitCodes(adUnitCode) {
+    if (typeof adUnitCode === 'string') {
+      return [adUnitCode];
+    } else if (utils.isArray(adUnitCode)) {
+      return adUnitCode;
+    }
+
+    return auctionManager.getAdUnitCodes() || [];
+  }
+
+  function getBidsReceived() {
+    var bidsReceived = auctionManager.getBidsReceived();
+
+    if (!__WEBPACK_IMPORTED_MODULE_1__config_js__["b" /* config */].getConfig('useBidCache')) {
+      bidsReceived = bidsReceived.filter(function (bid) {
+        return latestAuctionForAdUnit[bid.adUnitCode] === bid.auctionId;
+      });
+    }
+
+    bidsReceived = bidsReceived.filter(function (bid) {
+      return Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bid, 'video.context') !== __WEBPACK_IMPORTED_MODULE_5__mediaTypes_js__["a" /* ADPOD */];
+    }).filter(function (bid) {
+      return bid.mediaType !== 'banner' || Object(__WEBPACK_IMPORTED_MODULE_4__sizeMapping_js__["c" /* sizeSupported */])([bid.width, bid.height]);
+    }).filter(filters.isUnusedBid).filter(filters.isBidNotExpired);
+    return getHighestCpmBidsFromBidPool(bidsReceived, __WEBPACK_IMPORTED_MODULE_0__utils_js__["getOldestHighestCpmBid"]);
+  }
+  /**
+   * Returns top bids for a given adUnit or set of adUnits.
+   * @param  {(string|string[])} adUnitCode adUnitCode or array of adUnitCodes
+   * @return {[type]}            [description]
+   */
+
+
+  targeting.getWinningBids = function (adUnitCode) {
+    var bidsReceived = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : getBidsReceived();
+    var adUnitCodes = getAdUnitCodes(adUnitCode);
+    return bidsReceived.filter(function (bid) {
+      return __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_includes_js___default()(adUnitCodes, bid.adUnitCode);
+    }).filter(function (bid) {
+      return bid.cpm > 0;
+    }).map(function (bid) {
+      return bid.adUnitCode;
+    }).filter(__WEBPACK_IMPORTED_MODULE_0__utils_js__["uniques"]).map(function (adUnitCode) {
+      return bidsReceived.filter(function (bid) {
+        return bid.adUnitCode === adUnitCode ? bid : null;
+      }).reduce(__WEBPACK_IMPORTED_MODULE_0__utils_js__["getHighestCpm"]);
+    });
+  };
+  /**
+   * @param  {(string|string[])} adUnitCode adUnitCode or array of adUnitCodes
+   * Sets targeting for AST
+   */
+
+
+  targeting.setTargetingForAst = function (adUnitCodes) {
+    var astTargeting = targeting.getAllTargeting(adUnitCodes);
+
+    try {
+      targeting.resetPresetTargetingAST(adUnitCodes);
+    } catch (e) {
+      utils.logError('unable to reset targeting for AST' + e);
+    }
+
+    Object.keys(astTargeting).forEach(function (targetId) {
+      return Object.keys(astTargeting[targetId]).forEach(function (key) {
+        utils.logMessage("Attempting to set targeting for targetId: ".concat(targetId, " key: ").concat(key, " value: ").concat(astTargeting[targetId][key])); // setKeywords supports string and array as value
+
+        if (utils.isStr(astTargeting[targetId][key]) || utils.isArray(astTargeting[targetId][key])) {
+          var keywordsObj = {};
+          var regex = /pt[0-9]/;
+
+          if (key.search(regex) < 0) {
+            keywordsObj[key.toUpperCase()] = astTargeting[targetId][key];
+          } else {
+            // pt${n} keys should not be uppercased
+            keywordsObj[key] = astTargeting[targetId][key];
+          }
+
+          window.apntag.setKeywords(targetId, keywordsObj, {
+            overrideKeyValue: true
+          });
+        }
+      });
+    });
+  };
+  /**
+   * Get targeting key value pairs for winning bid.
+   * @param {string[]}    AdUnit code array
+   * @return {targetingArray}   winning bids targeting
+   */
+
+
+  function getWinningBidTargeting(adUnitCodes, bidsReceived) {
+    var winners = targeting.getWinningBids(adUnitCodes, bidsReceived);
+    var standardKeys = getStandardKeys();
+    winners = winners.map(function (winner) {
+      return _defineProperty({}, winner.adUnitCode, Object.keys(winner.adserverTargeting).filter(function (key) {
+        return typeof winner.sendStandardTargeting === 'undefined' || winner.sendStandardTargeting || standardKeys.indexOf(key) === -1;
+      }).reduce(function (acc, key) {
+        var targetingValue = [winner.adserverTargeting[key]];
+
+        var targeting = _defineProperty({}, key.substring(0, MAX_DFP_KEYLENGTH), targetingValue);
+
+        if (key === CONSTANTS.TARGETING_KEYS.DEAL) {
+          var bidderCodeTargetingKey = "".concat(key, "_").concat(winner.bidderCode).substring(0, MAX_DFP_KEYLENGTH);
+
+          var bidderCodeTargeting = _defineProperty({}, bidderCodeTargetingKey, targetingValue);
+
+          return [].concat(_toConsumableArray(acc), [targeting, bidderCodeTargeting]);
+        }
+
+        return [].concat(_toConsumableArray(acc), [targeting]);
+      }, []));
+    });
+    return winners;
+  }
+
+  function getStandardKeys() {
+    return auctionManager.getStandardBidderAdServerTargeting() // in case using a custom standard key set
+    .map(function (targeting) {
+      return targeting.key;
+    }).concat(TARGETING_KEYS).filter(__WEBPACK_IMPORTED_MODULE_0__utils_js__["uniques"]); // standard keys defined in the library.
+  }
+  /**
+   * Merge custom adserverTargeting with same key name for same adUnitCode.
+   * e.g: Appnexus defining custom keyvalue pair foo:bar and Rubicon defining custom keyvalue pair foo:baz will be merged to foo: ['bar','baz']
+   *
+   * @param {Object[]} acc Accumulator for reducer. It will store updated bidResponse objects
+   * @param {Object} bid BidResponse
+   * @param {number} index current index
+   * @param {Array} arr original array
+   */
+
+
+  function mergeAdServerTargeting(acc, bid, index, arr) {
+    function concatTargetingValue(key) {
+      return function (currentBidElement) {
+        if (!utils.isArray(currentBidElement.adserverTargeting[key])) {
+          currentBidElement.adserverTargeting[key] = [currentBidElement.adserverTargeting[key]];
+        }
+
+        currentBidElement.adserverTargeting[key] = currentBidElement.adserverTargeting[key].concat(bid.adserverTargeting[key]).filter(__WEBPACK_IMPORTED_MODULE_0__utils_js__["uniques"]);
+        delete bid.adserverTargeting[key];
+      };
+    }
+
+    function hasSameAdunitCodeAndKey(key) {
+      return function (currentBidElement) {
+        return currentBidElement.adUnitCode === bid.adUnitCode && currentBidElement.adserverTargeting[key];
+      };
+    }
+
+    Object.keys(bid.adserverTargeting).filter(getCustomKeys()).forEach(function (key) {
+      if (acc.length) {
+        acc.filter(hasSameAdunitCodeAndKey(key)).forEach(concatTargetingValue(key));
+      }
+    });
+    acc.push(bid);
+    return acc;
+  }
+
+  function getCustomKeys() {
+    var standardKeys = getStandardKeys().concat(__WEBPACK_IMPORTED_MODULE_2__native_js__["a" /* NATIVE_TARGETING_KEYS */]);
+    return function (key) {
+      return standardKeys.indexOf(key) === -1;
+    };
+  }
+
+  function truncateCustomKeys(bid) {
+    return _defineProperty({}, bid.adUnitCode, Object.keys(bid.adserverTargeting) // Get only the non-standard keys of the losing bids, since we
+    // don't want to override the standard keys of the winning bid.
+    .filter(getCustomKeys()).map(function (key) {
+      return _defineProperty({}, key.substring(0, MAX_DFP_KEYLENGTH), [bid.adserverTargeting[key]]);
+    }));
+  }
+  /**
+   * Get custom targeting key value pairs for bids.
+   * @param {string[]}    AdUnit code array
+   * @return {targetingArray}   bids with custom targeting defined in bidderSettings
+   */
+
+
+  function getCustomBidTargeting(adUnitCodes, bidsReceived) {
+    return bidsReceived.filter(function (bid) {
+      return __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_includes_js___default()(adUnitCodes, bid.adUnitCode);
+    }).map(function (bid) {
+      return _extends({}, bid);
+    }).reduce(mergeAdServerTargeting, []).map(truncateCustomKeys).filter(function (bid) {
+      return bid;
+    }); // removes empty elements in array;
+  }
+  /**
+   * Get targeting key value pairs for non-winning bids.
+   * @param {string[]}    AdUnit code array
+   * @return {targetingArray}   all non-winning bids targeting
+   */
+
+
+  function getBidLandscapeTargeting(adUnitCodes, bidsReceived) {
+    var standardKeys = TARGETING_KEYS.concat(__WEBPACK_IMPORTED_MODULE_2__native_js__["a" /* NATIVE_TARGETING_KEYS */]);
+    var adUnitBidLimit = __WEBPACK_IMPORTED_MODULE_1__config_js__["b" /* config */].getConfig('sendBidsControl.bidLimit');
+    var bids = getHighestCpmBidsFromBidPool(bidsReceived, __WEBPACK_IMPORTED_MODULE_0__utils_js__["getHighestCpm"], adUnitBidLimit); // populate targeting keys for the remaining bids
+
+    return bids.map(function (bid) {
+      if (bidShouldBeAddedToTargeting(bid, adUnitCodes)) {
+        return _defineProperty({}, bid.adUnitCode, getTargetingMap(bid, standardKeys.filter(function (key) {
+          return typeof bid.adserverTargeting[key] !== 'undefined';
+        })));
+      }
+    }).filter(function (bid) {
+      return bid;
+    }); // removes empty elements in array
+  }
+
+  function getTargetingMap(bid, keys) {
+    return keys.map(function (key) {
+      return _defineProperty({}, "".concat(key, "_").concat(bid.bidderCode).substring(0, MAX_DFP_KEYLENGTH), [bid.adserverTargeting[key]]);
+    });
+  }
+
+  targeting.isApntagDefined = function () {
+    if (window.apntag && utils.isFn(window.apntag.setKeywords)) {
+      return true;
+    }
+  };
+
+  return targeting;
+}
+var targeting = newTargeting(__WEBPACK_IMPORTED_MODULE_3__auctionManager_js__["a" /* auctionManager */]);
+
+/***/ }),
+/* 45 */,
+/* 46 */,
+/* 47 */
+/***/ (function(module, exports) {
+
+module.exports = {};
+
+
+/***/ }),
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6115,8 +7016,8 @@ function getTimedOutBids(bidderRequests, timelyBidders) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return userSync; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_js__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__storageManager_js__ = __webpack_require__(9);
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
@@ -6367,10 +7268,10 @@ function newUserSync(userSyncDependencies) {
 
       var checkForFiltering = {
         'include': function include(bidders, bidder) {
-          return !__WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js___default()(bidders, bidder);
+          return !__WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js___default()(bidders, bidder);
         },
         'exclude': function exclude(bidders, bidder) {
-          return __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js___default()(bidders, bidder);
+          return __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js___default()(bidders, bidder);
         }
       };
       return checkForFiltering[filterType](biddersToFilter, bidder);
@@ -6484,715 +7385,187 @@ var userSync = newUserSync({
  */
 
 /***/ }),
-/* 40 */
+/* 49 */,
+/* 50 */,
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return OUTSTREAM; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return INSTREAM; });
-/* unused harmony export videoAdUnit */
-/* unused harmony export videoBidder */
-/* unused harmony export hasNonVideoBidder */
-/* harmony export (immutable) */ __webpack_exports__["d"] = isValidVideoBid;
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return checkVideoBidSetup; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__adapterManager_js__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_config_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__hook_js__ = __webpack_require__(14);
-
-
-
-
-
-var VIDEO_MEDIA_TYPE = 'video';
-var OUTSTREAM = 'outstream';
-var INSTREAM = 'instream';
-/**
- * Helper functions for working with video-enabled adUnits
- */
-
-var videoAdUnit = function videoAdUnit(adUnit) {
-  var mediaType = adUnit.mediaType === VIDEO_MEDIA_TYPE;
-  var mediaTypes = Object(__WEBPACK_IMPORTED_MODULE_1__utils_js__["deepAccess"])(adUnit, 'mediaTypes.video');
-  return mediaType || mediaTypes;
-};
-var videoBidder = function videoBidder(bid) {
-  return __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes_js___default()(__WEBPACK_IMPORTED_MODULE_0__adapterManager_js__["default"].videoAdapters, bid.bidder);
-};
-var hasNonVideoBidder = function hasNonVideoBidder(adUnit) {
-  return adUnit.bids.filter(function (bid) {
-    return !videoBidder(bid);
-  }).length;
-};
-/**
- * @typedef {object} VideoBid
- * @property {string} adId id of the bid
- */
-
-/**
- * Validate that the assets required for video context are present on the bid
- * @param {VideoBid} bid Video bid to validate
- * @param {BidRequest[]} bidRequests All bid requests for an auction
- * @return {Boolean} If object is valid
- */
-
-function isValidVideoBid(bid, bidRequests) {
-  var bidRequest = Object(__WEBPACK_IMPORTED_MODULE_1__utils_js__["getBidRequest"])(bid.requestId, bidRequests);
-  var videoMediaType = bidRequest && Object(__WEBPACK_IMPORTED_MODULE_1__utils_js__["deepAccess"])(bidRequest, 'mediaTypes.video');
-  var context = videoMediaType && Object(__WEBPACK_IMPORTED_MODULE_1__utils_js__["deepAccess"])(videoMediaType, 'context'); // if context not defined assume default 'instream' for video bids
-  // instream bids require a vast url or vast xml content
-
-  return checkVideoBidSetup(bid, bidRequest, videoMediaType, context);
-}
-var checkVideoBidSetup = Object(__WEBPACK_IMPORTED_MODULE_4__hook_js__["b" /* hook */])('sync', function (bid, bidRequest, videoMediaType, context) {
-  if (!bidRequest || videoMediaType && context !== OUTSTREAM) {
-    // xml-only video bids require a prebid cache url
-    if (!__WEBPACK_IMPORTED_MODULE_2__src_config_js__["b" /* config */].getConfig('cache.url') && bid.vastXml && !bid.vastUrl) {
-      Object(__WEBPACK_IMPORTED_MODULE_1__utils_js__["logError"])("\n        This bid contains only vastXml and will not work when a prebid cache url is not specified.\n        Try enabling prebid cache with pbjs.setConfig({ cache: {url: \"...\"} });\n      ");
-      return false;
-    }
-
-    return !!(bid.vastUrl || bid.vastXml);
-  } // outstream bids require a renderer on the bid or pub-defined on adunit
-
-
-  if (context === OUTSTREAM) {
-    return !!(bid.renderer || bidRequest.renderer);
-  }
-
-  return true;
-}, 'checkVideoBidSetup');
-
-/***/ }),
-/* 41 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export TARGETING_KEYS */
-/* unused harmony export filters */
-/* unused harmony export getHighestCpmBidsFromBidPool */
-/* unused harmony export sortByDealAndPriceBucketOrCpm */
-/* unused harmony export newTargeting */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return targeting; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__native_js__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__auctionManager_js__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sizeMapping_js__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__mediaTypes_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes_js__);
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-
-
-
-
-
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getPriceBucketString; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return isValidPriceConfig; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_pure_features_array_find_js__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_pure_features_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_pure_features_array_find_js__);
 
 
 var utils = __webpack_require__(0);
 
-var CONSTANTS = __webpack_require__(5);
-
-var pbTargetingKeys = [];
-var MAX_DFP_KEYLENGTH = 20;
-var TTL_BUFFER = 1000;
-var TARGETING_KEYS = Object.keys(CONSTANTS.TARGETING_KEYS).map(function (key) {
-  return CONSTANTS.TARGETING_KEYS[key];
-}); // return unexpired bids
-
-var isBidNotExpired = function isBidNotExpired(bid) {
-  return bid.responseTimestamp + bid.ttl * 1000 + TTL_BUFFER > Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["timestamp"])();
-}; // return bids whose status is not set. Winning bids can only have a status of `rendered`.
-
-
-var isUnusedBid = function isUnusedBid(bid) {
-  return bid && (bid.status && !__WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes_js___default()([CONSTANTS.BID_STATUS.RENDERED], bid.status) || !bid.status);
+var _defaultPrecision = 2;
+var _lgPriceConfig = {
+  'buckets': [{
+    'max': 5,
+    'increment': 0.5
+  }]
+};
+var _mgPriceConfig = {
+  'buckets': [{
+    'max': 20,
+    'increment': 0.1
+  }]
+};
+var _hgPriceConfig = {
+  'buckets': [{
+    'max': 20,
+    'increment': 0.01
+  }]
+};
+var _densePriceConfig = {
+  'buckets': [{
+    'max': 3,
+    'increment': 0.01
+  }, {
+    'max': 8,
+    'increment': 0.05
+  }, {
+    'max': 20,
+    'increment': 0.5
+  }]
+};
+var _autoPriceConfig = {
+  'buckets': [{
+    'max': 5,
+    'increment': 0.05
+  }, {
+    'max': 10,
+    'increment': 0.1
+  }, {
+    'max': 20,
+    'increment': 0.5
+  }]
 };
 
-var filters = {
-  isBidNotExpired: isBidNotExpired,
-  isUnusedBid: isUnusedBid
-}; // If two bids are found for same adUnitCode, we will use the highest one to take part in auction
-// This can happen in case of concurrent auctions
-// If adUnitBidLimit is set above 0 return top N number of bids
+function getPriceBucketString(cpm, customConfig) {
+  var granularityMultiplier = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
+  var cpmFloat = parseFloat(cpm);
 
-function getHighestCpmBidsFromBidPool(bidsReceived, highestCpmCallback) {
-  var adUnitBidLimit = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
-  var bids = [];
-  var dealPrioritization = __WEBPACK_IMPORTED_MODULE_1__config_js__["b" /* config */].getConfig('sendBidsControl.dealPrioritization'); // bucket by adUnitcode
+  if (isNaN(cpmFloat)) {
+    cpmFloat = '';
+  }
 
-  var buckets = Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["groupBy"])(bidsReceived, 'adUnitCode'); // filter top bid for each bucket by bidder
+  return {
+    low: cpmFloat === '' ? '' : getCpmStringValue(cpm, _lgPriceConfig, granularityMultiplier),
+    med: cpmFloat === '' ? '' : getCpmStringValue(cpm, _mgPriceConfig, granularityMultiplier),
+    high: cpmFloat === '' ? '' : getCpmStringValue(cpm, _hgPriceConfig, granularityMultiplier),
+    auto: cpmFloat === '' ? '' : getCpmStringValue(cpm, _autoPriceConfig, granularityMultiplier),
+    dense: cpmFloat === '' ? '' : getCpmStringValue(cpm, _densePriceConfig, granularityMultiplier),
+    custom: cpmFloat === '' ? '' : getCpmStringValue(cpm, customConfig, granularityMultiplier)
+  };
+}
 
-  Object.keys(buckets).forEach(function (bucketKey) {
-    var bucketBids = [];
-    var bidsByBidder = Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["groupBy"])(buckets[bucketKey], 'bidderCode');
-    Object.keys(bidsByBidder).forEach(function (key) {
-      return bucketBids.push(bidsByBidder[key].reduce(highestCpmCallback));
-    }); // if adUnitBidLimit is set, pass top N number bids
+function getCpmStringValue(cpm, config, granularityMultiplier) {
+  var cpmStr = '';
 
-    if (adUnitBidLimit > 0) {
-      bucketBids = dealPrioritization ? bucketBids(sortByDealAndPriceBucketOrCpm(true)) : bucketBids.sort(function (a, b) {
-        return b.cpm - a.cpm;
-      });
-      bids.push.apply(bids, _toConsumableArray(bucketBids.slice(0, adUnitBidLimit)));
+  if (!isValidPriceConfig(config)) {
+    return cpmStr;
+  }
+
+  var cap = config.buckets.reduce(function (prev, curr) {
+    if (prev.max > curr.max) {
+      return prev;
+    }
+
+    return curr;
+  }, {
+    'max': 0
+  });
+  var bucketFloor = 0;
+  var bucket = __WEBPACK_IMPORTED_MODULE_0_core_js_pure_features_array_find_js___default()(config.buckets, function (bucket) {
+    if (cpm > cap.max * granularityMultiplier) {
+      // cpm exceeds cap, just return the cap.
+      var precision = bucket.precision;
+
+      if (typeof precision === 'undefined') {
+        precision = _defaultPrecision;
+      }
+
+      cpmStr = (bucket.max * granularityMultiplier).toFixed(precision);
+    } else if (cpm <= bucket.max * granularityMultiplier && cpm >= bucketFloor * granularityMultiplier) {
+      bucket.min = bucketFloor;
+      return bucket;
     } else {
-      bids.push.apply(bids, _toConsumableArray(bucketBids));
+      bucketFloor = bucket.max;
     }
   });
-  return bids;
+
+  if (bucket) {
+    cpmStr = getCpmTarget(cpm, bucket, granularityMultiplier);
+  }
+
+  return cpmStr;
 }
-/**
-* A descending sort function that will sort the list of objects based on the following two dimensions:
-*  - bids with a deal are sorted before bids w/o a deal
-*  - then sort bids in each grouping based on the hb_pb value
-* eg: the following list of bids would be sorted like:
-*  [{
-*    "hb_adid": "vwx",
-*    "hb_pb": "28",
-*    "hb_deal": "7747"
-*  }, {
-*    "hb_adid": "jkl",
-*    "hb_pb": "10",
-*    "hb_deal": "9234"
-*  }, {
-*    "hb_adid": "stu",
-*    "hb_pb": "50"
-*  }, {
-*    "hb_adid": "def",
-*    "hb_pb": "2"
-*  }]
-*/
 
-function sortByDealAndPriceBucketOrCpm() {
-  var useCpm = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-  return function (a, b) {
-    if (a.adUnitTargeting.hb_deal !== undefined && b.adUnitTargeting.hb_deal === undefined) {
-      return -1;
+function isValidPriceConfig(config) {
+  if (utils.isEmpty(config) || !config.buckets || !Array.isArray(config.buckets)) {
+    return false;
+  }
+
+  var isValid = true;
+  config.buckets.forEach(function (bucket) {
+    if (!bucket.max || !bucket.increment) {
+      isValid = false;
     }
-
-    if (a.adUnitTargeting.hb_deal === undefined && b.adUnitTargeting.hb_deal !== undefined) {
-      return 1;
-    } // assuming both values either have a deal or don't have a deal - sort by the hb_pb param
-
-
-    if (useCpm) {
-      return b.cpm - a.cpm;
-    }
-
-    return b.adUnitTargeting.hb_pb - a.adUnitTargeting.hb_pb;
-  };
+  });
+  return isValid;
 }
-/**
- * @typedef {Object.<string,string>} targeting
- * @property {string} targeting_key
- */
 
-/**
- * @typedef {Object.<string,Object.<string,string[]>[]>[]} targetingArray
- */
-
-function newTargeting(auctionManager) {
-  var targeting = {};
-  var latestAuctionForAdUnit = {};
-
-  targeting.setLatestAuctionForAdUnit = function (adUnitCode, auctionId) {
-    latestAuctionForAdUnit[adUnitCode] = auctionId;
-  };
-
-  targeting.resetPresetTargeting = function (adUnitCode) {
-    if (Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["isGptPubadsDefined"])()) {
-      var adUnitCodes = getAdUnitCodes(adUnitCode);
-      var adUnits = auctionManager.getAdUnits().filter(function (adUnit) {
-        return __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes_js___default()(adUnitCodes, adUnit.code);
-      });
-      window.googletag.pubads().getSlots().forEach(function (slot) {
-        pbTargetingKeys.forEach(function (key) {
-          // reset only registered adunits
-          adUnits.forEach(function (unit) {
-            if (unit.code === slot.getAdUnitPath() || unit.code === slot.getSlotElementId()) {
-              slot.setTargeting(key, null);
-            }
-          });
-        });
-      });
-    }
-  };
-
-  targeting.resetPresetTargetingAST = function (adUnitCode) {
-    var adUnitCodes = getAdUnitCodes(adUnitCode);
-    adUnitCodes.forEach(function (unit) {
-      var astTag = window.apntag.getTag(unit);
-
-      if (astTag && astTag.keywords) {
-        var currentKeywords = Object.keys(astTag.keywords);
-        var newKeywords = {};
-        currentKeywords.forEach(function (key) {
-          if (!__WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes_js___default()(pbTargetingKeys, key.toLowerCase())) {
-            newKeywords[key] = astTag.keywords[key];
-          }
-        });
-        window.apntag.modifyTag(unit, {
-          keywords: newKeywords
-        });
-      }
-    });
-  };
-  /**
-   * checks if bid has targeting set and belongs based on matching ad unit codes
-   * @return {boolean} true or false
-   */
-
-
-  function bidShouldBeAddedToTargeting(bid, adUnitCodes) {
-    return bid.adserverTargeting && adUnitCodes && (utils.isArray(adUnitCodes) && __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes_js___default()(adUnitCodes, bid.adUnitCode) || typeof adUnitCodes === 'string' && bid.adUnitCode === adUnitCodes);
-  }
-
-  ;
-  /**
-   * Returns targeting for any bids which have deals if alwaysIncludeDeals === true
-   */
-
-  function getDealBids(adUnitCodes, bidsReceived) {
-    if (__WEBPACK_IMPORTED_MODULE_1__config_js__["b" /* config */].getConfig('targetingControls.alwaysIncludeDeals') === true) {
-      var standardKeys = TARGETING_KEYS.concat(__WEBPACK_IMPORTED_MODULE_2__native_js__["a" /* NATIVE_TARGETING_KEYS */]); // we only want the top bid from bidders who have multiple entries per ad unit code
-
-      var bids = getHighestCpmBidsFromBidPool(bidsReceived, __WEBPACK_IMPORTED_MODULE_0__utils_js__["getHighestCpm"]); // populate targeting keys for the remaining bids if they have a dealId
-
-      return bids.map(function (bid) {
-        if (bid.dealId && bidShouldBeAddedToTargeting(bid, adUnitCodes)) {
-          return _defineProperty({}, bid.adUnitCode, getTargetingMap(bid, standardKeys.filter(function (key) {
-            return typeof bid.adserverTargeting[key] !== 'undefined';
-          })));
-        }
-      }).filter(function (bid) {
-        return bid;
-      }); // removes empty elements in array
-    }
-
-    return [];
-  }
-
-  ;
-  /**
-   * Returns all ad server targeting for all ad units.
-   * @param {string=} adUnitCode
-   * @return {Object.<string,targeting>} targeting
-   */
-
-  targeting.getAllTargeting = function (adUnitCode) {
-    var bidsReceived = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : getBidsReceived();
-    var adUnitCodes = getAdUnitCodes(adUnitCode); // Get targeting for the winning bid. Add targeting for any bids that have
-    // `alwaysUseBid=true`. If sending all bids is enabled, add targeting for losing bids.
-
-    var targeting = getWinningBidTargeting(adUnitCodes, bidsReceived).concat(getCustomBidTargeting(adUnitCodes, bidsReceived)).concat(__WEBPACK_IMPORTED_MODULE_1__config_js__["b" /* config */].getConfig('enableSendAllBids') ? getBidLandscapeTargeting(adUnitCodes, bidsReceived) : getDealBids(adUnitCodes, bidsReceived)); // store a reference of the targeting keys
-
-    targeting.map(function (adUnitCode) {
-      Object.keys(adUnitCode).map(function (key) {
-        adUnitCode[key].map(function (targetKey) {
-          if (pbTargetingKeys.indexOf(Object.keys(targetKey)[0]) === -1) {
-            pbTargetingKeys = Object.keys(targetKey).concat(pbTargetingKeys);
-          }
-        });
-      });
-    });
-    targeting = flattenTargeting(targeting);
-    var auctionKeysThreshold = __WEBPACK_IMPORTED_MODULE_1__config_js__["b" /* config */].getConfig('targetingControls.auctionKeyMaxChars');
-
-    if (auctionKeysThreshold) {
-      Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["logInfo"])("Detected 'targetingControls.auctionKeyMaxChars' was active for this auction; set with a limit of ".concat(auctionKeysThreshold, " characters.  Running checks on auction keys..."));
-      targeting = filterTargetingKeys(targeting, auctionKeysThreshold);
-    } // make sure at least there is a entry per adUnit code in the targetingSet so receivers of SET_TARGETING call's can know what ad units are being invoked
-
-
-    adUnitCodes.forEach(function (code) {
-      if (!targeting[code]) {
-        targeting[code] = {};
-      }
-    });
-    return targeting;
-  }; // create an encoded string variant based on the keypairs of the provided object
-  //  - note this will encode the characters between the keys (ie = and &)
-
-
-  function convertKeysToQueryForm(keyMap) {
-    return Object.keys(keyMap).reduce(function (queryString, key) {
-      var encodedKeyPair = "".concat(key, "%3d").concat(encodeURIComponent(keyMap[key]), "%26");
-      return queryString += encodedKeyPair;
-    }, '');
-  }
-
-  function filterTargetingKeys(targeting, auctionKeysThreshold) {
-    // read each targeting.adUnit object and sort the adUnits into a list of adUnitCodes based on priorization setting (eg CPM)
-    var targetingCopy = Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepClone"])(targeting);
-    var targetingMap = Object.keys(targetingCopy).map(function (adUnitCode) {
-      return {
-        adUnitCode: adUnitCode,
-        adUnitTargeting: targetingCopy[adUnitCode]
-      };
-    }).sort(sortByDealAndPriceBucketOrCpm()); // iterate through the targeting based on above list and transform the keys into the query-equivalent and count characters
-
-    return targetingMap.reduce(function (accMap, currMap, index, arr) {
-      var adUnitQueryString = convertKeysToQueryForm(currMap.adUnitTargeting); // for the last adUnit - trim last encoded ampersand from the converted query string
-
-      if (index + 1 === arr.length) {
-        adUnitQueryString = adUnitQueryString.slice(0, -3);
-      } // if under running threshold add to result
-
-
-      var code = currMap.adUnitCode;
-      var querySize = adUnitQueryString.length;
-
-      if (querySize <= auctionKeysThreshold) {
-        auctionKeysThreshold -= querySize;
-        Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["logInfo"])("AdUnit '".concat(code, "' auction keys comprised of ").concat(querySize, " characters.  Deducted from running threshold; new limit is ").concat(auctionKeysThreshold), targetingCopy[code]);
-        accMap[code] = targetingCopy[code];
-      } else {
-        Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["logWarn"])("The following keys for adUnitCode '".concat(code, "' exceeded the current limit of the 'auctionKeyMaxChars' setting.\nThe key-set size was ").concat(querySize, ", the current allotted amount was ").concat(auctionKeysThreshold, ".\n"), targetingCopy[code]);
-      }
-
-      if (index + 1 === arr.length && Object.keys(accMap).length === 0) {
-        Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["logError"])('No auction targeting keys were permitted due to the setting in setConfig(targetingControls.auctionKeyMaxChars).  Please review setup and consider adjusting.');
-      }
-
-      return accMap;
-    }, {});
-  }
-  /**
-   * Converts targeting array and flattens to make it easily iteratable
-   * e.g: Sample input to this function
-   * ```
-   * [
-   *    {
-   *      "div-gpt-ad-1460505748561-0": [{"hb_bidder": ["appnexusAst"]}]
-   *    },
-   *    {
-   *      "div-gpt-ad-1460505748561-0": [{"hb_bidder_appnexusAs": ["appnexusAst"]}]
-   *    }
-   * ]
-   * ```
-   * Resulting array
-   * ```
-   * {
-   *  "div-gpt-ad-1460505748561-0": {
-   *    "hb_bidder": "appnexusAst",
-   *    "hb_bidder_appnexusAs": "appnexusAst"
-   *  }
-   * }
-   * ```
-   *
-   * @param {targetingArray}  targeting
-   * @return {Object.<string,targeting>}  targeting
-   */
-
-
-  function flattenTargeting(targeting) {
-    var targetingObj = targeting.map(function (targeting) {
-      return _defineProperty({}, Object.keys(targeting)[0], targeting[Object.keys(targeting)[0]].map(function (target) {
-        return _defineProperty({}, Object.keys(target)[0], target[Object.keys(target)[0]].join(', '));
-      }).reduce(function (p, c) {
-        return _extends(c, p);
-      }, {}));
-    }).reduce(function (accumulator, targeting) {
-      var key = Object.keys(targeting)[0];
-      accumulator[key] = _extends({}, accumulator[key], targeting[key]);
-      return accumulator;
-    }, {});
-    return targetingObj;
-  }
-  /**
-   * Sets targeting for DFP
-   * @param {Object.<string,Object.<string,string>>} targetingConfig
-   */
-
-
-  targeting.setTargetingForGPT = function (targetingConfig, customSlotMatching) {
-    window.googletag.pubads().getSlots().forEach(function (slot) {
-      Object.keys(targetingConfig).filter(customSlotMatching ? customSlotMatching(slot) : Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["isAdUnitCodeMatchingSlot"])(slot)).forEach(function (targetId) {
-        return Object.keys(targetingConfig[targetId]).forEach(function (key) {
-          var valueArr = targetingConfig[targetId][key].split(',');
-          valueArr = valueArr.length > 1 ? [valueArr] : valueArr;
-          valueArr.map(function (value) {
-            utils.logMessage("Attempting to set key value for slot: ".concat(slot.getSlotElementId(), " key: ").concat(key, " value: ").concat(value));
-            return value;
-          }).forEach(function (value) {
-            slot.setTargeting(key, value);
-          });
-        });
-      });
-    });
-  };
-  /**
-   * normlizes input to a `adUnit.code` array
-   * @param  {(string|string[])} adUnitCode [description]
-   * @return {string[]}     AdUnit code array
-   */
-
-
-  function getAdUnitCodes(adUnitCode) {
-    if (typeof adUnitCode === 'string') {
-      return [adUnitCode];
-    } else if (utils.isArray(adUnitCode)) {
-      return adUnitCode;
-    }
-
-    return auctionManager.getAdUnitCodes() || [];
-  }
-
-  function getBidsReceived() {
-    var bidsReceived = auctionManager.getBidsReceived();
-
-    if (!__WEBPACK_IMPORTED_MODULE_1__config_js__["b" /* config */].getConfig('useBidCache')) {
-      bidsReceived = bidsReceived.filter(function (bid) {
-        return latestAuctionForAdUnit[bid.adUnitCode] === bid.auctionId;
-      });
-    }
-
-    bidsReceived = bidsReceived.filter(function (bid) {
-      return Object(__WEBPACK_IMPORTED_MODULE_0__utils_js__["deepAccess"])(bid, 'video.context') !== __WEBPACK_IMPORTED_MODULE_5__mediaTypes_js__["a" /* ADPOD */];
-    }).filter(function (bid) {
-      return bid.mediaType !== 'banner' || Object(__WEBPACK_IMPORTED_MODULE_4__sizeMapping_js__["c" /* sizeSupported */])([bid.width, bid.height]);
-    }).filter(filters.isUnusedBid).filter(filters.isBidNotExpired);
-    return getHighestCpmBidsFromBidPool(bidsReceived, __WEBPACK_IMPORTED_MODULE_0__utils_js__["getOldestHighestCpmBid"]);
-  }
-  /**
-   * Returns top bids for a given adUnit or set of adUnits.
-   * @param  {(string|string[])} adUnitCode adUnitCode or array of adUnitCodes
-   * @return {[type]}            [description]
-   */
-
-
-  targeting.getWinningBids = function (adUnitCode) {
-    var bidsReceived = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : getBidsReceived();
-    var adUnitCodes = getAdUnitCodes(adUnitCode);
-    return bidsReceived.filter(function (bid) {
-      return __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes_js___default()(adUnitCodes, bid.adUnitCode);
-    }).filter(function (bid) {
-      return bid.cpm > 0;
-    }).map(function (bid) {
-      return bid.adUnitCode;
-    }).filter(__WEBPACK_IMPORTED_MODULE_0__utils_js__["uniques"]).map(function (adUnitCode) {
-      return bidsReceived.filter(function (bid) {
-        return bid.adUnitCode === adUnitCode ? bid : null;
-      }).reduce(__WEBPACK_IMPORTED_MODULE_0__utils_js__["getHighestCpm"]);
-    });
-  };
-  /**
-   * @param  {(string|string[])} adUnitCode adUnitCode or array of adUnitCodes
-   * Sets targeting for AST
-   */
-
-
-  targeting.setTargetingForAst = function (adUnitCodes) {
-    var astTargeting = targeting.getAllTargeting(adUnitCodes);
-
-    try {
-      targeting.resetPresetTargetingAST(adUnitCodes);
-    } catch (e) {
-      utils.logError('unable to reset targeting for AST' + e);
-    }
-
-    Object.keys(astTargeting).forEach(function (targetId) {
-      return Object.keys(astTargeting[targetId]).forEach(function (key) {
-        utils.logMessage("Attempting to set targeting for targetId: ".concat(targetId, " key: ").concat(key, " value: ").concat(astTargeting[targetId][key])); // setKeywords supports string and array as value
-
-        if (utils.isStr(astTargeting[targetId][key]) || utils.isArray(astTargeting[targetId][key])) {
-          var keywordsObj = {};
-          var regex = /pt[0-9]/;
-
-          if (key.search(regex) < 0) {
-            keywordsObj[key.toUpperCase()] = astTargeting[targetId][key];
-          } else {
-            // pt${n} keys should not be uppercased
-            keywordsObj[key] = astTargeting[targetId][key];
-          }
-
-          window.apntag.setKeywords(targetId, keywordsObj, {
-            overrideKeyValue: true
-          });
-        }
-      });
-    });
-  };
-  /**
-   * Get targeting key value pairs for winning bid.
-   * @param {string[]}    AdUnit code array
-   * @return {targetingArray}   winning bids targeting
-   */
-
-
-  function getWinningBidTargeting(adUnitCodes, bidsReceived) {
-    var winners = targeting.getWinningBids(adUnitCodes, bidsReceived);
-    var standardKeys = getStandardKeys();
-    winners = winners.map(function (winner) {
-      return _defineProperty({}, winner.adUnitCode, Object.keys(winner.adserverTargeting).filter(function (key) {
-        return typeof winner.sendStandardTargeting === 'undefined' || winner.sendStandardTargeting || standardKeys.indexOf(key) === -1;
-      }).reduce(function (acc, key) {
-        var targetingValue = [winner.adserverTargeting[key]];
-
-        var targeting = _defineProperty({}, key.substring(0, MAX_DFP_KEYLENGTH), targetingValue);
-
-        if (key === CONSTANTS.TARGETING_KEYS.DEAL) {
-          var bidderCodeTargetingKey = "".concat(key, "_").concat(winner.bidderCode).substring(0, MAX_DFP_KEYLENGTH);
-
-          var bidderCodeTargeting = _defineProperty({}, bidderCodeTargetingKey, targetingValue);
-
-          return [].concat(_toConsumableArray(acc), [targeting, bidderCodeTargeting]);
-        }
-
-        return [].concat(_toConsumableArray(acc), [targeting]);
-      }, []));
-    });
-    return winners;
-  }
-
-  function getStandardKeys() {
-    return auctionManager.getStandardBidderAdServerTargeting() // in case using a custom standard key set
-    .map(function (targeting) {
-      return targeting.key;
-    }).concat(TARGETING_KEYS).filter(__WEBPACK_IMPORTED_MODULE_0__utils_js__["uniques"]); // standard keys defined in the library.
-  }
-  /**
-   * Merge custom adserverTargeting with same key name for same adUnitCode.
-   * e.g: Appnexus defining custom keyvalue pair foo:bar and Rubicon defining custom keyvalue pair foo:baz will be merged to foo: ['bar','baz']
-   *
-   * @param {Object[]} acc Accumulator for reducer. It will store updated bidResponse objects
-   * @param {Object} bid BidResponse
-   * @param {number} index current index
-   * @param {Array} arr original array
-   */
-
-
-  function mergeAdServerTargeting(acc, bid, index, arr) {
-    function concatTargetingValue(key) {
-      return function (currentBidElement) {
-        if (!utils.isArray(currentBidElement.adserverTargeting[key])) {
-          currentBidElement.adserverTargeting[key] = [currentBidElement.adserverTargeting[key]];
-        }
-
-        currentBidElement.adserverTargeting[key] = currentBidElement.adserverTargeting[key].concat(bid.adserverTargeting[key]).filter(__WEBPACK_IMPORTED_MODULE_0__utils_js__["uniques"]);
-        delete bid.adserverTargeting[key];
-      };
-    }
-
-    function hasSameAdunitCodeAndKey(key) {
-      return function (currentBidElement) {
-        return currentBidElement.adUnitCode === bid.adUnitCode && currentBidElement.adserverTargeting[key];
-      };
-    }
-
-    Object.keys(bid.adserverTargeting).filter(getCustomKeys()).forEach(function (key) {
-      if (acc.length) {
-        acc.filter(hasSameAdunitCodeAndKey(key)).forEach(concatTargetingValue(key));
-      }
-    });
-    acc.push(bid);
-    return acc;
-  }
-
-  function getCustomKeys() {
-    var standardKeys = getStandardKeys().concat(__WEBPACK_IMPORTED_MODULE_2__native_js__["a" /* NATIVE_TARGETING_KEYS */]);
-    return function (key) {
-      return standardKeys.indexOf(key) === -1;
-    };
-  }
-
-  function truncateCustomKeys(bid) {
-    return _defineProperty({}, bid.adUnitCode, Object.keys(bid.adserverTargeting) // Get only the non-standard keys of the losing bids, since we
-    // don't want to override the standard keys of the winning bid.
-    .filter(getCustomKeys()).map(function (key) {
-      return _defineProperty({}, key.substring(0, MAX_DFP_KEYLENGTH), [bid.adserverTargeting[key]]);
-    }));
-  }
-  /**
-   * Get custom targeting key value pairs for bids.
-   * @param {string[]}    AdUnit code array
-   * @return {targetingArray}   bids with custom targeting defined in bidderSettings
-   */
-
-
-  function getCustomBidTargeting(adUnitCodes, bidsReceived) {
-    return bidsReceived.filter(function (bid) {
-      return __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_includes_js___default()(adUnitCodes, bid.adUnitCode);
-    }).map(function (bid) {
-      return _extends({}, bid);
-    }).reduce(mergeAdServerTargeting, []).map(truncateCustomKeys).filter(function (bid) {
-      return bid;
-    }); // removes empty elements in array;
-  }
-  /**
-   * Get targeting key value pairs for non-winning bids.
-   * @param {string[]}    AdUnit code array
-   * @return {targetingArray}   all non-winning bids targeting
-   */
-
-
-  function getBidLandscapeTargeting(adUnitCodes, bidsReceived) {
-    var standardKeys = TARGETING_KEYS.concat(__WEBPACK_IMPORTED_MODULE_2__native_js__["a" /* NATIVE_TARGETING_KEYS */]);
-    var adUnitBidLimit = __WEBPACK_IMPORTED_MODULE_1__config_js__["b" /* config */].getConfig('sendBidsControl.bidLimit');
-    var bids = getHighestCpmBidsFromBidPool(bidsReceived, __WEBPACK_IMPORTED_MODULE_0__utils_js__["getHighestCpm"], adUnitBidLimit); // populate targeting keys for the remaining bids
-
-    return bids.map(function (bid) {
-      if (bidShouldBeAddedToTargeting(bid, adUnitCodes)) {
-        return _defineProperty({}, bid.adUnitCode, getTargetingMap(bid, standardKeys.filter(function (key) {
-          return typeof bid.adserverTargeting[key] !== 'undefined';
-        })));
-      }
-    }).filter(function (bid) {
-      return bid;
-    }); // removes empty elements in array
-  }
-
-  function getTargetingMap(bid, keys) {
-    return keys.map(function (key) {
-      return _defineProperty({}, "".concat(key, "_").concat(bid.bidderCode).substring(0, MAX_DFP_KEYLENGTH), [bid.adserverTargeting[key]]);
-    });
-  }
-
-  targeting.isApntagDefined = function () {
-    if (window.apntag && utils.isFn(window.apntag.setKeywords)) {
-      return true;
-    }
-  };
-
-  return targeting;
+function getCpmTarget(cpm, bucket, granularityMultiplier) {
+  var precision = typeof bucket.precision !== 'undefined' ? bucket.precision : _defaultPrecision;
+  var increment = bucket.increment * granularityMultiplier;
+  var bucketMin = bucket.min * granularityMultiplier; // start increments at the bucket min and then add bucket min back to arrive at the correct rounding
+  // note - we're padding the values to avoid using decimals in the math prior to flooring
+  // this is done as JS can return values slightly below the expected mark which would skew the price bucket target
+  //   (eg 4.01 / 0.01 = 400.99999999999994)
+  // min precison should be 2 to move decimal place over.
+
+  var pow = Math.pow(10, precision + 2);
+  var cpmToFloor = (cpm * pow - bucketMin * pow) / (increment * pow);
+  var cpmTarget = Math.floor(cpmToFloor) * increment + bucketMin; // force to 10 decimal places to deal with imprecise decimal/binary conversions
+  //    (for example 0.1 * 3 = 0.30000000000000004)
+
+  cpmTarget = Number(cpmTarget.toFixed(10));
+  return cpmTarget.toFixed(precision);
 }
-var targeting = newTargeting(__WEBPACK_IMPORTED_MODULE_3__auctionManager_js__["a" /* auctionManager */]);
+
+
 
 /***/ }),
-/* 42 */,
-/* 43 */
+/* 52 */
 /***/ (function(module, exports) {
 
-module.exports = function (exec) {
-  try {
-    return !!exec();
-  } catch (e) {
-    return true;
-  }
+module.exports = function (bitmap, value) {
+  return {
+    enumerable: !(bitmap & 1),
+    configurable: !(bitmap & 2),
+    writable: !(bitmap & 4),
+    value: value
+  };
 };
 
 
 /***/ }),
-/* 44 */
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// toObject with fallback for non-array-like ES3 strings
+var IndexedObject = __webpack_require__(85);
+var requireObjectCoercible = __webpack_require__(55);
+
+module.exports = function (it) {
+  return IndexedObject(requireObjectCoercible(it));
+};
+
+
+/***/ }),
+/* 54 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -7203,70 +7576,126 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 45 */
+/* 55 */
 /***/ (function(module, exports) {
 
-// 7.2.1 RequireObjectCoercible(argument)
+// `RequireObjectCoercible` abstract operation
+// https://tc39.github.io/ecma262/#sec-requireobjectcoercible
 module.exports = function (it) {
-  if (it == undefined) throw TypeError("Can't call method on  " + it);
+  if (it == undefined) throw TypeError("Can't call method on " + it);
   return it;
 };
 
 
 /***/ }),
-/* 46 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// 7.1.15 ToLength
-var toInteger = __webpack_require__(56);
+var toInteger = __webpack_require__(67);
+
 var min = Math.min;
-module.exports = function (it) {
-  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
+
+// `ToLength` abstract operation
+// https://tc39.github.io/ecma262/#sec-tolength
+module.exports = function (argument) {
+  return argument > 0 ? min(toInteger(argument), 0x1FFFFFFFFFFFFF) : 0; // 2 ** 53 - 1 == 9007199254740991
 };
 
 
 /***/ }),
-/* 47 */
+/* 57 */
 /***/ (function(module, exports) {
 
 module.exports = function () { /* empty */ };
 
 
 /***/ }),
-/* 48 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ctx = __webpack_require__(31);
-var call = __webpack_require__(82);
-var isArrayIter = __webpack_require__(83);
-var anObject = __webpack_require__(35);
-var toLength = __webpack_require__(46);
-var getIterFn = __webpack_require__(84);
-var BREAK = {};
-var RETURN = {};
-var exports = module.exports = function (iterable, entries, fn, that, ITERATOR) {
-  var iterFn = ITERATOR ? function () { return iterable; } : getIterFn(iterable);
-  var f = ctx(fn, that, entries ? 2 : 1);
-  var index = 0;
-  var length, step, iterator, result;
-  if (typeof iterFn != 'function') throw TypeError(iterable + ' is not iterable!');
-  // fast case for arrays with default iterator
-  if (isArrayIter(iterFn)) for (length = toLength(iterable.length); length > index; index++) {
-    result = entries ? f(anObject(step = iterable[index])[0], step[1]) : f(iterable[index]);
-    if (result === BREAK || result === RETURN) return result;
-  } else for (iterator = iterFn.call(iterable); !(step = iterator.next()).done;) {
-    result = call(iterator, f, step.value, entries);
-    if (result === BREAK || result === RETURN) return result;
-  }
-};
-exports.BREAK = BREAK;
-exports.RETURN = RETURN;
+var getBuiltIn = __webpack_require__(27);
+
+module.exports = getBuiltIn;
 
 
 /***/ }),
-/* 49 */,
-/* 50 */,
-/* 51 */
+/* 59 */
+/***/ (function(module, exports) {
+
+module.exports = {};
+
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var NATIVE_WEAK_MAP = __webpack_require__(141);
+var global = __webpack_require__(24);
+var isObject = __webpack_require__(25);
+var createNonEnumerableProperty = __webpack_require__(31);
+var objectHas = __webpack_require__(26);
+var sharedKey = __webpack_require__(74);
+var hiddenKeys = __webpack_require__(59);
+
+var WeakMap = global.WeakMap;
+var set, get, has;
+
+var enforce = function (it) {
+  return has(it) ? get(it) : set(it, {});
+};
+
+var getterFor = function (TYPE) {
+  return function (it) {
+    var state;
+    if (!isObject(it) || (state = get(it)).type !== TYPE) {
+      throw TypeError('Incompatible receiver, ' + TYPE + ' required');
+    } return state;
+  };
+};
+
+if (NATIVE_WEAK_MAP) {
+  var store = new WeakMap();
+  var wmget = store.get;
+  var wmhas = store.has;
+  var wmset = store.set;
+  set = function (it, metadata) {
+    wmset.call(store, it, metadata);
+    return metadata;
+  };
+  get = function (it) {
+    return wmget.call(store, it) || {};
+  };
+  has = function (it) {
+    return wmhas.call(store, it);
+  };
+} else {
+  var STATE = sharedKey('state');
+  hiddenKeys[STATE] = true;
+  set = function (it, metadata) {
+    createNonEnumerableProperty(it, STATE, metadata);
+    return metadata;
+  };
+  get = function (it) {
+    return objectHas(it, STATE) ? it[STATE] : {};
+  };
+  has = function (it) {
+    return objectHas(it, STATE);
+  };
+}
+
+module.exports = {
+  set: set,
+  get: get,
+  has: has,
+  enforce: enforce,
+  getterFor: getterFor
+};
+
+
+/***/ }),
+/* 61 */,
+/* 62 */,
+/* 63 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7274,20 +7703,20 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "adUnitSetupChecks", function() { return adUnitSetupChecks; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "checkAdUnitSetup", function() { return checkAdUnitSetup; });
 /* harmony export (immutable) */ __webpack_exports__["executeStorageCallbacks"] = executeStorageCallbacks;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__prebidGlobal_js__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__prebidGlobal_js__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__secureCreatives_js__ = __webpack_require__(140);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__userSync_js__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__secureCreatives_js__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__userSync_js__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__auctionManager_js__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__targeting_js__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__hook_js__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__debugging_js__ = __webpack_require__(142);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__adUnits_js__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__Renderer_js__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__bidfactory_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__auctionManager_js__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__targeting_js__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__hook_js__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__debugging_js__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_includes_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_includes_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__adUnits_js__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__Renderer_js__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__bidfactory_js__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__storageManager_js__ = __webpack_require__(9);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -7346,8 +7775,8 @@ pbjs.bidderSettings = pbjs.bidderSettings || {}; // let the world know we are lo
 
 pbjs.libLoaded = true; // version auto generated from build
 
-pbjs.version = "v3.14.0";
-utils.logInfo("Prebid.js v3.14.0 loaded"); // create adUnit array
+pbjs.version = "v3.26.0";
+utils.logInfo("Prebid.js v3.26.0 loaded"); // create adUnit array
 
 pbjs.adUnits = pbjs.adUnits || []; // Allow publishers who enable user sync override to trigger their sync
 
@@ -7600,7 +8029,7 @@ pbjs.setTargetingForGPTAsync = function (adUnit, customSlotMatching) {
 
   var targetingSet = __WEBPACK_IMPORTED_MODULE_6__targeting_js__["a" /* targeting */].getAllTargeting(adUnit); // first reset any old targeting
 
-  __WEBPACK_IMPORTED_MODULE_6__targeting_js__["a" /* targeting */].resetPresetTargeting(adUnit); // now set new targeting keys
+  __WEBPACK_IMPORTED_MODULE_6__targeting_js__["a" /* targeting */].resetPresetTargeting(adUnit, customSlotMatching); // now set new targeting keys
 
   __WEBPACK_IMPORTED_MODULE_6__targeting_js__["a" /* targeting */].setTargetingForGPT(targetingSet, customSlotMatching);
   Object.keys(targetingSet).forEach(function (adUnitCode) {
@@ -7817,7 +8246,7 @@ pbjs.requestBids = Object(__WEBPACK_IMPORTED_MODULE_7__hook_js__["b" /* hook */]
   if (adUnitCodes && adUnitCodes.length) {
     // if specific adUnitCodes supplied filter adUnits for those codes
     adUnits = adUnits.filter(function (unit) {
-      return __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes_js___default()(adUnitCodes, unit.code);
+      return __WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_includes_js___default()(adUnitCodes, unit.code);
     });
   } else {
     // otherwise derive adUnitCodes from adUnits
@@ -7847,7 +8276,7 @@ pbjs.requestBids = Object(__WEBPACK_IMPORTED_MODULE_7__hook_js__["b" /* hook */]
     var s2sConfig = __WEBPACK_IMPORTED_MODULE_4__config_js__["b" /* config */].getConfig('s2sConfig');
     var s2sBidders = s2sConfig && s2sConfig.bidders;
     var bidders = s2sBidders ? allBidders.filter(function (bidder) {
-      return !__WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes_js___default()(s2sBidders, bidder);
+      return !__WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_includes_js___default()(s2sBidders, bidder);
     }) : allBidders;
     adUnit.transactionId = utils.generateUUID();
     bidders.forEach(function (bidder) {
@@ -7857,7 +8286,7 @@ pbjs.requestBids = Object(__WEBPACK_IMPORTED_MODULE_7__hook_js__["b" /* hook */]
       var bidderMediaTypes = spec && spec.supportedMediaTypes || ['banner']; // check if the bidder's mediaTypes are not in the adUnit's mediaTypes
 
       var bidderEligible = adUnitMediaTypes.some(function (type) {
-        return __WEBPACK_IMPORTED_MODULE_9_core_js_library_fn_array_includes_js___default()(bidderMediaTypes, type);
+        return __WEBPACK_IMPORTED_MODULE_9_core_js_pure_features_array_includes_js___default()(bidderMediaTypes, type);
       });
 
       if (!bidderEligible) {
@@ -7906,7 +8335,6 @@ pbjs.requestBids = Object(__WEBPACK_IMPORTED_MODULE_7__hook_js__["b" /* hook */]
     return __WEBPACK_IMPORTED_MODULE_6__targeting_js__["a" /* targeting */].setLatestAuctionForAdUnit(code, auction.getAuctionId());
   });
   auction.callBids();
-  return auction;
 });
 function executeStorageCallbacks(fn, reqBidsConfigObj) {
   runAll(__WEBPACK_IMPORTED_MODULE_13__storageManager_js__["c" /* storageCallbacks */]);
@@ -8293,368 +8721,447 @@ pbjs.processQueue = function () {
 /* harmony default export */ __webpack_exports__["default"] = (pbjs);
 
 /***/ }),
-/* 52 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getPriceBucketString; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return isValidPriceConfig; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_find_js__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_find_js__);
-
-
-var utils = __webpack_require__(0);
-
-var _defaultPrecision = 2;
-var _lgPriceConfig = {
-  'buckets': [{
-    'max': 5,
-    'increment': 0.5
-  }]
-};
-var _mgPriceConfig = {
-  'buckets': [{
-    'max': 20,
-    'increment': 0.1
-  }]
-};
-var _hgPriceConfig = {
-  'buckets': [{
-    'max': 20,
-    'increment': 0.01
-  }]
-};
-var _densePriceConfig = {
-  'buckets': [{
-    'max': 3,
-    'increment': 0.01
-  }, {
-    'max': 8,
-    'increment': 0.05
-  }, {
-    'max': 20,
-    'increment': 0.5
-  }]
-};
-var _autoPriceConfig = {
-  'buckets': [{
-    'max': 5,
-    'increment': 0.05
-  }, {
-    'max': 10,
-    'increment': 0.1
-  }, {
-    'max': 20,
-    'increment': 0.5
-  }]
-};
-
-function getPriceBucketString(cpm, customConfig) {
-  var granularityMultiplier = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
-  var cpmFloat = parseFloat(cpm);
-
-  if (isNaN(cpmFloat)) {
-    cpmFloat = '';
-  }
-
-  return {
-    low: cpmFloat === '' ? '' : getCpmStringValue(cpm, _lgPriceConfig, granularityMultiplier),
-    med: cpmFloat === '' ? '' : getCpmStringValue(cpm, _mgPriceConfig, granularityMultiplier),
-    high: cpmFloat === '' ? '' : getCpmStringValue(cpm, _hgPriceConfig, granularityMultiplier),
-    auto: cpmFloat === '' ? '' : getCpmStringValue(cpm, _autoPriceConfig, granularityMultiplier),
-    dense: cpmFloat === '' ? '' : getCpmStringValue(cpm, _densePriceConfig, granularityMultiplier),
-    custom: cpmFloat === '' ? '' : getCpmStringValue(cpm, customConfig, granularityMultiplier)
-  };
-}
-
-function getCpmStringValue(cpm, config, granularityMultiplier) {
-  var cpmStr = '';
-
-  if (!isValidPriceConfig(config)) {
-    return cpmStr;
-  }
-
-  var cap = config.buckets.reduce(function (prev, curr) {
-    if (prev.max > curr.max) {
-      return prev;
-    }
-
-    return curr;
-  }, {
-    'max': 0
-  });
-  var bucketFloor = 0;
-  var bucket = __WEBPACK_IMPORTED_MODULE_0_core_js_library_fn_array_find_js___default()(config.buckets, function (bucket) {
-    if (cpm > cap.max * granularityMultiplier) {
-      // cpm exceeds cap, just return the cap.
-      var precision = bucket.precision;
-
-      if (typeof precision === 'undefined') {
-        precision = _defaultPrecision;
-      }
-
-      cpmStr = (bucket.max * granularityMultiplier).toFixed(precision);
-    } else if (cpm <= bucket.max * granularityMultiplier && cpm >= bucketFloor * granularityMultiplier) {
-      bucket.min = bucketFloor;
-      return bucket;
-    } else {
-      bucketFloor = bucket.max;
-    }
-  });
-
-  if (bucket) {
-    cpmStr = getCpmTarget(cpm, bucket, granularityMultiplier);
-  }
-
-  return cpmStr;
-}
-
-function isValidPriceConfig(config) {
-  if (utils.isEmpty(config) || !config.buckets || !Array.isArray(config.buckets)) {
-    return false;
-  }
-
-  var isValid = true;
-  config.buckets.forEach(function (bucket) {
-    if (!bucket.max || !bucket.increment) {
-      isValid = false;
-    }
-  });
-  return isValid;
-}
-
-function getCpmTarget(cpm, bucket, granularityMultiplier) {
-  var precision = typeof bucket.precision !== 'undefined' ? bucket.precision : _defaultPrecision;
-  var increment = bucket.increment * granularityMultiplier;
-  var bucketMin = bucket.min * granularityMultiplier; // start increments at the bucket min and then add bucket min back to arrive at the correct rounding
-  // note - we're padding the values to avoid using decimals in the math prior to flooring
-  // this is done as JS can return values slightly below the expected mark which would skew the price bucket target
-  //   (eg 4.01 / 0.01 = 400.99999999999994)
-  // min precison should be 2 to move decimal place over.
-
-  var pow = Math.pow(10, precision + 2);
-  var cpmToFloor = (cpm * pow - bucketMin * pow) / (increment * pow);
-  var cpmTarget = Math.floor(cpmToFloor) * increment + bucketMin; // force to 10 decimal places to deal with imprecise decimal/binary conversions
-  //    (for example 0.1 * 3 = 0.30000000000000004)
-
-  cpmTarget = Number(cpmTarget.toFixed(10));
-  return cpmTarget.toFixed(precision);
-}
-
-
-
-/***/ }),
-/* 53 */
-/***/ (function(module, exports) {
-
-module.exports = function (bitmap, value) {
-  return {
-    enumerable: !(bitmap & 1),
-    configurable: !(bitmap & 2),
-    writable: !(bitmap & 4),
-    value: value
-  };
-};
-
-
-/***/ }),
-/* 54 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// 0 -> Array#forEach
-// 1 -> Array#map
-// 2 -> Array#filter
-// 3 -> Array#some
-// 4 -> Array#every
-// 5 -> Array#find
-// 6 -> Array#findIndex
-var ctx = __webpack_require__(31);
-var IObject = __webpack_require__(71);
-var toObject = __webpack_require__(55);
-var toLength = __webpack_require__(46);
-var asc = __webpack_require__(107);
-module.exports = function (TYPE, $create) {
+var isObject = __webpack_require__(25);
+
+// `ToPrimitive` abstract operation
+// https://tc39.github.io/ecma262/#sec-toprimitive
+// instead of the ES6 spec version, we didn't implement @@toPrimitive case
+// and the second argument - flag - preferred type is a string
+module.exports = function (input, PREFERRED_STRING) {
+  if (!isObject(input)) return input;
+  var fn, val;
+  if (PREFERRED_STRING && typeof (fn = input.toString) == 'function' && !isObject(val = fn.call(input))) return val;
+  if (typeof (fn = input.valueOf) == 'function' && !isObject(val = fn.call(input))) return val;
+  if (!PREFERRED_STRING && typeof (fn = input.toString) == 'function' && !isObject(val = fn.call(input))) return val;
+  throw TypeError("Can't convert object to primitive value");
+};
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var bind = __webpack_require__(23);
+var IndexedObject = __webpack_require__(85);
+var toObject = __webpack_require__(66);
+var toLength = __webpack_require__(56);
+var arraySpeciesCreate = __webpack_require__(129);
+
+var push = [].push;
+
+// `Array.prototype.{ forEach, map, filter, some, every, find, findIndex }` methods implementation
+var createMethod = function (TYPE) {
   var IS_MAP = TYPE == 1;
   var IS_FILTER = TYPE == 2;
   var IS_SOME = TYPE == 3;
   var IS_EVERY = TYPE == 4;
   var IS_FIND_INDEX = TYPE == 6;
   var NO_HOLES = TYPE == 5 || IS_FIND_INDEX;
-  var create = $create || asc;
-  return function ($this, callbackfn, that) {
+  return function ($this, callbackfn, that, specificCreate) {
     var O = toObject($this);
-    var self = IObject(O);
-    var f = ctx(callbackfn, that, 3);
+    var self = IndexedObject(O);
+    var boundFunction = bind(callbackfn, that, 3);
     var length = toLength(self.length);
     var index = 0;
-    var result = IS_MAP ? create($this, length) : IS_FILTER ? create($this, 0) : undefined;
-    var val, res;
+    var create = specificCreate || arraySpeciesCreate;
+    var target = IS_MAP ? create($this, length) : IS_FILTER ? create($this, 0) : undefined;
+    var value, result;
     for (;length > index; index++) if (NO_HOLES || index in self) {
-      val = self[index];
-      res = f(val, index, O);
+      value = self[index];
+      result = boundFunction(value, index, O);
       if (TYPE) {
-        if (IS_MAP) result[index] = res;   // map
-        else if (res) switch (TYPE) {
-          case 3: return true;             // some
-          case 5: return val;              // find
-          case 6: return index;            // findIndex
-          case 2: result.push(val);        // filter
-        } else if (IS_EVERY) return false; // every
+        if (IS_MAP) target[index] = result; // map
+        else if (result) switch (TYPE) {
+          case 3: return true;              // some
+          case 5: return value;             // find
+          case 6: return index;             // findIndex
+          case 2: push.call(target, value); // filter
+        } else if (IS_EVERY) return false;  // every
       }
     }
-    return IS_FIND_INDEX ? -1 : IS_SOME || IS_EVERY ? IS_EVERY : result;
+    return IS_FIND_INDEX ? -1 : IS_SOME || IS_EVERY ? IS_EVERY : target;
   };
 };
 
+module.exports = {
+  // `Array.prototype.forEach` method
+  // https://tc39.github.io/ecma262/#sec-array.prototype.foreach
+  forEach: createMethod(0),
+  // `Array.prototype.map` method
+  // https://tc39.github.io/ecma262/#sec-array.prototype.map
+  map: createMethod(1),
+  // `Array.prototype.filter` method
+  // https://tc39.github.io/ecma262/#sec-array.prototype.filter
+  filter: createMethod(2),
+  // `Array.prototype.some` method
+  // https://tc39.github.io/ecma262/#sec-array.prototype.some
+  some: createMethod(3),
+  // `Array.prototype.every` method
+  // https://tc39.github.io/ecma262/#sec-array.prototype.every
+  every: createMethod(4),
+  // `Array.prototype.find` method
+  // https://tc39.github.io/ecma262/#sec-array.prototype.find
+  find: createMethod(5),
+  // `Array.prototype.findIndex` method
+  // https://tc39.github.io/ecma262/#sec-array.prototype.findIndex
+  findIndex: createMethod(6)
+};
+
 
 /***/ }),
-/* 55 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// 7.1.13 ToObject(argument)
-var defined = __webpack_require__(45);
-module.exports = function (it) {
-  return Object(defined(it));
+var requireObjectCoercible = __webpack_require__(55);
+
+// `ToObject` abstract operation
+// https://tc39.github.io/ecma262/#sec-toobject
+module.exports = function (argument) {
+  return Object(requireObjectCoercible(argument));
 };
 
 
 /***/ }),
-/* 56 */
+/* 67 */
 /***/ (function(module, exports) {
 
-// 7.1.4 ToInteger
 var ceil = Math.ceil;
 var floor = Math.floor;
-module.exports = function (it) {
-  return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
+
+// `ToInteger` abstract operation
+// https://tc39.github.io/ecma262/#sec-tointeger
+module.exports = function (argument) {
+  return isNaN(argument = +argument) ? 0 : (argument > 0 ? floor : ceil)(argument);
 };
 
 
 /***/ }),
-/* 57 */
+/* 68 */
 /***/ (function(module, exports) {
 
 var id = 0;
-var px = Math.random();
+var postfix = Math.random();
+
 module.exports = function (key) {
-  return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
+  return 'Symbol(' + String(key === undefined ? '' : key) + ')_' + (++id + postfix).toString(36);
 };
 
 
 /***/ }),
-/* 58 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// to indexed object, toObject with fallback for non-array-like ES3 strings
-var IObject = __webpack_require__(71);
-var defined = __webpack_require__(45);
-module.exports = function (it) {
-  return IObject(defined(it));
+var DESCRIPTORS = __webpack_require__(29);
+var fails = __webpack_require__(30);
+var has = __webpack_require__(26);
+
+var defineProperty = Object.defineProperty;
+var cache = {};
+
+var thrower = function (it) { throw it; };
+
+module.exports = function (METHOD_NAME, options) {
+  if (has(cache, METHOD_NAME)) return cache[METHOD_NAME];
+  if (!options) options = {};
+  var method = [][METHOD_NAME];
+  var ACCESSORS = has(options, 'ACCESSORS') ? options.ACCESSORS : false;
+  var argument0 = has(options, 0) ? options[0] : thrower;
+  var argument1 = has(options, 1) ? options[1] : undefined;
+
+  return cache[METHOD_NAME] = !!method && !fails(function () {
+    if (ACCESSORS && !DESCRIPTORS) return true;
+    var O = { length: -1 };
+
+    if (ACCESSORS) defineProperty(O, 1, { enumerable: true, get: thrower });
+    else O[1] = 1;
+
+    method.call(O, argument0, argument1);
+  });
 };
 
 
 /***/ }),
-/* 59 */
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var classof = __webpack_require__(71);
+var Iterators = __webpack_require__(40);
+var wellKnownSymbol = __webpack_require__(21);
+
+var ITERATOR = wellKnownSymbol('iterator');
+
+module.exports = function (it) {
+  if (it != undefined) return it[ITERATOR]
+    || it['@@iterator']
+    || Iterators[classof(it)];
+};
+
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var TO_STRING_TAG_SUPPORT = __webpack_require__(72);
+var classofRaw = __webpack_require__(54);
+var wellKnownSymbol = __webpack_require__(21);
+
+var TO_STRING_TAG = wellKnownSymbol('toStringTag');
+// ES3 wrong here
+var CORRECT_ARGUMENTS = classofRaw(function () { return arguments; }()) == 'Arguments';
+
+// fallback for IE11 Script Access Denied error
+var tryGet = function (it, key) {
+  try {
+    return it[key];
+  } catch (error) { /* empty */ }
+};
+
+// getting tag from ES6+ `Object.prototype.toString`
+module.exports = TO_STRING_TAG_SUPPORT ? classofRaw : function (it) {
+  var O, tag, result;
+  return it === undefined ? 'Undefined' : it === null ? 'Null'
+    // @@toStringTag case
+    : typeof (tag = tryGet(O = Object(it), TO_STRING_TAG)) == 'string' ? tag
+    // builtinTag case
+    : CORRECT_ARGUMENTS ? classofRaw(O)
+    // ES3 arguments fallback
+    : (result = classofRaw(O)) == 'Object' && typeof O.callee == 'function' ? 'Arguments' : result;
+};
+
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var wellKnownSymbol = __webpack_require__(21);
+
+var TO_STRING_TAG = wellKnownSymbol('toStringTag');
+var test = {};
+
+test[TO_STRING_TAG] = 'z';
+
+module.exports = String(test) === '[object z]';
+
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var TO_STRING_TAG_SUPPORT = __webpack_require__(72);
+var defineProperty = __webpack_require__(34).f;
+var createNonEnumerableProperty = __webpack_require__(31);
+var has = __webpack_require__(26);
+var toString = __webpack_require__(140);
+var wellKnownSymbol = __webpack_require__(21);
+
+var TO_STRING_TAG = wellKnownSymbol('toStringTag');
+
+module.exports = function (it, TAG, STATIC, SET_METHOD) {
+  if (it) {
+    var target = STATIC ? it : it.prototype;
+    if (!has(target, TO_STRING_TAG)) {
+      defineProperty(target, TO_STRING_TAG, { configurable: true, value: TAG });
+    }
+    if (SET_METHOD && !TO_STRING_TAG_SUPPORT) {
+      createNonEnumerableProperty(target, 'toString', toString);
+    }
+  }
+};
+
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var shared = __webpack_require__(88);
+var uid = __webpack_require__(68);
+
+var keys = shared('keys');
+
+module.exports = function (key) {
+  return keys[key] || (keys[key] = uid(key));
+};
+
+
+/***/ }),
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var LIBRARY = __webpack_require__(73);
-var $export = __webpack_require__(18);
-var redefine = __webpack_require__(114);
-var hide = __webpack_require__(24);
-var Iterators = __webpack_require__(37);
-var $iterCreate = __webpack_require__(115);
-var setToStringTag = __webpack_require__(61);
-var getPrototypeOf = __webpack_require__(120);
-var ITERATOR = __webpack_require__(17)('iterator');
-var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
-var FF_ITERATOR = '@@iterator';
+var $ = __webpack_require__(15);
+var createIteratorConstructor = __webpack_require__(149);
+var getPrototypeOf = __webpack_require__(101);
+var setPrototypeOf = __webpack_require__(151);
+var setToStringTag = __webpack_require__(73);
+var createNonEnumerableProperty = __webpack_require__(31);
+var redefine = __webpack_require__(99);
+var wellKnownSymbol = __webpack_require__(21);
+var IS_PURE = __webpack_require__(17);
+var Iterators = __webpack_require__(40);
+var IteratorsCore = __webpack_require__(100);
+
+var IteratorPrototype = IteratorsCore.IteratorPrototype;
+var BUGGY_SAFARI_ITERATORS = IteratorsCore.BUGGY_SAFARI_ITERATORS;
+var ITERATOR = wellKnownSymbol('iterator');
 var KEYS = 'keys';
 var VALUES = 'values';
+var ENTRIES = 'entries';
 
 var returnThis = function () { return this; };
 
-module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCED) {
-  $iterCreate(Constructor, NAME, next);
-  var getMethod = function (kind) {
-    if (!BUGGY && kind in proto) return proto[kind];
-    switch (kind) {
-      case KEYS: return function keys() { return new Constructor(this, kind); };
-      case VALUES: return function values() { return new Constructor(this, kind); };
-    } return function entries() { return new Constructor(this, kind); };
+module.exports = function (Iterable, NAME, IteratorConstructor, next, DEFAULT, IS_SET, FORCED) {
+  createIteratorConstructor(IteratorConstructor, NAME, next);
+
+  var getIterationMethod = function (KIND) {
+    if (KIND === DEFAULT && defaultIterator) return defaultIterator;
+    if (!BUGGY_SAFARI_ITERATORS && KIND in IterablePrototype) return IterablePrototype[KIND];
+    switch (KIND) {
+      case KEYS: return function keys() { return new IteratorConstructor(this, KIND); };
+      case VALUES: return function values() { return new IteratorConstructor(this, KIND); };
+      case ENTRIES: return function entries() { return new IteratorConstructor(this, KIND); };
+    } return function () { return new IteratorConstructor(this); };
   };
-  var TAG = NAME + ' Iterator';
-  var DEF_VALUES = DEFAULT == VALUES;
-  var VALUES_BUG = false;
-  var proto = Base.prototype;
-  var $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT];
-  var $default = $native || getMethod(DEFAULT);
-  var $entries = DEFAULT ? !DEF_VALUES ? $default : getMethod('entries') : undefined;
-  var $anyNative = NAME == 'Array' ? proto.entries || $native : $native;
-  var methods, key, IteratorPrototype;
-  // Fix native
-  if ($anyNative) {
-    IteratorPrototype = getPrototypeOf($anyNative.call(new Base()));
-    if (IteratorPrototype !== Object.prototype && IteratorPrototype.next) {
+
+  var TO_STRING_TAG = NAME + ' Iterator';
+  var INCORRECT_VALUES_NAME = false;
+  var IterablePrototype = Iterable.prototype;
+  var nativeIterator = IterablePrototype[ITERATOR]
+    || IterablePrototype['@@iterator']
+    || DEFAULT && IterablePrototype[DEFAULT];
+  var defaultIterator = !BUGGY_SAFARI_ITERATORS && nativeIterator || getIterationMethod(DEFAULT);
+  var anyNativeIterator = NAME == 'Array' ? IterablePrototype.entries || nativeIterator : nativeIterator;
+  var CurrentIteratorPrototype, methods, KEY;
+
+  // fix native
+  if (anyNativeIterator) {
+    CurrentIteratorPrototype = getPrototypeOf(anyNativeIterator.call(new Iterable()));
+    if (IteratorPrototype !== Object.prototype && CurrentIteratorPrototype.next) {
+      if (!IS_PURE && getPrototypeOf(CurrentIteratorPrototype) !== IteratorPrototype) {
+        if (setPrototypeOf) {
+          setPrototypeOf(CurrentIteratorPrototype, IteratorPrototype);
+        } else if (typeof CurrentIteratorPrototype[ITERATOR] != 'function') {
+          createNonEnumerableProperty(CurrentIteratorPrototype, ITERATOR, returnThis);
+        }
+      }
       // Set @@toStringTag to native iterators
-      setToStringTag(IteratorPrototype, TAG, true);
-      // fix for some old engines
-      if (!LIBRARY && typeof IteratorPrototype[ITERATOR] != 'function') hide(IteratorPrototype, ITERATOR, returnThis);
+      setToStringTag(CurrentIteratorPrototype, TO_STRING_TAG, true, true);
+      if (IS_PURE) Iterators[TO_STRING_TAG] = returnThis;
     }
   }
+
   // fix Array#{values, @@iterator}.name in V8 / FF
-  if (DEF_VALUES && $native && $native.name !== VALUES) {
-    VALUES_BUG = true;
-    $default = function values() { return $native.call(this); };
+  if (DEFAULT == VALUES && nativeIterator && nativeIterator.name !== VALUES) {
+    INCORRECT_VALUES_NAME = true;
+    defaultIterator = function values() { return nativeIterator.call(this); };
   }
-  // Define iterator
-  if ((!LIBRARY || FORCED) && (BUGGY || VALUES_BUG || !proto[ITERATOR])) {
-    hide(proto, ITERATOR, $default);
+
+  // define iterator
+  if ((!IS_PURE || FORCED) && IterablePrototype[ITERATOR] !== defaultIterator) {
+    createNonEnumerableProperty(IterablePrototype, ITERATOR, defaultIterator);
   }
-  // Plug for library
-  Iterators[NAME] = $default;
-  Iterators[TAG] = returnThis;
+  Iterators[NAME] = defaultIterator;
+
+  // export additional methods
   if (DEFAULT) {
     methods = {
-      values: DEF_VALUES ? $default : getMethod(VALUES),
-      keys: IS_SET ? $default : getMethod(KEYS),
-      entries: $entries
+      values: getIterationMethod(VALUES),
+      keys: IS_SET ? defaultIterator : getIterationMethod(KEYS),
+      entries: getIterationMethod(ENTRIES)
     };
-    if (FORCED) for (key in methods) {
-      if (!(key in proto)) redefine(proto, key, methods[key]);
-    } else $export($export.P + $export.F * (BUGGY || VALUES_BUG), NAME, methods);
+    if (FORCED) for (KEY in methods) {
+      if (BUGGY_SAFARI_ITERATORS || INCORRECT_VALUES_NAME || !(KEY in IterablePrototype)) {
+        redefine(IterablePrototype, KEY, methods[KEY]);
+      }
+    } else $({ target: NAME, proto: true, forced: BUGGY_SAFARI_ITERATORS || INCORRECT_VALUES_NAME }, methods);
   }
+
   return methods;
 };
 
 
 /***/ }),
-/* 60 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var shared = __webpack_require__(72)('keys');
-var uid = __webpack_require__(57);
-module.exports = function (key) {
-  return shared[key] || (shared[key] = uid(key));
-};
+"use strict";
+
+
+var implementation = __webpack_require__(193);
+
+module.exports = Function.prototype.bind || implementation;
 
 
 /***/ }),
-/* 61 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var def = __webpack_require__(23).f;
-var has = __webpack_require__(36);
-var TAG = __webpack_require__(17)('toStringTag');
+"use strict";
 
-module.exports = function (it, tag, stat) {
-  if (it && !has(it = stat ? it : it.prototype, TAG)) def(it, TAG, { configurable: true, value: tag });
+
+var keys = __webpack_require__(105);
+var hasSymbols = typeof Symbol === 'function' && typeof Symbol('foo') === 'symbol';
+
+var toStr = Object.prototype.toString;
+var concat = Array.prototype.concat;
+var origDefineProperty = Object.defineProperty;
+
+var isFunction = function (fn) {
+	return typeof fn === 'function' && toStr.call(fn) === '[object Function]';
 };
+
+var arePropertyDescriptorsSupported = function () {
+	var obj = {};
+	try {
+		origDefineProperty(obj, 'x', { enumerable: false, value: obj });
+		// eslint-disable-next-line no-unused-vars, no-restricted-syntax
+		for (var _ in obj) { // jscs:ignore disallowUnusedVariables
+			return false;
+		}
+		return obj.x === obj;
+	} catch (e) { /* this is IE 8. */
+		return false;
+	}
+};
+var supportsDescriptors = origDefineProperty && arePropertyDescriptorsSupported();
+
+var defineProperty = function (object, name, value, predicate) {
+	if (name in object && (!isFunction(predicate) || !predicate())) {
+		return;
+	}
+	if (supportsDescriptors) {
+		origDefineProperty(object, name, {
+			configurable: true,
+			enumerable: false,
+			value: value,
+			writable: true
+		});
+	} else {
+		object[name] = value;
+	}
+};
+
+var defineProperties = function (object, map) {
+	var predicates = arguments.length > 2 ? arguments[2] : {};
+	var props = keys(map);
+	if (hasSymbols) {
+		props = concat.call(props, Object.getOwnPropertySymbols(map));
+	}
+	for (var i = 0; i < props.length; i += 1) {
+		defineProperty(object, props[i], map[props[i]], predicates[props[i]]);
+	}
+};
+
+defineProperties.supportsDescriptors = !!supportsDescriptors;
+
+module.exports = defineProperties;
 
 
 /***/ }),
-/* 62 */
+/* 78 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8761,20 +9268,21 @@ var adunitCounter = {
 
 
 /***/ }),
-/* 63 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(196);
-module.exports = __webpack_require__(19).Array.findIndex;
+var parent = __webpack_require__(259);
+
+module.exports = parent;
 
 
 /***/ }),
-/* 64 */
+/* 80 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = registerVideoSupport;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__prebidGlobal_js__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__prebidGlobal_js__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_js__ = __webpack_require__(0);
 
 
@@ -8834,81 +9342,114 @@ function registerVideoSupport(name, videoSupport) {
 }
 
 /***/ }),
-/* 65 */,
-/* 66 */,
-/* 67 */,
-/* 68 */,
-/* 69 */
-/***/ (function(module, exports) {
-
-module.exports = function (it) {
-  if (typeof it != 'function') throw TypeError(it + ' is not a function!');
-  return it;
-};
-
-
-/***/ }),
-/* 70 */
+/* 81 */,
+/* 82 */,
+/* 83 */,
+/* 84 */,
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(20);
-var document = __webpack_require__(22).document;
-// typeof document.createElement is 'object' in old IE
-var is = isObject(document) && isObject(document.createElement);
-module.exports = function (it) {
-  return is ? document.createElement(it) : {};
-};
+var fails = __webpack_require__(30);
+var classof = __webpack_require__(54);
 
-
-/***/ }),
-/* 71 */
-/***/ (function(module, exports, __webpack_require__) {
+var split = ''.split;
 
 // fallback for non-array-like ES3 and non-enumerable old V8 strings
-var cof = __webpack_require__(44);
-// eslint-disable-next-line no-prototype-builtins
-module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
-  return cof(it) == 'String' ? it.split('') : Object(it);
-};
+module.exports = fails(function () {
+  // throws an error in rhino, see https://github.com/mozilla/rhino/issues/346
+  // eslint-disable-next-line no-prototype-builtins
+  return !Object('z').propertyIsEnumerable(0);
+}) ? function (it) {
+  return classof(it) == 'String' ? split.call(it, '') : Object(it);
+} : Object;
 
 
 /***/ }),
-/* 72 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var core = __webpack_require__(19);
-var global = __webpack_require__(22);
-var SHARED = '__core-js_shared__';
-var store = global[SHARED] || (global[SHARED] = {});
+var DESCRIPTORS = __webpack_require__(29);
+var fails = __webpack_require__(30);
+var createElement = __webpack_require__(87);
 
-(module.exports = function (key, value) {
-  return store[key] || (store[key] = value !== undefined ? value : {});
-})('versions', []).push({
-  version: core.version,
-  mode: __webpack_require__(73) ? 'pure' : 'global',
-  copyright: '© 2018 Denis Pushkarev (zloirock.ru)'
+// Thank's IE8 for his funny defineProperty
+module.exports = !DESCRIPTORS && !fails(function () {
+  return Object.defineProperty(createElement('div'), 'a', {
+    get: function () { return 7; }
+  }).a != 7;
 });
 
 
 /***/ }),
-/* 73 */
-/***/ (function(module, exports) {
+/* 87 */
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = true;
+var global = __webpack_require__(24);
+var isObject = __webpack_require__(25);
+
+var document = global.document;
+// typeof document.createElement is 'object' in old IE
+var EXISTS = isObject(document) && isObject(document.createElement);
+
+module.exports = function (it) {
+  return EXISTS ? document.createElement(it) : {};
+};
 
 
 /***/ }),
-/* 74 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// false -> Array#indexOf
-// true  -> Array#includes
-var toIObject = __webpack_require__(58);
-var toLength = __webpack_require__(46);
-var toAbsoluteIndex = __webpack_require__(111);
-module.exports = function (IS_INCLUDES) {
+var IS_PURE = __webpack_require__(17);
+var store = __webpack_require__(89);
+
+(module.exports = function (key, value) {
+  return store[key] || (store[key] = value !== undefined ? value : {});
+})('versions', []).push({
+  version: '3.6.4',
+  mode: IS_PURE ? 'pure' : 'global',
+  copyright: '© 2020 Denis Pushkarev (zloirock.ru)'
+});
+
+
+/***/ }),
+/* 89 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var global = __webpack_require__(24);
+var setGlobal = __webpack_require__(131);
+
+var SHARED = '__core-js_shared__';
+var store = global[SHARED] || setGlobal(SHARED, {});
+
+module.exports = store;
+
+
+/***/ }),
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var fails = __webpack_require__(30);
+
+module.exports = !!Object.getOwnPropertySymbols && !fails(function () {
+  // Chrome 38 Symbol has incorrect toString conversion
+  // eslint-disable-next-line no-undef
+  return !String(Symbol());
+});
+
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var toIndexedObject = __webpack_require__(53);
+var toLength = __webpack_require__(56);
+var toAbsoluteIndex = __webpack_require__(135);
+
+// `Array.prototype.{ indexOf, includes }` methods implementation
+var createMethod = function (IS_INCLUDES) {
   return function ($this, el, fromIndex) {
-    var O = toIObject($this);
+    var O = toIndexedObject($this);
     var length = toLength(O.length);
     var index = toAbsoluteIndex(fromIndex, length);
     var value;
@@ -8919,304 +9460,538 @@ module.exports = function (IS_INCLUDES) {
       // eslint-disable-next-line no-self-compare
       if (value != value) return true;
     // Array#indexOf ignores holes, Array#includes - not
-    } else for (;length > index; index++) if (IS_INCLUDES || index in O) {
-      if (O[index] === el) return IS_INCLUDES || index || 0;
+    } else for (;length > index; index++) {
+      if ((IS_INCLUDES || index in O) && O[index] === el) return IS_INCLUDES || index || 0;
     } return !IS_INCLUDES && -1;
   };
 };
 
+module.exports = {
+  // `Array.prototype.includes` method
+  // https://tc39.github.io/ecma262/#sec-array.prototype.includes
+  includes: createMethod(true),
+  // `Array.prototype.indexOf` method
+  // https://tc39.github.io/ecma262/#sec-array.prototype.indexof
+  indexOf: createMethod(false)
+};
+
 
 /***/ }),
-/* 75 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(112);
-__webpack_require__(76);
-__webpack_require__(121);
-__webpack_require__(123);
-__webpack_require__(127);
-__webpack_require__(130);
-__webpack_require__(132);
-module.exports = __webpack_require__(19).Set;
+var parent = __webpack_require__(136);
+__webpack_require__(159);
+__webpack_require__(161);
+__webpack_require__(163);
+__webpack_require__(165);
+__webpack_require__(167);
+__webpack_require__(168);
+__webpack_require__(169);
+__webpack_require__(170);
+__webpack_require__(171);
+__webpack_require__(172);
+__webpack_require__(173);
+__webpack_require__(174);
+__webpack_require__(175);
+__webpack_require__(176);
+__webpack_require__(177);
+__webpack_require__(178);
+__webpack_require__(179);
+__webpack_require__(180);
+
+module.exports = parent;
 
 
 /***/ }),
-/* 76 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+var hiddenKeys = __webpack_require__(59);
+var isObject = __webpack_require__(25);
+var has = __webpack_require__(26);
+var defineProperty = __webpack_require__(34).f;
+var uid = __webpack_require__(68);
+var FREEZING = __webpack_require__(139);
 
-var $at = __webpack_require__(113)(true);
-
-// 21.1.3.27 String.prototype[@@iterator]()
-__webpack_require__(59)(String, 'String', function (iterated) {
-  this._t = String(iterated); // target
-  this._i = 0;                // next index
-// 21.1.5.2.1 %StringIteratorPrototype%.next()
-}, function () {
-  var O = this._t;
-  var index = this._i;
-  var point;
-  if (index >= O.length) return { value: undefined, done: true };
-  point = $at(O, index);
-  this._i += point.length;
-  return { value: point, done: false };
-});
-
-
-/***/ }),
-/* 77 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-var anObject = __webpack_require__(35);
-var dPs = __webpack_require__(116);
-var enumBugKeys = __webpack_require__(78);
-var IE_PROTO = __webpack_require__(60)('IE_PROTO');
-var Empty = function () { /* empty */ };
-var PROTOTYPE = 'prototype';
-
-// Create object with fake `null` prototype: use iframe Object with cleared prototype
-var createDict = function () {
-  // Thrash, waste and sodomy: IE GC bug
-  var iframe = __webpack_require__(70)('iframe');
-  var i = enumBugKeys.length;
-  var lt = '<';
-  var gt = '>';
-  var iframeDocument;
-  iframe.style.display = 'none';
-  __webpack_require__(119).appendChild(iframe);
-  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
-  // createDict = iframe.contentWindow.Object;
-  // html.removeChild(iframe);
-  iframeDocument = iframe.contentWindow.document;
-  iframeDocument.open();
-  iframeDocument.write(lt + 'script' + gt + 'document.F=Object' + lt + '/script' + gt);
-  iframeDocument.close();
-  createDict = iframeDocument.F;
-  while (i--) delete createDict[PROTOTYPE][enumBugKeys[i]];
-  return createDict();
-};
-
-module.exports = Object.create || function create(O, Properties) {
-  var result;
-  if (O !== null) {
-    Empty[PROTOTYPE] = anObject(O);
-    result = new Empty();
-    Empty[PROTOTYPE] = null;
-    // add "__proto__" for Object.getPrototypeOf polyfill
-    result[IE_PROTO] = O;
-  } else result = createDict();
-  return Properties === undefined ? result : dPs(result, Properties);
-};
-
-
-/***/ }),
-/* 78 */
-/***/ (function(module, exports) {
-
-// IE 8- don't enum bug keys
-module.exports = (
-  'constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf'
-).split(',');
-
-
-/***/ }),
-/* 79 */
-/***/ (function(module, exports) {
-
-module.exports = function (done, value) {
-  return { value: value, done: !!done };
-};
-
-
-/***/ }),
-/* 80 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var hide = __webpack_require__(24);
-module.exports = function (target, src, safe) {
-  for (var key in src) {
-    if (safe && target[key]) target[key] = src[key];
-    else hide(target, key, src[key]);
-  } return target;
-};
-
-
-/***/ }),
-/* 81 */
-/***/ (function(module, exports) {
-
-module.exports = function (it, Constructor, name, forbiddenField) {
-  if (!(it instanceof Constructor) || (forbiddenField !== undefined && forbiddenField in it)) {
-    throw TypeError(name + ': incorrect invocation!');
-  } return it;
-};
-
-
-/***/ }),
-/* 82 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// call something on iterator step with safe closing on error
-var anObject = __webpack_require__(35);
-module.exports = function (iterator, fn, value, entries) {
-  try {
-    return entries ? fn(anObject(value)[0], value[1]) : fn(value);
-  // 7.4.6 IteratorClose(iterator, completion)
-  } catch (e) {
-    var ret = iterator['return'];
-    if (ret !== undefined) anObject(ret.call(iterator));
-    throw e;
-  }
-};
-
-
-/***/ }),
-/* 83 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// check on default Array iterator
-var Iterators = __webpack_require__(37);
-var ITERATOR = __webpack_require__(17)('iterator');
-var ArrayProto = Array.prototype;
-
-module.exports = function (it) {
-  return it !== undefined && (Iterators.Array === it || ArrayProto[ITERATOR] === it);
-};
-
-
-/***/ }),
-/* 84 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var classof = __webpack_require__(85);
-var ITERATOR = __webpack_require__(17)('iterator');
-var Iterators = __webpack_require__(37);
-module.exports = __webpack_require__(19).getIteratorMethod = function (it) {
-  if (it != undefined) return it[ITERATOR]
-    || it['@@iterator']
-    || Iterators[classof(it)];
-};
-
-
-/***/ }),
-/* 85 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// getting tag from 19.1.3.6 Object.prototype.toString()
-var cof = __webpack_require__(44);
-var TAG = __webpack_require__(17)('toStringTag');
-// ES3 wrong here
-var ARG = cof(function () { return arguments; }()) == 'Arguments';
-
-// fallback for IE11 Script Access Denied error
-var tryGet = function (it, key) {
-  try {
-    return it[key];
-  } catch (e) { /* empty */ }
-};
-
-module.exports = function (it) {
-  var O, T, B;
-  return it === undefined ? 'Undefined' : it === null ? 'Null'
-    // @@toStringTag case
-    : typeof (T = tryGet(O = Object(it), TAG)) == 'string' ? T
-    // builtinTag case
-    : ARG ? cof(O)
-    // ES3 arguments fallback
-    : (B = cof(O)) == 'Object' && typeof O.callee == 'function' ? 'Arguments' : B;
-};
-
-
-/***/ }),
-/* 86 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var META = __webpack_require__(57)('meta');
-var isObject = __webpack_require__(20);
-var has = __webpack_require__(36);
-var setDesc = __webpack_require__(23).f;
+var METADATA = uid('meta');
 var id = 0;
+
 var isExtensible = Object.isExtensible || function () {
   return true;
 };
-var FREEZE = !__webpack_require__(43)(function () {
-  return isExtensible(Object.preventExtensions({}));
-});
-var setMeta = function (it) {
-  setDesc(it, META, { value: {
-    i: 'O' + ++id, // object ID
-    w: {}          // weak collections IDs
+
+var setMetadata = function (it) {
+  defineProperty(it, METADATA, { value: {
+    objectID: 'O' + ++id, // object ID
+    weakData: {}          // weak collections IDs
   } });
 };
+
 var fastKey = function (it, create) {
-  // return primitive with prefix
+  // return a primitive with prefix
   if (!isObject(it)) return typeof it == 'symbol' ? it : (typeof it == 'string' ? 'S' : 'P') + it;
-  if (!has(it, META)) {
+  if (!has(it, METADATA)) {
     // can't set metadata to uncaught frozen object
     if (!isExtensible(it)) return 'F';
     // not necessary to add metadata
     if (!create) return 'E';
     // add missing metadata
-    setMeta(it);
+    setMetadata(it);
   // return object ID
-  } return it[META].i;
+  } return it[METADATA].objectID;
 };
-var getWeak = function (it, create) {
-  if (!has(it, META)) {
+
+var getWeakData = function (it, create) {
+  if (!has(it, METADATA)) {
     // can't set metadata to uncaught frozen object
     if (!isExtensible(it)) return true;
     // not necessary to add metadata
     if (!create) return false;
     // add missing metadata
-    setMeta(it);
-  // return hash weak collections IDs
-  } return it[META].w;
+    setMetadata(it);
+  // return the store of weak collections IDs
+  } return it[METADATA].weakData;
 };
+
 // add metadata on freeze-family methods calling
 var onFreeze = function (it) {
-  if (FREEZE && meta.NEED && isExtensible(it) && !has(it, META)) setMeta(it);
+  if (FREEZING && meta.REQUIRED && isExtensible(it) && !has(it, METADATA)) setMetadata(it);
   return it;
 };
+
 var meta = module.exports = {
-  KEY: META,
-  NEED: false,
+  REQUIRED: false,
   fastKey: fastKey,
-  getWeak: getWeak,
+  getWeakData: getWeakData,
   onFreeze: onFreeze
 };
 
+hiddenKeys[METADATA] = true;
+
 
 /***/ }),
-/* 87 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(20);
-module.exports = function (it, TYPE) {
-  if (!isObject(it) || it._t !== TYPE) throw TypeError('Incompatible receiver, ' + TYPE + ' required!');
-  return it;
+var wellKnownSymbol = __webpack_require__(21);
+var Iterators = __webpack_require__(40);
+
+var ITERATOR = wellKnownSymbol('iterator');
+var ArrayPrototype = Array.prototype;
+
+// check on default Array iterator
+module.exports = function (it) {
+  return it !== undefined && (Iterators.Array === it || ArrayPrototype[ITERATOR] === it);
 };
 
 
 /***/ }),
-/* 88 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(76);
-__webpack_require__(134);
-module.exports = __webpack_require__(19).Array.from;
+var anObject = __webpack_require__(16);
+
+// call something on iterator step with safe closing on error
+module.exports = function (iterator, fn, value, ENTRIES) {
+  try {
+    return ENTRIES ? fn(anObject(value)[0], value[1]) : fn(value);
+  // 7.4.6 IteratorClose(iterator, completion)
+  } catch (error) {
+    var returnMethod = iterator['return'];
+    if (returnMethod !== undefined) anObject(returnMethod.call(iterator));
+    throw error;
+  }
+};
 
 
 /***/ }),
-/* 89 */
+/* 96 */
+/***/ (function(module, exports) {
+
+module.exports = function (it, Constructor, name) {
+  if (!(it instanceof Constructor)) {
+    throw TypeError('Incorrect ' + (name ? name + ' ' : '') + 'invocation');
+  } return it;
+};
+
+
+/***/ }),
+/* 97 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var anObject = __webpack_require__(16);
+var defineProperties = __webpack_require__(144);
+var enumBugKeys = __webpack_require__(98);
+var hiddenKeys = __webpack_require__(59);
+var html = __webpack_require__(147);
+var documentCreateElement = __webpack_require__(87);
+var sharedKey = __webpack_require__(74);
+
+var GT = '>';
+var LT = '<';
+var PROTOTYPE = 'prototype';
+var SCRIPT = 'script';
+var IE_PROTO = sharedKey('IE_PROTO');
+
+var EmptyConstructor = function () { /* empty */ };
+
+var scriptTag = function (content) {
+  return LT + SCRIPT + GT + content + LT + '/' + SCRIPT + GT;
+};
+
+// Create object with fake `null` prototype: use ActiveX Object with cleared prototype
+var NullProtoObjectViaActiveX = function (activeXDocument) {
+  activeXDocument.write(scriptTag(''));
+  activeXDocument.close();
+  var temp = activeXDocument.parentWindow.Object;
+  activeXDocument = null; // avoid memory leak
+  return temp;
+};
+
+// Create object with fake `null` prototype: use iframe Object with cleared prototype
+var NullProtoObjectViaIFrame = function () {
+  // Thrash, waste and sodomy: IE GC bug
+  var iframe = documentCreateElement('iframe');
+  var JS = 'java' + SCRIPT + ':';
+  var iframeDocument;
+  iframe.style.display = 'none';
+  html.appendChild(iframe);
+  // https://github.com/zloirock/core-js/issues/475
+  iframe.src = String(JS);
+  iframeDocument = iframe.contentWindow.document;
+  iframeDocument.open();
+  iframeDocument.write(scriptTag('document.F=Object'));
+  iframeDocument.close();
+  return iframeDocument.F;
+};
+
+// Check for document.domain and active x support
+// No need to use active x approach when document.domain is not set
+// see https://github.com/es-shims/es5-shim/issues/150
+// variation of https://github.com/kitcambridge/es5-shim/commit/4f738ac066346
+// avoid IE GC bug
+var activeXDocument;
+var NullProtoObject = function () {
+  try {
+    /* global ActiveXObject */
+    activeXDocument = document.domain && new ActiveXObject('htmlfile');
+  } catch (error) { /* ignore */ }
+  NullProtoObject = activeXDocument ? NullProtoObjectViaActiveX(activeXDocument) : NullProtoObjectViaIFrame();
+  var length = enumBugKeys.length;
+  while (length--) delete NullProtoObject[PROTOTYPE][enumBugKeys[length]];
+  return NullProtoObject();
+};
+
+hiddenKeys[IE_PROTO] = true;
+
+// `Object.create` method
+// https://tc39.github.io/ecma262/#sec-object.create
+module.exports = Object.create || function create(O, Properties) {
+  var result;
+  if (O !== null) {
+    EmptyConstructor[PROTOTYPE] = anObject(O);
+    result = new EmptyConstructor();
+    EmptyConstructor[PROTOTYPE] = null;
+    // add "__proto__" for Object.getPrototypeOf polyfill
+    result[IE_PROTO] = O;
+  } else result = NullProtoObject();
+  return Properties === undefined ? result : defineProperties(result, Properties);
+};
+
+
+/***/ }),
+/* 98 */
+/***/ (function(module, exports) {
+
+// IE8- don't enum bug keys
+module.exports = [
+  'constructor',
+  'hasOwnProperty',
+  'isPrototypeOf',
+  'propertyIsEnumerable',
+  'toLocaleString',
+  'toString',
+  'valueOf'
+];
+
+
+/***/ }),
+/* 99 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var createNonEnumerableProperty = __webpack_require__(31);
+
+module.exports = function (target, key, value, options) {
+  if (options && options.enumerable) target[key] = value;
+  else createNonEnumerableProperty(target, key, value);
+};
+
+
+/***/ }),
+/* 100 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var getPrototypeOf = __webpack_require__(101);
+var createNonEnumerableProperty = __webpack_require__(31);
+var has = __webpack_require__(26);
+var wellKnownSymbol = __webpack_require__(21);
+var IS_PURE = __webpack_require__(17);
+
+var ITERATOR = wellKnownSymbol('iterator');
+var BUGGY_SAFARI_ITERATORS = false;
+
+var returnThis = function () { return this; };
+
+// `%IteratorPrototype%` object
+// https://tc39.github.io/ecma262/#sec-%iteratorprototype%-object
+var IteratorPrototype, PrototypeOfArrayIteratorPrototype, arrayIterator;
+
+if ([].keys) {
+  arrayIterator = [].keys();
+  // Safari 8 has buggy iterators w/o `next`
+  if (!('next' in arrayIterator)) BUGGY_SAFARI_ITERATORS = true;
+  else {
+    PrototypeOfArrayIteratorPrototype = getPrototypeOf(getPrototypeOf(arrayIterator));
+    if (PrototypeOfArrayIteratorPrototype !== Object.prototype) IteratorPrototype = PrototypeOfArrayIteratorPrototype;
+  }
+}
+
+if (IteratorPrototype == undefined) IteratorPrototype = {};
+
+// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
+if (!IS_PURE && !has(IteratorPrototype, ITERATOR)) {
+  createNonEnumerableProperty(IteratorPrototype, ITERATOR, returnThis);
+}
+
+module.exports = {
+  IteratorPrototype: IteratorPrototype,
+  BUGGY_SAFARI_ITERATORS: BUGGY_SAFARI_ITERATORS
+};
+
+
+/***/ }),
+/* 101 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var has = __webpack_require__(26);
+var toObject = __webpack_require__(66);
+var sharedKey = __webpack_require__(74);
+var CORRECT_PROTOTYPE_GETTER = __webpack_require__(150);
+
+var IE_PROTO = sharedKey('IE_PROTO');
+var ObjectPrototype = Object.prototype;
+
+// `Object.getPrototypeOf` method
+// https://tc39.github.io/ecma262/#sec-object.getprototypeof
+module.exports = CORRECT_PROTOTYPE_GETTER ? Object.getPrototypeOf : function (O) {
+  O = toObject(O);
+  if (has(O, IE_PROTO)) return O[IE_PROTO];
+  if (typeof O.constructor == 'function' && O instanceof O.constructor) {
+    return O.constructor.prototype;
+  } return O instanceof Object ? ObjectPrototype : null;
+};
+
+
+/***/ }),
+/* 102 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var charAt = __webpack_require__(155).charAt;
+var InternalStateModule = __webpack_require__(60);
+var defineIterator = __webpack_require__(75);
+
+var STRING_ITERATOR = 'String Iterator';
+var setInternalState = InternalStateModule.set;
+var getInternalState = InternalStateModule.getterFor(STRING_ITERATOR);
+
+// `String.prototype[@@iterator]` method
+// https://tc39.github.io/ecma262/#sec-string.prototype-@@iterator
+defineIterator(String, 'String', function (iterated) {
+  setInternalState(this, {
+    type: STRING_ITERATOR,
+    string: String(iterated),
+    index: 0
+  });
+// `%StringIteratorPrototype%.next` method
+// https://tc39.github.io/ecma262/#sec-%stringiteratorprototype%.next
+}, function next() {
+  var state = getInternalState(this);
+  var string = state.string;
+  var index = state.index;
+  var point;
+  if (index >= string.length) return { value: undefined, done: true };
+  point = charAt(string, index);
+  state.index += point.length;
+  return { value: point, done: false };
+});
+
+
+/***/ }),
+/* 103 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var anObject = __webpack_require__(16);
+var getIteratorMethod = __webpack_require__(70);
+
+module.exports = function (it) {
+  var iteratorMethod = getIteratorMethod(it);
+  if (typeof iteratorMethod != 'function') {
+    throw TypeError(String(it) + ' is not iterable');
+  } return anObject(iteratorMethod.call(it));
+};
+
+
+/***/ }),
+/* 104 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var parent = __webpack_require__(181);
+
+module.exports = parent;
+
+
+/***/ }),
+/* 105 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var slice = Array.prototype.slice;
+var isArgs = __webpack_require__(106);
+
+var origKeys = Object.keys;
+var keysShim = origKeys ? function keys(o) { return origKeys(o); } : __webpack_require__(188);
+
+var originalKeys = Object.keys;
+
+keysShim.shim = function shimObjectKeys() {
+	if (Object.keys) {
+		var keysWorksWithArguments = (function () {
+			// Safari 5.0 bug
+			var args = Object.keys(arguments);
+			return args && args.length === arguments.length;
+		}(1, 2));
+		if (!keysWorksWithArguments) {
+			Object.keys = function keys(object) { // eslint-disable-line func-name-matching
+				if (isArgs(object)) {
+					return originalKeys(slice.call(object));
+				}
+				return originalKeys(object);
+			};
+		}
+	} else {
+		Object.keys = keysShim;
+	}
+	return Object.keys || keysShim;
+};
+
+module.exports = keysShim;
+
+
+/***/ }),
+/* 106 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var toStr = Object.prototype.toString;
+
+module.exports = function isArguments(value) {
+	var str = toStr.call(value);
+	var isArgs = str === '[object Arguments]';
+	if (!isArgs) {
+		isArgs = str !== '[object Array]' &&
+			value !== null &&
+			typeof value === 'object' &&
+			typeof value.length === 'number' &&
+			value.length >= 0 &&
+			toStr.call(value.callee) === '[object Function]';
+	}
+	return isArgs;
+};
+
+
+/***/ }),
+/* 107 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var $Object = Object;
+var $TypeError = TypeError;
+
+module.exports = function flags() {
+	if (this != null && this !== $Object(this)) {
+		throw new $TypeError('RegExp.prototype.flags getter called on non-object');
+	}
+	var result = '';
+	if (this.global) {
+		result += 'g';
+	}
+	if (this.ignoreCase) {
+		result += 'i';
+	}
+	if (this.multiline) {
+		result += 'm';
+	}
+	if (this.dotAll) {
+		result += 's';
+	}
+	if (this.unicode) {
+		result += 'u';
+	}
+	if (this.sticky) {
+		result += 'y';
+	}
+	return result;
+};
+
+
+/***/ }),
+/* 108 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var implementation = __webpack_require__(107);
+
+var supportsDescriptors = __webpack_require__(77).supportsDescriptors;
+var $gOPD = Object.getOwnPropertyDescriptor;
+var $TypeError = TypeError;
+
+module.exports = function getPolyfill() {
+	if (!supportsDescriptors) {
+		throw new $TypeError('RegExp.prototype.flags requires a true ES5 environment that supports property descriptors');
+	}
+	if ((/a/mig).flags === 'gim') {
+		var descriptor = $gOPD(RegExp.prototype, 'flags');
+		if (descriptor && typeof descriptor.get === 'function' && typeof (/a/).dotAll === 'boolean') {
+			return descriptor.get;
+		}
+	}
+	return implementation;
+};
+
+
+/***/ }),
+/* 109 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["b"] = store;
 /* harmony export (immutable) */ __webpack_exports__["a"] = getCacheUrl;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ajax_js__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_config_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_js__ = __webpack_require__(0);
 /**
  * This module interacts with the server used to cache video ad content to be restored later.
  * At a high level, the expected workflow goes like this:
@@ -9227,6 +10002,7 @@ module.exports = __webpack_require__(19).Array.from;
  *
  * This trickery helps integrate with ad servers, which set character limits on request params.
  */
+
 
 
 /**
@@ -9276,9 +10052,13 @@ function toStorageRequest(bid) {
     ttlseconds: Number(bid.ttl)
   };
 
-  if (__WEBPACK_IMPORTED_MODULE_1__src_config_js__["b" /* config */].getConfig('cache.vasttrack')) {
+  if (__WEBPACK_IMPORTED_MODULE_1__config_js__["b" /* config */].getConfig('cache.vasttrack')) {
     payload.bidder = bid.bidder;
-    payload.bidid = bid.requestId;
+    payload.bidid = bid.requestId; // function has a thisArg set to bidderRequest for accessing the auctionStart
+
+    if (__WEBPACK_IMPORTED_MODULE_2__utils_js__["isPlainObject"](this) && this.hasOwnProperty('auctionStart')) {
+      payload.timestamp = this.auctionStart;
+    }
   }
 
   if (typeof bid.customCacheKey === 'string' && bid.customCacheKey !== '') {
@@ -9336,25 +10116,26 @@ function shimStorageCallback(done) {
  *
  * @param {CacheableBid[]} bids A list of bid objects which should be cached.
  * @param {videoCacheStoreCallback} [done] An optional callback which should be executed after
+ * @param {BidderRequest} [bidderRequest]
  * the data has been stored in the cache.
  */
 
 
-function store(bids, done) {
+function store(bids, done, bidderRequest) {
   var requestData = {
-    puts: bids.map(toStorageRequest)
+    puts: bids.map(toStorageRequest, bidderRequest)
   };
-  Object(__WEBPACK_IMPORTED_MODULE_0__ajax_js__["a" /* ajax */])(__WEBPACK_IMPORTED_MODULE_1__src_config_js__["b" /* config */].getConfig('cache.url'), shimStorageCallback(done), JSON.stringify(requestData), {
+  Object(__WEBPACK_IMPORTED_MODULE_0__ajax_js__["a" /* ajax */])(__WEBPACK_IMPORTED_MODULE_1__config_js__["b" /* config */].getConfig('cache.url'), shimStorageCallback(done), JSON.stringify(requestData), {
     contentType: 'text/plain',
     withCredentials: true
   });
 }
 function getCacheUrl(id) {
-  return "".concat(__WEBPACK_IMPORTED_MODULE_1__src_config_js__["b" /* config */].getConfig('cache.url'), "?uuid=").concat(id);
+  return "".concat(__WEBPACK_IMPORTED_MODULE_1__config_js__["b" /* config */].getConfig('cache.url'), "?uuid=").concat(id);
 }
 
 /***/ }),
-/* 90 */
+/* 110 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9364,8 +10145,8 @@ function getCacheUrl(id) {
 /* harmony export (immutable) */ __webpack_exports__["b"] = resolveStatus;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js__);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 
@@ -9490,9 +10271,9 @@ function resolveStatus() {
     }) && Object(__WEBPACK_IMPORTED_MODULE_1__utils_js__["deepAccess"])(mediaTypes, 'banner.sizes.length') > 0 && (labels.length === 0 || !labelAll && (labels.some(function (label) {
       return maps.labels[label];
     }) || labels.some(function (label) {
-      return __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js___default()(activeLabels, label);
+      return __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js___default()(activeLabels, label);
     })) || labelAll && labels.reduce(function (result, label) {
-      return !result ? result : maps.labels[label] || __WEBPACK_IMPORTED_MODULE_2_core_js_library_fn_array_includes_js___default()(activeLabels, label);
+      return !result ? result : maps.labels[label] || __WEBPACK_IMPORTED_MODULE_2_core_js_pure_features_array_includes_js___default()(activeLabels, label);
     }, true)),
     mediaTypes: mediaTypes
   };
@@ -9548,7 +10329,7 @@ function evaluateSizeConfig(configs) {
 }
 
 /***/ }),
-/* 91 */
+/* 111 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9574,25 +10355,25 @@ function Adapter(code) {
 }
 
 /***/ }),
-/* 92 */,
-/* 93 */,
-/* 94 */,
-/* 95 */,
-/* 96 */,
-/* 97 */,
-/* 98 */,
-/* 99 */,
-/* 100 */,
-/* 101 */,
-/* 102 */
+/* 112 */,
+/* 113 */,
+/* 114 */,
+/* 115 */,
+/* 116 */,
+/* 117 */,
+/* 118 */,
+/* 119 */,
+/* 120 */,
+/* 121 */,
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(103);
-module.exports = __webpack_require__(51);
+__webpack_require__(123);
+module.exports = __webpack_require__(63);
 
 
 /***/ }),
-/* 103 */
+/* 123 */
 /***/ (function(module, exports) {
 
 /**
@@ -9616,7 +10397,7 @@ pbjs.detectWidth = window.detectWidth || function () {
 };
 
 window.dfpAdunitsToRefresh = [];
-var EXCHANGE_RATE = window.EXCHANGE_RATE || 1.45;
+var EXCHANGE_RATE = window.EXCHANGE_RATE || 1.35;
 var REFRESH_RATE = 80000;
 var REFRESH_INDIVIDUAL_DELAY = 5000;
 var refreshIteration = 0;
@@ -11839,504 +12620,13 @@ pbjs.requestAds = function (adUnits, displayAds, TIMEOUT) {
 **/
 
 /***/ }),
-/* 104 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// 22.1.3.8 Array.prototype.find(predicate, thisArg = undefined)
-var $export = __webpack_require__(18);
-var $find = __webpack_require__(54)(5);
-var KEY = 'find';
-var forced = true;
-// Shouldn't skip holes
-if (KEY in []) Array(1)[KEY](function () { forced = false; });
-$export($export.P + $export.F * forced, 'Array', {
-  find: function find(callbackfn /* , that = undefined */) {
-    return $find(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
-  }
-});
-__webpack_require__(47)(KEY);
-
-
-/***/ }),
-/* 105 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = !__webpack_require__(25) && !__webpack_require__(43)(function () {
-  return Object.defineProperty(__webpack_require__(70)('div'), 'a', { get: function () { return 7; } }).a != 7;
-});
-
-
-/***/ }),
-/* 106 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 7.1.1 ToPrimitive(input [, PreferredType])
-var isObject = __webpack_require__(20);
-// instead of the ES6 spec version, we didn't implement @@toPrimitive case
-// and the second argument - flag - preferred type is a string
-module.exports = function (it, S) {
-  if (!isObject(it)) return it;
-  var fn, val;
-  if (S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it))) return val;
-  if (typeof (fn = it.valueOf) == 'function' && !isObject(val = fn.call(it))) return val;
-  if (!S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it))) return val;
-  throw TypeError("Can't convert object to primitive value");
-};
-
-
-/***/ }),
-/* 107 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-var speciesConstructor = __webpack_require__(108);
-
-module.exports = function (original, length) {
-  return new (speciesConstructor(original))(length);
-};
-
-
-/***/ }),
-/* 108 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var isObject = __webpack_require__(20);
-var isArray = __webpack_require__(109);
-var SPECIES = __webpack_require__(17)('species');
-
-module.exports = function (original) {
-  var C;
-  if (isArray(original)) {
-    C = original.constructor;
-    // cross-realm fallback
-    if (typeof C == 'function' && (C === Array || isArray(C.prototype))) C = undefined;
-    if (isObject(C)) {
-      C = C[SPECIES];
-      if (C === null) C = undefined;
-    }
-  } return C === undefined ? Array : C;
-};
-
-
-/***/ }),
-/* 109 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 7.2.2 IsArray(argument)
-var cof = __webpack_require__(44);
-module.exports = Array.isArray || function isArray(arg) {
-  return cof(arg) == 'Array';
-};
-
-
-/***/ }),
-/* 110 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// https://github.com/tc39/Array.prototype.includes
-var $export = __webpack_require__(18);
-var $includes = __webpack_require__(74)(true);
-
-$export($export.P, 'Array', {
-  includes: function includes(el /* , fromIndex = 0 */) {
-    return $includes(this, el, arguments.length > 1 ? arguments[1] : undefined);
-  }
-});
-
-__webpack_require__(47)('includes');
-
-
-/***/ }),
-/* 111 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var toInteger = __webpack_require__(56);
-var max = Math.max;
-var min = Math.min;
-module.exports = function (index, length) {
-  index = toInteger(index);
-  return index < 0 ? max(index + length, 0) : min(index, length);
-};
-
-
-/***/ }),
-/* 112 */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-/* 113 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var toInteger = __webpack_require__(56);
-var defined = __webpack_require__(45);
-// true  -> String#at
-// false -> String#codePointAt
-module.exports = function (TO_STRING) {
-  return function (that, pos) {
-    var s = String(defined(that));
-    var i = toInteger(pos);
-    var l = s.length;
-    var a, b;
-    if (i < 0 || i >= l) return TO_STRING ? '' : undefined;
-    a = s.charCodeAt(i);
-    return a < 0xd800 || a > 0xdbff || i + 1 === l || (b = s.charCodeAt(i + 1)) < 0xdc00 || b > 0xdfff
-      ? TO_STRING ? s.charAt(i) : a
-      : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;
-  };
-};
-
-
-/***/ }),
-/* 114 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(24);
-
-
-/***/ }),
-/* 115 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var create = __webpack_require__(77);
-var descriptor = __webpack_require__(53);
-var setToStringTag = __webpack_require__(61);
-var IteratorPrototype = {};
-
-// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
-__webpack_require__(24)(IteratorPrototype, __webpack_require__(17)('iterator'), function () { return this; });
-
-module.exports = function (Constructor, NAME, next) {
-  Constructor.prototype = create(IteratorPrototype, { next: descriptor(1, next) });
-  setToStringTag(Constructor, NAME + ' Iterator');
-};
-
-
-/***/ }),
-/* 116 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var dP = __webpack_require__(23);
-var anObject = __webpack_require__(35);
-var getKeys = __webpack_require__(117);
-
-module.exports = __webpack_require__(25) ? Object.defineProperties : function defineProperties(O, Properties) {
-  anObject(O);
-  var keys = getKeys(Properties);
-  var length = keys.length;
-  var i = 0;
-  var P;
-  while (length > i) dP.f(O, P = keys[i++], Properties[P]);
-  return O;
-};
-
-
-/***/ }),
-/* 117 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.14 / 15.2.3.14 Object.keys(O)
-var $keys = __webpack_require__(118);
-var enumBugKeys = __webpack_require__(78);
-
-module.exports = Object.keys || function keys(O) {
-  return $keys(O, enumBugKeys);
-};
-
-
-/***/ }),
-/* 118 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var has = __webpack_require__(36);
-var toIObject = __webpack_require__(58);
-var arrayIndexOf = __webpack_require__(74)(false);
-var IE_PROTO = __webpack_require__(60)('IE_PROTO');
-
-module.exports = function (object, names) {
-  var O = toIObject(object);
-  var i = 0;
-  var result = [];
-  var key;
-  for (key in O) if (key != IE_PROTO) has(O, key) && result.push(key);
-  // Don't enum bug & hidden keys
-  while (names.length > i) if (has(O, key = names[i++])) {
-    ~arrayIndexOf(result, key) || result.push(key);
-  }
-  return result;
-};
-
-
-/***/ }),
-/* 119 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var document = __webpack_require__(22).document;
-module.exports = document && document.documentElement;
-
-
-/***/ }),
-/* 120 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
-var has = __webpack_require__(36);
-var toObject = __webpack_require__(55);
-var IE_PROTO = __webpack_require__(60)('IE_PROTO');
-var ObjectProto = Object.prototype;
-
-module.exports = Object.getPrototypeOf || function (O) {
-  O = toObject(O);
-  if (has(O, IE_PROTO)) return O[IE_PROTO];
-  if (typeof O.constructor == 'function' && O instanceof O.constructor) {
-    return O.constructor.prototype;
-  } return O instanceof Object ? ObjectProto : null;
-};
-
-
-/***/ }),
-/* 121 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(122);
-var global = __webpack_require__(22);
-var hide = __webpack_require__(24);
-var Iterators = __webpack_require__(37);
-var TO_STRING_TAG = __webpack_require__(17)('toStringTag');
-
-var DOMIterables = ('CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,' +
-  'DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,' +
-  'MediaList,MimeTypeArray,NamedNodeMap,NodeList,PaintRequestList,Plugin,PluginArray,SVGLengthList,SVGNumberList,' +
-  'SVGPathSegList,SVGPointList,SVGStringList,SVGTransformList,SourceBufferList,StyleSheetList,TextTrackCueList,' +
-  'TextTrackList,TouchList').split(',');
-
-for (var i = 0; i < DOMIterables.length; i++) {
-  var NAME = DOMIterables[i];
-  var Collection = global[NAME];
-  var proto = Collection && Collection.prototype;
-  if (proto && !proto[TO_STRING_TAG]) hide(proto, TO_STRING_TAG, NAME);
-  Iterators[NAME] = Iterators.Array;
-}
-
-
-/***/ }),
-/* 122 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var addToUnscopables = __webpack_require__(47);
-var step = __webpack_require__(79);
-var Iterators = __webpack_require__(37);
-var toIObject = __webpack_require__(58);
-
-// 22.1.3.4 Array.prototype.entries()
-// 22.1.3.13 Array.prototype.keys()
-// 22.1.3.29 Array.prototype.values()
-// 22.1.3.30 Array.prototype[@@iterator]()
-module.exports = __webpack_require__(59)(Array, 'Array', function (iterated, kind) {
-  this._t = toIObject(iterated); // target
-  this._i = 0;                   // next index
-  this._k = kind;                // kind
-// 22.1.5.2.1 %ArrayIteratorPrototype%.next()
-}, function () {
-  var O = this._t;
-  var kind = this._k;
-  var index = this._i++;
-  if (!O || index >= O.length) {
-    this._t = undefined;
-    return step(1);
-  }
-  if (kind == 'keys') return step(0, index);
-  if (kind == 'values') return step(0, O[index]);
-  return step(0, [index, O[index]]);
-}, 'values');
-
-// argumentsList[@@iterator] is %ArrayProto_values% (9.4.4.6, 9.4.4.7)
-Iterators.Arguments = Iterators.Array;
-
-addToUnscopables('keys');
-addToUnscopables('values');
-addToUnscopables('entries');
-
-
-/***/ }),
-/* 123 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var strong = __webpack_require__(124);
-var validate = __webpack_require__(87);
-var SET = 'Set';
-
-// 23.2 Set Objects
-module.exports = __webpack_require__(126)(SET, function (get) {
-  return function Set() { return get(this, arguments.length > 0 ? arguments[0] : undefined); };
-}, {
-  // 23.2.3.1 Set.prototype.add(value)
-  add: function add(value) {
-    return strong.def(validate(this, SET), value = value === 0 ? 0 : value, value);
-  }
-}, strong);
-
-
-/***/ }),
 /* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+__webpack_require__(125);
+var entryUnbind = __webpack_require__(58);
 
-var dP = __webpack_require__(23).f;
-var create = __webpack_require__(77);
-var redefineAll = __webpack_require__(80);
-var ctx = __webpack_require__(31);
-var anInstance = __webpack_require__(81);
-var forOf = __webpack_require__(48);
-var $iterDefine = __webpack_require__(59);
-var step = __webpack_require__(79);
-var setSpecies = __webpack_require__(125);
-var DESCRIPTORS = __webpack_require__(25);
-var fastKey = __webpack_require__(86).fastKey;
-var validate = __webpack_require__(87);
-var SIZE = DESCRIPTORS ? '_s' : 'size';
-
-var getEntry = function (that, key) {
-  // fast case
-  var index = fastKey(key);
-  var entry;
-  if (index !== 'F') return that._i[index];
-  // frozen object case
-  for (entry = that._f; entry; entry = entry.n) {
-    if (entry.k == key) return entry;
-  }
-};
-
-module.exports = {
-  getConstructor: function (wrapper, NAME, IS_MAP, ADDER) {
-    var C = wrapper(function (that, iterable) {
-      anInstance(that, C, NAME, '_i');
-      that._t = NAME;         // collection type
-      that._i = create(null); // index
-      that._f = undefined;    // first entry
-      that._l = undefined;    // last entry
-      that[SIZE] = 0;         // size
-      if (iterable != undefined) forOf(iterable, IS_MAP, that[ADDER], that);
-    });
-    redefineAll(C.prototype, {
-      // 23.1.3.1 Map.prototype.clear()
-      // 23.2.3.2 Set.prototype.clear()
-      clear: function clear() {
-        for (var that = validate(this, NAME), data = that._i, entry = that._f; entry; entry = entry.n) {
-          entry.r = true;
-          if (entry.p) entry.p = entry.p.n = undefined;
-          delete data[entry.i];
-        }
-        that._f = that._l = undefined;
-        that[SIZE] = 0;
-      },
-      // 23.1.3.3 Map.prototype.delete(key)
-      // 23.2.3.4 Set.prototype.delete(value)
-      'delete': function (key) {
-        var that = validate(this, NAME);
-        var entry = getEntry(that, key);
-        if (entry) {
-          var next = entry.n;
-          var prev = entry.p;
-          delete that._i[entry.i];
-          entry.r = true;
-          if (prev) prev.n = next;
-          if (next) next.p = prev;
-          if (that._f == entry) that._f = next;
-          if (that._l == entry) that._l = prev;
-          that[SIZE]--;
-        } return !!entry;
-      },
-      // 23.2.3.6 Set.prototype.forEach(callbackfn, thisArg = undefined)
-      // 23.1.3.5 Map.prototype.forEach(callbackfn, thisArg = undefined)
-      forEach: function forEach(callbackfn /* , that = undefined */) {
-        validate(this, NAME);
-        var f = ctx(callbackfn, arguments.length > 1 ? arguments[1] : undefined, 3);
-        var entry;
-        while (entry = entry ? entry.n : this._f) {
-          f(entry.v, entry.k, this);
-          // revert to the last existing entry
-          while (entry && entry.r) entry = entry.p;
-        }
-      },
-      // 23.1.3.7 Map.prototype.has(key)
-      // 23.2.3.7 Set.prototype.has(value)
-      has: function has(key) {
-        return !!getEntry(validate(this, NAME), key);
-      }
-    });
-    if (DESCRIPTORS) dP(C.prototype, 'size', {
-      get: function () {
-        return validate(this, NAME)[SIZE];
-      }
-    });
-    return C;
-  },
-  def: function (that, key, value) {
-    var entry = getEntry(that, key);
-    var prev, index;
-    // change existing entry
-    if (entry) {
-      entry.v = value;
-    // create new entry
-    } else {
-      that._l = entry = {
-        i: index = fastKey(key, true), // <- index
-        k: key,                        // <- key
-        v: value,                      // <- value
-        p: prev = that._l,             // <- previous entry
-        n: undefined,                  // <- next entry
-        r: false                       // <- removed
-      };
-      if (!that._f) that._f = entry;
-      if (prev) prev.n = entry;
-      that[SIZE]++;
-      // add to index
-      if (index !== 'F') that._i[index] = entry;
-    } return that;
-  },
-  getEntry: getEntry,
-  setStrong: function (C, NAME, IS_MAP) {
-    // add .keys, .values, .entries, [@@iterator]
-    // 23.1.3.4, 23.1.3.8, 23.1.3.11, 23.1.3.12, 23.2.3.5, 23.2.3.8, 23.2.3.10, 23.2.3.11
-    $iterDefine(C, NAME, function (iterated, kind) {
-      this._t = validate(iterated, NAME); // target
-      this._k = kind;                     // kind
-      this._l = undefined;                // previous
-    }, function () {
-      var that = this;
-      var kind = that._k;
-      var entry = that._l;
-      // revert to the last existing entry
-      while (entry && entry.r) entry = entry.p;
-      // get next entry
-      if (!that._t || !(that._l = entry = entry ? entry.n : that._t._f)) {
-        // or finish the iteration
-        that._t = undefined;
-        return step(1);
-      }
-      // return step by kind
-      if (kind == 'keys') return step(0, entry.k);
-      if (kind == 'values') return step(0, entry.v);
-      return step(0, [entry.k, entry.v]);
-    }, IS_MAP ? 'entries' : 'values', !IS_MAP, true);
-
-    // add [@@species], 23.1.2.2, 23.2.2.2
-    setSpecies(NAME);
-  }
-};
+module.exports = entryUnbind('Array', 'find');
 
 
 /***/ }),
@@ -12345,84 +12635,54 @@ module.exports = {
 
 "use strict";
 
-var global = __webpack_require__(22);
-var core = __webpack_require__(19);
-var dP = __webpack_require__(23);
-var DESCRIPTORS = __webpack_require__(25);
-var SPECIES = __webpack_require__(17)('species');
+var $ = __webpack_require__(15);
+var $find = __webpack_require__(65).find;
+var addToUnscopables = __webpack_require__(57);
+var arrayMethodUsesToLength = __webpack_require__(69);
 
-module.exports = function (KEY) {
-  var C = typeof core[KEY] == 'function' ? core[KEY] : global[KEY];
-  if (DESCRIPTORS && C && !C[SPECIES]) dP.f(C, SPECIES, {
-    configurable: true,
-    get: function () { return this; }
-  });
-};
+var FIND = 'find';
+var SKIPS_HOLES = true;
+
+var USES_TO_LENGTH = arrayMethodUsesToLength(FIND);
+
+// Shouldn't skip holes
+if (FIND in []) Array(1)[FIND](function () { SKIPS_HOLES = false; });
+
+// `Array.prototype.find` method
+// https://tc39.github.io/ecma262/#sec-array.prototype.find
+$({ target: 'Array', proto: true, forced: SKIPS_HOLES || !USES_TO_LENGTH }, {
+  find: function find(callbackfn /* , that = undefined */) {
+    return $find(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
+  }
+});
+
+// https://tc39.github.io/ecma262/#sec-array.prototype-@@unscopables
+addToUnscopables(FIND);
 
 
 /***/ }),
 /* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+var DESCRIPTORS = __webpack_require__(29);
+var propertyIsEnumerableModule = __webpack_require__(127);
+var createPropertyDescriptor = __webpack_require__(52);
+var toIndexedObject = __webpack_require__(53);
+var toPrimitive = __webpack_require__(64);
+var has = __webpack_require__(26);
+var IE8_DOM_DEFINE = __webpack_require__(86);
 
-var global = __webpack_require__(22);
-var $export = __webpack_require__(18);
-var meta = __webpack_require__(86);
-var fails = __webpack_require__(43);
-var hide = __webpack_require__(24);
-var redefineAll = __webpack_require__(80);
-var forOf = __webpack_require__(48);
-var anInstance = __webpack_require__(81);
-var isObject = __webpack_require__(20);
-var setToStringTag = __webpack_require__(61);
-var dP = __webpack_require__(23).f;
-var each = __webpack_require__(54)(0);
-var DESCRIPTORS = __webpack_require__(25);
+var nativeGetOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
 
-module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
-  var Base = global[NAME];
-  var C = Base;
-  var ADDER = IS_MAP ? 'set' : 'add';
-  var proto = C && C.prototype;
-  var O = {};
-  if (!DESCRIPTORS || typeof C != 'function' || !(IS_WEAK || proto.forEach && !fails(function () {
-    new C().entries().next();
-  }))) {
-    // create collection constructor
-    C = common.getConstructor(wrapper, NAME, IS_MAP, ADDER);
-    redefineAll(C.prototype, methods);
-    meta.NEED = true;
-  } else {
-    C = wrapper(function (target, iterable) {
-      anInstance(target, C, NAME, '_c');
-      target._c = new Base();
-      if (iterable != undefined) forOf(iterable, IS_MAP, target[ADDER], target);
-    });
-    each('add,clear,delete,forEach,get,has,set,keys,values,entries,toJSON'.split(','), function (KEY) {
-      var IS_ADDER = KEY == 'add' || KEY == 'set';
-      if (KEY in proto && !(IS_WEAK && KEY == 'clear')) hide(C.prototype, KEY, function (a, b) {
-        anInstance(this, C, KEY);
-        if (!IS_ADDER && IS_WEAK && !isObject(a)) return KEY == 'get' ? undefined : false;
-        var result = this._c[KEY](a === 0 ? 0 : a, b);
-        return IS_ADDER ? this : result;
-      });
-    });
-    IS_WEAK || dP(C.prototype, 'size', {
-      get: function () {
-        return this._c.size;
-      }
-    });
-  }
-
-  setToStringTag(C, NAME);
-
-  O[NAME] = C;
-  $export($export.G + $export.W + $export.F, O);
-
-  if (!IS_WEAK) common.setStrong(C, NAME, IS_MAP);
-
-  return C;
+// `Object.getOwnPropertyDescriptor` method
+// https://tc39.github.io/ecma262/#sec-object.getownpropertydescriptor
+exports.f = DESCRIPTORS ? nativeGetOwnPropertyDescriptor : function getOwnPropertyDescriptor(O, P) {
+  O = toIndexedObject(O);
+  P = toPrimitive(P, true);
+  if (IE8_DOM_DEFINE) try {
+    return nativeGetOwnPropertyDescriptor(O, P);
+  } catch (error) { /* empty */ }
+  if (has(O, P)) return createPropertyDescriptor(!propertyIsEnumerableModule.f.call(O, P), O[P]);
 };
 
 
@@ -12430,37 +12690,72 @@ module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
 /* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// https://github.com/DavidBruant/Map-Set.prototype.toJSON
-var $export = __webpack_require__(18);
+"use strict";
 
-$export($export.P + $export.R, 'Set', { toJSON: __webpack_require__(128)('Set') });
+var nativePropertyIsEnumerable = {}.propertyIsEnumerable;
+var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+
+// Nashorn ~ JDK8 bug
+var NASHORN_BUG = getOwnPropertyDescriptor && !nativePropertyIsEnumerable.call({ 1: 2 }, 1);
+
+// `Object.prototype.propertyIsEnumerable` method implementation
+// https://tc39.github.io/ecma262/#sec-object.prototype.propertyisenumerable
+exports.f = NASHORN_BUG ? function propertyIsEnumerable(V) {
+  var descriptor = getOwnPropertyDescriptor(this, V);
+  return !!descriptor && descriptor.enumerable;
+} : nativePropertyIsEnumerable;
 
 
 /***/ }),
 /* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// https://github.com/DavidBruant/Map-Set.prototype.toJSON
-var classof = __webpack_require__(85);
-var from = __webpack_require__(129);
-module.exports = function (NAME) {
-  return function toJSON() {
-    if (classof(this) != NAME) throw TypeError(NAME + "#toJSON isn't generic");
-    return from(this);
-  };
+var fails = __webpack_require__(30);
+
+var replacement = /#|\.prototype\./;
+
+var isForced = function (feature, detection) {
+  var value = data[normalize(feature)];
+  return value == POLYFILL ? true
+    : value == NATIVE ? false
+    : typeof detection == 'function' ? fails(detection)
+    : !!detection;
 };
+
+var normalize = isForced.normalize = function (string) {
+  return String(string).replace(replacement, '.').toLowerCase();
+};
+
+var data = isForced.data = {};
+var NATIVE = isForced.NATIVE = 'N';
+var POLYFILL = isForced.POLYFILL = 'P';
+
+module.exports = isForced;
 
 
 /***/ }),
 /* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var forOf = __webpack_require__(48);
+var isObject = __webpack_require__(25);
+var isArray = __webpack_require__(130);
+var wellKnownSymbol = __webpack_require__(21);
 
-module.exports = function (iter, ITERATOR) {
-  var result = [];
-  forOf(iter, false, result.push, result, ITERATOR);
-  return result;
+var SPECIES = wellKnownSymbol('species');
+
+// `ArraySpeciesCreate` abstract operation
+// https://tc39.github.io/ecma262/#sec-arrayspeciescreate
+module.exports = function (originalArray, length) {
+  var C;
+  if (isArray(originalArray)) {
+    C = originalArray.constructor;
+    // cross-realm fallback
+    if (typeof C == 'function' && (C === Array || isArray(C.prototype))) C = undefined;
+    else if (isObject(C)) {
+      C = C[SPECIES];
+      if (C === null) C = undefined;
+    }
+  } return new (C === undefined ? Array : C)(length === 0 ? 0 : length);
 };
 
 
@@ -12468,26 +12763,28 @@ module.exports = function (iter, ITERATOR) {
 /* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// https://tc39.github.io/proposal-setmap-offrom/#sec-set.of
-__webpack_require__(131)('Set');
+var classof = __webpack_require__(54);
+
+// `IsArray` abstract operation
+// https://tc39.github.io/ecma262/#sec-isarray
+module.exports = Array.isArray || function isArray(arg) {
+  return classof(arg) == 'Array';
+};
 
 
 /***/ }),
 /* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+var global = __webpack_require__(24);
+var createNonEnumerableProperty = __webpack_require__(31);
 
-// https://tc39.github.io/proposal-setmap-offrom/
-var $export = __webpack_require__(18);
-
-module.exports = function (COLLECTION) {
-  $export($export.S, COLLECTION, { of: function of() {
-    var length = arguments.length;
-    var A = new Array(length);
-    while (length--) A[length] = arguments[length];
-    return new this(A);
-  } });
+module.exports = function (key, value) {
+  try {
+    createNonEnumerableProperty(global, key, value);
+  } catch (error) {
+    global[key] = value;
+  } return value;
 };
 
 
@@ -12495,43 +12792,23 @@ module.exports = function (COLLECTION) {
 /* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// https://tc39.github.io/proposal-setmap-offrom/#sec-set.from
-__webpack_require__(133)('Set');
+var NATIVE_SYMBOL = __webpack_require__(90);
+
+module.exports = NATIVE_SYMBOL
+  // eslint-disable-next-line no-undef
+  && !Symbol.sham
+  // eslint-disable-next-line no-undef
+  && typeof Symbol.iterator == 'symbol';
 
 
 /***/ }),
 /* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+__webpack_require__(134);
+var entryUnbind = __webpack_require__(58);
 
-// https://tc39.github.io/proposal-setmap-offrom/
-var $export = __webpack_require__(18);
-var aFunction = __webpack_require__(69);
-var ctx = __webpack_require__(31);
-var forOf = __webpack_require__(48);
-
-module.exports = function (COLLECTION) {
-  $export($export.S, COLLECTION, { from: function from(source /* , mapFn, thisArg */) {
-    var mapFn = arguments[1];
-    var mapping, A, n, cb;
-    aFunction(this);
-    mapping = mapFn !== undefined;
-    if (mapping) aFunction(mapFn);
-    if (source == undefined) return new this();
-    A = [];
-    if (mapping) {
-      n = 0;
-      cb = ctx(mapFn, arguments[2], 2);
-      forOf(source, false, function (nextItem) {
-        A.push(cb(nextItem, n++));
-      });
-    } else {
-      forOf(source, false, A.push, A);
-    }
-    return new this(A);
-  } });
-};
+module.exports = entryUnbind('Array', 'includes');
 
 
 /***/ }),
@@ -12540,56 +12817,40 @@ module.exports = function (COLLECTION) {
 
 "use strict";
 
-var ctx = __webpack_require__(31);
-var $export = __webpack_require__(18);
-var toObject = __webpack_require__(55);
-var call = __webpack_require__(82);
-var isArrayIter = __webpack_require__(83);
-var toLength = __webpack_require__(46);
-var createProperty = __webpack_require__(135);
-var getIterFn = __webpack_require__(84);
+var $ = __webpack_require__(15);
+var $includes = __webpack_require__(91).includes;
+var addToUnscopables = __webpack_require__(57);
+var arrayMethodUsesToLength = __webpack_require__(69);
 
-$export($export.S + $export.F * !__webpack_require__(136)(function (iter) { Array.from(iter); }), 'Array', {
-  // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
-  from: function from(arrayLike /* , mapfn = undefined, thisArg = undefined */) {
-    var O = toObject(arrayLike);
-    var C = typeof this == 'function' ? this : Array;
-    var aLen = arguments.length;
-    var mapfn = aLen > 1 ? arguments[1] : undefined;
-    var mapping = mapfn !== undefined;
-    var index = 0;
-    var iterFn = getIterFn(O);
-    var length, result, step, iterator;
-    if (mapping) mapfn = ctx(mapfn, aLen > 2 ? arguments[2] : undefined, 2);
-    // if object isn't iterable or it's array with default iterator - use simple case
-    if (iterFn != undefined && !(C == Array && isArrayIter(iterFn))) {
-      for (iterator = iterFn.call(O), result = new C(); !(step = iterator.next()).done; index++) {
-        createProperty(result, index, mapping ? call(iterator, mapfn, [step.value, index], true) : step.value);
-      }
-    } else {
-      length = toLength(O.length);
-      for (result = new C(length); length > index; index++) {
-        createProperty(result, index, mapping ? mapfn(O[index], index) : O[index]);
-      }
-    }
-    result.length = index;
-    return result;
+var USES_TO_LENGTH = arrayMethodUsesToLength('indexOf', { ACCESSORS: true, 1: 0 });
+
+// `Array.prototype.includes` method
+// https://tc39.github.io/ecma262/#sec-array.prototype.includes
+$({ target: 'Array', proto: true, forced: !USES_TO_LENGTH }, {
+  includes: function includes(el /* , fromIndex = 0 */) {
+    return $includes(this, el, arguments.length > 1 ? arguments[1] : undefined);
   }
 });
+
+// https://tc39.github.io/ecma262/#sec-array.prototype-@@unscopables
+addToUnscopables('includes');
 
 
 /***/ }),
 /* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
+var toInteger = __webpack_require__(67);
 
-var $defineProperty = __webpack_require__(23);
-var createDesc = __webpack_require__(53);
+var max = Math.max;
+var min = Math.min;
 
-module.exports = function (object, index, value) {
-  if (index in object) $defineProperty.f(object, index, createDesc(0, value));
-  else object[index] = value;
+// Helper for a popular repeating case of the spec:
+// Let integer be ? ToInteger(index).
+// If integer < 0, let result be max((length + integer), 0); else let result be min(integer, length).
+module.exports = function (index, length) {
+  var integer = toInteger(index);
+  return integer < 0 ? max(integer + length, 0) : min(integer, length);
 };
 
 
@@ -12597,32 +12858,1417 @@ module.exports = function (object, index, value) {
 /* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ITERATOR = __webpack_require__(17)('iterator');
-var SAFE_CLOSING = false;
+__webpack_require__(137);
+__webpack_require__(154);
+__webpack_require__(102);
+__webpack_require__(156);
+var path = __webpack_require__(47);
 
-try {
-  var riter = [7][ITERATOR]();
-  riter['return'] = function () { SAFE_CLOSING = true; };
-  // eslint-disable-next-line no-throw-literal
-  Array.from(riter, function () { throw 2; });
-} catch (e) { /* empty */ }
-
-module.exports = function (exec, skipClosing) {
-  if (!skipClosing && !SAFE_CLOSING) return false;
-  var safe = false;
-  try {
-    var arr = [7];
-    var iter = arr[ITERATOR]();
-    iter.next = function () { return { done: safe = true }; };
-    arr[ITERATOR] = function () { return iter; };
-    exec(arr);
-  } catch (e) { /* empty */ }
-  return safe;
-};
+module.exports = path.Set;
 
 
 /***/ }),
 /* 137 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var collection = __webpack_require__(138);
+var collectionStrong = __webpack_require__(143);
+
+// `Set` constructor
+// https://tc39.github.io/ecma262/#sec-set-objects
+module.exports = collection('Set', function (init) {
+  return function Set() { return init(this, arguments.length ? arguments[0] : undefined); };
+}, collectionStrong);
+
+
+/***/ }),
+/* 138 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var global = __webpack_require__(24);
+var InternalMetadataModule = __webpack_require__(93);
+var fails = __webpack_require__(30);
+var createNonEnumerableProperty = __webpack_require__(31);
+var iterate = __webpack_require__(18);
+var anInstance = __webpack_require__(96);
+var isObject = __webpack_require__(25);
+var setToStringTag = __webpack_require__(73);
+var defineProperty = __webpack_require__(34).f;
+var forEach = __webpack_require__(65).forEach;
+var DESCRIPTORS = __webpack_require__(29);
+var InternalStateModule = __webpack_require__(60);
+
+var setInternalState = InternalStateModule.set;
+var internalStateGetterFor = InternalStateModule.getterFor;
+
+module.exports = function (CONSTRUCTOR_NAME, wrapper, common) {
+  var IS_MAP = CONSTRUCTOR_NAME.indexOf('Map') !== -1;
+  var IS_WEAK = CONSTRUCTOR_NAME.indexOf('Weak') !== -1;
+  var ADDER = IS_MAP ? 'set' : 'add';
+  var NativeConstructor = global[CONSTRUCTOR_NAME];
+  var NativePrototype = NativeConstructor && NativeConstructor.prototype;
+  var exported = {};
+  var Constructor;
+
+  if (!DESCRIPTORS || typeof NativeConstructor != 'function'
+    || !(IS_WEAK || NativePrototype.forEach && !fails(function () { new NativeConstructor().entries().next(); }))
+  ) {
+    // create collection constructor
+    Constructor = common.getConstructor(wrapper, CONSTRUCTOR_NAME, IS_MAP, ADDER);
+    InternalMetadataModule.REQUIRED = true;
+  } else {
+    Constructor = wrapper(function (target, iterable) {
+      setInternalState(anInstance(target, Constructor, CONSTRUCTOR_NAME), {
+        type: CONSTRUCTOR_NAME,
+        collection: new NativeConstructor()
+      });
+      if (iterable != undefined) iterate(iterable, target[ADDER], target, IS_MAP);
+    });
+
+    var getInternalState = internalStateGetterFor(CONSTRUCTOR_NAME);
+
+    forEach(['add', 'clear', 'delete', 'forEach', 'get', 'has', 'set', 'keys', 'values', 'entries'], function (KEY) {
+      var IS_ADDER = KEY == 'add' || KEY == 'set';
+      if (KEY in NativePrototype && !(IS_WEAK && KEY == 'clear')) {
+        createNonEnumerableProperty(Constructor.prototype, KEY, function (a, b) {
+          var collection = getInternalState(this).collection;
+          if (!IS_ADDER && IS_WEAK && !isObject(a)) return KEY == 'get' ? undefined : false;
+          var result = collection[KEY](a === 0 ? 0 : a, b);
+          return IS_ADDER ? this : result;
+        });
+      }
+    });
+
+    IS_WEAK || defineProperty(Constructor.prototype, 'size', {
+      configurable: true,
+      get: function () {
+        return getInternalState(this).collection.size;
+      }
+    });
+  }
+
+  setToStringTag(Constructor, CONSTRUCTOR_NAME, false, true);
+
+  exported[CONSTRUCTOR_NAME] = Constructor;
+  $({ global: true, forced: true }, exported);
+
+  if (!IS_WEAK) common.setStrong(Constructor, CONSTRUCTOR_NAME, IS_MAP);
+
+  return Constructor;
+};
+
+
+/***/ }),
+/* 139 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var fails = __webpack_require__(30);
+
+module.exports = !fails(function () {
+  return Object.isExtensible(Object.preventExtensions({}));
+});
+
+
+/***/ }),
+/* 140 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var TO_STRING_TAG_SUPPORT = __webpack_require__(72);
+var classof = __webpack_require__(71);
+
+// `Object.prototype.toString` method implementation
+// https://tc39.github.io/ecma262/#sec-object.prototype.tostring
+module.exports = TO_STRING_TAG_SUPPORT ? {}.toString : function toString() {
+  return '[object ' + classof(this) + ']';
+};
+
+
+/***/ }),
+/* 141 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var global = __webpack_require__(24);
+var inspectSource = __webpack_require__(142);
+
+var WeakMap = global.WeakMap;
+
+module.exports = typeof WeakMap === 'function' && /native code/.test(inspectSource(WeakMap));
+
+
+/***/ }),
+/* 142 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var store = __webpack_require__(89);
+
+var functionToString = Function.toString;
+
+// this helper broken in `3.4.1-3.4.4`, so we can't use `shared` helper
+if (typeof store.inspectSource != 'function') {
+  store.inspectSource = function (it) {
+    return functionToString.call(it);
+  };
+}
+
+module.exports = store.inspectSource;
+
+
+/***/ }),
+/* 143 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var defineProperty = __webpack_require__(34).f;
+var create = __webpack_require__(97);
+var redefineAll = __webpack_require__(148);
+var bind = __webpack_require__(23);
+var anInstance = __webpack_require__(96);
+var iterate = __webpack_require__(18);
+var defineIterator = __webpack_require__(75);
+var setSpecies = __webpack_require__(153);
+var DESCRIPTORS = __webpack_require__(29);
+var fastKey = __webpack_require__(93).fastKey;
+var InternalStateModule = __webpack_require__(60);
+
+var setInternalState = InternalStateModule.set;
+var internalStateGetterFor = InternalStateModule.getterFor;
+
+module.exports = {
+  getConstructor: function (wrapper, CONSTRUCTOR_NAME, IS_MAP, ADDER) {
+    var C = wrapper(function (that, iterable) {
+      anInstance(that, C, CONSTRUCTOR_NAME);
+      setInternalState(that, {
+        type: CONSTRUCTOR_NAME,
+        index: create(null),
+        first: undefined,
+        last: undefined,
+        size: 0
+      });
+      if (!DESCRIPTORS) that.size = 0;
+      if (iterable != undefined) iterate(iterable, that[ADDER], that, IS_MAP);
+    });
+
+    var getInternalState = internalStateGetterFor(CONSTRUCTOR_NAME);
+
+    var define = function (that, key, value) {
+      var state = getInternalState(that);
+      var entry = getEntry(that, key);
+      var previous, index;
+      // change existing entry
+      if (entry) {
+        entry.value = value;
+      // create new entry
+      } else {
+        state.last = entry = {
+          index: index = fastKey(key, true),
+          key: key,
+          value: value,
+          previous: previous = state.last,
+          next: undefined,
+          removed: false
+        };
+        if (!state.first) state.first = entry;
+        if (previous) previous.next = entry;
+        if (DESCRIPTORS) state.size++;
+        else that.size++;
+        // add to index
+        if (index !== 'F') state.index[index] = entry;
+      } return that;
+    };
+
+    var getEntry = function (that, key) {
+      var state = getInternalState(that);
+      // fast case
+      var index = fastKey(key);
+      var entry;
+      if (index !== 'F') return state.index[index];
+      // frozen object case
+      for (entry = state.first; entry; entry = entry.next) {
+        if (entry.key == key) return entry;
+      }
+    };
+
+    redefineAll(C.prototype, {
+      // 23.1.3.1 Map.prototype.clear()
+      // 23.2.3.2 Set.prototype.clear()
+      clear: function clear() {
+        var that = this;
+        var state = getInternalState(that);
+        var data = state.index;
+        var entry = state.first;
+        while (entry) {
+          entry.removed = true;
+          if (entry.previous) entry.previous = entry.previous.next = undefined;
+          delete data[entry.index];
+          entry = entry.next;
+        }
+        state.first = state.last = undefined;
+        if (DESCRIPTORS) state.size = 0;
+        else that.size = 0;
+      },
+      // 23.1.3.3 Map.prototype.delete(key)
+      // 23.2.3.4 Set.prototype.delete(value)
+      'delete': function (key) {
+        var that = this;
+        var state = getInternalState(that);
+        var entry = getEntry(that, key);
+        if (entry) {
+          var next = entry.next;
+          var prev = entry.previous;
+          delete state.index[entry.index];
+          entry.removed = true;
+          if (prev) prev.next = next;
+          if (next) next.previous = prev;
+          if (state.first == entry) state.first = next;
+          if (state.last == entry) state.last = prev;
+          if (DESCRIPTORS) state.size--;
+          else that.size--;
+        } return !!entry;
+      },
+      // 23.2.3.6 Set.prototype.forEach(callbackfn, thisArg = undefined)
+      // 23.1.3.5 Map.prototype.forEach(callbackfn, thisArg = undefined)
+      forEach: function forEach(callbackfn /* , that = undefined */) {
+        var state = getInternalState(this);
+        var boundFunction = bind(callbackfn, arguments.length > 1 ? arguments[1] : undefined, 3);
+        var entry;
+        while (entry = entry ? entry.next : state.first) {
+          boundFunction(entry.value, entry.key, this);
+          // revert to the last existing entry
+          while (entry && entry.removed) entry = entry.previous;
+        }
+      },
+      // 23.1.3.7 Map.prototype.has(key)
+      // 23.2.3.7 Set.prototype.has(value)
+      has: function has(key) {
+        return !!getEntry(this, key);
+      }
+    });
+
+    redefineAll(C.prototype, IS_MAP ? {
+      // 23.1.3.6 Map.prototype.get(key)
+      get: function get(key) {
+        var entry = getEntry(this, key);
+        return entry && entry.value;
+      },
+      // 23.1.3.9 Map.prototype.set(key, value)
+      set: function set(key, value) {
+        return define(this, key === 0 ? 0 : key, value);
+      }
+    } : {
+      // 23.2.3.1 Set.prototype.add(value)
+      add: function add(value) {
+        return define(this, value = value === 0 ? 0 : value, value);
+      }
+    });
+    if (DESCRIPTORS) defineProperty(C.prototype, 'size', {
+      get: function () {
+        return getInternalState(this).size;
+      }
+    });
+    return C;
+  },
+  setStrong: function (C, CONSTRUCTOR_NAME, IS_MAP) {
+    var ITERATOR_NAME = CONSTRUCTOR_NAME + ' Iterator';
+    var getInternalCollectionState = internalStateGetterFor(CONSTRUCTOR_NAME);
+    var getInternalIteratorState = internalStateGetterFor(ITERATOR_NAME);
+    // add .keys, .values, .entries, [@@iterator]
+    // 23.1.3.4, 23.1.3.8, 23.1.3.11, 23.1.3.12, 23.2.3.5, 23.2.3.8, 23.2.3.10, 23.2.3.11
+    defineIterator(C, CONSTRUCTOR_NAME, function (iterated, kind) {
+      setInternalState(this, {
+        type: ITERATOR_NAME,
+        target: iterated,
+        state: getInternalCollectionState(iterated),
+        kind: kind,
+        last: undefined
+      });
+    }, function () {
+      var state = getInternalIteratorState(this);
+      var kind = state.kind;
+      var entry = state.last;
+      // revert to the last existing entry
+      while (entry && entry.removed) entry = entry.previous;
+      // get next entry
+      if (!state.target || !(state.last = entry = entry ? entry.next : state.state.first)) {
+        // or finish the iteration
+        state.target = undefined;
+        return { value: undefined, done: true };
+      }
+      // return step by kind
+      if (kind == 'keys') return { value: entry.key, done: false };
+      if (kind == 'values') return { value: entry.value, done: false };
+      return { value: [entry.key, entry.value], done: false };
+    }, IS_MAP ? 'entries' : 'values', !IS_MAP, true);
+
+    // add [@@species], 23.1.2.2, 23.2.2.2
+    setSpecies(CONSTRUCTOR_NAME);
+  }
+};
+
+
+/***/ }),
+/* 144 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var DESCRIPTORS = __webpack_require__(29);
+var definePropertyModule = __webpack_require__(34);
+var anObject = __webpack_require__(16);
+var objectKeys = __webpack_require__(145);
+
+// `Object.defineProperties` method
+// https://tc39.github.io/ecma262/#sec-object.defineproperties
+module.exports = DESCRIPTORS ? Object.defineProperties : function defineProperties(O, Properties) {
+  anObject(O);
+  var keys = objectKeys(Properties);
+  var length = keys.length;
+  var index = 0;
+  var key;
+  while (length > index) definePropertyModule.f(O, key = keys[index++], Properties[key]);
+  return O;
+};
+
+
+/***/ }),
+/* 145 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var internalObjectKeys = __webpack_require__(146);
+var enumBugKeys = __webpack_require__(98);
+
+// `Object.keys` method
+// https://tc39.github.io/ecma262/#sec-object.keys
+module.exports = Object.keys || function keys(O) {
+  return internalObjectKeys(O, enumBugKeys);
+};
+
+
+/***/ }),
+/* 146 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var has = __webpack_require__(26);
+var toIndexedObject = __webpack_require__(53);
+var indexOf = __webpack_require__(91).indexOf;
+var hiddenKeys = __webpack_require__(59);
+
+module.exports = function (object, names) {
+  var O = toIndexedObject(object);
+  var i = 0;
+  var result = [];
+  var key;
+  for (key in O) !has(hiddenKeys, key) && has(O, key) && result.push(key);
+  // Don't enum bug & hidden keys
+  while (names.length > i) if (has(O, key = names[i++])) {
+    ~indexOf(result, key) || result.push(key);
+  }
+  return result;
+};
+
+
+/***/ }),
+/* 147 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var getBuiltIn = __webpack_require__(27);
+
+module.exports = getBuiltIn('document', 'documentElement');
+
+
+/***/ }),
+/* 148 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var redefine = __webpack_require__(99);
+
+module.exports = function (target, src, options) {
+  for (var key in src) {
+    if (options && options.unsafe && target[key]) target[key] = src[key];
+    else redefine(target, key, src[key], options);
+  } return target;
+};
+
+
+/***/ }),
+/* 149 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var IteratorPrototype = __webpack_require__(100).IteratorPrototype;
+var create = __webpack_require__(97);
+var createPropertyDescriptor = __webpack_require__(52);
+var setToStringTag = __webpack_require__(73);
+var Iterators = __webpack_require__(40);
+
+var returnThis = function () { return this; };
+
+module.exports = function (IteratorConstructor, NAME, next) {
+  var TO_STRING_TAG = NAME + ' Iterator';
+  IteratorConstructor.prototype = create(IteratorPrototype, { next: createPropertyDescriptor(1, next) });
+  setToStringTag(IteratorConstructor, TO_STRING_TAG, false, true);
+  Iterators[TO_STRING_TAG] = returnThis;
+  return IteratorConstructor;
+};
+
+
+/***/ }),
+/* 150 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var fails = __webpack_require__(30);
+
+module.exports = !fails(function () {
+  function F() { /* empty */ }
+  F.prototype.constructor = null;
+  return Object.getPrototypeOf(new F()) !== F.prototype;
+});
+
+
+/***/ }),
+/* 151 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var anObject = __webpack_require__(16);
+var aPossiblePrototype = __webpack_require__(152);
+
+// `Object.setPrototypeOf` method
+// https://tc39.github.io/ecma262/#sec-object.setprototypeof
+// Works with __proto__ only. Old v8 can't work with null proto objects.
+/* eslint-disable no-proto */
+module.exports = Object.setPrototypeOf || ('__proto__' in {} ? function () {
+  var CORRECT_SETTER = false;
+  var test = {};
+  var setter;
+  try {
+    setter = Object.getOwnPropertyDescriptor(Object.prototype, '__proto__').set;
+    setter.call(test, []);
+    CORRECT_SETTER = test instanceof Array;
+  } catch (error) { /* empty */ }
+  return function setPrototypeOf(O, proto) {
+    anObject(O);
+    aPossiblePrototype(proto);
+    if (CORRECT_SETTER) setter.call(O, proto);
+    else O.__proto__ = proto;
+    return O;
+  };
+}() : undefined);
+
+
+/***/ }),
+/* 152 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isObject = __webpack_require__(25);
+
+module.exports = function (it) {
+  if (!isObject(it) && it !== null) {
+    throw TypeError("Can't set " + String(it) + ' as a prototype');
+  } return it;
+};
+
+
+/***/ }),
+/* 153 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var getBuiltIn = __webpack_require__(27);
+var definePropertyModule = __webpack_require__(34);
+var wellKnownSymbol = __webpack_require__(21);
+var DESCRIPTORS = __webpack_require__(29);
+
+var SPECIES = wellKnownSymbol('species');
+
+module.exports = function (CONSTRUCTOR_NAME) {
+  var Constructor = getBuiltIn(CONSTRUCTOR_NAME);
+  var defineProperty = definePropertyModule.f;
+
+  if (DESCRIPTORS && Constructor && !Constructor[SPECIES]) {
+    defineProperty(Constructor, SPECIES, {
+      configurable: true,
+      get: function () { return this; }
+    });
+  }
+};
+
+
+/***/ }),
+/* 154 */
+/***/ (function(module, exports) {
+
+// empty
+
+
+/***/ }),
+/* 155 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var toInteger = __webpack_require__(67);
+var requireObjectCoercible = __webpack_require__(55);
+
+// `String.prototype.{ codePointAt, at }` methods implementation
+var createMethod = function (CONVERT_TO_STRING) {
+  return function ($this, pos) {
+    var S = String(requireObjectCoercible($this));
+    var position = toInteger(pos);
+    var size = S.length;
+    var first, second;
+    if (position < 0 || position >= size) return CONVERT_TO_STRING ? '' : undefined;
+    first = S.charCodeAt(position);
+    return first < 0xD800 || first > 0xDBFF || position + 1 === size
+      || (second = S.charCodeAt(position + 1)) < 0xDC00 || second > 0xDFFF
+        ? CONVERT_TO_STRING ? S.charAt(position) : first
+        : CONVERT_TO_STRING ? S.slice(position, position + 2) : (first - 0xD800 << 10) + (second - 0xDC00) + 0x10000;
+  };
+};
+
+module.exports = {
+  // `String.prototype.codePointAt` method
+  // https://tc39.github.io/ecma262/#sec-string.prototype.codepointat
+  codeAt: createMethod(false),
+  // `String.prototype.at` method
+  // https://github.com/mathiasbynens/String.prototype.at
+  charAt: createMethod(true)
+};
+
+
+/***/ }),
+/* 156 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(157);
+var DOMIterables = __webpack_require__(158);
+var global = __webpack_require__(24);
+var classof = __webpack_require__(71);
+var createNonEnumerableProperty = __webpack_require__(31);
+var Iterators = __webpack_require__(40);
+var wellKnownSymbol = __webpack_require__(21);
+
+var TO_STRING_TAG = wellKnownSymbol('toStringTag');
+
+for (var COLLECTION_NAME in DOMIterables) {
+  var Collection = global[COLLECTION_NAME];
+  var CollectionPrototype = Collection && Collection.prototype;
+  if (CollectionPrototype && classof(CollectionPrototype) !== TO_STRING_TAG) {
+    createNonEnumerableProperty(CollectionPrototype, TO_STRING_TAG, COLLECTION_NAME);
+  }
+  Iterators[COLLECTION_NAME] = Iterators.Array;
+}
+
+
+/***/ }),
+/* 157 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var toIndexedObject = __webpack_require__(53);
+var addToUnscopables = __webpack_require__(57);
+var Iterators = __webpack_require__(40);
+var InternalStateModule = __webpack_require__(60);
+var defineIterator = __webpack_require__(75);
+
+var ARRAY_ITERATOR = 'Array Iterator';
+var setInternalState = InternalStateModule.set;
+var getInternalState = InternalStateModule.getterFor(ARRAY_ITERATOR);
+
+// `Array.prototype.entries` method
+// https://tc39.github.io/ecma262/#sec-array.prototype.entries
+// `Array.prototype.keys` method
+// https://tc39.github.io/ecma262/#sec-array.prototype.keys
+// `Array.prototype.values` method
+// https://tc39.github.io/ecma262/#sec-array.prototype.values
+// `Array.prototype[@@iterator]` method
+// https://tc39.github.io/ecma262/#sec-array.prototype-@@iterator
+// `CreateArrayIterator` internal method
+// https://tc39.github.io/ecma262/#sec-createarrayiterator
+module.exports = defineIterator(Array, 'Array', function (iterated, kind) {
+  setInternalState(this, {
+    type: ARRAY_ITERATOR,
+    target: toIndexedObject(iterated), // target
+    index: 0,                          // next index
+    kind: kind                         // kind
+  });
+// `%ArrayIteratorPrototype%.next` method
+// https://tc39.github.io/ecma262/#sec-%arrayiteratorprototype%.next
+}, function () {
+  var state = getInternalState(this);
+  var target = state.target;
+  var kind = state.kind;
+  var index = state.index++;
+  if (!target || index >= target.length) {
+    state.target = undefined;
+    return { value: undefined, done: true };
+  }
+  if (kind == 'keys') return { value: index, done: false };
+  if (kind == 'values') return { value: target[index], done: false };
+  return { value: [index, target[index]], done: false };
+}, 'values');
+
+// argumentsList[@@iterator] is %ArrayProto_values%
+// https://tc39.github.io/ecma262/#sec-createunmappedargumentsobject
+// https://tc39.github.io/ecma262/#sec-createmappedargumentsobject
+Iterators.Arguments = Iterators.Array;
+
+// https://tc39.github.io/ecma262/#sec-array.prototype-@@unscopables
+addToUnscopables('keys');
+addToUnscopables('values');
+addToUnscopables('entries');
+
+
+/***/ }),
+/* 158 */
+/***/ (function(module, exports) {
+
+// iterable DOM collections
+// flag - `iterable` interface - 'entries', 'keys', 'values', 'forEach' methods
+module.exports = {
+  CSSRuleList: 0,
+  CSSStyleDeclaration: 0,
+  CSSValueList: 0,
+  ClientRectList: 0,
+  DOMRectList: 0,
+  DOMStringList: 0,
+  DOMTokenList: 1,
+  DataTransferItemList: 0,
+  FileList: 0,
+  HTMLAllCollection: 0,
+  HTMLCollection: 0,
+  HTMLFormElement: 0,
+  HTMLSelectElement: 0,
+  MediaList: 0,
+  MimeTypeArray: 0,
+  NamedNodeMap: 0,
+  NodeList: 1,
+  PaintRequestList: 0,
+  Plugin: 0,
+  PluginArray: 0,
+  SVGLengthList: 0,
+  SVGNumberList: 0,
+  SVGPathSegList: 0,
+  SVGPointList: 0,
+  SVGStringList: 0,
+  SVGTransformList: 0,
+  SourceBufferList: 0,
+  StyleSheetList: 0,
+  TextTrackCueList: 0,
+  TextTrackList: 0,
+  TouchList: 0
+};
+
+
+/***/ }),
+/* 159 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $ = __webpack_require__(15);
+var from = __webpack_require__(160);
+
+// `Set.from` method
+// https://tc39.github.io/proposal-setmap-offrom/#sec-set.from
+$({ target: 'Set', stat: true }, {
+  from: from
+});
+
+
+/***/ }),
+/* 160 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+// https://tc39.github.io/proposal-setmap-offrom/
+var aFunction = __webpack_require__(19);
+var bind = __webpack_require__(23);
+var iterate = __webpack_require__(18);
+
+module.exports = function from(source /* , mapFn, thisArg */) {
+  var length = arguments.length;
+  var mapFn = length > 1 ? arguments[1] : undefined;
+  var mapping, A, n, boundFunction;
+  aFunction(this);
+  mapping = mapFn !== undefined;
+  if (mapping) aFunction(mapFn);
+  if (source == undefined) return new this();
+  A = [];
+  if (mapping) {
+    n = 0;
+    boundFunction = bind(mapFn, length > 2 ? arguments[2] : undefined, 2);
+    iterate(source, function (nextItem) {
+      A.push(boundFunction(nextItem, n++));
+    });
+  } else {
+    iterate(source, A.push, A);
+  }
+  return new this(A);
+};
+
+
+/***/ }),
+/* 161 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $ = __webpack_require__(15);
+var of = __webpack_require__(162);
+
+// `Set.of` method
+// https://tc39.github.io/proposal-setmap-offrom/#sec-set.of
+$({ target: 'Set', stat: true }, {
+  of: of
+});
+
+
+/***/ }),
+/* 162 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+// https://tc39.github.io/proposal-setmap-offrom/
+module.exports = function of() {
+  var length = arguments.length;
+  var A = new Array(length);
+  while (length--) A[length] = arguments[length];
+  return new this(A);
+};
+
+
+/***/ }),
+/* 163 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var IS_PURE = __webpack_require__(17);
+var collectionAddAll = __webpack_require__(164);
+
+// `Set.prototype.addAll` method
+// https://github.com/tc39/proposal-collection-methods
+$({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
+  addAll: function addAll(/* ...elements */) {
+    return collectionAddAll.apply(this, arguments);
+  }
+});
+
+
+/***/ }),
+/* 164 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var anObject = __webpack_require__(16);
+var aFunction = __webpack_require__(19);
+
+// https://github.com/tc39/collection-methods
+module.exports = function (/* ...elements */) {
+  var set = anObject(this);
+  var adder = aFunction(set.add);
+  for (var k = 0, len = arguments.length; k < len; k++) {
+    adder.call(set, arguments[k]);
+  }
+  return set;
+};
+
+
+/***/ }),
+/* 165 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var IS_PURE = __webpack_require__(17);
+var collectionDeleteAll = __webpack_require__(166);
+
+// `Set.prototype.deleteAll` method
+// https://github.com/tc39/proposal-collection-methods
+$({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
+  deleteAll: function deleteAll(/* ...elements */) {
+    return collectionDeleteAll.apply(this, arguments);
+  }
+});
+
+
+/***/ }),
+/* 166 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var anObject = __webpack_require__(16);
+var aFunction = __webpack_require__(19);
+
+// https://github.com/tc39/collection-methods
+module.exports = function (/* ...elements */) {
+  var collection = anObject(this);
+  var remover = aFunction(collection['delete']);
+  var allDeleted = true;
+  var wasDeleted;
+  for (var k = 0, len = arguments.length; k < len; k++) {
+    wasDeleted = remover.call(collection, arguments[k]);
+    allDeleted = allDeleted && wasDeleted;
+  }
+  return !!allDeleted;
+};
+
+
+/***/ }),
+/* 167 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var IS_PURE = __webpack_require__(17);
+var anObject = __webpack_require__(16);
+var bind = __webpack_require__(23);
+var getSetIterator = __webpack_require__(35);
+var iterate = __webpack_require__(18);
+
+// `Set.prototype.every` method
+// https://github.com/tc39/proposal-collection-methods
+$({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
+  every: function every(callbackfn /* , thisArg */) {
+    var set = anObject(this);
+    var iterator = getSetIterator(set);
+    var boundFunction = bind(callbackfn, arguments.length > 1 ? arguments[1] : undefined, 3);
+    return !iterate(iterator, function (value) {
+      if (!boundFunction(value, value, set)) return iterate.stop();
+    }, undefined, false, true).stopped;
+  }
+});
+
+
+/***/ }),
+/* 168 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var IS_PURE = __webpack_require__(17);
+var getBuiltIn = __webpack_require__(27);
+var anObject = __webpack_require__(16);
+var aFunction = __webpack_require__(19);
+var speciesConstructor = __webpack_require__(41);
+var iterate = __webpack_require__(18);
+
+// `Set.prototype.difference` method
+// https://github.com/tc39/proposal-set-methods
+$({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
+  difference: function difference(iterable) {
+    var set = anObject(this);
+    var newSet = new (speciesConstructor(set, getBuiltIn('Set')))(set);
+    var remover = aFunction(newSet['delete']);
+    iterate(iterable, function (value) {
+      remover.call(newSet, value);
+    });
+    return newSet;
+  }
+});
+
+
+/***/ }),
+/* 169 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var IS_PURE = __webpack_require__(17);
+var getBuiltIn = __webpack_require__(27);
+var anObject = __webpack_require__(16);
+var aFunction = __webpack_require__(19);
+var bind = __webpack_require__(23);
+var speciesConstructor = __webpack_require__(41);
+var getSetIterator = __webpack_require__(35);
+var iterate = __webpack_require__(18);
+
+// `Set.prototype.filter` method
+// https://github.com/tc39/proposal-collection-methods
+$({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
+  filter: function filter(callbackfn /* , thisArg */) {
+    var set = anObject(this);
+    var iterator = getSetIterator(set);
+    var boundFunction = bind(callbackfn, arguments.length > 1 ? arguments[1] : undefined, 3);
+    var newSet = new (speciesConstructor(set, getBuiltIn('Set')))();
+    var adder = aFunction(newSet.add);
+    iterate(iterator, function (value) {
+      if (boundFunction(value, value, set)) adder.call(newSet, value);
+    }, undefined, false, true);
+    return newSet;
+  }
+});
+
+
+/***/ }),
+/* 170 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var IS_PURE = __webpack_require__(17);
+var anObject = __webpack_require__(16);
+var bind = __webpack_require__(23);
+var getSetIterator = __webpack_require__(35);
+var iterate = __webpack_require__(18);
+
+// `Set.prototype.find` method
+// https://github.com/tc39/proposal-collection-methods
+$({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
+  find: function find(callbackfn /* , thisArg */) {
+    var set = anObject(this);
+    var iterator = getSetIterator(set);
+    var boundFunction = bind(callbackfn, arguments.length > 1 ? arguments[1] : undefined, 3);
+    return iterate(iterator, function (value) {
+      if (boundFunction(value, value, set)) return iterate.stop(value);
+    }, undefined, false, true).result;
+  }
+});
+
+
+/***/ }),
+/* 171 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var IS_PURE = __webpack_require__(17);
+var getBuiltIn = __webpack_require__(27);
+var anObject = __webpack_require__(16);
+var aFunction = __webpack_require__(19);
+var speciesConstructor = __webpack_require__(41);
+var iterate = __webpack_require__(18);
+
+// `Set.prototype.intersection` method
+// https://github.com/tc39/proposal-set-methods
+$({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
+  intersection: function intersection(iterable) {
+    var set = anObject(this);
+    var newSet = new (speciesConstructor(set, getBuiltIn('Set')))();
+    var hasCheck = aFunction(set.has);
+    var adder = aFunction(newSet.add);
+    iterate(iterable, function (value) {
+      if (hasCheck.call(set, value)) adder.call(newSet, value);
+    });
+    return newSet;
+  }
+});
+
+
+/***/ }),
+/* 172 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var IS_PURE = __webpack_require__(17);
+var anObject = __webpack_require__(16);
+var aFunction = __webpack_require__(19);
+var iterate = __webpack_require__(18);
+
+// `Set.prototype.isDisjointFrom` method
+// https://tc39.github.io/proposal-set-methods/#Set.prototype.isDisjointFrom
+$({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
+  isDisjointFrom: function isDisjointFrom(iterable) {
+    var set = anObject(this);
+    var hasCheck = aFunction(set.has);
+    return !iterate(iterable, function (value) {
+      if (hasCheck.call(set, value) === true) return iterate.stop();
+    }).stopped;
+  }
+});
+
+
+/***/ }),
+/* 173 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var IS_PURE = __webpack_require__(17);
+var getBuiltIn = __webpack_require__(27);
+var anObject = __webpack_require__(16);
+var aFunction = __webpack_require__(19);
+var getIterator = __webpack_require__(103);
+var iterate = __webpack_require__(18);
+
+// `Set.prototype.isSubsetOf` method
+// https://tc39.github.io/proposal-set-methods/#Set.prototype.isSubsetOf
+$({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
+  isSubsetOf: function isSubsetOf(iterable) {
+    var iterator = getIterator(this);
+    var otherSet = anObject(iterable);
+    var hasCheck = otherSet.has;
+    if (typeof hasCheck != 'function') {
+      otherSet = new (getBuiltIn('Set'))(iterable);
+      hasCheck = aFunction(otherSet.has);
+    }
+    return !iterate(iterator, function (value) {
+      if (hasCheck.call(otherSet, value) === false) return iterate.stop();
+    }, undefined, false, true).stopped;
+  }
+});
+
+
+/***/ }),
+/* 174 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var IS_PURE = __webpack_require__(17);
+var anObject = __webpack_require__(16);
+var aFunction = __webpack_require__(19);
+var iterate = __webpack_require__(18);
+
+// `Set.prototype.isSupersetOf` method
+// https://tc39.github.io/proposal-set-methods/#Set.prototype.isSupersetOf
+$({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
+  isSupersetOf: function isSupersetOf(iterable) {
+    var set = anObject(this);
+    var hasCheck = aFunction(set.has);
+    return !iterate(iterable, function (value) {
+      if (hasCheck.call(set, value) === false) return iterate.stop();
+    }).stopped;
+  }
+});
+
+
+/***/ }),
+/* 175 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var IS_PURE = __webpack_require__(17);
+var anObject = __webpack_require__(16);
+var getSetIterator = __webpack_require__(35);
+var iterate = __webpack_require__(18);
+
+// `Set.prototype.join` method
+// https://github.com/tc39/proposal-collection-methods
+$({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
+  join: function join(separator) {
+    var set = anObject(this);
+    var iterator = getSetIterator(set);
+    var sep = separator === undefined ? ',' : String(separator);
+    var result = [];
+    iterate(iterator, result.push, result, false, true);
+    return result.join(sep);
+  }
+});
+
+
+/***/ }),
+/* 176 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var IS_PURE = __webpack_require__(17);
+var getBuiltIn = __webpack_require__(27);
+var anObject = __webpack_require__(16);
+var aFunction = __webpack_require__(19);
+var bind = __webpack_require__(23);
+var speciesConstructor = __webpack_require__(41);
+var getSetIterator = __webpack_require__(35);
+var iterate = __webpack_require__(18);
+
+// `Set.prototype.map` method
+// https://github.com/tc39/proposal-collection-methods
+$({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
+  map: function map(callbackfn /* , thisArg */) {
+    var set = anObject(this);
+    var iterator = getSetIterator(set);
+    var boundFunction = bind(callbackfn, arguments.length > 1 ? arguments[1] : undefined, 3);
+    var newSet = new (speciesConstructor(set, getBuiltIn('Set')))();
+    var adder = aFunction(newSet.add);
+    iterate(iterator, function (value) {
+      adder.call(newSet, boundFunction(value, value, set));
+    }, undefined, false, true);
+    return newSet;
+  }
+});
+
+
+/***/ }),
+/* 177 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var IS_PURE = __webpack_require__(17);
+var anObject = __webpack_require__(16);
+var aFunction = __webpack_require__(19);
+var getSetIterator = __webpack_require__(35);
+var iterate = __webpack_require__(18);
+
+// `Set.prototype.reduce` method
+// https://github.com/tc39/proposal-collection-methods
+$({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
+  reduce: function reduce(callbackfn /* , initialValue */) {
+    var set = anObject(this);
+    var iterator = getSetIterator(set);
+    var noInitial = arguments.length < 2;
+    var accumulator = noInitial ? undefined : arguments[1];
+    aFunction(callbackfn);
+    iterate(iterator, function (value) {
+      if (noInitial) {
+        noInitial = false;
+        accumulator = value;
+      } else {
+        accumulator = callbackfn(accumulator, value, value, set);
+      }
+    }, undefined, false, true);
+    if (noInitial) throw TypeError('Reduce of empty set with no initial value');
+    return accumulator;
+  }
+});
+
+
+/***/ }),
+/* 178 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var IS_PURE = __webpack_require__(17);
+var anObject = __webpack_require__(16);
+var bind = __webpack_require__(23);
+var getSetIterator = __webpack_require__(35);
+var iterate = __webpack_require__(18);
+
+// `Set.prototype.some` method
+// https://github.com/tc39/proposal-collection-methods
+$({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
+  some: function some(callbackfn /* , thisArg */) {
+    var set = anObject(this);
+    var iterator = getSetIterator(set);
+    var boundFunction = bind(callbackfn, arguments.length > 1 ? arguments[1] : undefined, 3);
+    return iterate(iterator, function (value) {
+      if (boundFunction(value, value, set)) return iterate.stop();
+    }, undefined, false, true).stopped;
+  }
+});
+
+
+/***/ }),
+/* 179 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var IS_PURE = __webpack_require__(17);
+var getBuiltIn = __webpack_require__(27);
+var anObject = __webpack_require__(16);
+var aFunction = __webpack_require__(19);
+var speciesConstructor = __webpack_require__(41);
+var iterate = __webpack_require__(18);
+
+// `Set.prototype.symmetricDifference` method
+// https://github.com/tc39/proposal-set-methods
+$({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
+  symmetricDifference: function symmetricDifference(iterable) {
+    var set = anObject(this);
+    var newSet = new (speciesConstructor(set, getBuiltIn('Set')))(set);
+    var remover = aFunction(newSet['delete']);
+    var adder = aFunction(newSet.add);
+    iterate(iterable, function (value) {
+      remover.call(newSet, value) || adder.call(newSet, value);
+    });
+    return newSet;
+  }
+});
+
+
+/***/ }),
+/* 180 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var IS_PURE = __webpack_require__(17);
+var getBuiltIn = __webpack_require__(27);
+var anObject = __webpack_require__(16);
+var aFunction = __webpack_require__(19);
+var speciesConstructor = __webpack_require__(41);
+var iterate = __webpack_require__(18);
+
+// `Set.prototype.union` method
+// https://github.com/tc39/proposal-set-methods
+$({ target: 'Set', proto: true, real: true, forced: IS_PURE }, {
+  union: function union(iterable) {
+    var set = anObject(this);
+    var newSet = new (speciesConstructor(set, getBuiltIn('Set')))(set);
+    iterate(iterable, aFunction(newSet.add), newSet);
+    return newSet;
+  }
+});
+
+
+/***/ }),
+/* 181 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(102);
+__webpack_require__(182);
+var path = __webpack_require__(47);
+
+module.exports = path.Array.from;
+
+
+/***/ }),
+/* 182 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $ = __webpack_require__(15);
+var from = __webpack_require__(183);
+var checkCorrectnessOfIteration = __webpack_require__(185);
+
+var INCORRECT_ITERATION = !checkCorrectnessOfIteration(function (iterable) {
+  Array.from(iterable);
+});
+
+// `Array.from` method
+// https://tc39.github.io/ecma262/#sec-array.from
+$({ target: 'Array', stat: true, forced: INCORRECT_ITERATION }, {
+  from: from
+});
+
+
+/***/ }),
+/* 183 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var bind = __webpack_require__(23);
+var toObject = __webpack_require__(66);
+var callWithSafeIterationClosing = __webpack_require__(95);
+var isArrayIteratorMethod = __webpack_require__(94);
+var toLength = __webpack_require__(56);
+var createProperty = __webpack_require__(184);
+var getIteratorMethod = __webpack_require__(70);
+
+// `Array.from` method implementation
+// https://tc39.github.io/ecma262/#sec-array.from
+module.exports = function from(arrayLike /* , mapfn = undefined, thisArg = undefined */) {
+  var O = toObject(arrayLike);
+  var C = typeof this == 'function' ? this : Array;
+  var argumentsLength = arguments.length;
+  var mapfn = argumentsLength > 1 ? arguments[1] : undefined;
+  var mapping = mapfn !== undefined;
+  var iteratorMethod = getIteratorMethod(O);
+  var index = 0;
+  var length, result, step, iterator, next, value;
+  if (mapping) mapfn = bind(mapfn, argumentsLength > 2 ? arguments[2] : undefined, 2);
+  // if the target is not iterable or it's an array with the default iterator - use a simple case
+  if (iteratorMethod != undefined && !(C == Array && isArrayIteratorMethod(iteratorMethod))) {
+    iterator = iteratorMethod.call(O);
+    next = iterator.next;
+    result = new C();
+    for (;!(step = next.call(iterator)).done; index++) {
+      value = mapping ? callWithSafeIterationClosing(iterator, mapfn, [step.value, index], true) : step.value;
+      createProperty(result, index, value);
+    }
+  } else {
+    length = toLength(O.length);
+    result = new C(length);
+    for (;length > index; index++) {
+      value = mapping ? mapfn(O[index], index) : O[index];
+      createProperty(result, index, value);
+    }
+  }
+  result.length = index;
+  return result;
+};
+
+
+/***/ }),
+/* 184 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var toPrimitive = __webpack_require__(64);
+var definePropertyModule = __webpack_require__(34);
+var createPropertyDescriptor = __webpack_require__(52);
+
+module.exports = function (object, key, value) {
+  var propertyKey = toPrimitive(key);
+  if (propertyKey in object) definePropertyModule.f(object, propertyKey, createPropertyDescriptor(0, value));
+  else object[propertyKey] = value;
+};
+
+
+/***/ }),
+/* 185 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var wellKnownSymbol = __webpack_require__(21);
+
+var ITERATOR = wellKnownSymbol('iterator');
+var SAFE_CLOSING = false;
+
+try {
+  var called = 0;
+  var iteratorWithReturn = {
+    next: function () {
+      return { done: !!called++ };
+    },
+    'return': function () {
+      SAFE_CLOSING = true;
+    }
+  };
+  iteratorWithReturn[ITERATOR] = function () {
+    return this;
+  };
+  // eslint-disable-next-line no-throw-literal
+  Array.from(iteratorWithReturn, function () { throw 2; });
+} catch (error) { /* empty */ }
+
+module.exports = function (exec, SKIP_CLOSING) {
+  if (!SKIP_CLOSING && !SAFE_CLOSING) return false;
+  var ITERATION_SUPPORT = false;
+  try {
+    var object = {};
+    object[ITERATOR] = function () {
+      return {
+        next: function () {
+          return { done: ITERATION_SUPPORT = true };
+        }
+      };
+    };
+    exec(object);
+  } catch (error) { /* empty */ }
+  return ITERATION_SUPPORT;
+};
+
+
+/***/ }),
+/* 186 */
 /***/ (function(module, exports) {
 
 module.exports = clone;
@@ -12656,7 +14302,840 @@ function clone(obj) {
 
 
 /***/ }),
-/* 138 */
+/* 187 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var objectKeys = __webpack_require__(105);
+var isArguments = __webpack_require__(189);
+var is = __webpack_require__(190);
+var isRegex = __webpack_require__(191);
+var flags = __webpack_require__(194);
+var isDate = __webpack_require__(200);
+
+var getTime = Date.prototype.getTime;
+
+function deepEqual(actual, expected, options) {
+  var opts = options || {};
+
+  // 7.1. All identical values are equivalent, as determined by ===.
+  if (opts.strict ? is(actual, expected) : actual === expected) {
+    return true;
+  }
+
+  // 7.3. Other pairs that do not both pass typeof value == 'object', equivalence is determined by ==.
+  if (!actual || !expected || (typeof actual !== 'object' && typeof expected !== 'object')) {
+    return opts.strict ? is(actual, expected) : actual == expected;
+  }
+
+  /*
+   * 7.4. For all other Object pairs, including Array objects, equivalence is
+   * determined by having the same number of owned properties (as verified
+   * with Object.prototype.hasOwnProperty.call), the same set of keys
+   * (although not necessarily the same order), equivalent values for every
+   * corresponding key, and an identical 'prototype' property. Note: this
+   * accounts for both named and indexed properties on Arrays.
+   */
+  // eslint-disable-next-line no-use-before-define
+  return objEquiv(actual, expected, opts);
+}
+
+function isUndefinedOrNull(value) {
+  return value === null || value === undefined;
+}
+
+function isBuffer(x) {
+  if (!x || typeof x !== 'object' || typeof x.length !== 'number') {
+    return false;
+  }
+  if (typeof x.copy !== 'function' || typeof x.slice !== 'function') {
+    return false;
+  }
+  if (x.length > 0 && typeof x[0] !== 'number') {
+    return false;
+  }
+  return true;
+}
+
+function objEquiv(a, b, opts) {
+  /* eslint max-statements: [2, 50] */
+  var i, key;
+  if (typeof a !== typeof b) { return false; }
+  if (isUndefinedOrNull(a) || isUndefinedOrNull(b)) { return false; }
+
+  // an identical 'prototype' property.
+  if (a.prototype !== b.prototype) { return false; }
+
+  if (isArguments(a) !== isArguments(b)) { return false; }
+
+  var aIsRegex = isRegex(a);
+  var bIsRegex = isRegex(b);
+  if (aIsRegex !== bIsRegex) { return false; }
+  if (aIsRegex || bIsRegex) {
+    return a.source === b.source && flags(a) === flags(b);
+  }
+
+  if (isDate(a) && isDate(b)) {
+    return getTime.call(a) === getTime.call(b);
+  }
+
+  var aIsBuffer = isBuffer(a);
+  var bIsBuffer = isBuffer(b);
+  if (aIsBuffer !== bIsBuffer) { return false; }
+  if (aIsBuffer || bIsBuffer) { // && would work too, because both are true or both false here
+    if (a.length !== b.length) { return false; }
+    for (i = 0; i < a.length; i++) {
+      if (a[i] !== b[i]) { return false; }
+    }
+    return true;
+  }
+
+  if (typeof a !== typeof b) { return false; }
+
+  try {
+    var ka = objectKeys(a);
+    var kb = objectKeys(b);
+  } catch (e) { // happens when one is a string literal and the other isn't
+    return false;
+  }
+  // having the same number of owned properties (keys incorporates hasOwnProperty)
+  if (ka.length !== kb.length) { return false; }
+
+  // the same set of keys (although not necessarily the same order),
+  ka.sort();
+  kb.sort();
+  // ~~~cheap key test
+  for (i = ka.length - 1; i >= 0; i--) {
+    if (ka[i] != kb[i]) { return false; }
+  }
+  // equivalent values for every corresponding key, and ~~~possibly expensive deep test
+  for (i = ka.length - 1; i >= 0; i--) {
+    key = ka[i];
+    if (!deepEqual(a[key], b[key], opts)) { return false; }
+  }
+
+  return true;
+}
+
+module.exports = deepEqual;
+
+
+/***/ }),
+/* 188 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var keysShim;
+if (!Object.keys) {
+	// modified from https://github.com/es-shims/es5-shim
+	var has = Object.prototype.hasOwnProperty;
+	var toStr = Object.prototype.toString;
+	var isArgs = __webpack_require__(106); // eslint-disable-line global-require
+	var isEnumerable = Object.prototype.propertyIsEnumerable;
+	var hasDontEnumBug = !isEnumerable.call({ toString: null }, 'toString');
+	var hasProtoEnumBug = isEnumerable.call(function () {}, 'prototype');
+	var dontEnums = [
+		'toString',
+		'toLocaleString',
+		'valueOf',
+		'hasOwnProperty',
+		'isPrototypeOf',
+		'propertyIsEnumerable',
+		'constructor'
+	];
+	var equalsConstructorPrototype = function (o) {
+		var ctor = o.constructor;
+		return ctor && ctor.prototype === o;
+	};
+	var excludedKeys = {
+		$applicationCache: true,
+		$console: true,
+		$external: true,
+		$frame: true,
+		$frameElement: true,
+		$frames: true,
+		$innerHeight: true,
+		$innerWidth: true,
+		$onmozfullscreenchange: true,
+		$onmozfullscreenerror: true,
+		$outerHeight: true,
+		$outerWidth: true,
+		$pageXOffset: true,
+		$pageYOffset: true,
+		$parent: true,
+		$scrollLeft: true,
+		$scrollTop: true,
+		$scrollX: true,
+		$scrollY: true,
+		$self: true,
+		$webkitIndexedDB: true,
+		$webkitStorageInfo: true,
+		$window: true
+	};
+	var hasAutomationEqualityBug = (function () {
+		/* global window */
+		if (typeof window === 'undefined') { return false; }
+		for (var k in window) {
+			try {
+				if (!excludedKeys['$' + k] && has.call(window, k) && window[k] !== null && typeof window[k] === 'object') {
+					try {
+						equalsConstructorPrototype(window[k]);
+					} catch (e) {
+						return true;
+					}
+				}
+			} catch (e) {
+				return true;
+			}
+		}
+		return false;
+	}());
+	var equalsConstructorPrototypeIfNotBuggy = function (o) {
+		/* global window */
+		if (typeof window === 'undefined' || !hasAutomationEqualityBug) {
+			return equalsConstructorPrototype(o);
+		}
+		try {
+			return equalsConstructorPrototype(o);
+		} catch (e) {
+			return false;
+		}
+	};
+
+	keysShim = function keys(object) {
+		var isObject = object !== null && typeof object === 'object';
+		var isFunction = toStr.call(object) === '[object Function]';
+		var isArguments = isArgs(object);
+		var isString = isObject && toStr.call(object) === '[object String]';
+		var theKeys = [];
+
+		if (!isObject && !isFunction && !isArguments) {
+			throw new TypeError('Object.keys called on a non-object');
+		}
+
+		var skipProto = hasProtoEnumBug && isFunction;
+		if (isString && object.length > 0 && !has.call(object, 0)) {
+			for (var i = 0; i < object.length; ++i) {
+				theKeys.push(String(i));
+			}
+		}
+
+		if (isArguments && object.length > 0) {
+			for (var j = 0; j < object.length; ++j) {
+				theKeys.push(String(j));
+			}
+		} else {
+			for (var name in object) {
+				if (!(skipProto && name === 'prototype') && has.call(object, name)) {
+					theKeys.push(String(name));
+				}
+			}
+		}
+
+		if (hasDontEnumBug) {
+			var skipConstructor = equalsConstructorPrototypeIfNotBuggy(object);
+
+			for (var k = 0; k < dontEnums.length; ++k) {
+				if (!(skipConstructor && dontEnums[k] === 'constructor') && has.call(object, dontEnums[k])) {
+					theKeys.push(dontEnums[k]);
+				}
+			}
+		}
+		return theKeys;
+	};
+}
+module.exports = keysShim;
+
+
+/***/ }),
+/* 189 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var hasToStringTag = typeof Symbol === 'function' && typeof Symbol.toStringTag === 'symbol';
+var toStr = Object.prototype.toString;
+
+var isStandardArguments = function isArguments(value) {
+	if (hasToStringTag && value && typeof value === 'object' && Symbol.toStringTag in value) {
+		return false;
+	}
+	return toStr.call(value) === '[object Arguments]';
+};
+
+var isLegacyArguments = function isArguments(value) {
+	if (isStandardArguments(value)) {
+		return true;
+	}
+	return value !== null &&
+		typeof value === 'object' &&
+		typeof value.length === 'number' &&
+		value.length >= 0 &&
+		toStr.call(value) !== '[object Array]' &&
+		toStr.call(value.callee) === '[object Function]';
+};
+
+var supportsStandardArguments = (function () {
+	return isStandardArguments(arguments);
+}());
+
+isStandardArguments.isLegacyArguments = isLegacyArguments; // for tests
+
+module.exports = supportsStandardArguments ? isStandardArguments : isLegacyArguments;
+
+
+/***/ }),
+/* 190 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// http://www.ecma-international.org/ecma-262/6.0/#sec-object.is
+
+var numberIsNaN = function (value) {
+	return value !== value;
+};
+
+module.exports = function is(a, b) {
+	if (a === 0 && b === 0) {
+		return 1 / a === 1 / b;
+	}
+	if (a === b) {
+		return true;
+	}
+	if (numberIsNaN(a) && numberIsNaN(b)) {
+		return true;
+	}
+	return false;
+};
+
+
+
+/***/ }),
+/* 191 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var has = __webpack_require__(192);
+var regexExec = RegExp.prototype.exec;
+var gOPD = Object.getOwnPropertyDescriptor;
+
+var tryRegexExecCall = function tryRegexExec(value) {
+	try {
+		var lastIndex = value.lastIndex;
+		value.lastIndex = 0; // eslint-disable-line no-param-reassign
+
+		regexExec.call(value);
+		return true;
+	} catch (e) {
+		return false;
+	} finally {
+		value.lastIndex = lastIndex; // eslint-disable-line no-param-reassign
+	}
+};
+var toStr = Object.prototype.toString;
+var regexClass = '[object RegExp]';
+var hasToStringTag = typeof Symbol === 'function' && typeof Symbol.toStringTag === 'symbol';
+
+module.exports = function isRegex(value) {
+	if (!value || typeof value !== 'object') {
+		return false;
+	}
+	if (!hasToStringTag) {
+		return toStr.call(value) === regexClass;
+	}
+
+	var descriptor = gOPD(value, 'lastIndex');
+	var hasLastIndexDataProperty = descriptor && has(descriptor, 'value');
+	if (!hasLastIndexDataProperty) {
+		return false;
+	}
+
+	return tryRegexExecCall(value);
+};
+
+
+/***/ }),
+/* 192 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var bind = __webpack_require__(76);
+
+module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
+
+
+/***/ }),
+/* 193 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/* eslint no-invalid-this: 1 */
+
+var ERROR_MESSAGE = 'Function.prototype.bind called on incompatible ';
+var slice = Array.prototype.slice;
+var toStr = Object.prototype.toString;
+var funcType = '[object Function]';
+
+module.exports = function bind(that) {
+    var target = this;
+    if (typeof target !== 'function' || toStr.call(target) !== funcType) {
+        throw new TypeError(ERROR_MESSAGE + target);
+    }
+    var args = slice.call(arguments, 1);
+
+    var bound;
+    var binder = function () {
+        if (this instanceof bound) {
+            var result = target.apply(
+                this,
+                args.concat(slice.call(arguments))
+            );
+            if (Object(result) === result) {
+                return result;
+            }
+            return this;
+        } else {
+            return target.apply(
+                that,
+                args.concat(slice.call(arguments))
+            );
+        }
+    };
+
+    var boundLength = Math.max(0, target.length - args.length);
+    var boundArgs = [];
+    for (var i = 0; i < boundLength; i++) {
+        boundArgs.push('$' + i);
+    }
+
+    bound = Function('binder', 'return function (' + boundArgs.join(',') + '){ return binder.apply(this,arguments); }')(binder);
+
+    if (target.prototype) {
+        var Empty = function Empty() {};
+        Empty.prototype = target.prototype;
+        bound.prototype = new Empty();
+        Empty.prototype = null;
+    }
+
+    return bound;
+};
+
+
+/***/ }),
+/* 194 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var define = __webpack_require__(77);
+var callBind = __webpack_require__(195);
+
+var implementation = __webpack_require__(107);
+var getPolyfill = __webpack_require__(108);
+var shim = __webpack_require__(199);
+
+var flagsBound = callBind(implementation);
+
+define(flagsBound, {
+	getPolyfill: getPolyfill,
+	implementation: implementation,
+	shim: shim
+});
+
+module.exports = flagsBound;
+
+
+/***/ }),
+/* 195 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var bind = __webpack_require__(76);
+
+var GetIntrinsic = __webpack_require__(196);
+
+var $Function = GetIntrinsic('%Function%');
+var $apply = $Function.apply;
+var $call = $Function.call;
+
+module.exports = function callBind() {
+	return bind.apply($call, arguments);
+};
+
+module.exports.apply = function applyBind() {
+	return bind.apply($apply, arguments);
+};
+
+
+/***/ }),
+/* 196 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/* globals
+	Atomics,
+	SharedArrayBuffer,
+*/
+
+var undefined;
+
+var $TypeError = TypeError;
+
+var $gOPD = Object.getOwnPropertyDescriptor;
+if ($gOPD) {
+	try {
+		$gOPD({}, '');
+	} catch (e) {
+		$gOPD = null; // this is IE 8, which has a broken gOPD
+	}
+}
+
+var throwTypeError = function () { throw new $TypeError(); };
+var ThrowTypeError = $gOPD
+	? (function () {
+		try {
+			// eslint-disable-next-line no-unused-expressions, no-caller, no-restricted-properties
+			arguments.callee; // IE 8 does not throw here
+			return throwTypeError;
+		} catch (calleeThrows) {
+			try {
+				// IE 8 throws on Object.getOwnPropertyDescriptor(arguments, '')
+				return $gOPD(arguments, 'callee').get;
+			} catch (gOPDthrows) {
+				return throwTypeError;
+			}
+		}
+	}())
+	: throwTypeError;
+
+var hasSymbols = __webpack_require__(197)();
+
+var getProto = Object.getPrototypeOf || function (x) { return x.__proto__; }; // eslint-disable-line no-proto
+
+var generator; // = function * () {};
+var generatorFunction = generator ? getProto(generator) : undefined;
+var asyncFn; // async function() {};
+var asyncFunction = asyncFn ? asyncFn.constructor : undefined;
+var asyncGen; // async function * () {};
+var asyncGenFunction = asyncGen ? getProto(asyncGen) : undefined;
+var asyncGenIterator = asyncGen ? asyncGen() : undefined;
+
+var TypedArray = typeof Uint8Array === 'undefined' ? undefined : getProto(Uint8Array);
+
+var INTRINSICS = {
+	'%Array%': Array,
+	'%ArrayBuffer%': typeof ArrayBuffer === 'undefined' ? undefined : ArrayBuffer,
+	'%ArrayBufferPrototype%': typeof ArrayBuffer === 'undefined' ? undefined : ArrayBuffer.prototype,
+	'%ArrayIteratorPrototype%': hasSymbols ? getProto([][Symbol.iterator]()) : undefined,
+	'%ArrayPrototype%': Array.prototype,
+	'%ArrayProto_entries%': Array.prototype.entries,
+	'%ArrayProto_forEach%': Array.prototype.forEach,
+	'%ArrayProto_keys%': Array.prototype.keys,
+	'%ArrayProto_values%': Array.prototype.values,
+	'%AsyncFromSyncIteratorPrototype%': undefined,
+	'%AsyncFunction%': asyncFunction,
+	'%AsyncFunctionPrototype%': asyncFunction ? asyncFunction.prototype : undefined,
+	'%AsyncGenerator%': asyncGen ? getProto(asyncGenIterator) : undefined,
+	'%AsyncGeneratorFunction%': asyncGenFunction,
+	'%AsyncGeneratorPrototype%': asyncGenFunction ? asyncGenFunction.prototype : undefined,
+	'%AsyncIteratorPrototype%': asyncGenIterator && hasSymbols && Symbol.asyncIterator ? asyncGenIterator[Symbol.asyncIterator]() : undefined,
+	'%Atomics%': typeof Atomics === 'undefined' ? undefined : Atomics,
+	'%Boolean%': Boolean,
+	'%BooleanPrototype%': Boolean.prototype,
+	'%DataView%': typeof DataView === 'undefined' ? undefined : DataView,
+	'%DataViewPrototype%': typeof DataView === 'undefined' ? undefined : DataView.prototype,
+	'%Date%': Date,
+	'%DatePrototype%': Date.prototype,
+	'%decodeURI%': decodeURI,
+	'%decodeURIComponent%': decodeURIComponent,
+	'%encodeURI%': encodeURI,
+	'%encodeURIComponent%': encodeURIComponent,
+	'%Error%': Error,
+	'%ErrorPrototype%': Error.prototype,
+	'%eval%': eval, // eslint-disable-line no-eval
+	'%EvalError%': EvalError,
+	'%EvalErrorPrototype%': EvalError.prototype,
+	'%Float32Array%': typeof Float32Array === 'undefined' ? undefined : Float32Array,
+	'%Float32ArrayPrototype%': typeof Float32Array === 'undefined' ? undefined : Float32Array.prototype,
+	'%Float64Array%': typeof Float64Array === 'undefined' ? undefined : Float64Array,
+	'%Float64ArrayPrototype%': typeof Float64Array === 'undefined' ? undefined : Float64Array.prototype,
+	'%Function%': Function,
+	'%FunctionPrototype%': Function.prototype,
+	'%Generator%': generator ? getProto(generator()) : undefined,
+	'%GeneratorFunction%': generatorFunction,
+	'%GeneratorPrototype%': generatorFunction ? generatorFunction.prototype : undefined,
+	'%Int8Array%': typeof Int8Array === 'undefined' ? undefined : Int8Array,
+	'%Int8ArrayPrototype%': typeof Int8Array === 'undefined' ? undefined : Int8Array.prototype,
+	'%Int16Array%': typeof Int16Array === 'undefined' ? undefined : Int16Array,
+	'%Int16ArrayPrototype%': typeof Int16Array === 'undefined' ? undefined : Int8Array.prototype,
+	'%Int32Array%': typeof Int32Array === 'undefined' ? undefined : Int32Array,
+	'%Int32ArrayPrototype%': typeof Int32Array === 'undefined' ? undefined : Int32Array.prototype,
+	'%isFinite%': isFinite,
+	'%isNaN%': isNaN,
+	'%IteratorPrototype%': hasSymbols ? getProto(getProto([][Symbol.iterator]())) : undefined,
+	'%JSON%': typeof JSON === 'object' ? JSON : undefined,
+	'%JSONParse%': typeof JSON === 'object' ? JSON.parse : undefined,
+	'%Map%': typeof Map === 'undefined' ? undefined : Map,
+	'%MapIteratorPrototype%': typeof Map === 'undefined' || !hasSymbols ? undefined : getProto(new Map()[Symbol.iterator]()),
+	'%MapPrototype%': typeof Map === 'undefined' ? undefined : Map.prototype,
+	'%Math%': Math,
+	'%Number%': Number,
+	'%NumberPrototype%': Number.prototype,
+	'%Object%': Object,
+	'%ObjectPrototype%': Object.prototype,
+	'%ObjProto_toString%': Object.prototype.toString,
+	'%ObjProto_valueOf%': Object.prototype.valueOf,
+	'%parseFloat%': parseFloat,
+	'%parseInt%': parseInt,
+	'%Promise%': typeof Promise === 'undefined' ? undefined : Promise,
+	'%PromisePrototype%': typeof Promise === 'undefined' ? undefined : Promise.prototype,
+	'%PromiseProto_then%': typeof Promise === 'undefined' ? undefined : Promise.prototype.then,
+	'%Promise_all%': typeof Promise === 'undefined' ? undefined : Promise.all,
+	'%Promise_reject%': typeof Promise === 'undefined' ? undefined : Promise.reject,
+	'%Promise_resolve%': typeof Promise === 'undefined' ? undefined : Promise.resolve,
+	'%Proxy%': typeof Proxy === 'undefined' ? undefined : Proxy,
+	'%RangeError%': RangeError,
+	'%RangeErrorPrototype%': RangeError.prototype,
+	'%ReferenceError%': ReferenceError,
+	'%ReferenceErrorPrototype%': ReferenceError.prototype,
+	'%Reflect%': typeof Reflect === 'undefined' ? undefined : Reflect,
+	'%RegExp%': RegExp,
+	'%RegExpPrototype%': RegExp.prototype,
+	'%Set%': typeof Set === 'undefined' ? undefined : Set,
+	'%SetIteratorPrototype%': typeof Set === 'undefined' || !hasSymbols ? undefined : getProto(new Set()[Symbol.iterator]()),
+	'%SetPrototype%': typeof Set === 'undefined' ? undefined : Set.prototype,
+	'%SharedArrayBuffer%': typeof SharedArrayBuffer === 'undefined' ? undefined : SharedArrayBuffer,
+	'%SharedArrayBufferPrototype%': typeof SharedArrayBuffer === 'undefined' ? undefined : SharedArrayBuffer.prototype,
+	'%String%': String,
+	'%StringIteratorPrototype%': hasSymbols ? getProto(''[Symbol.iterator]()) : undefined,
+	'%StringPrototype%': String.prototype,
+	'%Symbol%': hasSymbols ? Symbol : undefined,
+	'%SymbolPrototype%': hasSymbols ? Symbol.prototype : undefined,
+	'%SyntaxError%': SyntaxError,
+	'%SyntaxErrorPrototype%': SyntaxError.prototype,
+	'%ThrowTypeError%': ThrowTypeError,
+	'%TypedArray%': TypedArray,
+	'%TypedArrayPrototype%': TypedArray ? TypedArray.prototype : undefined,
+	'%TypeError%': $TypeError,
+	'%TypeErrorPrototype%': $TypeError.prototype,
+	'%Uint8Array%': typeof Uint8Array === 'undefined' ? undefined : Uint8Array,
+	'%Uint8ArrayPrototype%': typeof Uint8Array === 'undefined' ? undefined : Uint8Array.prototype,
+	'%Uint8ClampedArray%': typeof Uint8ClampedArray === 'undefined' ? undefined : Uint8ClampedArray,
+	'%Uint8ClampedArrayPrototype%': typeof Uint8ClampedArray === 'undefined' ? undefined : Uint8ClampedArray.prototype,
+	'%Uint16Array%': typeof Uint16Array === 'undefined' ? undefined : Uint16Array,
+	'%Uint16ArrayPrototype%': typeof Uint16Array === 'undefined' ? undefined : Uint16Array.prototype,
+	'%Uint32Array%': typeof Uint32Array === 'undefined' ? undefined : Uint32Array,
+	'%Uint32ArrayPrototype%': typeof Uint32Array === 'undefined' ? undefined : Uint32Array.prototype,
+	'%URIError%': URIError,
+	'%URIErrorPrototype%': URIError.prototype,
+	'%WeakMap%': typeof WeakMap === 'undefined' ? undefined : WeakMap,
+	'%WeakMapPrototype%': typeof WeakMap === 'undefined' ? undefined : WeakMap.prototype,
+	'%WeakSet%': typeof WeakSet === 'undefined' ? undefined : WeakSet,
+	'%WeakSetPrototype%': typeof WeakSet === 'undefined' ? undefined : WeakSet.prototype
+};
+
+var bind = __webpack_require__(76);
+var $replace = bind.call(Function.call, String.prototype.replace);
+
+/* adapted from https://github.com/lodash/lodash/blob/4.17.15/dist/lodash.js#L6735-L6744 */
+var rePropName = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g;
+var reEscapeChar = /\\(\\)?/g; /** Used to match backslashes in property paths. */
+var stringToPath = function stringToPath(string) {
+	var result = [];
+	$replace(string, rePropName, function (match, number, quote, subString) {
+		result[result.length] = quote ? $replace(subString, reEscapeChar, '$1') : (number || match);
+	});
+	return result;
+};
+/* end adaptation */
+
+var getBaseIntrinsic = function getBaseIntrinsic(name, allowMissing) {
+	if (!(name in INTRINSICS)) {
+		throw new SyntaxError('intrinsic ' + name + ' does not exist!');
+	}
+
+	// istanbul ignore if // hopefully this is impossible to test :-)
+	if (typeof INTRINSICS[name] === 'undefined' && !allowMissing) {
+		throw new $TypeError('intrinsic ' + name + ' exists, but is not available. Please file an issue!');
+	}
+
+	return INTRINSICS[name];
+};
+
+module.exports = function GetIntrinsic(name, allowMissing) {
+	if (typeof name !== 'string' || name.length === 0) {
+		throw new TypeError('intrinsic name must be a non-empty string');
+	}
+	if (arguments.length > 1 && typeof allowMissing !== 'boolean') {
+		throw new TypeError('"allowMissing" argument must be a boolean');
+	}
+
+	var parts = stringToPath(name);
+
+	var value = getBaseIntrinsic('%' + (parts.length > 0 ? parts[0] : '') + '%', allowMissing);
+	for (var i = 1; i < parts.length; i += 1) {
+		if (value != null) {
+			if ($gOPD && (i + 1) >= parts.length) {
+				var desc = $gOPD(value, parts[i]);
+				value = desc ? (desc.get || desc.value) : value[parts[i]];
+			} else {
+				value = value[parts[i]];
+			}
+		}
+	}
+	return value;
+};
+
+
+/***/ }),
+/* 197 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {
+
+var origSymbol = global.Symbol;
+var hasSymbolSham = __webpack_require__(198);
+
+module.exports = function hasNativeSymbols() {
+	if (typeof origSymbol !== 'function') { return false; }
+	if (typeof Symbol !== 'function') { return false; }
+	if (typeof origSymbol('foo') !== 'symbol') { return false; }
+	if (typeof Symbol('bar') !== 'symbol') { return false; }
+
+	return hasSymbolSham();
+};
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(20)))
+
+/***/ }),
+/* 198 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/* eslint complexity: [2, 18], max-statements: [2, 33] */
+module.exports = function hasSymbols() {
+	if (typeof Symbol !== 'function' || typeof Object.getOwnPropertySymbols !== 'function') { return false; }
+	if (typeof Symbol.iterator === 'symbol') { return true; }
+
+	var obj = {};
+	var sym = Symbol('test');
+	var symObj = Object(sym);
+	if (typeof sym === 'string') { return false; }
+
+	if (Object.prototype.toString.call(sym) !== '[object Symbol]') { return false; }
+	if (Object.prototype.toString.call(symObj) !== '[object Symbol]') { return false; }
+
+	// temp disabled per https://github.com/ljharb/object.assign/issues/17
+	// if (sym instanceof Symbol) { return false; }
+	// temp disabled per https://github.com/WebReflection/get-own-property-symbols/issues/4
+	// if (!(symObj instanceof Symbol)) { return false; }
+
+	// if (typeof Symbol.prototype.toString !== 'function') { return false; }
+	// if (String(sym) !== Symbol.prototype.toString.call(sym)) { return false; }
+
+	var symVal = 42;
+	obj[sym] = symVal;
+	for (sym in obj) { return false; } // eslint-disable-line no-restricted-syntax
+	if (typeof Object.keys === 'function' && Object.keys(obj).length !== 0) { return false; }
+
+	if (typeof Object.getOwnPropertyNames === 'function' && Object.getOwnPropertyNames(obj).length !== 0) { return false; }
+
+	var syms = Object.getOwnPropertySymbols(obj);
+	if (syms.length !== 1 || syms[0] !== sym) { return false; }
+
+	if (!Object.prototype.propertyIsEnumerable.call(obj, sym)) { return false; }
+
+	if (typeof Object.getOwnPropertyDescriptor === 'function') {
+		var descriptor = Object.getOwnPropertyDescriptor(obj, sym);
+		if (descriptor.value !== symVal || descriptor.enumerable !== true) { return false; }
+	}
+
+	return true;
+};
+
+
+/***/ }),
+/* 199 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var supportsDescriptors = __webpack_require__(77).supportsDescriptors;
+var getPolyfill = __webpack_require__(108);
+var gOPD = Object.getOwnPropertyDescriptor;
+var defineProperty = Object.defineProperty;
+var TypeErr = TypeError;
+var getProto = Object.getPrototypeOf;
+var regex = /a/;
+
+module.exports = function shimFlags() {
+	if (!supportsDescriptors || !getProto) {
+		throw new TypeErr('RegExp.prototype.flags requires a true ES5 environment that supports property descriptors');
+	}
+	var polyfill = getPolyfill();
+	var proto = getProto(regex);
+	var descriptor = gOPD(proto, 'flags');
+	if (!descriptor || descriptor.get !== polyfill) {
+		defineProperty(proto, 'flags', {
+			configurable: true,
+			enumerable: false,
+			get: polyfill
+		});
+	}
+	return polyfill;
+};
+
+
+/***/ }),
+/* 200 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var getDay = Date.prototype.getDay;
+var tryDateObject = function tryDateGetDayCall(value) {
+	try {
+		getDay.call(value);
+		return true;
+	} catch (e) {
+		return false;
+	}
+};
+
+var toStr = Object.prototype.toString;
+var dateClass = '[object Date]';
+var hasToStringTag = typeof Symbol === 'function' && typeof Symbol.toStringTag === 'symbol';
+
+module.exports = function isDateObject(value) {
+	if (typeof value !== 'object' || value === null) {
+		return false;
+	}
+	return hasToStringTag ? tryDateObject(value) : toStr.call(value) === dateClass;
+};
+
+
+/***/ }),
+/* 201 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12671,7 +15150,7 @@ function dlv(obj, key, def, p, undef) {
 
 
 /***/ }),
-/* 139 */
+/* 202 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12686,7 +15165,7 @@ function dlv(obj, key, def, p, undef) {
 
 
 /***/ }),
-/* 140 */
+/* 203 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12694,16 +15173,16 @@ function dlv(obj, key, def, p, undef) {
 /* unused harmony export _sendAdToCreative */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__events_js__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__events_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__events_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__native_js__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__native_js__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants_json__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__constants_json__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__auctionManager_js__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_library_fn_array_find_js__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_library_fn_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_core_js_library_fn_array_find_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Renderer_js__ = __webpack_require__(12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__auctionManager_js__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_pure_features_array_find_js__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_pure_features_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_core_js_pure_features_array_find_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Renderer_js__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js__);
 /* Secure Creatives
   Provides support for rendering creatives into cross domain iframes such as SafeFrame to prevent
    access to a publisher page from creative payloads.
@@ -12732,12 +15211,12 @@ function receiveMessage(ev) {
   }
 
   if (data && data.adId) {
-    var adObject = __WEBPACK_IMPORTED_MODULE_5_core_js_library_fn_array_find_js___default()(__WEBPACK_IMPORTED_MODULE_4__auctionManager_js__["a" /* auctionManager */].getBidsReceived(), function (bid) {
+    var adObject = __WEBPACK_IMPORTED_MODULE_5_core_js_pure_features_array_find_js___default()(__WEBPACK_IMPORTED_MODULE_4__auctionManager_js__["a" /* auctionManager */].getBidsReceived(), function (bid) {
       return bid.adId === data.adId;
     });
 
     if (adObject && data.message === 'Prebid Request') {
-      _sendAdToCreative(adObject, data.adServerDomain, ev.source); // save winning bids
+      _sendAdToCreative(adObject, ev); // save winning bids
 
 
       __WEBPACK_IMPORTED_MODULE_4__auctionManager_js__["a" /* auctionManager */].addWinningBid(adObject);
@@ -12768,7 +15247,7 @@ function receiveMessage(ev) {
   }
 }
 
-function _sendAdToCreative(adObject, remoteDomain, source) {
+function _sendAdToCreative(adObject, ev) {
   var adId = adObject.adId,
       ad = adObject.ad,
       adUrl = adObject.adUrl,
@@ -12781,14 +15260,14 @@ function _sendAdToCreative(adObject, remoteDomain, source) {
     Object(__WEBPACK_IMPORTED_MODULE_6__Renderer_js__["b" /* executeRenderer */])(renderer, adObject);
   } else if (adId) {
     resizeRemoteCreative(adObject);
-    source.postMessage(JSON.stringify({
+    ev.source.postMessage(JSON.stringify({
       message: 'Prebid Response',
       ad: Object(__WEBPACK_IMPORTED_MODULE_3__utils_js__["replaceAuctionPrice"])(ad, cpm),
       adUrl: Object(__WEBPACK_IMPORTED_MODULE_3__utils_js__["replaceAuctionPrice"])(adUrl, cpm),
       adId: adId,
       width: width,
       height: height
-    }), remoteDomain);
+    }), ev.origin);
   }
 }
 
@@ -12828,9 +15307,9 @@ function resizeRemoteCreative(_ref) {
   }
 
   function getDfpElementId(adId) {
-    return __WEBPACK_IMPORTED_MODULE_5_core_js_library_fn_array_find_js___default()(window.googletag.pubads().getSlots(), function (slot) {
-      return __WEBPACK_IMPORTED_MODULE_5_core_js_library_fn_array_find_js___default()(slot.getTargetingKeys(), function (key) {
-        return __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default()(slot.getTargeting(key), adId);
+    return __WEBPACK_IMPORTED_MODULE_5_core_js_pure_features_array_find_js___default()(window.googletag.pubads().getSlots(), function (slot) {
+      return __WEBPACK_IMPORTED_MODULE_5_core_js_pure_features_array_find_js___default()(slot.getTargetingKeys(), function (key) {
+        return __WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default()(slot.getTargeting(key), adId);
       });
     }).getSlotElementId();
   }
@@ -12842,12 +15321,12 @@ function resizeRemoteCreative(_ref) {
 }
 
 /***/ }),
-/* 141 */
+/* 204 */
 /***/ (function(module, exports) {
 
 /*
 * @license MIT
-* Fun Hooks v0.9.7
+* Fun Hooks v0.9.9
 * (c) @snapwich
 */
 create.SYNC = 1;
@@ -13047,14 +15526,21 @@ function create(config) {
             });
           });
         }
-        return assign(hooks, {
-          remove: function() {
-            hooks.forEach(function(entry) {
-              entry.remove();
-            });
-            return this;
-          }
-        });
+        try {
+          assign(hooks, {
+            remove: function() {
+              hooks.forEach(function(entry) {
+                entry.remove();
+              });
+              return this;
+            }
+          });
+        } catch (e) {
+          console.error(
+            "error adding `remove` to array, did you modify Array.prototype?"
+          );
+        }
+        return hooks;
       },
       removeAll: function() {
         return this.getHooks().remove();
@@ -13228,7 +15714,7 @@ module.exports = create;
 
 
 /***/ }),
-/* 142 */
+/* 205 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13245,7 +15731,7 @@ module.exports = create;
 /* harmony export (immutable) */ __webpack_exports__["a"] = sessionLoader;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auction_js__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auction_js__ = __webpack_require__(42);
 
 
 
@@ -13409,89 +15895,6 @@ function sessionLoader(storage) {
 }
 
 /***/ }),
-/* 143 */,
-/* 144 */,
-/* 145 */,
-/* 146 */,
-/* 147 */,
-/* 148 */,
-/* 149 */,
-/* 150 */,
-/* 151 */,
-/* 152 */,
-/* 153 */,
-/* 154 */,
-/* 155 */,
-/* 156 */,
-/* 157 */,
-/* 158 */,
-/* 159 */,
-/* 160 */,
-/* 161 */,
-/* 162 */,
-/* 163 */,
-/* 164 */,
-/* 165 */,
-/* 166 */,
-/* 167 */,
-/* 168 */,
-/* 169 */,
-/* 170 */,
-/* 171 */,
-/* 172 */,
-/* 173 */,
-/* 174 */,
-/* 175 */,
-/* 176 */,
-/* 177 */,
-/* 178 */,
-/* 179 */,
-/* 180 */,
-/* 181 */,
-/* 182 */,
-/* 183 */,
-/* 184 */,
-/* 185 */,
-/* 186 */,
-/* 187 */,
-/* 188 */,
-/* 189 */,
-/* 190 */,
-/* 191 */,
-/* 192 */,
-/* 193 */,
-/* 194 */,
-/* 195 */,
-/* 196 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// 22.1.3.9 Array.prototype.findIndex(predicate, thisArg = undefined)
-var $export = __webpack_require__(18);
-var $find = __webpack_require__(54)(6);
-var KEY = 'findIndex';
-var forced = true;
-// Shouldn't skip holes
-if (KEY in []) Array(1)[KEY](function () { forced = false; });
-$export($export.P + $export.F * forced, 'Array', {
-  findIndex: function findIndex(callbackfn /* , that = undefined */) {
-    return $find(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
-  }
-});
-__webpack_require__(47)(KEY);
-
-
-/***/ }),
-/* 197 */,
-/* 198 */,
-/* 199 */,
-/* 200 */,
-/* 201 */,
-/* 202 */,
-/* 203 */,
-/* 204 */,
-/* 205 */,
 /* 206 */,
 /* 207 */,
 /* 208 */,
@@ -13545,8 +15948,47 @@ __webpack_require__(47)(KEY);
 /* 256 */,
 /* 257 */,
 /* 258 */,
-/* 259 */,
-/* 260 */,
+/* 259 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(260);
+var entryUnbind = __webpack_require__(58);
+
+module.exports = entryUnbind('Array', 'findIndex');
+
+
+/***/ }),
+/* 260 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var $findIndex = __webpack_require__(65).findIndex;
+var addToUnscopables = __webpack_require__(57);
+var arrayMethodUsesToLength = __webpack_require__(69);
+
+var FIND_INDEX = 'findIndex';
+var SKIPS_HOLES = true;
+
+var USES_TO_LENGTH = arrayMethodUsesToLength(FIND_INDEX);
+
+// Shouldn't skip holes
+if (FIND_INDEX in []) Array(1)[FIND_INDEX](function () { SKIPS_HOLES = false; });
+
+// `Array.prototype.findIndex` method
+// https://tc39.github.io/ecma262/#sec-array.prototype.findindex
+$({ target: 'Array', proto: true, forced: SKIPS_HOLES || !USES_TO_LENGTH }, {
+  findIndex: function findIndex(callbackfn /* , that = undefined */) {
+    return $findIndex(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
+  }
+});
+
+// https://tc39.github.io/ecma262/#sec-array.prototype-@@unscopables
+addToUnscopables(FIND_INDEX);
+
+
+/***/ }),
 /* 261 */,
 /* 262 */,
 /* 263 */,
@@ -13579,79 +16021,11 @@ __webpack_require__(47)(KEY);
 /* 290 */,
 /* 291 */,
 /* 292 */,
-/* 293 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(294);
-module.exports = __webpack_require__(19).String.includes;
-
-
-/***/ }),
-/* 294 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-// 21.1.3.7 String.prototype.includes(searchString, position = 0)
-
-var $export = __webpack_require__(18);
-var context = __webpack_require__(295);
-var INCLUDES = 'includes';
-
-$export($export.P + $export.F * __webpack_require__(297)(INCLUDES), 'String', {
-  includes: function includes(searchString /* , position = 0 */) {
-    return !!~context(this, searchString, INCLUDES)
-      .indexOf(searchString, arguments.length > 1 ? arguments[1] : undefined);
-  }
-});
-
-
-/***/ }),
-/* 295 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// helper for String#{startsWith, endsWith, includes}
-var isRegExp = __webpack_require__(296);
-var defined = __webpack_require__(45);
-
-module.exports = function (that, searchString, NAME) {
-  if (isRegExp(searchString)) throw TypeError('String#' + NAME + " doesn't accept regex!");
-  return String(defined(that));
-};
-
-
-/***/ }),
-/* 296 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 7.2.8 IsRegExp(argument)
-var isObject = __webpack_require__(20);
-var cof = __webpack_require__(44);
-var MATCH = __webpack_require__(17)('match');
-module.exports = function (it) {
-  var isRegExp;
-  return isObject(it) && ((isRegExp = it[MATCH]) !== undefined ? !!isRegExp : cof(it) == 'RegExp');
-};
-
-
-/***/ }),
-/* 297 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var MATCH = __webpack_require__(17)('match');
-module.exports = function (KEY) {
-  var re = /./;
-  try {
-    '/./'[KEY](re);
-  } catch (e) {
-    try {
-      re[MATCH] = false;
-      return !'/./'[KEY](re);
-    } catch (f) { /* empty */ }
-  } return true;
-};
-
-
-/***/ }),
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
 /* 298 */,
 /* 299 */,
 /* 300 */,
@@ -13731,12 +16105,98 @@ module.exports = function (KEY) {
 /* 374 */,
 /* 375 */,
 /* 376 */,
-/* 377 */,
-/* 378 */,
-/* 379 */,
-/* 380 */,
-/* 381 */,
-/* 382 */,
+/* 377 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var parent = __webpack_require__(378);
+
+module.exports = parent;
+
+
+/***/ }),
+/* 378 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(379);
+var entryUnbind = __webpack_require__(58);
+
+module.exports = entryUnbind('String', 'includes');
+
+
+/***/ }),
+/* 379 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__(15);
+var notARegExp = __webpack_require__(380);
+var requireObjectCoercible = __webpack_require__(55);
+var correctIsRegExpLogic = __webpack_require__(382);
+
+// `String.prototype.includes` method
+// https://tc39.github.io/ecma262/#sec-string.prototype.includes
+$({ target: 'String', proto: true, forced: !correctIsRegExpLogic('includes') }, {
+  includes: function includes(searchString /* , position = 0 */) {
+    return !!~String(requireObjectCoercible(this))
+      .indexOf(notARegExp(searchString), arguments.length > 1 ? arguments[1] : undefined);
+  }
+});
+
+
+/***/ }),
+/* 380 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isRegExp = __webpack_require__(381);
+
+module.exports = function (it) {
+  if (isRegExp(it)) {
+    throw TypeError("The method doesn't accept regular expressions");
+  } return it;
+};
+
+
+/***/ }),
+/* 381 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isObject = __webpack_require__(25);
+var classof = __webpack_require__(54);
+var wellKnownSymbol = __webpack_require__(21);
+
+var MATCH = wellKnownSymbol('match');
+
+// `IsRegExp` abstract operation
+// https://tc39.github.io/ecma262/#sec-isregexp
+module.exports = function (it) {
+  var isRegExp;
+  return isObject(it) && ((isRegExp = it[MATCH]) !== undefined ? !!isRegExp : classof(it) == 'RegExp');
+};
+
+
+/***/ }),
+/* 382 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var wellKnownSymbol = __webpack_require__(21);
+
+var MATCH = wellKnownSymbol('match');
+
+module.exports = function (METHOD_NAME) {
+  var regexp = /./;
+  try {
+    '/./'[METHOD_NAME](regexp);
+  } catch (e) {
+    try {
+      regexp[MATCH] = false;
+      return '/./'[METHOD_NAME](regexp);
+    } catch (f) { /* empty */ }
+  } return false;
+};
+
+
+/***/ }),
 /* 383 */,
 /* 384 */,
 /* 385 */,
@@ -13755,30 +16215,149 @@ module.exports = function (KEY) {
 /* 398 */,
 /* 399 */,
 /* 400 */,
-/* 401 */
+/* 401 */,
+/* 402 */,
+/* 403 */,
+/* 404 */,
+/* 405 */,
+/* 406 */,
+/* 407 */,
+/* 408 */,
+/* 409 */,
+/* 410 */,
+/* 411 */,
+/* 412 */,
+/* 413 */,
+/* 414 */,
+/* 415 */,
+/* 416 */,
+/* 417 */,
+/* 418 */,
+/* 419 */,
+/* 420 */,
+/* 421 */,
+/* 422 */,
+/* 423 */,
+/* 424 */,
+/* 425 */,
+/* 426 */,
+/* 427 */,
+/* 428 */,
+/* 429 */,
+/* 430 */,
+/* 431 */,
+/* 432 */,
+/* 433 */,
+/* 434 */,
+/* 435 */,
+/* 436 */,
+/* 437 */,
+/* 438 */,
+/* 439 */,
+/* 440 */,
+/* 441 */,
+/* 442 */,
+/* 443 */,
+/* 444 */,
+/* 445 */,
+/* 446 */,
+/* 447 */,
+/* 448 */,
+/* 449 */,
+/* 450 */,
+/* 451 */,
+/* 452 */,
+/* 453 */,
+/* 454 */,
+/* 455 */,
+/* 456 */,
+/* 457 */,
+/* 458 */,
+/* 459 */,
+/* 460 */,
+/* 461 */,
+/* 462 */,
+/* 463 */,
+/* 464 */,
+/* 465 */,
+/* 466 */,
+/* 467 */,
+/* 468 */,
+/* 469 */,
+/* 470 */,
+/* 471 */,
+/* 472 */,
+/* 473 */,
+/* 474 */,
+/* 475 */,
+/* 476 */,
+/* 477 */,
+/* 478 */,
+/* 479 */,
+/* 480 */,
+/* 481 */,
+/* 482 */,
+/* 483 */,
+/* 484 */,
+/* 485 */,
+/* 486 */,
+/* 487 */,
+/* 488 */,
+/* 489 */,
+/* 490 */,
+/* 491 */,
+/* 492 */,
+/* 493 */,
+/* 494 */,
+/* 495 */,
+/* 496 */,
+/* 497 */,
+/* 498 */,
+/* 499 */,
+/* 500 */,
+/* 501 */,
+/* 502 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(402);
-module.exports = __webpack_require__(19).Number.isInteger;
+var parent = __webpack_require__(503);
+
+module.exports = parent;
 
 
 /***/ }),
-/* 402 */
+/* 503 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// 20.1.2.3 Number.isInteger(number)
-var $export = __webpack_require__(18);
+__webpack_require__(504);
+var path = __webpack_require__(47);
 
-$export($export.S, 'Number', { isInteger: __webpack_require__(403) });
+module.exports = path.Number.isInteger;
 
 
 /***/ }),
-/* 403 */
+/* 504 */
 /***/ (function(module, exports, __webpack_require__) {
 
-// 20.1.2.3 Number.isInteger(number)
-var isObject = __webpack_require__(20);
+var $ = __webpack_require__(15);
+var isInteger = __webpack_require__(505);
+
+// `Number.isInteger` method
+// https://tc39.github.io/ecma262/#sec-number.isinteger
+$({ target: 'Number', stat: true }, {
+  isInteger: isInteger
+});
+
+
+/***/ }),
+/* 505 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isObject = __webpack_require__(25);
+
 var floor = Math.floor;
+
+// `Number.isInteger` method implementation
+// https://tc39.github.io/ecma262/#sec-number.isinteger
 module.exports = function isInteger(it) {
   return !isObject(it) && isFinite(it) && floor(it) === it;
 };
@@ -13786,17 +16365,17 @@ module.exports = function isInteger(it) {
 
 /***/ })
 /******/ ]);
-pbjsChunk([246],{
+pbjsChunk([277],{
 
-/***/ 225:
+/***/ 301:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(226);
+module.exports = __webpack_require__(302);
 
 
 /***/ }),
 
-/***/ 226:
+/***/ 302:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14251,34 +16830,34 @@ Object(__WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory_js__["registerBid
 
 /***/ })
 
-},[225]);
-pbjsChunk([244],{
+},[301]);
+pbjsChunk([275],{
 
-/***/ 233:
+/***/ 309:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(234);
+module.exports = __webpack_require__(310);
 
 
 /***/ }),
 
-/***/ 234:
+/***/ 310:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "spec", function() { return spec; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_Renderer_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_Renderer_js__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_utils_js__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_config_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_adapters_bidderFactory_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_mediaTypes_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_auctionManager_js__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_find_js__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_find_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_video_js__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_auctionManager_js__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_find_js__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_find_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_video_js__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_storageManager_js__ = __webpack_require__(9);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -14308,11 +16887,29 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 var BIDDER_CODE = 'appnexus';
 var URL = 'https://ib.adnxs.com/ut/v3/prebid';
-var VIDEO_TARGETING = ['id', 'mimes', 'minduration', 'maxduration', 'startdelay', 'skippable', 'playback_method', 'frameworks'];
+var VIDEO_TARGETING = ['id', 'minduration', 'maxduration', 'skippable', 'playback_method', 'frameworks', 'context', 'skipoffset'];
 var USER_PARAMS = ['age', 'externalUid', 'segments', 'gender', 'dnt', 'language'];
 var APP_DEVICE_PARAMS = ['geo', 'device_id']; // appid is collected separately
 
 var DEBUG_PARAMS = ['enabled', 'dongle', 'member_id', 'debug_timeout'];
+var VIDEO_MAPPING = {
+  playback_method: {
+    'unknown': 0,
+    'auto_play_sound_on': 1,
+    'auto_play_sound_off': 2,
+    'click_to_play': 3,
+    'mouse_over': 4,
+    'auto_play_sound_unknown': 5
+  },
+  context: {
+    'unknown': 0,
+    'pre_roll': 1,
+    'mid_roll': 2,
+    'post_roll': 3,
+    'outstream': 4,
+    'in-banner': 5
+  }
+};
 var NATIVE_MAPPING = {
   body: 'description',
   body2: 'desc2',
@@ -14345,7 +16942,7 @@ var storage = Object(__WEBPACK_IMPORTED_MODULE_9__src_storageManager_js__["b" /*
 var spec = {
   code: BIDDER_CODE,
   gvlid: GVLID,
-  aliases: ['appnexusAst', 'brealtime', 'emxdigital', 'pagescience', 'defymedia', 'gourmetads', 'matomy', 'featureforward', 'oftmedia', 'districtm', 'adasta', 'bpa33x'],
+  aliases: ['appnexusAst', 'brealtime', 'emxdigital', 'pagescience', 'defymedia', 'gourmetads', 'matomy', 'featureforward', 'oftmedia', 'districtm', 'adasta', 'beintoo'],
   supportedMediaTypes: [__WEBPACK_IMPORTED_MODULE_4__src_mediaTypes_js__["b" /* BANNER */], __WEBPACK_IMPORTED_MODULE_4__src_mediaTypes_js__["d" /* VIDEO */], __WEBPACK_IMPORTED_MODULE_4__src_mediaTypes_js__["c" /* NATIVE */]],
 
   /**
@@ -14366,7 +16963,7 @@ var spec = {
    */
   buildRequests: function buildRequests(bidRequests, bidderRequest) {
     var tags = bidRequests.map(bidToTag);
-    var userObjBid = __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_find_js___default()(bidRequests, hasUserInfo);
+    var userObjBid = __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_find_js___default()(bidRequests, hasUserInfo);
     var userObj = {};
 
     if (__WEBPACK_IMPORTED_MODULE_2__src_config_js__["b" /* config */].getConfig('coppa') === true) {
@@ -14377,25 +16974,26 @@ var spec = {
 
     if (userObjBid) {
       Object.keys(userObjBid.params.user).filter(function (param) {
-        return __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default()(USER_PARAMS, param);
+        return __WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default()(USER_PARAMS, param);
       }).forEach(function (param) {
-        return userObj[param] = userObjBid.params.user[param];
+        var uparam = __WEBPACK_IMPORTED_MODULE_1__src_utils_js__["convertCamelToUnderscore"](param);
+        userObj[uparam] = userObjBid.params.user[param];
       });
     }
 
-    var appDeviceObjBid = __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_find_js___default()(bidRequests, hasAppDeviceInfo);
+    var appDeviceObjBid = __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_find_js___default()(bidRequests, hasAppDeviceInfo);
     var appDeviceObj;
 
     if (appDeviceObjBid && appDeviceObjBid.params && appDeviceObjBid.params.app) {
       appDeviceObj = {};
       Object.keys(appDeviceObjBid.params.app).filter(function (param) {
-        return __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default()(APP_DEVICE_PARAMS, param);
+        return __WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default()(APP_DEVICE_PARAMS, param);
       }).forEach(function (param) {
         return appDeviceObj[param] = appDeviceObjBid.params.app[param];
       });
     }
 
-    var appIdObjBid = __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_find_js___default()(bidRequests, hasAppId);
+    var appIdObjBid = __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_find_js___default()(bidRequests, hasAppId);
     var appIdObj;
 
     if (appIdObjBid && appIdObjBid.params && appDeviceObjBid.params.app && appDeviceObjBid.params.app.id) {
@@ -14416,7 +17014,7 @@ var spec = {
         __WEBPACK_IMPORTED_MODULE_1__src_utils_js__["logError"]('AppNexus Debug Auction Cookie Error:\n\n' + e);
       }
     } else {
-      var debugBidRequest = __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_find_js___default()(bidRequests, hasDebug);
+      var debugBidRequest = __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_find_js___default()(bidRequests, hasDebug);
 
       if (debugBidRequest && debugBidRequest.debug) {
         debugObj = debugBidRequest.debug;
@@ -14425,13 +17023,13 @@ var spec = {
 
     if (debugObj && debugObj.enabled) {
       Object.keys(debugObj).filter(function (param) {
-        return __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default()(DEBUG_PARAMS, param);
+        return __WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default()(DEBUG_PARAMS, param);
       }).forEach(function (param) {
         debugObjParams[param] = debugObj[param];
       });
     }
 
-    var memberIdBid = __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_find_js___default()(bidRequests, hasMemberId);
+    var memberIdBid = __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_find_js___default()(bidRequests, hasMemberId);
     var member = memberIdBid ? parseInt(memberIdBid.params.member, 10) : 0;
     var schain = bidRequests[0].schain;
     var payload = {
@@ -14439,7 +17037,7 @@ var spec = {
       user: userObj,
       sdk: {
         source: SOURCE,
-        version: "3.14.0"
+        version: "3.26.0"
       },
       schain: schain
     };
@@ -14489,7 +17087,7 @@ var spec = {
       payload.referrer_detection = refererinfo;
     }
 
-    var hasAdPodBid = __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_find_js___default()(bidRequests, hasAdPod);
+    var hasAdPodBid = __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_find_js___default()(bidRequests, hasAdPod);
 
     if (hasAdPodBid) {
       bidRequests.filter(hasAdPod).forEach(function (adPodBid) {
@@ -14502,15 +17100,32 @@ var spec = {
       });
     }
 
+    var eids = [];
     var criteoId = __WEBPACK_IMPORTED_MODULE_1__src_utils_js__["deepAccess"](bidRequests[0], "userId.criteoId");
 
     if (criteoId) {
-      var tpuids = [];
-      tpuids.push({
-        'provider': 'criteo',
-        'user_id': criteoId
+      eids.push({
+        source: 'criteo.com',
+        id: criteoId
       });
-      payload.tpuids = tpuids;
+    }
+
+    var tdid = __WEBPACK_IMPORTED_MODULE_1__src_utils_js__["deepAccess"](bidRequests[0], "userId.tdid");
+
+    if (tdid) {
+      eids.push({
+        source: 'adserver.org',
+        id: tdid,
+        rti_partner: 'TDID'
+      });
+    }
+
+    if (eids.length) {
+      payload.eids = eids;
+    }
+
+    if (tags[0].publisher_id) {
+      payload.publisher_id = tags[0].publisher_id;
     }
 
     var request = formatRequest(payload, bidderRequest);
@@ -14546,7 +17161,7 @@ var spec = {
         var rtbBid = getRtbBid(serverBid);
 
         if (rtbBid) {
-          if (rtbBid.cpm !== 0 && __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default()(_this.supportedMediaTypes, rtbBid.ad_type)) {
+          if (rtbBid.cpm !== 0 && __WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default()(_this.supportedMediaTypes, rtbBid.ad_type)) {
             var bid = newBid(serverBid, rtbBid, bidderRequest);
             bid.mediaType = parseMediaType(rtbBid);
             bids.push(bid);
@@ -14587,14 +17202,14 @@ var spec = {
   getMappingFileInfo: function getMappingFileInfo() {
     return {
       url: mappingFileUrl,
-      refreshInDays: 7
+      refreshInDays: 2
     };
   },
   getUserSyncs: function getUserSyncs(syncOptions) {
     if (syncOptions.iframeEnabled) {
       return [{
         type: 'iframe',
-        url: 'https://acdn.adnxs.com/ib/static/usersync/v3/async_usersync.html'
+        url: 'https://acdn.adnxs.com/dmp/async_usersync.html'
       }];
     }
   },
@@ -14603,7 +17218,8 @@ var spec = {
       'member': 'string',
       'invCode': 'string',
       'placementId': 'number',
-      'keywords': __WEBPACK_IMPORTED_MODULE_1__src_utils_js__["transformBidderParamKeywords"]
+      'keywords': __WEBPACK_IMPORTED_MODULE_1__src_utils_js__["transformBidderParamKeywords"],
+      'publisherId': 'number'
     }, params);
 
     if (isOpenRtb) {
@@ -14863,9 +17479,9 @@ function newBid(serverBid, rtbBid, bidderRequest) {
 
     switch (videoContext) {
       case __WEBPACK_IMPORTED_MODULE_4__src_mediaTypes_js__["a" /* ADPOD */]:
-        var iabSubCatId = Object(__WEBPACK_IMPORTED_MODULE_3__src_adapters_bidderFactory_js__["getIabSubCategory"])(bidRequest.bidder, rtbBid.brand_category_id);
+        var primaryCatId = Object(__WEBPACK_IMPORTED_MODULE_3__src_adapters_bidderFactory_js__["getIabSubCategory"])(bidRequest.bidder, rtbBid.brand_category_id);
         bid.meta = _extends({}, bid.meta, {
-          iabSubCatId: iabSubCatId
+          primaryCatId: primaryCatId
         });
         var dealTier = rtbBid.deal_priority;
         bid.video = {
@@ -14883,7 +17499,7 @@ function newBid(serverBid, rtbBid, bidderRequest) {
         bid.vastXml = rtbBid.rtb.video.content;
 
         if (rtbBid.renderer_url) {
-          var videoBid = __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_find_js___default()(bidderRequest.bids, function (bid) {
+          var videoBid = __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_find_js___default()(bidderRequest.bids, function (bid) {
             return bid.bidId === serverBid.uuid;
           });
           var rendererOptions = __WEBPACK_IMPORTED_MODULE_1__src_utils_js__["deepAccess"](videoBid, 'renderer.options');
@@ -15016,6 +17632,10 @@ function bidToTag(bid) {
     tag.ext_inv_code = bid.params.extInvCode;
   }
 
+  if (bid.params.publisherId) {
+    tag.publisher_id = parseInt(bid.params.publisherId, 10);
+  }
+
   if (bid.params.externalImpId) {
     tag.external_imp_id = bid.params.externalImpId;
   }
@@ -15067,9 +17687,19 @@ function bidToTag(bid) {
     tag.video = {}; // place any valid video params on the tag
 
     Object.keys(bid.params.video).filter(function (param) {
-      return __WEBPACK_IMPORTED_MODULE_7_core_js_library_fn_array_includes_js___default()(VIDEO_TARGETING, param);
+      return __WEBPACK_IMPORTED_MODULE_7_core_js_pure_features_array_includes_js___default()(VIDEO_TARGETING, param);
     }).forEach(function (param) {
-      return tag.video[param] = bid.params.video[param];
+      switch (param) {
+        case 'context':
+        case 'playback_method':
+          var type = bid.params.video[param];
+          type = __WEBPACK_IMPORTED_MODULE_1__src_utils_js__["isArray"](type) ? type[0] : type;
+          tag.video[param] = VIDEO_MAPPING[param][type];
+          break;
+
+        default:
+          tag.video[param] = bid.params.video[param];
+      }
     });
   }
 
@@ -15079,7 +17709,7 @@ function bidToTag(bid) {
     });
   }
 
-  var adUnit = __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_find_js___default()(__WEBPACK_IMPORTED_MODULE_5__src_auctionManager_js__["a" /* auctionManager */].getAdUnits(), function (au) {
+  var adUnit = __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_find_js___default()(__WEBPACK_IMPORTED_MODULE_5__src_auctionManager_js__["a" /* auctionManager */].getAdUnits(), function (au) {
     return bid.transactionId === au.transactionId;
   });
 
@@ -15202,7 +17832,7 @@ function setVideoProperty(tag, key, value) {
 }
 
 function getRtbBid(tag) {
-  return tag && tag.ads && tag.ads.length && __WEBPACK_IMPORTED_MODULE_6_core_js_library_fn_array_find_js___default()(tag.ads, function (ad) {
+  return tag && tag.ads && tag.ads.length && __WEBPACK_IMPORTED_MODULE_6_core_js_pure_features_array_find_js___default()(tag.ads, function (ad) {
     return ad.rtb;
   });
 }
@@ -15292,18 +17922,18 @@ Object(__WEBPACK_IMPORTED_MODULE_3__src_adapters_bidderFactory_js__["registerBid
 
 /***/ })
 
-},[233]);
-pbjsChunk([203],{
+},[309]);
+pbjsChunk([230],{
 
-/***/ 329:
+/***/ 416:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(330);
+module.exports = __webpack_require__(417);
 
 
 /***/ }),
 
-/***/ 330:
+/***/ 417:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15316,6 +17946,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["matchRequest"] = matchRequest;
 /* harmony export (immutable) */ __webpack_exports__["checkDeepArray"] = checkDeepArray;
 /* harmony export (immutable) */ __webpack_exports__["defaultSize"] = defaultSize;
+/* harmony export (immutable) */ __webpack_exports__["bindUserId"] = bindUserId;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_utils_js__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_config_js__ = __webpack_require__(3);
@@ -15439,6 +18070,19 @@ var spec = {
       dmxRequest.site = _objectSpread({}, dmxRequest.site, {}, site);
     } catch (e) {}
 
+    var eids = [];
+
+    if (bidRequest && bidRequest.userId) {
+      bindUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](bidRequest, "userId.idl_env"), 'liveramp.com', 1);
+      bindUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](bidRequest, "userId.digitrustid.data.id"), 'digitru.st', 1);
+      bindUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](bidRequest, "userId.id5id"), 'id5-sync.com', 1);
+      bindUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](bidRequest, "userId.pubcid"), 'pubcid.org', 1);
+      bindUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](bidRequest, "userId.tdid"), 'adserver.org', 1);
+      dmxRequest.user = dmxRequest.user || {};
+      dmxRequest.user.ext = dmxRequest.user.ext || {};
+      dmxRequest.user.ext.eids = eids;
+    }
+
     if (!dmxRequest.test) {
       delete dmxRequest.test;
     }
@@ -15451,6 +18095,9 @@ var spec = {
       dmxRequest.user.ext = {};
       dmxRequest.user.ext.consent = bidderRequest.gdprConsent.consentString;
     }
+
+    dmxRequest.regs = dmxRequest.regs || {};
+    dmxRequest.regs.coppa = __WEBPACK_IMPORTED_MODULE_2__src_config_js__["b" /* config */].getConfig('coppa') === true ? 1 : 0;
 
     if (bidderRequest && bidderRequest.uspConsent) {
       dmxRequest.regs = dmxRequest.regs || {};
@@ -15665,22 +18312,33 @@ function defaultSize(thebidObj) {
   returnObject.height = checkDeepArray(sizes)[1];
   return returnObject;
 }
+function bindUserId(eids, value, source, atype) {
+  if (__WEBPACK_IMPORTED_MODULE_0__src_utils_js__["isStr"](value) && Array.isArray(eids)) {
+    eids.push({
+      source: source,
+      uids: [{
+        id: value,
+        atype: atype
+      }]
+    });
+  }
+}
 Object(__WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory_js__["registerBidder"])(spec);
 
 /***/ })
 
-},[329]);
-pbjsChunk([182],{
+},[416]);
+pbjsChunk([206],{
 
-/***/ 375:
+/***/ 468:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(376);
+module.exports = __webpack_require__(469);
 
 
 /***/ }),
 
-/***/ 376:
+/***/ 469:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15690,15 +18348,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["getSyncUrl"] = getSyncUrl;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_utils_js__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_Renderer_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_Renderer_js__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_mediaTypes_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_config_js__ = __webpack_require__(3);
+
 
 
 
 
 var BIDDER_CODE = 'grid';
 var ENDPOINT_URL = 'https://grid.bidswitch.net/hb';
-var SYNC_URL = 'https://x.bidswitch.net/sync?ssp=iow_labs';
+var SYNC_URL = 'https://x.bidswitch.net/sync?ssp=themediagrid';
 var TIME_TO_LIVE = 360;
 var RENDERER_URL = 'https://acdn.adnxs.com/video/outstream/ANOutstreamVideo.js';
 var hasSynced = false;
@@ -15740,13 +18400,32 @@ var spec = {
     var slotsMapByUid = {};
     var sizeMap = {};
     var bids = validBidRequests || [];
+    var pageKeywords = null;
     var reqId;
     bids.forEach(function (bid) {
       reqId = bid.bidderRequestId;
       var uid = bid.params.uid,
-          adUnitCode = bid.adUnitCode;
+          adUnitCode = bid.adUnitCode,
+          mediaTypes = bid.mediaTypes;
       auids.push(uid);
       var sizesId = __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["parseSizesInput"](bid.sizes);
+
+      if (!pageKeywords && !__WEBPACK_IMPORTED_MODULE_0__src_utils_js__["isEmpty"](bid.params.keywords)) {
+        pageKeywords = __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["transformBidderParamKeywords"](bid.params.keywords);
+      }
+
+      var addedSizes = {};
+      sizesId.forEach(function (sizeId) {
+        addedSizes[sizeId] = true;
+      });
+      var bannerSizesId = __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["parseSizesInput"](__WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](mediaTypes, 'banner.sizes'));
+      var videoSizesId = __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["parseSizesInput"](__WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](mediaTypes, 'video.playerSize'));
+      bannerSizesId.concat(videoSizesId).forEach(function (sizeId) {
+        if (!addedSizes[sizeId]) {
+          addedSizes[sizeId] = true;
+          sizesId.push(sizeId);
+        }
+      });
 
       if (!slotsMapByUid[uid]) {
         slotsMapByUid[uid] = {};
@@ -15785,13 +18464,30 @@ var spec = {
         });
       });
     });
+    var configKeywords = __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["transformBidderParamKeywords"]({
+      'user': __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](__WEBPACK_IMPORTED_MODULE_4__src_config_js__["b" /* config */].getConfig('fpd.user'), 'keywords') || null,
+      'context': __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](__WEBPACK_IMPORTED_MODULE_4__src_config_js__["b" /* config */].getConfig('fpd.context'), 'keywords') || null
+    });
+
+    if (configKeywords.length) {
+      pageKeywords = (pageKeywords || []).concat(configKeywords);
+    }
+
+    if (pageKeywords && pageKeywords.length > 0) {
+      pageKeywords.forEach(deleteValues);
+    }
+
     var payload = {
       auids: auids.join(','),
       sizes: __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["getKeys"](sizeMap).join(','),
       r: reqId,
       wrapperType: 'Prebid_js',
-      wrapperVersion: "3.14.0"
+      wrapperVersion: "3.26.0"
     };
+
+    if (pageKeywords) {
+      payload.keywords = JSON.stringify(pageKeywords);
+    }
 
     if (bidderRequest) {
       if (bidderRequest.refererInfo && bidderRequest.refererInfo.referer) {
@@ -15872,6 +18568,16 @@ var spec = {
     }
   }
 };
+
+function isPopulatedArray(arr) {
+  return !!(__WEBPACK_IMPORTED_MODULE_0__src_utils_js__["isArray"](arr) && arr.length > 0);
+}
+
+function deleteValues(keyPairObj) {
+  if (isPopulatedArray(keyPairObj.value) && keyPairObj.value[0] === '') {
+    delete keyPairObj.value;
+  }
+}
 
 function _getBidFromResponse(respItem) {
   if (!respItem) {
@@ -15999,58 +18705,30 @@ Object(__WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory_js__["registerBid
 
 /***/ })
 
-},[375]);
-pbjsChunk([32],{
+},[468]);
+pbjsChunk([204],{
 
-/***/ 15:
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || Function("return this")() || (1,eval)("this");
-} catch(e) {
-	// This works if the window reference is available
-	if(typeof window === "object")
-		g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-
-/***/ 377:
+/***/ 472:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(378);
+module.exports = __webpack_require__(473);
 
 
 /***/ }),
 
-/***/ 378:
+/***/ 473:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function(global) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "spec", function() { return spec; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_utils_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_config_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_mediaTypes_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_adapters_bidderFactory_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_storageManager_js__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_mediaTypes_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_config_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_storageManager_js__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_pure_features_array_includes__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_pure_features_array_includes___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_pure_features_array_includes__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_adapters_bidderFactory_js__ = __webpack_require__(1);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -16077,15 +18755,20 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-var storage = Object(__WEBPACK_IMPORTED_MODULE_5__src_storageManager_js__["b" /* getStorageManager */])();
+var storage = Object(__WEBPACK_IMPORTED_MODULE_3__src_storageManager_js__["b" /* getStorageManager */])();
 var BIDDER_CODE = 'gumgum';
 var ALIAS_BIDDER_CODE = ['gg'];
 var BID_ENDPOINT = "https://g2.gumgum.com/hbid/imp";
-var DT_CREDENTIALS = {
-  member: 'YcXr87z2lpbB'
+var JCSI = {
+  t: 0,
+  rq: 8,
+  pbv: "3.26.0"
 };
-var SUPPORTED_MEDIA_TYPES = [__WEBPACK_IMPORTED_MODULE_2__src_mediaTypes_js__["b" /* BANNER */], __WEBPACK_IMPORTED_MODULE_2__src_mediaTypes_js__["d" /* VIDEO */]];
+var SUPPORTED_MEDIA_TYPES = [__WEBPACK_IMPORTED_MODULE_1__src_mediaTypes_js__["b" /* BANNER */], __WEBPACK_IMPORTED_MODULE_1__src_mediaTypes_js__["d" /* VIDEO */]];
 var TIME_TO_LIVE = 60;
+var DELAY_REQUEST_TIME = 1800000; // setting to 30 mins
+
+var invalidRequestIds = {};
 var browserParams = {};
 var pageViewId = null; // TODO: potential 0 values for browserParams sent to ad server
 
@@ -16133,10 +18816,7 @@ function _getBrowserParams(topWindowUrl) {
     pu: topUrl,
     ce: storage.cookiesAreEnabled(),
     dpr: topWindow.devicePixelRatio || 1,
-    jcsi: JSON.stringify({
-      t: 0,
-      rq: 8
-    }),
+    jcsi: JSON.stringify(JCSI),
     ogu: getOgURL()
   };
   ns = getNetworkSpeed();
@@ -16169,13 +18849,7 @@ function _getTradeDeskIDParam(userId) {
 }
 
 function _getDigiTrustQueryParams(userId) {
-  var digiTrustId = userId.digitrustid && userId.digitrustid.data;
-
-  if (!digiTrustId) {
-    var digiTrustUser = window.DigiTrust && window.DigiTrust.getUser ? window.DigiTrust.getUser(DT_CREDENTIALS) : {};
-    digiTrustId = digiTrustUser && digiTrustUser.success && digiTrustUser.identity || '';
-  } // Verify there is an ID and this user has not opted out
-
+  var digiTrustId = userId.digitrustid && userId.digitrustid.data; // Verify there is an ID and this user has not opted out
 
   if (!digiTrustId || digiTrustId.privacy && digiTrustId.privacy.optout) {
     return {};
@@ -16217,9 +18891,18 @@ function _serializeSupplyChainObj(schainObj) {
 function isBidRequestValid(bid) {
   var params = bid.params,
       adUnitCode = bid.adUnitCode;
+  var id = params.inScreen || params.inScreenPubID || params.inSlot || params.ICV || params.video || params.inVideo;
+
+  if (invalidRequestIds[id]) {
+    __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["logWarn"]("[GumGum] Please check the implementation for ".concat(id, " for the placement ").concat(adUnitCode));
+    return false;
+  }
 
   switch (true) {
     case !!params.inScreen:
+      break;
+
+    case !!params.inScreenPubID:
       break;
 
     case !!params.inSlot:
@@ -16229,6 +18912,12 @@ function isBidRequestValid(bid) {
       break;
 
     case !!params.video:
+      break;
+
+    case !!params.inVideo:
+      break;
+
+    case !!params.videoPubID:
       break;
 
     default:
@@ -16296,7 +18985,7 @@ function buildRequests(validBidRequests, bidderRequest) {
   var bids = [];
   var gdprConsent = bidderRequest && bidderRequest.gdprConsent;
   var uspConsent = bidderRequest && bidderRequest.uspConsent;
-  var timeout = __WEBPACK_IMPORTED_MODULE_1__src_config_js__["b" /* config */].getConfig('bidderTimeout');
+  var timeout = __WEBPACK_IMPORTED_MODULE_2__src_config_js__["b" /* config */].getConfig('bidderTimeout');
   var topWindowUrl = bidderRequest && bidderRequest.refererInfo && bidderRequest.refererInfo.referer;
 
   __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["_each"](validBidRequests, function (bidRequest) {
@@ -16340,10 +19029,22 @@ function buildRequests(validBidRequests, bidderRequest) {
       data.pi = 5;
     }
 
+    if (params.videoPubID) {
+      data = _extends(data, _getVidParams(mediaTypes.video));
+      data.pubId = params.videoPubID;
+      data.pi = 7;
+    }
+
     if (params.video) {
       data = _extends(data, _getVidParams(mediaTypes.video));
       data.t = params.video;
       data.pi = 7;
+    }
+
+    if (params.inVideo) {
+      data = _extends(data, _getVidParams(mediaTypes.video));
+      data.t = params.inVideo;
+      data.pi = 6;
     }
 
     if (gdprConsent) {
@@ -16368,7 +19069,7 @@ function buildRequests(validBidRequests, bidderRequest) {
       tId: transactionId,
       pi: data.pi,
       selector: params.selector,
-      sizes: bannerSizes || bidRequest.sizes,
+      sizes: bannerSizes,
       url: BID_ENDPOINT,
       method: 'GET',
       data: _extends(data, _getBrowserParams(topWindowUrl), _getDigiTrustQueryParams(userId), _getTradeDeskIDParam(userId))
@@ -16388,6 +19089,22 @@ function buildRequests(validBidRequests, bidderRequest) {
 function interpretResponse(serverResponse, bidRequest) {
   var bidResponses = [];
   var serverResponseBody = serverResponse.body;
+
+  if (!serverResponseBody || serverResponseBody.err) {
+    var _data = bidRequest.data || {};
+
+    var id = _data.t || _data.si || _data.ni || _data.pubId;
+    var delayTime = serverResponseBody ? serverResponseBody.err.drt : DELAY_REQUEST_TIME;
+    invalidRequestIds[id] = {
+      productId: _data.pi,
+      timestamp: new Date().getTime()
+    };
+    setTimeout(function () {
+      !!invalidRequestIds[id] && delete invalidRequestIds[id];
+    }, delayTime);
+    __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["logWarn"]("[GumGum] Please check the implementation for ".concat(id));
+  }
+
   var defaultResponse = {
     ad: {
       price: 0,
@@ -16406,7 +19123,8 @@ function interpretResponse(serverResponse, bidRequest) {
       markup = _Object$assign$ad.markup,
       cur = _Object$assign$ad.cur,
       wrapper = _Object$assign.cw,
-      pvid = _Object$assign.pag.pvid;
+      pvid = _Object$assign.pag.pvid,
+      jcsi = _Object$assign.jcsi;
 
   var data = bidRequest.data || {};
   var product = data.pi;
@@ -16419,9 +19137,13 @@ function interpretResponse(serverResponse, bidRequest) {
       height = _sizes$0$split2[1]; // return 1x1 when breakout expected
 
 
-  if ((product === 2 || product === 5) && __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_includes_js___default()(sizes, '1x1')) {
+  if ((product === 2 || product === 5) && __WEBPACK_IMPORTED_MODULE_4_core_js_pure_features_array_includes___default()(sizes, '1x1')) {
     width = '1';
     height = '1';
+  }
+
+  if (jcsi) {
+    serverResponseBody.jcsi = JCSI;
   } // update Page View ID from server response
 
 
@@ -16433,7 +19155,10 @@ function interpretResponse(serverResponse, bidRequest) {
     }, {
       ad: wrapper ? getWrapperCode(wrapper, _extends({}, serverResponseBody, {
         bidRequest: bidRequest
-      })) : markup,
+      })) : markup
+    }, product === 6 && {
+      ad: markup
+    }, {
       cpm: isTestUnit ? 0.1 : cpm,
       creativeId: creativeId,
       currency: cur || 'USD',
@@ -16481,23 +19206,23 @@ var spec = {
   getUserSyncs: getUserSyncs,
   supportedMediaTypes: SUPPORTED_MEDIA_TYPES
 };
-Object(__WEBPACK_IMPORTED_MODULE_4__src_adapters_bidderFactory_js__["registerBidder"])(spec);
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(15)))
+Object(__WEBPACK_IMPORTED_MODULE_5__src_adapters_bidderFactory_js__["registerBidder"])(spec);
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(20)))
 
 /***/ })
 
-},[377]);
-pbjsChunk([172],{
+},[472]);
+pbjsChunk([191],{
 
-/***/ 399:
+/***/ 500:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(400);
+module.exports = __webpack_require__(501);
 
 
 /***/ }),
 
-/***/ 400:
+/***/ 501:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16506,10 +19231,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_utils_js__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_mediaTypes_js__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_config_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_find_js__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_find_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_library_fn_number_is_integer_js__ = __webpack_require__(401);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_library_fn_number_is_integer_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_library_fn_number_is_integer_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_array_find_js__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_array_find_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_pure_features_number_is_integer_js__ = __webpack_require__(502);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_pure_features_number_is_integer_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_pure_features_number_is_integer_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_adapters_bidderFactory_js__ = __webpack_require__(1);
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -16648,7 +19373,7 @@ function parseBid(rawBid, currency, bidRequest) {
 
 
 function isValidSize(size) {
-  return Array.isArray(size) && size.length === 2 && __WEBPACK_IMPORTED_MODULE_4_core_js_library_fn_number_is_integer_js___default()(size[0]) && __WEBPACK_IMPORTED_MODULE_4_core_js_library_fn_number_is_integer_js___default()(size[1]);
+  return Array.isArray(size) && size.length === 2 && __WEBPACK_IMPORTED_MODULE_4_core_js_pure_features_number_is_integer_js___default()(size[0]) && __WEBPACK_IMPORTED_MODULE_4_core_js_pure_features_number_is_integer_js___default()(size[1]);
 }
 /**
  * Determines whether or not the given size object is an element of the size
@@ -16679,7 +19404,7 @@ function includesSize(sizeArray, size) {
  *
  * @param  {*}       bidFloor    The bidFloor parameter inside bid request config.
  * @param  {*}       bidFloorCur The bidFloorCur parameter inside bid request config.
- * @return {boolean}             True if this is a valid biFfloor parameters format, and false
+ * @return {boolean}             True if this is a valid bidFloor parameters format, and false
  *                               otherwise.
  */
 
@@ -16702,9 +19427,43 @@ function getBidRequest(id, impressions) {
     return;
   }
 
-  return __WEBPACK_IMPORTED_MODULE_3_core_js_library_fn_array_find_js___default()(impressions, function (imp) {
+  return __WEBPACK_IMPORTED_MODULE_3_core_js_pure_features_array_find_js___default()(impressions, function (imp) {
     return imp.id === id;
   });
+}
+/**
+ * Adds a User ID module's response into user Eids array.
+ *
+ * @param  {array}  userEids       An array of objects containing user ids,
+ *                                 will be attached to bid request later.
+ * @param  {object} seenIdPartners An object with Identity partners names already added,
+ *                                 updated with new partner name.
+ * @param  {*}      id             The id obtained from User ID module.
+ * @param  {string} source         The URL of the User ID module.
+ * @param  {string} ixlPartnerName The name of the Identity Partner in IX Library.
+ * @param  {string} rtiPartner     The name of the User ID provider in Prebid.
+ * @return {boolean}               True if successfully added the ID to the userEids, false otherwise.
+ */
+
+
+function addUserEids(userEids, seenIdPartners, id, source, ixlPartnerName, rtiPartner) {
+  if (id) {
+    // mark the partnername that IX RTI uses
+    seenIdPartners[ixlPartnerName] = 1;
+    userEids.push({
+      source: source,
+      uids: [{
+        id: id,
+        ext: {
+          rtiPartner: rtiPartner
+        }
+      }]
+    });
+    return true;
+  }
+
+  __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["logWarn"]('Tried to add a user ID from Prebid, the ID received was null');
+  return false;
 }
 /**
  * Builds a request object to be sent to the ad server based on bid requests.
@@ -16721,8 +19480,19 @@ function getBidRequest(id, impressions) {
 function buildRequest(validBidRequests, bidderRequest, impressions, version) {
   var userEids = []; // Always use secure HTTPS protocol.
 
-  var baseUrl = SECURE_BID_URL; // RTI ids will be included in the bid request if the function getIdentityInfo() is loaded
+  var baseUrl = SECURE_BID_URL; // Dict for identity partners already populated from prebid
+
+  var seenIdPartners = {}; // Get ids from Prebid User ID Modules
+
+  var userId = validBidRequests[0].userId;
+
+  if (userId && _typeof(userId) === 'object') {
+    if (userId.idl_env) {
+      addUserEids(userEids, seenIdPartners, userId.idl_env, 'liveramp.com', 'LiveRampIp', 'idl');
+    }
+  } // RTI ids will be included in the bid request if the function getIdentityInfo() is loaded
   // and if the data for the partner exist
+
 
   if (window.headertag && typeof window.headertag.getIdentityInfo === 'function') {
     var identityInfo = window.headertag.getIdentityInfo();
@@ -16730,10 +19500,13 @@ function buildRequest(validBidRequests, bidderRequest, impressions, version) {
     if (identityInfo && _typeof(identityInfo) === 'object') {
       for (var partnerName in identityInfo) {
         if (identityInfo.hasOwnProperty(partnerName)) {
-          var response = identityInfo[partnerName];
+          // check if not already populated by prebid cache
+          if (!seenIdPartners.hasOwnProperty(partnerName)) {
+            var response = identityInfo[partnerName];
 
-          if (!response.responsePending && response.data && _typeof(response.data) === 'object' && Object.keys(response.data).length) {
-            userEids.push(response.data);
+            if (!response.responsePending && response.data && _typeof(response.data) === 'object' && Object.keys(response.data).length) {
+              userEids.push(response.data);
+            }
           }
         }
       }
@@ -16797,7 +19570,8 @@ function buildRequest(validBidRequests, bidderRequest, impressions, version) {
 
   var payload = {}; // Parse additional runtime configs.
 
-  var otherIxConfig = __WEBPACK_IMPORTED_MODULE_2__src_config_js__["b" /* config */].getConfig('ix');
+  var bidderCode = bidderRequest && bidderRequest.bidderCode || 'ix';
+  var otherIxConfig = __WEBPACK_IMPORTED_MODULE_2__src_config_js__["b" /* config */].getConfig(bidderCode);
 
   if (otherIxConfig) {
     // Append firstPartyData to r.site.page if firstPartyData exists.
@@ -16837,6 +19611,74 @@ function buildRequest(validBidRequests, bidderRequest, impressions, version) {
     url: baseUrl,
     data: payload
   };
+}
+/**
+ *
+ * @param  {array}   bannerSizeList list of banner sizes
+ * @param  {array}   bannerSize the size to be removed
+ * @return {boolean} true if succesfully removed, false if not found
+ */
+
+
+function removeFromSizes(bannerSizeList, bannerSize) {
+  for (var i = 0; i < bannerSizeList.length; i++) {
+    if (bannerSize[0] == bannerSizeList[i][0] && bannerSize[1] == bannerSizeList[i][1]) {
+      bannerSizeList.splice(i, 1);
+      return true;
+    }
+  } // size not found
+
+
+  return false;
+}
+/**
+ * Updates the Object to track missing banner sizes.
+ *
+ * @param {object} validBidRequest    The bid request for an ad unit's with a configured size.
+ * @param {object} missingBannerSizes The object containing missing banner sizes
+ * @param {object} imp                The impression for the bidrequest
+ */
+
+
+function updateMissingSizes(validBidRequest, missingBannerSizes, imp) {
+  var transactionID = validBidRequest.transactionId;
+
+  if (missingBannerSizes.hasOwnProperty(transactionID)) {
+    var currentSizeList = [];
+
+    if (missingBannerSizes[transactionID].hasOwnProperty('missingSizes')) {
+      currentSizeList = missingBannerSizes[transactionID].missingSizes;
+    }
+
+    removeFromSizes(currentSizeList, validBidRequest.params.size);
+    missingBannerSizes[transactionID].missingSizes = currentSizeList;
+  } else {
+    // New Ad Unit
+    if (__WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](validBidRequest, 'mediaTypes.banner.sizes')) {
+      var sizeList = __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepClone"](validBidRequest.mediaTypes.banner.sizes);
+      removeFromSizes(sizeList, validBidRequest.params.size);
+      var newAdUnitEntry = {
+        'missingSizes': sizeList,
+        'impression': imp
+      };
+      missingBannerSizes[transactionID] = newAdUnitEntry;
+    }
+  }
+}
+/**
+ *
+ * @param  {object} imp      Impression object to be modified
+ * @param  {array}  newSize  The new size to be applied
+ * @return {object} newImp   Updated impression object
+ */
+
+
+function createMissingBannerImp(imp, newSize) {
+  var newImp = __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepClone"](imp);
+  newImp.ext.sid = "".concat(newSize[0], "x").concat(newSize[1]);
+  newImp.banner.w = newSize[0];
+  newImp.banner.h = newSize[1];
+  return newImp;
 }
 
 var spec = {
@@ -16898,7 +19740,9 @@ var spec = {
     var reqs = [];
     var bannerImps = [];
     var videoImps = [];
-    var validBidRequest = null;
+    var validBidRequest = null; // To capture the missing sizes i.e not configured for ix
+
+    var missingBannerSizes = {};
 
     for (var i = 0; i < validBidRequests.length; i++) {
       validBidRequest = validBidRequests[i];
@@ -16912,7 +19756,22 @@ var spec = {
       }
 
       if (validBidRequest.mediaType === __WEBPACK_IMPORTED_MODULE_1__src_mediaTypes_js__["b" /* BANNER */] || __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](validBidRequest, 'mediaTypes.banner') || !validBidRequest.mediaType && !validBidRequest.mediaTypes) {
-        bannerImps.push(bidToBannerImp(validBidRequest));
+        var imp = bidToBannerImp(validBidRequest);
+        bannerImps.push(imp);
+        updateMissingSizes(validBidRequest, missingBannerSizes, imp);
+      }
+    } // Finding the missing banner sizes ,and making impressions for them
+
+
+    for (var transactionID in missingBannerSizes) {
+      if (missingBannerSizes.hasOwnProperty(transactionID)) {
+        var missingSizes = missingBannerSizes[transactionID].missingSizes;
+
+        for (var _i = 0; _i < missingSizes.length; _i++) {
+          var origImp = missingBannerSizes[transactionID].impression;
+          var newImp = createMissingBannerImp(origImp, missingSizes[_i]);
+          bannerImps.push(newImp);
+        }
       }
     }
 
@@ -16993,18 +19852,18 @@ Object(__WEBPACK_IMPORTED_MODULE_5__src_adapters_bidderFactory_js__["registerBid
 
 /***/ })
 
-},[399]);
-pbjsChunk([136],{
+},[500]);
+pbjsChunk([150],{
 
-/***/ 489:
+/***/ 603:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(490);
+module.exports = __webpack_require__(604);
 
 
 /***/ }),
 
-/***/ 490:
+/***/ 604:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17015,7 +19874,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_utils_js__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_mediaTypes_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_url_js__ = __webpack_require__(10);
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -17027,7 +19885,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
 
 
 
@@ -17495,8 +20352,8 @@ function createVideoBidResponses(response, _ref3) {
       startTime = _ref3.startTime;
   var bidResponses = [];
 
-  if (response !== undefined && response.vastUrl !== '' && response.pub_rev !== '') {
-    var vastQueryParams = Object(__WEBPACK_IMPORTED_MODULE_4__src_url_js__["c" /* parse */])(response.vastUrl).search || {};
+  if (response !== undefined && response.vastUrl !== '' && response.pub_rev > 0) {
+    var vastQueryParams = __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["parseUrl"](response.vastUrl).search || {};
     var bidResponse = {};
     bidResponse.requestId = bid.bidId; // default 5 mins
 
@@ -17504,9 +20361,9 @@ function createVideoBidResponses(response, _ref3) {
 
     bidResponse.netRevenue = true;
     bidResponse.currency = response.currency;
-    bidResponse.cpm = Number(response.pub_rev) / 1000;
-    bidResponse.width = response.width;
-    bidResponse.height = response.height;
+    bidResponse.cpm = parseInt(response.pub_rev, 10) / 1000;
+    bidResponse.width = parseInt(response.width, 10);
+    bidResponse.height = parseInt(response.height, 10);
     bidResponse.creativeId = response.adid;
     bidResponse.vastUrl = response.vastUrl;
     bidResponse.mediaType = __WEBPACK_IMPORTED_MODULE_3__src_mediaTypes_js__["d" /* VIDEO */]; // enrich adunit with vast parameters
@@ -17524,42 +20381,43 @@ Object(__WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory_js__["registerBid
 
 /***/ })
 
-},[489]);
-pbjsChunk([23],{
+},[603]);
+pbjsChunk([25],{
 
-/***/ 543:
+/***/ 657:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(544);
+module.exports = __webpack_require__(658);
 
 
 /***/ }),
 
-/***/ 544:
+/***/ 658:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (immutable) */ __webpack_exports__["resetSyncedStatus"] = resetSyncedStatus;
+/* harmony export (immutable) */ __webpack_exports__["resetWurlMap"] = resetWurlMap;
 /* harmony export (immutable) */ __webpack_exports__["PrebidServer"] = PrebidServer;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_adapter_js__ = __webpack_require__(91);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_bidfactory_js__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_adapter_js__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_bidfactory_js__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_utils_js__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_constants_json__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_constants_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__src_constants_json__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_adapterManager_js__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_config_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_mediaTypes_js__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_native_js__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__src_native_js__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__src_adapters_bidderFactory_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_events_js__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__src_events_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9__src_events_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_library_fn_array_includes_js__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_library_fn_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_core_js_library_fn_array_includes_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_js__ = __webpack_require__(545);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_pure_features_array_includes_js__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_pure_features_array_includes_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_core_js_pure_features_array_includes_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_js__ = __webpack_require__(659);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__src_ajax_js__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_library_fn_array_find_js__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_library_fn_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_core_js_library_fn_array_find_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_pure_features_array_find_js__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_pure_features_array_find_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_core_js_pure_features_array_find_js__);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -17648,6 +20506,7 @@ __WEBPACK_IMPORTED_MODULE_5__src_config_js__["b" /* config */].setDefaults({
  * @property {string} endpoint endpoint to contact
  *  === optional params below ===
  * @property {number} [timeout] timeout for S2S bidders - should be lower than `pbjs.requestBids({timeout})`
+ * @property {number} [defaultTtl] ttl for S2S bidders when pbs does not return a ttl on the response - defaults to 60`
  * @property {boolean} [cacheMarkup] whether to cache the adm result
  * @property {string} [adapter] adapter code to use for S2S
  * @property {string} [syncEndpoint] endpoint URL for syncing cookies
@@ -17664,7 +20523,7 @@ function setS2sConfig(options) {
       // vendor keys will be set if either: the key was not specified by user
       // or if the user did not set their own distinct value (ie using the system default) to override the vendor
       Object.keys(__WEBPACK_IMPORTED_MODULE_11__config_js__["a" /* S2S_VENDORS */][vendor]).forEach(function (vendorKey) {
-        if (s2sDefaultConfig[vendorKey] === options[vendorKey] || !__WEBPACK_IMPORTED_MODULE_10_core_js_library_fn_array_includes_js___default()(optionKeys, vendorKey)) {
+        if (s2sDefaultConfig[vendorKey] === options[vendorKey] || !__WEBPACK_IMPORTED_MODULE_10_core_js_pure_features_array_includes_js___default()(optionKeys, vendorKey)) {
           options[vendorKey] = __WEBPACK_IMPORTED_MODULE_11__config_js__["a" /* S2S_VENDORS */][vendor][vendorKey];
         }
       });
@@ -17677,7 +20536,7 @@ function setS2sConfig(options) {
   var keys = Object.keys(options);
 
   if (['accountId', 'bidders', 'endpoint'].filter(function (key) {
-    if (!__WEBPACK_IMPORTED_MODULE_10_core_js_library_fn_array_includes_js___default()(keys, key)) {
+    if (!__WEBPACK_IMPORTED_MODULE_10_core_js_pure_features_array_includes_js___default()(keys, key)) {
       __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["logError"](key + ' missing in server to server config');
       return true;
     }
@@ -17862,12 +20721,21 @@ function _appendSiteAppDevice(request, pageUrl) {
       id: _s2sConfig.accountId
     };
   } else {
-    request.site = {
-      publisher: {
-        id: _s2sConfig.accountId
-      },
-      page: pageUrl
-    };
+    request.site = {};
+
+    if (__WEBPACK_IMPORTED_MODULE_2__src_utils_js__["isPlainObject"](__WEBPACK_IMPORTED_MODULE_5__src_config_js__["b" /* config */].getConfig('site'))) {
+      request.site = __WEBPACK_IMPORTED_MODULE_5__src_config_js__["b" /* config */].getConfig('site');
+    } // set publisher.id if not already defined
+
+
+    if (!__WEBPACK_IMPORTED_MODULE_2__src_utils_js__["deepAccess"](request.site, 'publisher.id')) {
+      __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["deepSetValue"](request.site, 'publisher.id', _s2sConfig.accountId);
+    } // set site.page if not already defined
+
+
+    if (!request.site.page) {
+      request.site.page = pageUrl;
+    }
   }
 
   if (_typeof(__WEBPACK_IMPORTED_MODULE_5__src_config_js__["b" /* config */].getConfig('device')) === 'object') {
@@ -17966,10 +20834,58 @@ var nativeEventTrackerMethodMap = {
 var bidIdMap = {};
 var nativeAssetCache = {}; // store processed native params to preserve
 
+/**
+ * map wurl to auction id and adId for use in the BID_WON event
+ */
+
+var wurlMap = {};
+/**
+ * @param {string} auctionId
+ * @param {string} adId generated value set to bidObject.adId by bidderFactory Bid()
+ * @param {string} wurl events.winurl passed from prebidServer as wurl
+ */
+
+function addWurl(auctionId, adId, wurl) {
+  if ([auctionId, adId].every(__WEBPACK_IMPORTED_MODULE_2__src_utils_js__["isStr"])) {
+    wurlMap["".concat(auctionId).concat(adId)] = wurl;
+  }
+}
+/**
+ * @param {string} auctionId
+ * @param {string} adId generated value set to bidObject.adId by bidderFactory Bid()
+ */
+
+
+function removeWurl(auctionId, adId) {
+  if ([auctionId, adId].every(__WEBPACK_IMPORTED_MODULE_2__src_utils_js__["isStr"])) {
+    wurlMap["".concat(auctionId).concat(adId)] = undefined;
+  }
+}
+/**
+ * @param {string} auctionId
+ * @param {string} adId generated value set to bidObject.adId by bidderFactory Bid()
+ * @return {(string|undefined)} events.winurl which was passed as wurl
+ */
+
+
+function getWurl(auctionId, adId) {
+  if ([auctionId, adId].every(__WEBPACK_IMPORTED_MODULE_2__src_utils_js__["isStr"])) {
+    return wurlMap["".concat(auctionId).concat(adId)];
+  }
+}
+/**
+ * remove all cached wurls
+ */
+
+
+function resetWurlMap() {
+  wurlMap = {};
+}
 var OPEN_RTB_PROTOCOL = {
   buildRequest: function buildRequest(s2sBidRequest, bidRequests, adUnits) {
     var imps = [];
-    var aliases = {}; // transform ad unit into array of OpenRTB impression objects
+    var aliases = {};
+    var firstBidRequest = bidRequests[0]; // transform ad unit into array of OpenRTB impression objects
 
     adUnits.forEach(function (adUnit) {
       var nativeParams = Object(__WEBPACK_IMPORTED_MODULE_7__src_native_js__["g" /* processNativeAdUnitParams */])(__WEBPACK_IMPORTED_MODULE_2__src_utils_js__["deepAccess"](adUnit, 'mediaTypes.native'));
@@ -18144,7 +21060,7 @@ var OPEN_RTB_PROTOCOL = {
       _extends(imp, mediaTypes); // if storedAuctionResponse has been set, pass SRID
 
 
-      var storedAuctionResponseBid = __WEBPACK_IMPORTED_MODULE_13_core_js_library_fn_array_find_js___default()(bidRequests[0].bids, function (bid) {
+      var storedAuctionResponseBid = __WEBPACK_IMPORTED_MODULE_13_core_js_pure_features_array_find_js___default()(firstBidRequest.bids, function (bid) {
         return bid.adUnitCode === adUnit.code && bid.storedAuctionResponse;
       });
 
@@ -18172,6 +21088,8 @@ var OPEN_RTB_PROTOCOL = {
       test: getConfig('debug') ? 1 : 0,
       ext: {
         prebid: {
+          // set ext.prebid.auctiontimestamp with the auction timestamp. Data type is long integer.
+          auctiontimestamp: firstBidRequest.auctionStart,
           targeting: {
             // includewinners is always true for openrtb
             includewinners: true,
@@ -18200,9 +21118,9 @@ var OPEN_RTB_PROTOCOL = {
       request.cur = [adServerCur[0]];
     }
 
-    _appendSiteAppDevice(request, bidRequests[0].refererInfo.referer);
+    _appendSiteAppDevice(request, firstBidRequest.refererInfo.referer);
 
-    var digiTrust = _getDigiTrustQueryParams(bidRequests && bidRequests[0]);
+    var digiTrust = _getDigiTrustQueryParams(firstBidRequest);
 
     if (digiTrust) {
       __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["deepSetValue"](request, 'user.ext.digitrust', digiTrust);
@@ -18228,21 +21146,21 @@ var OPEN_RTB_PROTOCOL = {
     }
 
     if (bidRequests) {
-      if (bidRequests[0].gdprConsent) {
+      if (firstBidRequest.gdprConsent) {
         // note - gdprApplies & consentString may be undefined in certain use-cases for consentManagement module
         var gdprApplies;
 
-        if (typeof bidRequests[0].gdprConsent.gdprApplies === 'boolean') {
-          gdprApplies = bidRequests[0].gdprConsent.gdprApplies ? 1 : 0;
+        if (typeof firstBidRequest.gdprConsent.gdprApplies === 'boolean') {
+          gdprApplies = firstBidRequest.gdprConsent.gdprApplies ? 1 : 0;
         }
 
         __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["deepSetValue"](request, 'regs.ext.gdpr', gdprApplies);
-        __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["deepSetValue"](request, 'user.ext.consent', bidRequests[0].gdprConsent.consentString);
+        __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["deepSetValue"](request, 'user.ext.consent', firstBidRequest.gdprConsent.consentString);
       } // US Privacy (CCPA) support
 
 
-      if (bidRequests[0].uspConsent) {
-        __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["deepSetValue"](request, 'regs.ext.us_privacy', bidRequests[0].uspConsent);
+      if (firstBidRequest.uspConsent) {
+        __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["deepSetValue"](request, 'regs.ext.us_privacy', firstBidRequest.uspConsent);
       }
     }
 
@@ -18288,11 +21206,32 @@ var OPEN_RTB_PROTOCOL = {
 
           if (bidRequest && serverResponseTimeMs) {
             bidRequest.serverResponseTimeMs = serverResponseTimeMs;
+          } // Look for seatbid[].bid[].ext.prebid.bidid and place it in the bidResponse object for use in analytics adapters as 'pbsBidId'
+
+
+          var bidId = __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["deepAccess"](bid, 'ext.prebid.bidid');
+
+          if (__WEBPACK_IMPORTED_MODULE_2__src_utils_js__["isStr"](bidId)) {
+            bidObject.pbsBidId = bidId;
+          } // store wurl by auctionId and adId so it can be accessed from the BID_WON event handler
+
+
+          if (__WEBPACK_IMPORTED_MODULE_2__src_utils_js__["isStr"](__WEBPACK_IMPORTED_MODULE_2__src_utils_js__["deepAccess"](bid, 'ext.prebid.events.win'))) {
+            addWurl(bidRequest.auctionId, bidObject.adId, __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["deepAccess"](bid, 'ext.prebid.events.win'));
           }
 
           var extPrebidTargeting = __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["deepAccess"](bid, 'ext.prebid.targeting'); // If ext.prebid.targeting exists, add it as a property value named 'adserverTargeting'
+          // The removal of hb_winurl and hb_bidid targeting values is temporary
+          // once we get through the transition, this block will be removed.
 
-          if (extPrebidTargeting && _typeof(extPrebidTargeting) === 'object') {
+          if (__WEBPACK_IMPORTED_MODULE_2__src_utils_js__["isPlainObject"](extPrebidTargeting)) {
+            // If wurl exists, remove hb_winurl and hb_bidid targeting attributes
+            if (__WEBPACK_IMPORTED_MODULE_2__src_utils_js__["isStr"](__WEBPACK_IMPORTED_MODULE_2__src_utils_js__["deepAccess"](bid, 'ext.prebid.events.win'))) {
+              extPrebidTargeting = __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["getDefinedParams"](extPrebidTargeting, Object.keys(extPrebidTargeting).filter(function (i) {
+                return i.indexOf('hb_winurl') === -1 && i.indexOf('hb_bidid') === -1;
+              }));
+            }
+
             bidObject.adserverTargeting = extPrebidTargeting;
           }
 
@@ -18405,7 +21344,8 @@ var OPEN_RTB_PROTOCOL = {
 
           bidObject.currency = response.cur ? response.cur : DEFAULT_S2S_CURRENCY; // TODO: Remove when prebid-server returns ttl and netRevenue
 
-          bidObject.ttl = bid.ttl ? bid.ttl : DEFAULT_S2S_TTL;
+          var configTtl = _s2sConfig.defaultTtl || DEFAULT_S2S_TTL;
+          bidObject.ttl = bid.ttl ? bid.ttl : configTtl;
           bidObject.netRevenue = bid.netRevenue ? bid.netRevenue : DEFAULT_S2S_NETREVENUE;
           bids.push({
             adUnit: bid.impid,
@@ -18419,8 +21359,24 @@ var OPEN_RTB_PROTOCOL = {
   }
 };
 /**
+ * BID_WON event to request the wurl
+ * @param {Bid} bid the winning bid object
+ */
+
+function bidWonHandler(bid) {
+  var wurl = getWurl(bid.auctionId, bid.adId);
+
+  if (__WEBPACK_IMPORTED_MODULE_2__src_utils_js__["isStr"](wurl)) {
+    __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["logMessage"]("Invoking image pixel for wurl on BID_WIN: \"".concat(wurl, "\""));
+    __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["triggerPixel"](wurl); // remove from wurl cache, since the wurl url was called
+
+    removeWurl(bid.auctionId, bid.adId);
+  }
+}
+/**
  * Bidder adapter for Prebid Server
  */
+
 
 function PrebidServer() {
   var baseAdapter = new __WEBPACK_IMPORTED_MODULE_0__src_adapter_js__["a" /* default */]('prebidServer');
@@ -18496,14 +21452,16 @@ function PrebidServer() {
       __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["logError"](error);
     }
 
-    if (!result || result.status && __WEBPACK_IMPORTED_MODULE_10_core_js_library_fn_array_includes_js___default()(result.status, 'Error')) {
+    if (!result || result.status && __WEBPACK_IMPORTED_MODULE_10_core_js_pure_features_array_includes_js___default()(result.status, 'Error')) {
       __WEBPACK_IMPORTED_MODULE_2__src_utils_js__["logError"]('error parsing response: ', result.status);
     }
 
     done();
     doClientSideSyncs(requestedBidders);
-  }
+  } // Listen for bid won to call wurl
 
+
+  __WEBPACK_IMPORTED_MODULE_9__src_events_js___default.a.on(__WEBPACK_IMPORTED_MODULE_3__src_constants_json__["EVENTS"].BID_WON, bidWonHandler);
   return _extends(this, {
     callBids: baseAdapter.callBids,
     setBidderCode: baseAdapter.setBidderCode,
@@ -18514,7 +21472,7 @@ __WEBPACK_IMPORTED_MODULE_4__src_adapterManager_js__["default"].registerBidAdapt
 
 /***/ }),
 
-/***/ 545:
+/***/ 659:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18539,18 +21497,18 @@ var S2S_VENDORS = {
 
 /***/ })
 
-},[543]);
-pbjsChunk([122],{
+},[657]);
+pbjsChunk([136],{
 
-/***/ 552:
+/***/ 666:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(553);
+module.exports = __webpack_require__(667);
 
 
 /***/ }),
 
-/***/ 553:
+/***/ 667:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18570,7 +21528,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_config_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_events_js__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_events_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__src_events_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_url_js__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_url_js__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_constants_json__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_constants_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__src_constants_json__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_storageManager_js__ = __webpack_require__(9);
@@ -18910,18 +21868,18 @@ initPubcid();
 
 /***/ })
 
-},[552]);
-pbjsChunk([120],{
+},[666]);
+pbjsChunk([133],{
 
-/***/ 558:
+/***/ 674:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(559);
+module.exports = __webpack_require__(675);
 
 
 /***/ }),
 
-/***/ 559:
+/***/ 675:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18931,6 +21889,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_mediaTypes_js__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_config_js__ = __webpack_require__(3);
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 
@@ -18940,10 +21900,10 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 var BIDDER_CODE = 'pubmatic';
 var LOG_WARN_PREFIX = 'PubMatic: ';
 var ENDPOINT = 'https://hbopenbid.pubmatic.com/translator?source=prebid-client';
-var USYNCURL = 'https://ads.pubmatic.com/AdServer/js/showad.js#PIX&kdntuid=1&p=';
+var USER_SYNC_URL_IFRAME = 'https://ads.pubmatic.com/AdServer/js/showad.js#PIX&kdntuid=1&p=';
+var USER_SYNC_URL_IMAGE = 'https://image8.pubmatic.com/AdServer/ImgSync?p=';
 var DEFAULT_CURRENCY = 'USD';
 var AUCTION_TYPE = 1;
-var PUBMATIC_DIGITRUST_KEY = 'nFIn8aLzbd';
 var UNDEFINED = undefined;
 var DEFAULT_WIDTH = 0;
 var DEFAULT_HEIGHT = 0;
@@ -19682,115 +22642,46 @@ function _createImpressionObject(bid, conf) {
     impObj.banner = bannerObj;
   }
 
+  _addFloorFromFloorModule(impObj, bid);
+
   return impObj.hasOwnProperty(__WEBPACK_IMPORTED_MODULE_2__src_mediaTypes_js__["b" /* BANNER */]) || impObj.hasOwnProperty(__WEBPACK_IMPORTED_MODULE_2__src_mediaTypes_js__["c" /* NATIVE */]) || impObj.hasOwnProperty(__WEBPACK_IMPORTED_MODULE_2__src_mediaTypes_js__["d" /* VIDEO */]) ? impObj : UNDEFINED;
 }
 
-function _getDigiTrustObject(key) {
-  function getDigiTrustId() {
-    var digiTrustUser = window.DigiTrust && (__WEBPACK_IMPORTED_MODULE_3__src_config_js__["b" /* config */].getConfig('digiTrustId') || window.DigiTrust.getUser({
-      member: key
-    }));
-    return digiTrustUser && digiTrustUser.success && digiTrustUser.identity || null;
-  }
+function _addFloorFromFloorModule(impObj, bid) {
+  var bidFloor = -1; // get lowest floor from floorModule
 
-  var digiTrustId = getDigiTrustId(); // Verify there is an ID and this user has not opted out
+  if (typeof bid.getFloor === 'function' && !__WEBPACK_IMPORTED_MODULE_3__src_config_js__["b" /* config */].getConfig('pubmatic.disableFloors')) {
+    [__WEBPACK_IMPORTED_MODULE_2__src_mediaTypes_js__["b" /* BANNER */], __WEBPACK_IMPORTED_MODULE_2__src_mediaTypes_js__["d" /* VIDEO */], __WEBPACK_IMPORTED_MODULE_2__src_mediaTypes_js__["c" /* NATIVE */]].forEach(function (mediaType) {
+      if (impObj.hasOwnProperty(mediaType)) {
+        var floorInfo = bid.getFloor({
+          currency: impObj.bidfloorcur,
+          mediaType: mediaType,
+          size: '*'
+        });
 
-  if (!digiTrustId || digiTrustId.privacy && digiTrustId.privacy.optout) {
-    return null;
-  }
-
-  return digiTrustId;
-}
-
-function _handleDigitrustId(eids) {
-  var digiTrustId = _getDigiTrustObject(PUBMATIC_DIGITRUST_KEY);
-
-  if (digiTrustId !== null) {
-    eids.push({
-      'source': 'digitru.st',
-      'uids': [{
-        'id': digiTrustId.id || '',
-        'atype': 1,
-        'ext': {
-          'keyv': parseInt(digiTrustId.keyv) || 0
+        if (_typeof(floorInfo) === 'object' && floorInfo.currency === impObj.bidfloorcur && !isNaN(parseInt(floorInfo.floor))) {
+          var mediaTypeFloor = parseFloat(floorInfo.floor);
+          bidFloor = bidFloor == -1 ? mediaTypeFloor : Math.min(mediaTypeFloor, bidFloor);
         }
-      }]
+      }
     });
-  }
-}
-
-function _handleTTDId(eids, validBidRequests) {
-  var ttdId = null;
-  var adsrvrOrgId = __WEBPACK_IMPORTED_MODULE_3__src_config_js__["b" /* config */].getConfig('adsrvrOrgId');
-
-  if (__WEBPACK_IMPORTED_MODULE_0__src_utils_js__["isStr"](__WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](validBidRequests, '0.userId.tdid'))) {
-    ttdId = validBidRequests[0].userId.tdid;
-  } else if (adsrvrOrgId && __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["isStr"](adsrvrOrgId.TDID)) {
-    ttdId = adsrvrOrgId.TDID;
-  }
-
-  if (ttdId !== null) {
-    eids.push({
-      'source': 'adserver.org',
-      'uids': [{
-        'id': ttdId,
-        'atype': 1,
-        'ext': {
-          'rtiPartner': 'TDID'
-        }
-      }]
-    });
-  }
-}
-/**
- * Produces external userid object in ortb 3.0 model.
- */
+  } // get highest from impObj.bidfllor and floor from floor module
+  // as we are using Math.max, it is ok if we have not got any floor from floorModule, then value of bidFloor will be -1
 
 
-function _addExternalUserId(eids, value, source, atype) {
-  if (__WEBPACK_IMPORTED_MODULE_0__src_utils_js__["isStr"](value)) {
-    eids.push({
-      source: source,
-      uids: [{
-        id: value,
-        atype: atype
-      }]
-    });
-  }
+  if (impObj.bidfloor) {
+    bidFloor = Math.max(bidFloor, impObj.bidfloor);
+  } // assign value only if bidFloor is > 0
+
+
+  impObj.bidfloor = !isNaN(bidFloor) && bidFloor > 0 ? bidFloor : UNDEFINED;
 }
 
 function _handleEids(payload, validBidRequests) {
-  var eids = [];
+  var bidUserIdAsEids = __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](validBidRequests, '0.userIdAsEids');
 
-  _handleDigitrustId(eids);
-
-  _handleTTDId(eids, validBidRequests);
-
-  var bidRequest = validBidRequests[0];
-
-  if (bidRequest && bidRequest.userId) {
-    _addExternalUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](bidRequest, "userId.pubcid"), 'pubcid.org', 1);
-
-    _addExternalUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](bidRequest, "userId.digitrustid.data.id"), 'digitru.st', 1);
-
-    _addExternalUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](bidRequest, "userId.id5id"), 'id5-sync.com', 1);
-
-    _addExternalUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](bidRequest, "userId.criteoId"), 'criteo.com', 1); // replacing criteoRtus
-
-
-    _addExternalUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](bidRequest, "userId.idl_env"), 'liveramp.com', 1);
-
-    _addExternalUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](bidRequest, "userId.lipb.lipbid"), 'liveintent.com', 1);
-
-    _addExternalUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](bidRequest, "userId.parrableid"), 'parrable.com', 1);
-
-    _addExternalUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](bidRequest, "userId.britepoolid"), 'britepool.com', 1);
-
-    _addExternalUserId(eids, __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](bidRequest, "userId.netId"), 'netid.de', 1);
-  }
-
-  if (eids.length > 0) {
-    payload.user.eids = eids;
+  if (__WEBPACK_IMPORTED_MODULE_0__src_utils_js__["isArray"](bidUserIdAsEids) && bidUserIdAsEids.length > 0) {
+    __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepSetValue"](payload, 'user.eids', bidUserIdAsEids);
   }
 }
 
@@ -20057,7 +22948,7 @@ var spec = {
     payload.ext.wrapper.version = parseInt(conf.verId) || UNDEFINED;
     payload.ext.wrapper.wiid = conf.wiid || UNDEFINED; // eslint-disable-next-line no-undef
 
-    payload.ext.wrapper.wv = "prebid_prebid_3.14.0";
+    payload.ext.wrapper.wv = "prebid_prebid_3.26.0";
     payload.ext.wrapper.transactionId = conf.transactionId;
     payload.ext.wrapper.wp = 'pbjs';
     payload.user.gender = conf.gender ? conf.gender.trim() : UNDEFINED;
@@ -20067,7 +22958,12 @@ var spec = {
     payload.user.yob = _parseSlotParam('yob', conf.yob);
     payload.device.geo = payload.user.geo;
     payload.site.page = conf.kadpageurl.trim() || payload.site.page.trim();
-    payload.site.domain = _getDomainFromURL(payload.site.page); // passing transactionId in source.tid
+    payload.site.domain = _getDomainFromURL(payload.site.page); // merge the device from config.getConfig('device')
+
+    if (_typeof(__WEBPACK_IMPORTED_MODULE_3__src_config_js__["b" /* config */].getConfig('device')) === 'object') {
+      payload.device = _extends(payload.device, __WEBPACK_IMPORTED_MODULE_3__src_config_js__["b" /* config */].getConfig('device'));
+    } // passing transactionId in source.tid
+
 
     __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepSetValue"](payload, 'source.tid', conf.transactionId); // test bids
 
@@ -20100,7 +22996,17 @@ var spec = {
 
     _handleEids(payload, validBidRequests);
 
-    _blockedIabCategoriesValidation(payload, blockedIabCategories);
+    _blockedIabCategoriesValidation(payload, blockedIabCategories); // Note: Do not move this block up
+    // if site object is set in Prebid config then we need to copy required fields from site into app and unset the site object
+
+
+    if (_typeof(__WEBPACK_IMPORTED_MODULE_3__src_config_js__["b" /* config */].getConfig('app')) === 'object') {
+      payload.app = __WEBPACK_IMPORTED_MODULE_3__src_config_js__["b" /* config */].getConfig('app'); // not copying domain from site as it is a derived value from page
+
+      payload.app.publisher = payload.site.publisher;
+      payload.app.ext = payload.site.ext || UNDEFINED;
+      delete payload.site;
+    }
 
     return {
       method: 'POST',
@@ -20138,7 +23044,11 @@ var spec = {
               netRevenue: NET_REVENUE,
               ttl: 300,
               referrer: parsedReferrer,
-              ad: bid.adm
+              ad: bid.adm,
+              pm_seat: seatbidder.seat || null,
+              pm_dspid: bid.ext && bid.ext.dspid ? bid.ext.dspid : null,
+              partnerImpId: bid.id || '' // partner impression Id
+
             };
 
             if (parsedRequest.imp && parsedRequest.imp.length > 0) {
@@ -20181,6 +23091,13 @@ var spec = {
 
             if (bid.adomain && bid.adomain.length > 0) {
               newBid.meta.clickUrl = bid.adomain[0];
+            } // adserverTargeting
+
+
+            if (seatbidder.ext && seatbidder.ext.buyid) {
+              newBid.adserverTargeting = {
+                'hb_buyid_pubmatic': seatbidder.ext.buyid
+              };
             }
 
             bidResponses.push(newBid);
@@ -20198,7 +23115,7 @@ var spec = {
    * Register User Sync.
    */
   getUserSyncs: function getUserSyncs(syncOptions, responses, gdprConsent, uspConsent) {
-    var syncurl = USYNCURL + publisherId; // Attaching GDPR Consent Params in UserSync url
+    var syncurl = '' + publisherId; // Attaching GDPR Consent Params in UserSync url
 
     if (gdprConsent) {
       syncurl += '&gdpr=' + (gdprConsent.gdprApplies ? 1 : 0);
@@ -20218,10 +23135,13 @@ var spec = {
     if (syncOptions.iframeEnabled) {
       return [{
         type: 'iframe',
-        url: syncurl
+        url: USER_SYNC_URL_IFRAME + syncurl
       }];
     } else {
-      __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["logWarn"](LOG_WARN_PREFIX + 'Please enable iframe based user sync.');
+      return [{
+        type: 'image',
+        url: USER_SYNC_URL_IMAGE + syncurl
+      }];
     }
   },
 
@@ -20242,18 +23162,18 @@ Object(__WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory_js__["registerBid
 
 /***/ })
 
-},[558]);
-pbjsChunk([104],{
+},[674]);
+pbjsChunk([113],{
 
-/***/ 604:
+/***/ 728:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(605);
+module.exports = __webpack_require__(729);
 
 
 /***/ }),
 
-/***/ 605:
+/***/ 729:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20296,7 +23216,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
 
 
-var DEFAULT_INTEGRATION = 'pbjs_lite'; // always use https, regardless of whether or not current page is secure
+var DEFAULT_INTEGRATION = 'pbjs_lite';
+var DEFAULT_PBS_INTEGRATION = 'pbjs'; // always use https, regardless of whether or not current page is secure
 
 var FASTLANE_ENDPOINT = 'https://fastlane.rubiconproject.com/a/api/fastlane.json';
 var VIDEO_ENDPOINT = 'https://prebid-server.rubiconproject.com/openrtb2/auction';
@@ -20317,6 +23238,7 @@ var sizeMap = {
   1: '468x60',
   2: '728x90',
   5: '120x90',
+  7: '125x125',
   8: '120x600',
   9: '160x600',
   10: '300x600',
@@ -20482,6 +23404,11 @@ var spec = {
               // includebidderkeys always false for openrtb
               includebidderkeys: false,
               pricegranularity: getPriceGranularity(__WEBPACK_IMPORTED_MODULE_2__src_config_js__["b" /* config */])
+            },
+            bidders: {
+              rubicon: {
+                integration: __WEBPACK_IMPORTED_MODULE_2__src_config_js__["b" /* config */].getConfig('rubicon.int_type') || DEFAULT_PBS_INTEGRATION
+              }
             }
           }
         }
@@ -20633,8 +23560,10 @@ var spec = {
 
       if (bidRequest.storedAuctionResponse) {
         __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepSetValue"](data.imp[0], 'ext.prebid.storedauctionresponse.id', bidRequest.storedAuctionResponse.toString());
-      }
+      } // set ext.prebid.auctiontimestamp using auction time
 
+
+      __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepSetValue"](data.imp[0], 'ext.prebid.auctiontimestamp', bidderRequest.auctionStart);
       return {
         method: 'POST',
         url: VIDEO_ENDPOINT,
@@ -20769,7 +23698,7 @@ var spec = {
       'alt_size_ids': parsedSizes.slice(1).join(',') || undefined,
       'rp_floor': (params.floor = parseFloat(params.floor)) > 0.01 ? params.floor : 0.01,
       'rp_secure': '1',
-      'tk_flint': "".concat(configIntType || DEFAULT_INTEGRATION, "_v3.14.0"),
+      'tk_flint': "".concat(configIntType || DEFAULT_INTEGRATION, "_v3.26.0"),
       'x_source.tid': bidRequest.transactionId,
       'x_source.pchain': params.pchain,
       'p_screen_res': _getScreenResolution(),
@@ -21523,18 +24452,18 @@ Object(__WEBPACK_IMPORTED_MODULE_1__src_adapters_bidderFactory_js__["registerBid
 
 /***/ })
 
-},[604]);
-pbjsChunk([102],{
+},[728]);
+pbjsChunk([111],{
 
-/***/ 610:
+/***/ 734:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(611);
+module.exports = __webpack_require__(735);
 
 
 /***/ }),
 
-/***/ 611:
+/***/ 735:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21733,25 +24662,25 @@ init();
 
 /***/ })
 
-},[610]);
-pbjsChunk([85],{
+},[734]);
+pbjsChunk([94],{
 
-/***/ 654:
+/***/ 780:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(655);
+module.exports = __webpack_require__(781);
 
 
 /***/ }),
 
-/***/ 655:
+/***/ 781:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "spec", function() { return spec; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_utils_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_url_js__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_url_js__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_adapters_bidderFactory_js__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_mediaTypes_js__ = __webpack_require__(2);
 
@@ -21781,18 +24710,11 @@ var spec = {
       var sovrnImps = [];
       var iv;
       var schain;
-      var digitrust;
+      var unifiedID;
 
       __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["_each"](bidReqs, function (bid) {
-        if (!digitrust) {
-          var bidRequestDigitrust = __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](bid, 'userId.digitrustid.data');
-
-          if (bidRequestDigitrust && (!bidRequestDigitrust.privacy || !bidRequestDigitrust.privacy.optout)) {
-            digitrust = {
-              id: bidRequestDigitrust.id,
-              keyv: bidRequestDigitrust.keyv
-            };
-          }
+        if (!unifiedID) {
+          unifiedID = __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepAccess"](bid, 'userId.tdid');
         }
 
         if (bid.schain) {
@@ -21812,6 +24734,7 @@ var spec = {
           };
         });
         sovrnImps.push({
+          adunitcode: bid.adUnitCode,
           id: bid.bidId,
           banner: {
             format: processedSizes,
@@ -21852,14 +24775,20 @@ var spec = {
         __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepSetValue"](sovrnBidReq, 'regs.ext.us_privacy', bidderRequest.uspConsent);
       }
 
-      if (digitrust) {
-        __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepSetValue"](sovrnBidReq, 'user.ext.digitrust', {
-          id: digitrust.id,
-          keyv: digitrust.keyv
-        });
+      if (unifiedID) {
+        var idArray = [{
+          source: 'adserver.org',
+          uids: [{
+            id: unifiedID,
+            ext: {
+              rtiPartner: 'TDID'
+            }
+          }]
+        }];
+        __WEBPACK_IMPORTED_MODULE_0__src_utils_js__["deepSetValue"](sovrnBidReq, 'user.ext.eids', idArray);
       }
 
-      var url = "https://ap.lijit.com/rtb/bid?" + "src=prebid_prebid_3.14.0";
+      var url = "https://ap.lijit.com/rtb/bid?src=prebid_prebid_3.26.0";
       if (iv) url += "&iv=".concat(iv);
       return {
         method: 'POST',
@@ -21968,5 +24897,5 @@ Object(__WEBPACK_IMPORTED_MODULE_2__src_adapters_bidderFactory_js__["registerBid
 
 /***/ })
 
-},[654]);
+},[780]);
 pbjs.processQueue();
